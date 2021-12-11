@@ -12,7 +12,7 @@
 	<atom:link href="/archives/author/admin/feed" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Tue, 07 Dec 2021 01:25:51 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 11 Dec 2021 11:19:16 +0000</lastBuildDate>
 	<language>zh-CN</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -888,102 +888,386 @@
 		
 			</item>
 		<item>
-		<title>政策要闻  工信部就“关于加强工业互联网平台安全建设的建议”进行答复</title>
-		<link>/archives/836</link>
-					<comments>/archives/836#respond</comments>
+		<title>热点信息  美国国防部新网安标准：网安成数度等级划分和新增变化</title>
+		<link>/archives/2086</link>
+					<comments>/archives/2086#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Wed, 17 Nov 2021 03:29:00 +0000</pubDate>
+		<pubDate>Fri, 19 Nov 2021 11:16:00 +0000</pubDate>
 				<category><![CDATA[全部]]></category>
 		<category><![CDATA[推荐]]></category>
-		<guid isPermaLink="false">/?p=836</guid>
+		<guid isPermaLink="false">/?p=2086</guid>
 
-					<description><![CDATA[政策要闻 &#124;&#124; 工信部就“关于加强工业互联网平台安全建设的建议”进行答复 为贯彻落实习近平总书记关于坚持和完善 [&#8230;]]]></description>
+					<description><![CDATA[美国国防部新网安标准：网安成数度等级划分和新增变化 网安标准2月14日讯，据外媒报道，于2020年1月31日， [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<h1><strong>政策要闻 || 工信部就“关于加强工业互联网平台安全建设的建议”进行答复</strong><strong></strong></h1>
+<p><strong>美国国防部新网安标准：网安成数度等级划分和新增变化</strong><strong></strong></p>
 
 
 
-<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="378" height="212" src="/wp-content/uploads/2021/11/49b3dd17614cecc1dd2526093188f6765cf9881f.png" alt="" class="wp-image-837" srcset="/wp-content/uploads/2021/11/49b3dd17614cecc1dd2526093188f6765cf9881f.png 378w, /wp-content/uploads/2021/11/49b3dd17614cecc1dd2526093188f6765cf9881f-300x168.png 300w" sizes="(max-width: 378px) 100vw, 378px" /></figure></div>
+<p>网安标准2月14日讯，据外媒报道，于2020年1月31日，美国国防部发布了新的网络安全标准——《网络安全成熟度模型认证1.0版》(简称CMMC 1.0)。美国防部表示，到2026年，国防承包商在回应政府采购计划的提案请求时，必须满足基本的网络安全标准。美国防部希望通过新版CMMC框架的推出，以增强国防工业基础（DIB）分包商的网络安全准备程度的方式，加强对供应链非机密信息（联邦合同信息（FCI）和受控未分类信息（CUI）的保护。继上一期谈了网安成熟度模型框架分析和进程级别之后，本期将要介绍CMMC的网安成熟度等级划分和新增变化。</p>
 
 
 
-<p>为贯彻落实习近平总书记关于坚持和完善人民代表大会制度的重要思想、关于加强和改进人民政协工作的重要思想，工业和信息化部积极做好十三届全国人大四次会议代表建议、全国政协十三届四次会议提案的办理工作，特别是结合党史学习教育，切实为民办实事、解难题，强化组织指导，创新沟通机制，努力将代表委员提出的有价值、高质量建议转化为破解难题的政策措施，推动工业和信息化事业高质量发展。为深入宣传工业和信息化部2021年全国两会建议提案办理工作成果，工业和信息化部政务新媒体“工信微报”特开设“复文选编”栏目，陆续编发部分建议提案复文案例。</p>
+<p>首先CMMC是一个基于数据保护为中心的安全成熟度评价体系。在这套体系里面，重点提到保护目标是CUI-受控的非机密信息，那这个定义清晰的界定了所保护数据的范围，任何绝密/秘密的涉及国家安全的数据信息不包含在内，CUI是政府创建或拥有的，或组织实体为政府创建或拥有的或代表政府创建或拥有的信息，这些信息是法律，法规或政府范围内的政策要求或允许机构使用保障或传播控制措施进行处理的信息。在CMMC体系文档中没有明确针对所保护数据信息的分类分级做明确的定义和说明，直接引用在美国的国家档案网站中CUI的分类与细分子类的详细描述说明，以及细分子类的分类指南和示例。</p>
 
 
 
-<p><strong>对十三届全国人大四次会议第9992号建议的答复</strong></p>
+<p><br>&nbsp;&nbsp;&nbsp;CUI数据信息的总体分类包括：关键基础设施、防御、出口管制、金融、出入境、情报、国际协定、执法、法律、自然和文化资源、北约、核、隐私、采购与供应链、专有业务信息、临时信息、统计、税务。</p>
 
 
 
-<p>田立坤代表：</p>
+<p><strong>目前，云安全的痛点有以下：</strong><strong></strong></p>
 
 
 
-<p>您提出的关于加强工业互联网平台安全建设的建议收悉，现答复如下：</p>
+<ol type="1"><li>云存储不加密，没有保密的交换文件的网盘</li><li>网盘存储的是明文文件</li><li>网盘共享功能分享的是明文文件</li><li>共享密码只有4个字母</li></ol>
 
 
 
-<p>当前，工业互联网快速发展，平台数量显著增长，融合应用日趋成熟。工业互联网平台作为工业互联网的中枢，向上承载应用生态，向下接入海量设备，面临的网络安全风险挑战与日俱增。我部赞同您提出的健全平台安全管理体系、提升平台安全技术防护能力、实施平台数据安全分类分级管理、加强安全检查评估等建议，将积极纳入相关工作举措。</p>
+<p><strong>无法区分获取文件的人是否是授权的？</strong><strong></strong></p>
 
 
 
-<p><strong>一、已开展工作</strong></p>
+<ol type="1"><li>网盘数据是用户的，用户文件在云端没有隐私</li><li>云平台可以看到所有用户数据</li><li>存在云平台的数据没有加密保护</li><li>云平台数据不区分用户保密</li></ol>
 
 
 
-<p><strong>（一）推动构建工业互联网平台安全政策体系。一是</strong>根据《国务院关于深化“互联网+先进制造业”发展工业互联网的指导意见》《加强工业互联网安全工作的指导意见》等文件要求，推动构建多部门协同推进、政府监管、企业主责的安全管理格局，明确由各地通信管理局加强工业互联网平台安全监管，并对联网设备、系统进行安全监测。<strong>二是</strong>印发《关于开展工业互联网企业网络安全分类分级管理试点工作的通知》，部署启动分类分级管理试点工作，分类施策、分级防护，进一步加强平台企业网络安全管理。<strong>三是</strong>推动《工业互联网平台企业网络安全防护规范》《工业互联网数据安全防护规范》等四项国家标准立项，加快研制工业互联网平台安全防护、安全评估、安全测试等30余项行业标准。</p>
+<p><strong>云安全的痛点？</strong><strong></strong></p>
 
 
 
-<p><strong>（二）强化工业互联网平台安全防护。一是</strong>依托工业互联网创新发展工程，支持海尔、富士康等工业互联网平台企业建立安全接入、态势感知、风险预警等技术手段，建成测试验证、安全众测等多个公共服务平台，鼓励威胁诱捕、工业APP安全检测等安全技术产品加快突破。<strong>二是</strong>依托国家工业互联网安全技术监测服务平台，累计覆盖重点工业互联网平台百余个，持续监测和处置恶意网络行为。<strong>三是</strong>持续开展网络安全技术应用试点示范，围绕边缘层、基础设施层（云IaaS）、平台层（工业PaaS）、应用层（工业SaaS）以及工业APP等安全防护需求，遴选平台安全防护优秀解决方案，不断加强平台安全防护能力建设。</p>
+<ol type="1"><li>加解密影响速度和体感</li><li>如果云端加密，超过百万用户规模，严重加解密占用云计算资源</li><li>用户端软件加密受终端影响感知较差</li><li>现有加密硬件速度不够快小于10MB/s</li><li>软件加密，效率低、不可信</li><li>软件加密占用主机CPU和内存资源</li><li>软件加密可以被篡改，不完全可信</li><li>密钥在那里？</li><li>放在云端？密钥和加密文件放在一起不安全</li></ol>
 
 
 
-<p><strong>（三）扎实推进行业数据安全管理工作。一是</strong>坚持法律法规制度先行，积极参与《数据安全法》等法律制定工作，夯实数据安全工作法律基础。<strong>二是</strong>印发《电信和互联网行业数据安全标准体系建设指南》等文件，研究发布行业网络数据分类分级、重要数据识别等40余项重点行业标准。<strong>三是</strong>部署开展行业网络数据安全保护能力提升专项行动，印发《电信和互联网企业网络数据安全合规性评估要点（2020年）》，明确合规评估指引。组织基础电信企业开展数据分类分级、重要数据识别、数据安全评估等标准贯标，指导重点互联网企业开展数据安全治理能力评估。</p>
+<p>10.放在用户手中？用户口令安全性不确定</p>
 
 
 
-<p><strong>（四）加快建设工业互联网安全技术防护体系。一是</strong>基本建成国家、省、企业三级协同工业互联网安全技术监测服务体系，国家平台已覆盖汽车、电子、钢铁等14个重要行业领域，涉及工业企业10万余家。<strong>二是</strong>组织开展工业互联网安全检查，开发检测工具箱和验证平台，及时发现、通报和整改安全风险隐患近2000个。<strong>三是</strong>依托工业互联网企业网络安全分类分级管理试点，面向平台企业开展检测评估，指导平台企业有效落实网络安全防护措施。</p>
+<p><strong>解决方案</strong><strong></strong></p>
 
 
 
-<p><strong>二、下一步工作考虑</strong></p>
+<ol type="1"><li>云端存储加密后文档</li><li>加密密钥在用户端存放</li><li>用户端解密使用</li><li><strong>上传、下载：都是以密文传输</strong><strong></strong></li><li>硬件加解密</li><li>上云前加密</li><li>下载后本机解密</li><li>密钥+PIN结合(指纹/按键)</li></ol>
 
 
 
-<p>做好平台安全保障对提升工业互联网高质量发展水平具有重要意义。下一步，我部将围绕健全平台安全管理体系、提升平台安全防护能力、强化平台数据安全保护等方面着力做好以下有关工作：</p>
+<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="530" src="/wp-content/uploads/2021/12/6b14cace303714f96ded434ac143b40f1654efd6.png" alt="" class="wp-image-2089" srcset="/wp-content/uploads/2021/12/6b14cace303714f96ded434ac143b40f1654efd6.png 830w, /wp-content/uploads/2021/12/6b14cace303714f96ded434ac143b40f1654efd6-300x192.png 300w, /wp-content/uploads/2021/12/6b14cace303714f96ded434ac143b40f1654efd6-768x490.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
 
 
 
-<p><strong>（一）健全完善工业互联网平台安全管理体系。一是</strong>推动出台工业互联网企业网络安全分类分级管理指南，深入实施平台企业网络安全分类分级管理，强化重点平台企业网络安全管理。<strong>二是</strong>推动印发《工业互联网综合标准化体系建设指南》（2021版），加快工业互联网平台安全分类分级管理等系列国家标准研制发布，指导企业落实网络安全主体责任。</p>
+<p><strong>解决方案——链</strong><strong></strong></p>
 
 
 
-<p><strong>（二）持续提升工业互联网平台安全防护水平。一是</strong>鼓励重点平台企业建设企业级安全态势感知能力，将重点平台纳入安全监测体系，加强平台安全监测预警、应急处置。<strong>二是</strong>出台中小企业安全上云上平台政策措施，实施中小企业安全上云专项行动，为中小企业上云全流程提供安全指引。<strong>三是</strong>依托工程项目、试点示范等，进一步加大平台安全关键技术攻关和优秀项目遴选，促进网络安全技术创新应用，提升平台安全保障和服务能力。</p>
+<p><strong>认证模式：</strong><strong></strong></p>
 
 
 
-<p><strong>（三）切实开展工业互联网数据安全保护。一是</strong>落实《数据安全法》，研究制定工业互联网数据安全管理政策文件，建立健全数据分类分级保护、重要数据保护等基础制度。<strong>二是</strong>加快制定工业互联网等重点领域数据安全标准规范，组织开展标准验证和试点示范，指导企业做好数据安全保护工作。<strong>三是</strong>大力发展数据安全技术和产业，鼓励相关企业、研究机构积极参与数据可信采集、数据安全态势感知、数据溯源等数据安全关键技术研发创新和应用推广。<strong>四是</strong>组织研究数据安全保护认证体系，制定行业数据安全保护能力评估规范，建立产学研共同参与的评估认证机制，开展认证工作。</p>
+<ol type="1"><li>客户终端必须上报正确的账号和密码</li><li>一次认证AAA：对用户的账号中的域名校验</li><li>国密认证AAA：对用户的身份、账号进行国密认证检验<strong></strong></li></ol>
 
 
 
-<p><strong>（四）系统强化工业互联网安全保障能力。一是</strong>完善安全技术监测服务体系，扩大监测范围，丰富平台功能，提升监测质量，提高支撑政府决策、保障企业安全的能力。<strong>二是</strong>充分发挥行业威胁信息共享平台作用，推动建立跨地区、跨行业通报处置和应急联动机制，增强工业互联网重大安全风险、重大安全事件应对能力。<strong>三是</strong>健全安全检查检测机制，定期对重点平台、工业企业、工业APP开展检测评估，推动安全检测评估工作规范化、常态化、体系化。</p>
+<p><strong>终端国密认证：</strong><strong></strong></p>
 
 
 
-<p>感谢您对工业互联网安全工作的关心和支持。</p>
+<ol type="1"><li>客户终端设备、身份国密认证</li><li>业务系统高速加密、国密加密</li><li>网络连接VPDN国密认证</li></ol>
 
 
 
-<p>工业和信息化部</p>
+<p><strong>高速加密：</strong><strong></strong></p>
 
 
 
-<p>2021年9月14日</p>
+<ol type="1"><li>终端数据加密</li><li>业务数据加密</li></ol>
+
+
+
+<p><strong>解决方案——端</strong></p>
+
+
+
+<ol type="1"><li>搭载最新USB 3.1第二代10Gbps接口</li><li>实时6Gbps加解密，支持AES /SM4 256bit 加密引擎</li><li>NIST/CSE认证的硬件加密芯片MX+</li><li>使用者可透过选择任何主机端可读取的存储装置里的文档及文件夹包含云端硬盘，加密既有资料</li><li>您拥有别人所没有的实体钥匙</li></ol>
+
+
+
+<p><strong>加密终端、身份识别</strong><strong>&nbsp;</strong><strong>保护个人及企业云端资料的安全</strong><strong></strong></p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="509" src="/wp-content/uploads/2021/12/035a8748384eb72aee2d00015a3675191fd44535.png" alt="" class="wp-image-2091" srcset="/wp-content/uploads/2021/12/035a8748384eb72aee2d00015a3675191fd44535.png 830w, /wp-content/uploads/2021/12/035a8748384eb72aee2d00015a3675191fd44535-300x184.png 300w, /wp-content/uploads/2021/12/035a8748384eb72aee2d00015a3675191fd44535-768x471.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
+
+
+
+<p><strong>解决方案——加密网盘</strong></p>
+
+
+
+<ol type="1"><li>文件本端硬件加密</li><li>密钥=硬件+PIN组合（密码、按键、指纹）</li><li>对接云存储，云上存密文</li><li>可共享，分享者硬件授权和解密</li></ol>
+
+
+
+<p><strong>加密网盘——用户侧加密、解密文件</strong><strong></strong></p>
+
+
+
+<ol type="1"><li>右键单击执行文档或文件夹加密 (Windows版本)</li><li>选取位于右方窗格的一个文档 (或可使用Shift或Ctrl键选取多个文档)，接着右键单击选择 “加密至目前路径”进行加密</li><li>选取左方窗格的一个文件夹并选择 “加密至目前路径”</li><li>欲解密文档，选取加密的文档/文件夹并右键单击选择“解密至目前路径</li></ol>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="344" height="303" src="/wp-content/uploads/2021/12/a74e73301021d17381dafffa4139501d53dcfb27.png" alt="" class="wp-image-2092" srcset="/wp-content/uploads/2021/12/a74e73301021d17381dafffa4139501d53dcfb27.png 344w, /wp-content/uploads/2021/12/a74e73301021d17381dafffa4139501d53dcfb27-300x264.png 300w" sizes="(max-width: 344px) 100vw, 344px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="355" height="305" src="/wp-content/uploads/2021/12/263152a5fc2f044bc869fe3f234982ae0c0bb993.png" alt="" class="wp-image-2093" srcset="/wp-content/uploads/2021/12/263152a5fc2f044bc869fe3f234982ae0c0bb993.png 355w, /wp-content/uploads/2021/12/263152a5fc2f044bc869fe3f234982ae0c0bb993-300x258.png 300w" sizes="(max-width: 355px) 100vw, 355px" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/MXNzK3hyMm9DTkl3YllQeWlHdWlFbTlVeVk1TmVXZjlHdDlHY3JyaVJvWEVsQjdqVWIwNGF0cmY5K3hjR3RoQmJvTllUVDUzN2xtcitMT29ZVmFlWnZKQVRueDJFdEpsaFh1YnJETndsOHV4VzFZQ0ZCQVYvcGN1cE5jNTdsekZxN2FXSXZOSTlKSDg4V1haWXJTKzBqclZGK0hMWUlLS1loMHRqRit2Njcrc1ZyUWI2ZkgvZC9LdnB2NjJuS2x0bERBRGpnWXVxbG51MUJPTTBRRT0=/attach/object/f9689ef8a8c6e8aff187fbae99f007c42ac41670" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/MXNzK3hyMm9DTkl3YllQeWlHdWlFbTlVeVk1TmVXZjlHdDlHY3JyaVJvWEVsQjdqVWIwNGF0cmY5K3hjR3RoQmJvTllUVDUzN2xtcitMT29ZVmFlWnZKQVRueDJFdEpsaFh1YnJETndsOHV4VzFZQ0ZCQVYvcGN1cE5jNTdsekZxN2FXSXZOSTlKSDg4V1haWXJTKzBqclZGK0hMWUlLS1loMHRqRit2Njcrc1ZyUWI2ZkgvZC9LdnB2NjJuS2x0bERBRGpnWXVxbG51MUJPTTBRRT0=/attach/object/43930fbf355f4b940c32f28d57e2db434f066937" alt=""/></figure>
+
+
+
+<p><strong>加密网盘——通过网盘客户端上传</strong><strong></strong></p>
+
+
+
+<ol type="1"><li>通过网盘客户端软件上传加密文件(Windows版本)</li><li>登录网盘</li><li>点击上传</li><li>选取已经用Enigma加密的文件，点击签名上传</li><li>客户端软件调用Enigma完成签名，并上传</li></ol>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="301" height="251" src="/wp-content/uploads/2021/12/fc527ce569306b1ab55d105e7834ac69f504f0fa.png" alt="" class="wp-image-2094"/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/MXNzK3hyMm9DTkl3YllQeWlHdWlFbTlVeVk1TmVXZjlHdDlHY3JyaVJvWEVsQjdqVWIwNGF0cmY5K3hjR3RoQmJvTllUVDUzN2xtcitMT29ZVmFlWnZKQVRueDJFdEpsaFh1YnJETndsOHV4VzFZQ0ZCQVYvcGN1cE5jNTdsekZxN2FXSXZOSTlKSDg4V1haWXJTKzBqclZGK0hMWUlLS1loMHRqRit2Njcrc1ZyUWI2ZkgvZC9LdnB2NjJuS2x0bERBRGpnWXVxbG51MUJPTTBRRT0=/attach/object/ae5c379b0c3d46606dd95b31e41a1205f68d6cbe" alt=""/></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="407" height="242" src="/wp-content/uploads/2021/12/d56d11ac0c8d8b3692e877b318196974e355d2f9.png" alt="" class="wp-image-2095" srcset="/wp-content/uploads/2021/12/d56d11ac0c8d8b3692e877b318196974e355d2f9.png 407w, /wp-content/uploads/2021/12/d56d11ac0c8d8b3692e877b318196974e355d2f9-300x178.png 300w" sizes="(max-width: 407px) 100vw, 407px" /></figure>
+
+
+
+<p><strong>加密网盘——文件加密上传过程实例</strong><strong></strong></p>
+
+
+
+<p>以PC端和云网盘使用Encryption Cloud Storage通过互联网交换和传输加密文件内容为例说明如下：</p>
+
+
+
+<p><strong>第一步: PC端使用Enigma高速硬件AES（密钥为个人私有）加密文件资料</strong><strong></strong></p>
+
+
+
+<p><strong>第二步: PC端用云网盘的Public Key加密第二步的结果</strong><strong></strong></p>
+
+
+
+<p><strong>第三步: 用云网盘的Private Key签名，并发送</strong><strong></strong></p>
+
+
+
+<p><strong>第四步: 云网盘收到后，用PC端的Public Key进行签名验证</strong><strong></strong></p>
+
+
+
+<p><strong>第五步: 用云网盘的Private Key解密第三步的结果</strong><strong></strong></p>
+
+
+
+<p><strong>第六步: 云网盘存储已经在PC端使用Enigma加密的文件资料</strong><strong></strong></p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="202" src="/wp-content/uploads/2021/12/a629756b0e28cf9c5c9bb481c470ac770cd696d1.png" alt="" class="wp-image-2096" srcset="/wp-content/uploads/2021/12/a629756b0e28cf9c5c9bb481c470ac770cd696d1.png 830w, /wp-content/uploads/2021/12/a629756b0e28cf9c5c9bb481c470ac770cd696d1-300x73.png 300w, /wp-content/uploads/2021/12/a629756b0e28cf9c5c9bb481c470ac770cd696d1-768x187.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
+
+
+
+<p><strong>解决方案——加密文档</strong><strong></strong></p>
+
+
+
+<ol type="1"><li>硬件身份认证</li><li>文档加密</li><li>加密文档网络共享</li><li>加密文档传递</li></ol>
+
+
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>支持多用户、群组的PKI部署</strong><strong></strong></p>
+
+
+
+<p><strong>文档和要素采用高性能硬件加解密引擎</strong><strong></strong></p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="829" height="471" src="/wp-content/uploads/2021/12/c1b8401f0c631195d72117b2c5488674acd9089f.png" alt="" class="wp-image-2097" srcset="/wp-content/uploads/2021/12/c1b8401f0c631195d72117b2c5488674acd9089f.png 829w, /wp-content/uploads/2021/12/c1b8401f0c631195d72117b2c5488674acd9089f-300x170.png 300w, /wp-content/uploads/2021/12/c1b8401f0c631195d72117b2c5488674acd9089f-768x436.png 768w" sizes="(max-width: 829px) 100vw, 829px" /></figure>
+
+
+
+<p><strong>加密文档——加密、解密文件</strong><strong></strong></p>
+
+
+
+<ol type="1"><li>右键单击执行文档或文件夹加密 (Windows版本)</li><li>选取位于右方窗格的一个文档 (或可使用Shift或Ctrl键选取多个文档)，接着右键单击选</li><li>择 “加密至目前路径”进行加密</li><li>选取左方窗格的一个文件夹并选择 “加密至目前路径”</li><li>欲解密文档，选取加密的文档/文件夹并右键单击选择“解密至目前路径”</li></ol>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="470" height="384" src="/wp-content/uploads/2021/12/bbbb200430ee28ca746d746b7d0cfdc262c18fa7.png" alt="" class="wp-image-2098" srcset="/wp-content/uploads/2021/12/bbbb200430ee28ca746d746b7d0cfdc262c18fa7.png 470w, /wp-content/uploads/2021/12/bbbb200430ee28ca746d746b7d0cfdc262c18fa7-300x245.png 300w" sizes="(max-width: 470px) 100vw, 470px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="466" height="376" src="/wp-content/uploads/2021/12/570bf7a9b97d2654b235b862d6f0639714621032.png" alt="" class="wp-image-2099" srcset="/wp-content/uploads/2021/12/570bf7a9b97d2654b235b862d6f0639714621032.png 466w, /wp-content/uploads/2021/12/570bf7a9b97d2654b235b862d6f0639714621032-300x242.png 300w" sizes="(max-width: 466px) 100vw, 466px" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/MXNzK3hyMm9DTkl3YllQeWlHdWlFbTlVeVk1TmVXZjlHdDlHY3JyaVJvWEVsQjdqVWIwNGF0cmY5K3hjR3RoQmJvTllUVDUzN2xtcitMT29ZVmFlWnZKQVRueDJFdEpsaFh1YnJETndsOHV4VzFZQ0ZCQVYvcGN1cE5jNTdsekZxN2FXSXZOSTlKSDg4V1haWXJTKzBqclZGK0hMWUlLS1loMHRqRit2Njcrc1ZyUWI2ZkgvZC9LdnB2NjJuS2x0bERBRGpnWXVxbG51MUJPTTBRRT0=/attach/object/1c849b500ac4181089e8d0eb1aeccf18b8522e21" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/MXNzK3hyMm9DTkl3YllQeWlHdWlFbTlVeVk1TmVXZjlHdDlHY3JyaVJvWEVsQjdqVWIwNGF0cmY5K3hjR3RoQmJvTllUVDUzN2xtcitMT29ZVmFlWnZKQVRueDJFdEpsaFh1YnJETndsOHV4VzFZQ0ZCQVYvcGN1cE5jNTdsekZxN2FXSXZOSTlKSDg4V1haWXJTKzBqclZGK0hMWUlLS1loMHRqRit2Njcrc1ZyUWI2ZkgvZC9LdnB2NjJuS2x0bERBRGpnWXVxbG51MUJPTTBRRT0=/attach/object/eb6c4677e77923f2cb3335e89e3990b0f6d8b755" alt=""/></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="829" height="361" src="/wp-content/uploads/2021/12/82a1f9a74d9cc838abca77e0699edec3e3781e17.png" alt="" class="wp-image-2100" srcset="/wp-content/uploads/2021/12/82a1f9a74d9cc838abca77e0699edec3e3781e17.png 829w, /wp-content/uploads/2021/12/82a1f9a74d9cc838abca77e0699edec3e3781e17-300x131.png 300w, /wp-content/uploads/2021/12/82a1f9a74d9cc838abca77e0699edec3e3781e17-768x334.png 768w" sizes="(max-width: 829px) 100vw, 829px" /></figure>
+
+
+
+<p><strong>加密文档——用户端到端加密文档传递</strong><strong></strong></p>
+
+
+
+<p>以Alice和Bob使用Encryption Cloud Storage通过互联网交换和传输加密文件内容为例说明如下：</p>
+
+
+
+<p>第一步: Alice使用CloudKey高速硬件AES加密文件资料</p>
+
+
+
+<p>第二步: Alice用Bob的Public Key加密第二步的结果</p>
+
+
+
+<p>第三步: 用Alice的Private Key签名，并发送</p>
+
+
+
+<p>第四步: Bob收到后，用Alice的Public Key进行签名验证</p>
+
+
+
+<p>第五步: 用Bob的Private Key解密第三步的结果</p>
+
+
+
+<p>第六步: Bob使用CloudKey的高速硬件AES解密文件资料</p>
+
+
+
+<h1><strong>CMMC等级划分</strong><strong></strong></h1>
+
+
+
+<p>除了网络安全控制标准外，CMMC将更广泛地“衡量一家公司网络安全实践和安全运营过程制度化的成熟度”。CMMC将实现多个级别的网络安全。除了评估公司实施网络安全控制措施的成熟度外，CMMC还将评估公司网络安全实践和流程的成熟度/制度化水平。</p>
+
+
+
+<p>从美国国防部各级官员对于网络安全成熟度模型认证的要求可以看到美国正在倾力打造国防相关的信息数据保护和安全防御体系，强制要求所有国防相关企业快速落地网络安全成熟度模型认证等级划分(CMMC)框架。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="525" src="/wp-content/uploads/2021/12/3302c5bad1cca29fb95d3b096afa7e8a83190679.png" alt="" class="wp-image-2101" srcset="/wp-content/uploads/2021/12/3302c5bad1cca29fb95d3b096afa7e8a83190679.png 830w, /wp-content/uploads/2021/12/3302c5bad1cca29fb95d3b096afa7e8a83190679-300x190.png 300w, /wp-content/uploads/2021/12/3302c5bad1cca29fb95d3b096afa7e8a83190679-768x486.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
+
+
+
+<p><strong>第一级：基础的网络卫生</strong></p>
+
+
+
+<ul><li>相当于联邦收购法规48 CFR 52.204-21中的所有实践。</li></ul>
+
+
+
+<p>一级要求最低。据国防部负责采办的助理部长办公室网络事务特别助理凯蒂·阿灵顿介绍，CMMC框架大约确定了17个网络安全特定“领域”，一级合规性仅要求在各个领域制定一项基本的“控制”措施</p>
+
+
+
+<p><strong>第二级：中级网络卫生，72种实践</strong></p>
+
+
+
+<ul><li>与联邦收购法相符</li><li>包括从NIST SP 800-171 r 1中选择的48个实践所组成的例集。</li><li>外加7个支持网络卫生的额外实践</li></ul>
+
+
+
+<p>二级被认为是过渡阶段。五角大楼可通过建立新的流程、规划和预算帮助各企业为更高的认证级别做好准备，其主要目标仍是“帮助小企业”。</p>
+
+
+
+<p><strong>第三级：良好的网络卫生，130种实践</strong></p>
+
+
+
+<ul><li>与联邦收购法相符</li><li>包括NIST SP 800-171 r 1中的所有实践案例。</li><li>外加20支持良好网络卫生的额外实践。</li></ul>
+
+
+
+<p>三级被认为是跨度最大的一级，是处理受控非机密信息的最低要求。企业的控制措施必须从前两级要求的17项增加到110多项。这些标准出自美国国家标准技术研究院的NIST 800-171修订版文件，也是目前许多企业声称已经达到的标准。</p>
+
+
+
+<p><strong>第四级：主动型，156种实践</strong></p>
+
+
+
+<ul><li>与联邦收购法相符</li><li>包括NIST SP 800-171 r 1中的所有实践。</li><li>外加NIST SP800-171B草案的11个额外实践。</li><li>包含额外15个实践，这些实践对一个主动出击型的网络项目进行了阐述。</li></ul>
+
+
+
+<p><strong>第五级：高级别，171个实践</strong></p>
+
+
+
+<ul><li>与联邦收购法相符</li><li>包括NIST SP 800-171 r 1中的所有实践。</li><li>从NIST SP800-171B草案中选择了4个额外实践案例。</li><li>还包含11个阐述高级网络安全计划的额外案例。</li></ul>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="987" height="739" src="/wp-content/uploads/2021/12/image.jpeg" alt="" class="wp-image-2102" srcset="/wp-content/uploads/2021/12/image.jpeg 987w, /wp-content/uploads/2021/12/image-300x225.jpeg 300w, /wp-content/uploads/2021/12/image-768x575.jpeg 768w" sizes="(max-width: 987px) 100vw, 987px" /></figure>
+
+
+
+<p>据悉，第四级和第五级针对承包最敏感合同的“极核心技术企业”，增加了额外的控制措施。而综上可知，这些标准将来自美国国家标准技术研究院、国际标准组织（ISO）、航空航天工业协会（AIA）等机构已经发布或正在制定的标准。</p>
+
+
+
+<p><strong>新版CMCC主要变化</strong><strong></strong></p>
+
+
+
+<p>新版CMMC模型利用了多处资源，进行了多方参考，包括：</p>
+
+
+
+<ul><li>CMMC第一级 只解决联邦并购法52.204-21条款涉及的惯例。</li><li>CMMC第三级 包括NIST SP 800-171r1等条款所涉实践（案例/惯例）。</li><li>CMMC第四和第五级整合了NIST SP 800-171B草案和其他法案中的部分实践（案例/惯例）。</li><li>此外，新版本的CMCC还参考了其他资源，如英国网络要素和澳大利亚网络安全中心必要的八种成熟度模型。</li></ul>
+
+
+
+<p>在CMMC认证方案中，企业不再“自行认证”而由美国防部授权第三方进行评估是最大的变化之一，且费用由企业承担。</p>
+
+
+
+<p>理论上，企业今后可以在不遵守规定的情况下竞标，但必须在选出“中标者”前获得所要求的等级的认证，否则将失去资格。因为未经认证的企业无法获得合同，且五角大楼官员无权给予任何企业网络安全认证的通行证。</p>
+
+
+
+<p>据报道，CMMC认证尤其会对小企业造成负担，美国防部将在不影响国家安全的前提下将影响降至最低。主承包商和工业界协会都在研究构建满足各种CMMC等级的计算基础架构，供分包商访问，让后者不必自己支付创建这些设施的费用</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/archives/836/feed</wfw:commentRss>
+					<wfw:commentRss>/archives/2086/feed</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

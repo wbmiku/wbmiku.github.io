@@ -660,8 +660,8 @@ body h6 {
   min-height: unset;
 }
 #colibri .style-829 p,#colibri .style-829  h1,#colibri .style-829  h2,#colibri .style-829  h3,#colibri .style-829  h4,#colibri .style-829  h5,#colibri .style-829  h6 {
-  font-weight: 600;
-  font-size: 1.8em;
+  font-weight: 400;
+  font-size: 1.6em;
   color: rgb(255, 255, 255);
 }
 #colibri .style-829 .text-wrapper-fancy svg path {
@@ -2227,12 +2227,12 @@ var colibriData = {"8-h37":{"data":{"sticky":{"className":"h-navigation_sticky a
 #colibri .h-navigation_sticky .style-9 > div > .colibri-menu-container > ul.colibri-menu > li > a, #colibri .h-navigation_sticky.style-9 > div > .colibri-menu-container > ul.colibri-menu > li > a,
 #colibri .style-831 > div > .colibri-menu-container > ul.colibri-menu > li.current_page_item > a, #colibri .style-831 > div > .colibri-menu-container > ul.colibri-menu > li.current_page_item > a:hover{
 	color: white;
-	font-size:20px;
-	font-weight:600
+	font-size:18px;
+	font-weight:400
 }
 #colibri .style-9 > div > .colibri-menu-container > ul.colibri-menu > li.current_page_item > a, #colibri .style-9 > div > .colibri-menu-container > ul.colibri-menu > li.current_page_item > a:hover{
-	font-size:20px;
-	font-weight:600
+	font-size:18px;
+	font-weight:400
 }
 
 /* 活动面板 */
@@ -2253,6 +2253,9 @@ var colibriData = {"8-h37":{"data":{"sticky":{"className":"h-navigation_sticky a
 	box-shadow: 0px 4px 10px 2px rgb(74 74 74 / 30%);
 	margin-top: -8px;
 	margin-bottom: 8px;
+}
+#colibri .style-193, #colibri .style-197{
+	padding:18px
 }
 
 /* 不显示文章预览图，next post */
@@ -2358,8 +2361,6 @@ var colibriData = {"8-h37":{"data":{"sticky":{"className":"h-navigation_sticky a
 	position:absolute;
 }
 
-
-
 /* 查看详情的按钮 */
 .h-x-container.style-812.style-local-32-c75.position-relative.h-element,
 .h-x-container.style-808.style-local-32-c88.position-relative.h-element{
@@ -2368,6 +2369,12 @@ var colibriData = {"8-h37":{"data":{"sticky":{"className":"h-navigation_sticky a
 span.h-button__outer.style-813-outer.style-local-32-c76-outer.d-inline-flex.h-element,
 span.h-button__outer.style-809-outer.style-local-32-c89-outer.d-inline-flex.h-element{
 	margin-top: -150px;
+}
+
+/* 图片圆角 */
+#colibri .style-800-image,
+#colibri .style-807-image{
+	border-radius:3px
 }</style>
 		    </head>
 
@@ -2452,7 +2459,7 @@ span.h-button__outer.style-809-outer.style-local-32-c89-outer.d-inline-flex.h-el
                                 <div data-colibri-component="dropdown-menu" role="navigation" h-use-smooth-scroll-all="true" data-colibri-id="8-h46" class="h-menu h-global-transition-all h-ignore-global-body-typography has-offcanvas-mobile h-menu-horizontal h-dropdown-menu style-831 style-local-8-h46 position-relative h-element">
                                   <!---->
                                   <div class="h-global-transition-all h-main-menu"><div class="colibri-menu-container"><ul id="menu-top-list" class="colibri-menu bordered-active-item bordered-active-item--bottom effect-borders-grow grow-from-left">
-<li id="menu-item-948" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-948"><a href="/archives/category/tuijian">专栏</a></li>
+<li id="menu-item-948" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-948"><a href="/archives/category/tuijian">专栏</a></li>
 <li id="menu-item-146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-146"><a href="/wenda">问答</a></li>
 <li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144"><a href="/shalong">沙龙</a></li>
 <li id="menu-item-143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-143"><a href="/shouce">手册</a></li>
@@ -2505,7 +2512,7 @@ span.h-button__outer.style-809-outer.style-local-32-c89-outer.d-inline-flex.h-el
                                           <div data-colibri-component="accordion-menu" role="navigation" h-use-smooth-scroll-all="true" data-colibri-id="8-h49" class="h-menu h-global-transition-all h-ignore-global-body-typography h-mobile-menu h-menu-accordion style-834 style-local-8-h49 position-relative h-element">
                                             <!---->
                                             <div class="h-global-transition-all h-mobile-menu"><div class="colibri-menu-container"><ul id="menu-top-list-1" class="colibri-menu none ">
-<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-948"><a href="/archives/category/tuijian">专栏</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-948"><a href="/archives/category/tuijian">专栏</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-146"><a href="/wenda">问答</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144"><a href="/shalong">沙龙</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-143"><a href="/shouce">手册</a></li>
@@ -2708,7 +2715,7 @@ span.h-button__outer.style-809-outer.style-local-32-c89-outer.d-inline-flex.h-el
         <div data-colibri-component="" class="h-row justify-content-lg-center justify-content-md-center justify-content-center align-items-lg-stretch align-items-md-stretch align-items-stretch gutters-col-lg-0 gutters-col-md-0 gutters-col-0 gutters-col-v-lg-0 gutters-col-v-md-0 gutters-col-v-0">
           <!---->
           <!---->
-        <div class="h-column h-column-container d-flex h-col-lg-12 h-col-md-12 h-col-12 post-836 post type-post status-publish format-standard has-post-thumbnail hentry category-quanbu category-tuijian masonry-item style-71-outer style-local-14-m4-outer"><div data-colibri-id="14-m4" class="d-flex h-flex-basis h-column__inner h-px-lg-0 h-px-md-0 h-px-0 v-inner-lg-0 v-inner-md-0 v-inner-0 style-71 style-local-14-m4 position-relative">
+        <div class="h-column h-column-container d-flex h-col-lg-12 h-col-md-12 h-col-12 post-836 post type-post status-publish format-standard has-post-thumbnail hentry category-quanbu category-guojiazhengce masonry-item style-71-outer style-local-14-m4-outer"><div data-colibri-id="14-m4" class="d-flex h-flex-basis h-column__inner h-px-lg-0 h-px-md-0 h-px-0 v-inner-lg-0 v-inner-md-0 v-inner-0 style-71 style-local-14-m4 position-relative">
 <!----><!----> <div class="w-100 h-y-container h-column__content h-column__v-align flex-basis-100 align-self-lg-start align-self-md-start align-self-start">
 <!----> <div data-colibri-id="14-m5" class="colibri-post-thumbnail colibri-post-has-thumbnail colibri-post-thumbnail-has-placeholder style-72 style-local-14-m5 h-overflow-hidden position-relative h-element">
 <!----><div class="h-global-transition-all colibri-post-thumbnail-shortcode style-dynamic-14-m5-height"><img width="378" height="212" src="/wp-content/uploads/2021/11/49b3dd17614cecc1dd2526093188f6765cf9881f.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" srcset="/wp-content/uploads/2021/11/49b3dd17614cecc1dd2526093188f6765cf9881f.png 378w, /wp-content/uploads/2021/11/49b3dd17614cecc1dd2526093188f6765cf9881f-300x168.png 300w" sizes="(max-width: 378px) 100vw, 378px"></div> <div class="colibri-post-thumbnail-content align-items-lg-center align-items-md-center align-items-center flex-basis-100"><div class="w-100 h-y-container">
@@ -2827,7 +2834,7 @@ span.h-button__outer.style-809-outer.style-local-32-c89-outer.d-inline-flex.h-el
 <!----><!----> <div class="w-100 h-y-container h-column__content h-column__v-align flex-basis-100 align-self-lg-center align-self-md-center align-self-center">
 <!----> <div data-colibri-id="14-m14" class="h-blog-categories style-81 style-local-14-m14 position-relative h-element">
 <!----><div class="h-global-transition-all">
-<a class="d-inline-block colibri-post-category" href="/archives/category/quanbu">全部</a><a class="d-inline-block colibri-post-category" href="/archives/category/tuijian">推荐</a>
+<a class="d-inline-block colibri-post-category" href="/archives/category/quanbu">全部</a><a class="d-inline-block colibri-post-category" href="/archives/category/guojiazhengce">国家政策</a>
 </div>
 </div>
 </div>
@@ -2876,7 +2883,7 @@ span.h-button__outer.style-809-outer.style-local-32-c89-outer.d-inline-flex.h-el
 <!----><div class="h-global-transition-all">
 	<nav class="navigation post-navigation" role="navigation" aria-label="文章导航">
 		<h2 class="screen-reader-text">文章导航</h2>
-		<div class="nav-links"><div class="nav-next"><a href="/archives/944" rel="next"><span class="meta-nav" aria-hidden="true">Next&nbsp;post</span> <span class="post-title" title="哪几种加密算法应用最广，安全度最高？他们有什么优缺点？">哪几种加密算法应用最广，安全度最高？他们有什么优缺点？</span></a></div></div>
+		<div class="nav-links"><div class="nav-next"><a href="/archives/2121" rel="next"><span class="meta-nav" aria-hidden="true">Next&nbsp;post</span> <span class="post-title" title="热点信息  关注15款违法App涉嫌超范围采集个人隐私信息">热点信息  关注15款违法App涉嫌超范围采集个人隐私信息</span></a></div></div>
 	</nav>
 </div>
 </div>

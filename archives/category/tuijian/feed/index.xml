@@ -12,7 +12,7 @@
 	<atom:link href="/archives/category/tuijian/feed" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Sat, 04 Dec 2021 13:06:19 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 11 Dec 2021 11:33:47 +0000</lastBuildDate>
 	<language>zh-CN</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,316 +20,1011 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.8.2</generator>
 	<item>
-		<title>政策要闻  工信部就“关于加强工业互联网平台安全建设的建议”进行答复</title>
-		<link>/archives/836</link>
-					<comments>/archives/836#respond</comments>
+		<title>热点信息  美国国防部新网安标准：网安成数度等级划分和新增变化</title>
+		<link>/archives/2086</link>
+					<comments>/archives/2086#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Wed, 17 Nov 2021 03:29:00 +0000</pubDate>
+		<pubDate>Fri, 19 Nov 2021 11:16:00 +0000</pubDate>
 				<category><![CDATA[全部]]></category>
 		<category><![CDATA[推荐]]></category>
-		<guid isPermaLink="false">/?p=836</guid>
+		<guid isPermaLink="false">/?p=2086</guid>
 
-					<description><![CDATA[政策要闻 &#124;&#124; 工信部就“关于加强工业互联网平台安全建设的建议”进行答复 为贯彻落实习近平总书记关于坚持和完善 [&#8230;]]]></description>
+					<description><![CDATA[美国国防部新网安标准：网安成数度等级划分和新增变化 网安标准2月14日讯，据外媒报道，于2020年1月31日， [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<h1><strong>政策要闻 || 工信部就“关于加强工业互联网平台安全建设的建议”进行答复</strong><strong></strong></h1>
+<p><strong>美国国防部新网安标准：网安成数度等级划分和新增变化</strong><strong></strong></p>
 
 
 
-<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="378" height="212" src="/wp-content/uploads/2021/11/49b3dd17614cecc1dd2526093188f6765cf9881f.png" alt="" class="wp-image-837" srcset="/wp-content/uploads/2021/11/49b3dd17614cecc1dd2526093188f6765cf9881f.png 378w, /wp-content/uploads/2021/11/49b3dd17614cecc1dd2526093188f6765cf9881f-300x168.png 300w" sizes="(max-width: 378px) 100vw, 378px" /></figure></div>
+<p>网安标准2月14日讯，据外媒报道，于2020年1月31日，美国国防部发布了新的网络安全标准——《网络安全成熟度模型认证1.0版》(简称CMMC 1.0)。美国防部表示，到2026年，国防承包商在回应政府采购计划的提案请求时，必须满足基本的网络安全标准。美国防部希望通过新版CMMC框架的推出，以增强国防工业基础（DIB）分包商的网络安全准备程度的方式，加强对供应链非机密信息（联邦合同信息（FCI）和受控未分类信息（CUI）的保护。继上一期谈了网安成熟度模型框架分析和进程级别之后，本期将要介绍CMMC的网安成熟度等级划分和新增变化。</p>
 
 
 
-<p>为贯彻落实习近平总书记关于坚持和完善人民代表大会制度的重要思想、关于加强和改进人民政协工作的重要思想，工业和信息化部积极做好十三届全国人大四次会议代表建议、全国政协十三届四次会议提案的办理工作，特别是结合党史学习教育，切实为民办实事、解难题，强化组织指导，创新沟通机制，努力将代表委员提出的有价值、高质量建议转化为破解难题的政策措施，推动工业和信息化事业高质量发展。为深入宣传工业和信息化部2021年全国两会建议提案办理工作成果，工业和信息化部政务新媒体“工信微报”特开设“复文选编”栏目，陆续编发部分建议提案复文案例。</p>
+<p>首先CMMC是一个基于数据保护为中心的安全成熟度评价体系。在这套体系里面，重点提到保护目标是CUI-受控的非机密信息，那这个定义清晰的界定了所保护数据的范围，任何绝密/秘密的涉及国家安全的数据信息不包含在内，CUI是政府创建或拥有的，或组织实体为政府创建或拥有的或代表政府创建或拥有的信息，这些信息是法律，法规或政府范围内的政策要求或允许机构使用保障或传播控制措施进行处理的信息。在CMMC体系文档中没有明确针对所保护数据信息的分类分级做明确的定义和说明，直接引用在美国的国家档案网站中CUI的分类与细分子类的详细描述说明，以及细分子类的分类指南和示例。</p>
 
 
 
-<p><strong>对十三届全国人大四次会议第9992号建议的答复</strong></p>
+<p><br>&nbsp;&nbsp;&nbsp;CUI数据信息的总体分类包括：关键基础设施、防御、出口管制、金融、出入境、情报、国际协定、执法、法律、自然和文化资源、北约、核、隐私、采购与供应链、专有业务信息、临时信息、统计、税务。</p>
 
 
 
-<p>田立坤代表：</p>
+<p><strong>目前，云安全的痛点有以下：</strong><strong></strong></p>
 
 
 
-<p>您提出的关于加强工业互联网平台安全建设的建议收悉，现答复如下：</p>
+<ol type="1"><li>云存储不加密，没有保密的交换文件的网盘</li><li>网盘存储的是明文文件</li><li>网盘共享功能分享的是明文文件</li><li>共享密码只有4个字母</li></ol>
 
 
 
-<p>当前，工业互联网快速发展，平台数量显著增长，融合应用日趋成熟。工业互联网平台作为工业互联网的中枢，向上承载应用生态，向下接入海量设备，面临的网络安全风险挑战与日俱增。我部赞同您提出的健全平台安全管理体系、提升平台安全技术防护能力、实施平台数据安全分类分级管理、加强安全检查评估等建议，将积极纳入相关工作举措。</p>
+<p><strong>无法区分获取文件的人是否是授权的？</strong><strong></strong></p>
 
 
 
-<p><strong>一、已开展工作</strong></p>
+<ol type="1"><li>网盘数据是用户的，用户文件在云端没有隐私</li><li>云平台可以看到所有用户数据</li><li>存在云平台的数据没有加密保护</li><li>云平台数据不区分用户保密</li></ol>
 
 
 
-<p><strong>（一）推动构建工业互联网平台安全政策体系。一是</strong>根据《国务院关于深化“互联网+先进制造业”发展工业互联网的指导意见》《加强工业互联网安全工作的指导意见》等文件要求，推动构建多部门协同推进、政府监管、企业主责的安全管理格局，明确由各地通信管理局加强工业互联网平台安全监管，并对联网设备、系统进行安全监测。<strong>二是</strong>印发《关于开展工业互联网企业网络安全分类分级管理试点工作的通知》，部署启动分类分级管理试点工作，分类施策、分级防护，进一步加强平台企业网络安全管理。<strong>三是</strong>推动《工业互联网平台企业网络安全防护规范》《工业互联网数据安全防护规范》等四项国家标准立项，加快研制工业互联网平台安全防护、安全评估、安全测试等30余项行业标准。</p>
+<p><strong>云安全的痛点？</strong><strong></strong></p>
 
 
 
-<p><strong>（二）强化工业互联网平台安全防护。一是</strong>依托工业互联网创新发展工程，支持海尔、富士康等工业互联网平台企业建立安全接入、态势感知、风险预警等技术手段，建成测试验证、安全众测等多个公共服务平台，鼓励威胁诱捕、工业APP安全检测等安全技术产品加快突破。<strong>二是</strong>依托国家工业互联网安全技术监测服务平台，累计覆盖重点工业互联网平台百余个，持续监测和处置恶意网络行为。<strong>三是</strong>持续开展网络安全技术应用试点示范，围绕边缘层、基础设施层（云IaaS）、平台层（工业PaaS）、应用层（工业SaaS）以及工业APP等安全防护需求，遴选平台安全防护优秀解决方案，不断加强平台安全防护能力建设。</p>
+<ol type="1"><li>加解密影响速度和体感</li><li>如果云端加密，超过百万用户规模，严重加解密占用云计算资源</li><li>用户端软件加密受终端影响感知较差</li><li>现有加密硬件速度不够快小于10MB/s</li><li>软件加密，效率低、不可信</li><li>软件加密占用主机CPU和内存资源</li><li>软件加密可以被篡改，不完全可信</li><li>密钥在那里？</li><li>放在云端？密钥和加密文件放在一起不安全</li></ol>
 
 
 
-<p><strong>（三）扎实推进行业数据安全管理工作。一是</strong>坚持法律法规制度先行，积极参与《数据安全法》等法律制定工作，夯实数据安全工作法律基础。<strong>二是</strong>印发《电信和互联网行业数据安全标准体系建设指南》等文件，研究发布行业网络数据分类分级、重要数据识别等40余项重点行业标准。<strong>三是</strong>部署开展行业网络数据安全保护能力提升专项行动，印发《电信和互联网企业网络数据安全合规性评估要点（2020年）》，明确合规评估指引。组织基础电信企业开展数据分类分级、重要数据识别、数据安全评估等标准贯标，指导重点互联网企业开展数据安全治理能力评估。</p>
+<p>10.放在用户手中？用户口令安全性不确定</p>
 
 
 
-<p><strong>（四）加快建设工业互联网安全技术防护体系。一是</strong>基本建成国家、省、企业三级协同工业互联网安全技术监测服务体系，国家平台已覆盖汽车、电子、钢铁等14个重要行业领域，涉及工业企业10万余家。<strong>二是</strong>组织开展工业互联网安全检查，开发检测工具箱和验证平台，及时发现、通报和整改安全风险隐患近2000个。<strong>三是</strong>依托工业互联网企业网络安全分类分级管理试点，面向平台企业开展检测评估，指导平台企业有效落实网络安全防护措施。</p>
+<p><strong>解决方案</strong><strong></strong></p>
 
 
 
-<p><strong>二、下一步工作考虑</strong></p>
+<ol type="1"><li>云端存储加密后文档</li><li>加密密钥在用户端存放</li><li>用户端解密使用</li><li><strong>上传、下载：都是以密文传输</strong><strong></strong></li><li>硬件加解密</li><li>上云前加密</li><li>下载后本机解密</li><li>密钥+PIN结合(指纹/按键)</li></ol>
 
 
 
-<p>做好平台安全保障对提升工业互联网高质量发展水平具有重要意义。下一步，我部将围绕健全平台安全管理体系、提升平台安全防护能力、强化平台数据安全保护等方面着力做好以下有关工作：</p>
+<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="530" src="/wp-content/uploads/2021/12/6b14cace303714f96ded434ac143b40f1654efd6.png" alt="" class="wp-image-2089" srcset="/wp-content/uploads/2021/12/6b14cace303714f96ded434ac143b40f1654efd6.png 830w, /wp-content/uploads/2021/12/6b14cace303714f96ded434ac143b40f1654efd6-300x192.png 300w, /wp-content/uploads/2021/12/6b14cace303714f96ded434ac143b40f1654efd6-768x490.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
 
 
 
-<p><strong>（一）健全完善工业互联网平台安全管理体系。一是</strong>推动出台工业互联网企业网络安全分类分级管理指南，深入实施平台企业网络安全分类分级管理，强化重点平台企业网络安全管理。<strong>二是</strong>推动印发《工业互联网综合标准化体系建设指南》（2021版），加快工业互联网平台安全分类分级管理等系列国家标准研制发布，指导企业落实网络安全主体责任。</p>
+<p><strong>解决方案——链</strong><strong></strong></p>
 
 
 
-<p><strong>（二）持续提升工业互联网平台安全防护水平。一是</strong>鼓励重点平台企业建设企业级安全态势感知能力，将重点平台纳入安全监测体系，加强平台安全监测预警、应急处置。<strong>二是</strong>出台中小企业安全上云上平台政策措施，实施中小企业安全上云专项行动，为中小企业上云全流程提供安全指引。<strong>三是</strong>依托工程项目、试点示范等，进一步加大平台安全关键技术攻关和优秀项目遴选，促进网络安全技术创新应用，提升平台安全保障和服务能力。</p>
+<p><strong>认证模式：</strong><strong></strong></p>
 
 
 
-<p><strong>（三）切实开展工业互联网数据安全保护。一是</strong>落实《数据安全法》，研究制定工业互联网数据安全管理政策文件，建立健全数据分类分级保护、重要数据保护等基础制度。<strong>二是</strong>加快制定工业互联网等重点领域数据安全标准规范，组织开展标准验证和试点示范，指导企业做好数据安全保护工作。<strong>三是</strong>大力发展数据安全技术和产业，鼓励相关企业、研究机构积极参与数据可信采集、数据安全态势感知、数据溯源等数据安全关键技术研发创新和应用推广。<strong>四是</strong>组织研究数据安全保护认证体系，制定行业数据安全保护能力评估规范，建立产学研共同参与的评估认证机制，开展认证工作。</p>
+<ol type="1"><li>客户终端必须上报正确的账号和密码</li><li>一次认证AAA：对用户的账号中的域名校验</li><li>国密认证AAA：对用户的身份、账号进行国密认证检验<strong></strong></li></ol>
 
 
 
-<p><strong>（四）系统强化工业互联网安全保障能力。一是</strong>完善安全技术监测服务体系，扩大监测范围，丰富平台功能，提升监测质量，提高支撑政府决策、保障企业安全的能力。<strong>二是</strong>充分发挥行业威胁信息共享平台作用，推动建立跨地区、跨行业通报处置和应急联动机制，增强工业互联网重大安全风险、重大安全事件应对能力。<strong>三是</strong>健全安全检查检测机制，定期对重点平台、工业企业、工业APP开展检测评估，推动安全检测评估工作规范化、常态化、体系化。</p>
+<p><strong>终端国密认证：</strong><strong></strong></p>
 
 
 
-<p>感谢您对工业互联网安全工作的关心和支持。</p>
+<ol type="1"><li>客户终端设备、身份国密认证</li><li>业务系统高速加密、国密加密</li><li>网络连接VPDN国密认证</li></ol>
 
 
 
-<p>工业和信息化部</p>
+<p><strong>高速加密：</strong><strong></strong></p>
 
 
 
-<p>2021年9月14日</p>
+<ol type="1"><li>终端数据加密</li><li>业务数据加密</li></ol>
+
+
+
+<p><strong>解决方案——端</strong></p>
+
+
+
+<ol type="1"><li>搭载最新USB 3.1第二代10Gbps接口</li><li>实时6Gbps加解密，支持AES /SM4 256bit 加密引擎</li><li>NIST/CSE认证的硬件加密芯片MX+</li><li>使用者可透过选择任何主机端可读取的存储装置里的文档及文件夹包含云端硬盘，加密既有资料</li><li>您拥有别人所没有的实体钥匙</li></ol>
+
+
+
+<p><strong>加密终端、身份识别</strong><strong>&nbsp;</strong><strong>保护个人及企业云端资料的安全</strong><strong></strong></p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="509" src="/wp-content/uploads/2021/12/035a8748384eb72aee2d00015a3675191fd44535.png" alt="" class="wp-image-2091" srcset="/wp-content/uploads/2021/12/035a8748384eb72aee2d00015a3675191fd44535.png 830w, /wp-content/uploads/2021/12/035a8748384eb72aee2d00015a3675191fd44535-300x184.png 300w, /wp-content/uploads/2021/12/035a8748384eb72aee2d00015a3675191fd44535-768x471.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
+
+
+
+<p><strong>解决方案——加密网盘</strong></p>
+
+
+
+<ol type="1"><li>文件本端硬件加密</li><li>密钥=硬件+PIN组合（密码、按键、指纹）</li><li>对接云存储，云上存密文</li><li>可共享，分享者硬件授权和解密</li></ol>
+
+
+
+<p><strong>加密网盘——用户侧加密、解密文件</strong><strong></strong></p>
+
+
+
+<ol type="1"><li>右键单击执行文档或文件夹加密 (Windows版本)</li><li>选取位于右方窗格的一个文档 (或可使用Shift或Ctrl键选取多个文档)，接着右键单击选择 “加密至目前路径”进行加密</li><li>选取左方窗格的一个文件夹并选择 “加密至目前路径”</li><li>欲解密文档，选取加密的文档/文件夹并右键单击选择“解密至目前路径</li></ol>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="344" height="303" src="/wp-content/uploads/2021/12/a74e73301021d17381dafffa4139501d53dcfb27.png" alt="" class="wp-image-2092" srcset="/wp-content/uploads/2021/12/a74e73301021d17381dafffa4139501d53dcfb27.png 344w, /wp-content/uploads/2021/12/a74e73301021d17381dafffa4139501d53dcfb27-300x264.png 300w" sizes="(max-width: 344px) 100vw, 344px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="355" height="305" src="/wp-content/uploads/2021/12/263152a5fc2f044bc869fe3f234982ae0c0bb993.png" alt="" class="wp-image-2093" srcset="/wp-content/uploads/2021/12/263152a5fc2f044bc869fe3f234982ae0c0bb993.png 355w, /wp-content/uploads/2021/12/263152a5fc2f044bc869fe3f234982ae0c0bb993-300x258.png 300w" sizes="(max-width: 355px) 100vw, 355px" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/MXNzK3hyMm9DTkl3YllQeWlHdWlFbTlVeVk1TmVXZjlHdDlHY3JyaVJvWEVsQjdqVWIwNGF0cmY5K3hjR3RoQmJvTllUVDUzN2xtcitMT29ZVmFlWnZKQVRueDJFdEpsaFh1YnJETndsOHV4VzFZQ0ZCQVYvcGN1cE5jNTdsekZxN2FXSXZOSTlKSDg4V1haWXJTKzBqclZGK0hMWUlLS1loMHRqRit2Njcrc1ZyUWI2ZkgvZC9LdnB2NjJuS2x0bERBRGpnWXVxbG51MUJPTTBRRT0=/attach/object/f9689ef8a8c6e8aff187fbae99f007c42ac41670" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/MXNzK3hyMm9DTkl3YllQeWlHdWlFbTlVeVk1TmVXZjlHdDlHY3JyaVJvWEVsQjdqVWIwNGF0cmY5K3hjR3RoQmJvTllUVDUzN2xtcitMT29ZVmFlWnZKQVRueDJFdEpsaFh1YnJETndsOHV4VzFZQ0ZCQVYvcGN1cE5jNTdsekZxN2FXSXZOSTlKSDg4V1haWXJTKzBqclZGK0hMWUlLS1loMHRqRit2Njcrc1ZyUWI2ZkgvZC9LdnB2NjJuS2x0bERBRGpnWXVxbG51MUJPTTBRRT0=/attach/object/43930fbf355f4b940c32f28d57e2db434f066937" alt=""/></figure>
+
+
+
+<p><strong>加密网盘——通过网盘客户端上传</strong><strong></strong></p>
+
+
+
+<ol type="1"><li>通过网盘客户端软件上传加密文件(Windows版本)</li><li>登录网盘</li><li>点击上传</li><li>选取已经用Enigma加密的文件，点击签名上传</li><li>客户端软件调用Enigma完成签名，并上传</li></ol>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="301" height="251" src="/wp-content/uploads/2021/12/fc527ce569306b1ab55d105e7834ac69f504f0fa.png" alt="" class="wp-image-2094"/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/MXNzK3hyMm9DTkl3YllQeWlHdWlFbTlVeVk1TmVXZjlHdDlHY3JyaVJvWEVsQjdqVWIwNGF0cmY5K3hjR3RoQmJvTllUVDUzN2xtcitMT29ZVmFlWnZKQVRueDJFdEpsaFh1YnJETndsOHV4VzFZQ0ZCQVYvcGN1cE5jNTdsekZxN2FXSXZOSTlKSDg4V1haWXJTKzBqclZGK0hMWUlLS1loMHRqRit2Njcrc1ZyUWI2ZkgvZC9LdnB2NjJuS2x0bERBRGpnWXVxbG51MUJPTTBRRT0=/attach/object/ae5c379b0c3d46606dd95b31e41a1205f68d6cbe" alt=""/></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="407" height="242" src="/wp-content/uploads/2021/12/d56d11ac0c8d8b3692e877b318196974e355d2f9.png" alt="" class="wp-image-2095" srcset="/wp-content/uploads/2021/12/d56d11ac0c8d8b3692e877b318196974e355d2f9.png 407w, /wp-content/uploads/2021/12/d56d11ac0c8d8b3692e877b318196974e355d2f9-300x178.png 300w" sizes="(max-width: 407px) 100vw, 407px" /></figure>
+
+
+
+<p><strong>加密网盘——文件加密上传过程实例</strong><strong></strong></p>
+
+
+
+<p>以PC端和云网盘使用Encryption Cloud Storage通过互联网交换和传输加密文件内容为例说明如下：</p>
+
+
+
+<p><strong>第一步: PC端使用Enigma高速硬件AES（密钥为个人私有）加密文件资料</strong><strong></strong></p>
+
+
+
+<p><strong>第二步: PC端用云网盘的Public Key加密第二步的结果</strong><strong></strong></p>
+
+
+
+<p><strong>第三步: 用云网盘的Private Key签名，并发送</strong><strong></strong></p>
+
+
+
+<p><strong>第四步: 云网盘收到后，用PC端的Public Key进行签名验证</strong><strong></strong></p>
+
+
+
+<p><strong>第五步: 用云网盘的Private Key解密第三步的结果</strong><strong></strong></p>
+
+
+
+<p><strong>第六步: 云网盘存储已经在PC端使用Enigma加密的文件资料</strong><strong></strong></p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="202" src="/wp-content/uploads/2021/12/a629756b0e28cf9c5c9bb481c470ac770cd696d1.png" alt="" class="wp-image-2096" srcset="/wp-content/uploads/2021/12/a629756b0e28cf9c5c9bb481c470ac770cd696d1.png 830w, /wp-content/uploads/2021/12/a629756b0e28cf9c5c9bb481c470ac770cd696d1-300x73.png 300w, /wp-content/uploads/2021/12/a629756b0e28cf9c5c9bb481c470ac770cd696d1-768x187.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
+
+
+
+<p><strong>解决方案——加密文档</strong><strong></strong></p>
+
+
+
+<ol type="1"><li>硬件身份认证</li><li>文档加密</li><li>加密文档网络共享</li><li>加密文档传递</li></ol>
+
+
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>支持多用户、群组的PKI部署</strong><strong></strong></p>
+
+
+
+<p><strong>文档和要素采用高性能硬件加解密引擎</strong><strong></strong></p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="829" height="471" src="/wp-content/uploads/2021/12/c1b8401f0c631195d72117b2c5488674acd9089f.png" alt="" class="wp-image-2097" srcset="/wp-content/uploads/2021/12/c1b8401f0c631195d72117b2c5488674acd9089f.png 829w, /wp-content/uploads/2021/12/c1b8401f0c631195d72117b2c5488674acd9089f-300x170.png 300w, /wp-content/uploads/2021/12/c1b8401f0c631195d72117b2c5488674acd9089f-768x436.png 768w" sizes="(max-width: 829px) 100vw, 829px" /></figure>
+
+
+
+<p><strong>加密文档——加密、解密文件</strong><strong></strong></p>
+
+
+
+<ol type="1"><li>右键单击执行文档或文件夹加密 (Windows版本)</li><li>选取位于右方窗格的一个文档 (或可使用Shift或Ctrl键选取多个文档)，接着右键单击选</li><li>择 “加密至目前路径”进行加密</li><li>选取左方窗格的一个文件夹并选择 “加密至目前路径”</li><li>欲解密文档，选取加密的文档/文件夹并右键单击选择“解密至目前路径”</li></ol>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="470" height="384" src="/wp-content/uploads/2021/12/bbbb200430ee28ca746d746b7d0cfdc262c18fa7.png" alt="" class="wp-image-2098" srcset="/wp-content/uploads/2021/12/bbbb200430ee28ca746d746b7d0cfdc262c18fa7.png 470w, /wp-content/uploads/2021/12/bbbb200430ee28ca746d746b7d0cfdc262c18fa7-300x245.png 300w" sizes="(max-width: 470px) 100vw, 470px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="466" height="376" src="/wp-content/uploads/2021/12/570bf7a9b97d2654b235b862d6f0639714621032.png" alt="" class="wp-image-2099" srcset="/wp-content/uploads/2021/12/570bf7a9b97d2654b235b862d6f0639714621032.png 466w, /wp-content/uploads/2021/12/570bf7a9b97d2654b235b862d6f0639714621032-300x242.png 300w" sizes="(max-width: 466px) 100vw, 466px" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/MXNzK3hyMm9DTkl3YllQeWlHdWlFbTlVeVk1TmVXZjlHdDlHY3JyaVJvWEVsQjdqVWIwNGF0cmY5K3hjR3RoQmJvTllUVDUzN2xtcitMT29ZVmFlWnZKQVRueDJFdEpsaFh1YnJETndsOHV4VzFZQ0ZCQVYvcGN1cE5jNTdsekZxN2FXSXZOSTlKSDg4V1haWXJTKzBqclZGK0hMWUlLS1loMHRqRit2Njcrc1ZyUWI2ZkgvZC9LdnB2NjJuS2x0bERBRGpnWXVxbG51MUJPTTBRRT0=/attach/object/1c849b500ac4181089e8d0eb1aeccf18b8522e21" alt=""/></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/MXNzK3hyMm9DTkl3YllQeWlHdWlFbTlVeVk1TmVXZjlHdDlHY3JyaVJvWEVsQjdqVWIwNGF0cmY5K3hjR3RoQmJvTllUVDUzN2xtcitMT29ZVmFlWnZKQVRueDJFdEpsaFh1YnJETndsOHV4VzFZQ0ZCQVYvcGN1cE5jNTdsekZxN2FXSXZOSTlKSDg4V1haWXJTKzBqclZGK0hMWUlLS1loMHRqRit2Njcrc1ZyUWI2ZkgvZC9LdnB2NjJuS2x0bERBRGpnWXVxbG51MUJPTTBRRT0=/attach/object/eb6c4677e77923f2cb3335e89e3990b0f6d8b755" alt=""/></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="829" height="361" src="/wp-content/uploads/2021/12/82a1f9a74d9cc838abca77e0699edec3e3781e17.png" alt="" class="wp-image-2100" srcset="/wp-content/uploads/2021/12/82a1f9a74d9cc838abca77e0699edec3e3781e17.png 829w, /wp-content/uploads/2021/12/82a1f9a74d9cc838abca77e0699edec3e3781e17-300x131.png 300w, /wp-content/uploads/2021/12/82a1f9a74d9cc838abca77e0699edec3e3781e17-768x334.png 768w" sizes="(max-width: 829px) 100vw, 829px" /></figure>
+
+
+
+<p><strong>加密文档——用户端到端加密文档传递</strong><strong></strong></p>
+
+
+
+<p>以Alice和Bob使用Encryption Cloud Storage通过互联网交换和传输加密文件内容为例说明如下：</p>
+
+
+
+<p>第一步: Alice使用CloudKey高速硬件AES加密文件资料</p>
+
+
+
+<p>第二步: Alice用Bob的Public Key加密第二步的结果</p>
+
+
+
+<p>第三步: 用Alice的Private Key签名，并发送</p>
+
+
+
+<p>第四步: Bob收到后，用Alice的Public Key进行签名验证</p>
+
+
+
+<p>第五步: 用Bob的Private Key解密第三步的结果</p>
+
+
+
+<p>第六步: Bob使用CloudKey的高速硬件AES解密文件资料</p>
+
+
+
+<h1><strong>CMMC等级划分</strong><strong></strong></h1>
+
+
+
+<p>除了网络安全控制标准外，CMMC将更广泛地“衡量一家公司网络安全实践和安全运营过程制度化的成熟度”。CMMC将实现多个级别的网络安全。除了评估公司实施网络安全控制措施的成熟度外，CMMC还将评估公司网络安全实践和流程的成熟度/制度化水平。</p>
+
+
+
+<p>从美国国防部各级官员对于网络安全成熟度模型认证的要求可以看到美国正在倾力打造国防相关的信息数据保护和安全防御体系，强制要求所有国防相关企业快速落地网络安全成熟度模型认证等级划分(CMMC)框架。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="525" src="/wp-content/uploads/2021/12/3302c5bad1cca29fb95d3b096afa7e8a83190679.png" alt="" class="wp-image-2101" srcset="/wp-content/uploads/2021/12/3302c5bad1cca29fb95d3b096afa7e8a83190679.png 830w, /wp-content/uploads/2021/12/3302c5bad1cca29fb95d3b096afa7e8a83190679-300x190.png 300w, /wp-content/uploads/2021/12/3302c5bad1cca29fb95d3b096afa7e8a83190679-768x486.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
+
+
+
+<p><strong>第一级：基础的网络卫生</strong></p>
+
+
+
+<ul><li>相当于联邦收购法规48 CFR 52.204-21中的所有实践。</li></ul>
+
+
+
+<p>一级要求最低。据国防部负责采办的助理部长办公室网络事务特别助理凯蒂·阿灵顿介绍，CMMC框架大约确定了17个网络安全特定“领域”，一级合规性仅要求在各个领域制定一项基本的“控制”措施</p>
+
+
+
+<p><strong>第二级：中级网络卫生，72种实践</strong></p>
+
+
+
+<ul><li>与联邦收购法相符</li><li>包括从NIST SP 800-171 r 1中选择的48个实践所组成的例集。</li><li>外加7个支持网络卫生的额外实践</li></ul>
+
+
+
+<p>二级被认为是过渡阶段。五角大楼可通过建立新的流程、规划和预算帮助各企业为更高的认证级别做好准备，其主要目标仍是“帮助小企业”。</p>
+
+
+
+<p><strong>第三级：良好的网络卫生，130种实践</strong></p>
+
+
+
+<ul><li>与联邦收购法相符</li><li>包括NIST SP 800-171 r 1中的所有实践案例。</li><li>外加20支持良好网络卫生的额外实践。</li></ul>
+
+
+
+<p>三级被认为是跨度最大的一级，是处理受控非机密信息的最低要求。企业的控制措施必须从前两级要求的17项增加到110多项。这些标准出自美国国家标准技术研究院的NIST 800-171修订版文件，也是目前许多企业声称已经达到的标准。</p>
+
+
+
+<p><strong>第四级：主动型，156种实践</strong></p>
+
+
+
+<ul><li>与联邦收购法相符</li><li>包括NIST SP 800-171 r 1中的所有实践。</li><li>外加NIST SP800-171B草案的11个额外实践。</li><li>包含额外15个实践，这些实践对一个主动出击型的网络项目进行了阐述。</li></ul>
+
+
+
+<p><strong>第五级：高级别，171个实践</strong></p>
+
+
+
+<ul><li>与联邦收购法相符</li><li>包括NIST SP 800-171 r 1中的所有实践。</li><li>从NIST SP800-171B草案中选择了4个额外实践案例。</li><li>还包含11个阐述高级网络安全计划的额外案例。</li></ul>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="987" height="739" src="/wp-content/uploads/2021/12/image.jpeg" alt="" class="wp-image-2102" srcset="/wp-content/uploads/2021/12/image.jpeg 987w, /wp-content/uploads/2021/12/image-300x225.jpeg 300w, /wp-content/uploads/2021/12/image-768x575.jpeg 768w" sizes="(max-width: 987px) 100vw, 987px" /></figure>
+
+
+
+<p>据悉，第四级和第五级针对承包最敏感合同的“极核心技术企业”，增加了额外的控制措施。而综上可知，这些标准将来自美国国家标准技术研究院、国际标准组织（ISO）、航空航天工业协会（AIA）等机构已经发布或正在制定的标准。</p>
+
+
+
+<p><strong>新版CMCC主要变化</strong><strong></strong></p>
+
+
+
+<p>新版CMMC模型利用了多处资源，进行了多方参考，包括：</p>
+
+
+
+<ul><li>CMMC第一级 只解决联邦并购法52.204-21条款涉及的惯例。</li><li>CMMC第三级 包括NIST SP 800-171r1等条款所涉实践（案例/惯例）。</li><li>CMMC第四和第五级整合了NIST SP 800-171B草案和其他法案中的部分实践（案例/惯例）。</li><li>此外，新版本的CMCC还参考了其他资源，如英国网络要素和澳大利亚网络安全中心必要的八种成熟度模型。</li></ul>
+
+
+
+<p>在CMMC认证方案中，企业不再“自行认证”而由美国防部授权第三方进行评估是最大的变化之一，且费用由企业承担。</p>
+
+
+
+<p>理论上，企业今后可以在不遵守规定的情况下竞标，但必须在选出“中标者”前获得所要求的等级的认证，否则将失去资格。因为未经认证的企业无法获得合同，且五角大楼官员无权给予任何企业网络安全认证的通行证。</p>
+
+
+
+<p>据报道，CMMC认证尤其会对小企业造成负担，美国防部将在不影响国家安全的前提下将影响降至最低。主承包商和工业界协会都在研究构建满足各种CMMC等级的计算基础架构，供分包商访问，让后者不必自己支付创建这些设施的费用</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/archives/836/feed</wfw:commentRss>
+					<wfw:commentRss>/archives/2086/feed</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>政策要闻  网盘不再限速！8家企业共同承诺</title>
-		<link>/archives/832</link>
-					<comments>/archives/832#respond</comments>
+		<title>热点信息  关注15款违法App涉嫌超范围采集个人隐私信息</title>
+		<link>/archives/2121</link>
+					<comments>/archives/2121#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Wed, 17 Nov 2021 03:26:00 +0000</pubDate>
+		<pubDate>Wed, 17 Nov 2021 11:30:00 +0000</pubDate>
 				<category><![CDATA[全部]]></category>
 		<category><![CDATA[推荐]]></category>
-		<guid isPermaLink="false">/?p=832</guid>
+		<guid isPermaLink="false">/?p=2121</guid>
 
-					<description><![CDATA[网盘不再限速！8家企业共同承诺！ 11月17日，在工业和信息化部信息通信发展司指导下，中国互联网协会、中国信息 [&#8230;]]]></description>
+					<description><![CDATA[热点信息 &#124;&#124; 关注15款违法App涉嫌超范围采集个人隐私信息 新华社天津9月9日电（记者张建新）国家计算机病 [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<h1><strong>网盘不再限速！8家企业共同承诺！</strong><strong></strong></h1>
+<h1><strong>热点信息 || 关注15款违法App涉嫌超范围采集个人隐私信息</strong><strong></strong></h1>
 
 
 
-<p>11月17日，在工业和信息化部信息通信发展司指导下，中国互联网协会、中国信息通信研究院组织百度网盘、腾讯微云、天翼云盘、和彩云、阿里云盘、迅雷云盘、360安全云盘和网易网盘等<strong>首批8家网盘企业在京共同签署《个人网盘服务业务用户体验保障自律公约》（以下简称《公约》），承诺2021年内将推出“无差别速率”产品，为各类用户提供无差别的上传/下载速率服务。</strong><strong></strong></p>
+<p>新华社天津9月9日电（记者张建新）国家计算机病毒应急处理中心近期通过互联网监测发现15款移动应用存在隐私不合规行为，违反《网络安全法》相关规定，涉嫌超范围采集个人隐私信息。</p>
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="823" height="485" src="/wp-content/uploads/2021/11/bf43eb8e9d9b8f0ac135cd3e28e64e5f675b415d.png" alt="" class="wp-image-834" srcset="/wp-content/uploads/2021/11/bf43eb8e9d9b8f0ac135cd3e28e64e5f675b415d.png 823w, /wp-content/uploads/2021/11/bf43eb8e9d9b8f0ac135cd3e28e64e5f675b415d-300x177.png 300w, /wp-content/uploads/2021/11/bf43eb8e9d9b8f0ac135cd3e28e64e5f675b415d-768x453.png 768w" sizes="(max-width: 823px) 100vw, 823px" /></figure>
+<p>　　1、App中无隐私政策，涉嫌隐私不合规。涉及1款App如下：</p>
 
 
 
-<p>11月17日，首批8家网盘企业在京签署《个人网盘服务业务用户体验保障自律公约》。图片来源：工业和信息化部官方微信“工信微报”</p>
+<p>　　《魔与道OL》（版本4.07.18，安智市场）。</p>
 
 
 
-<p>当前，全球数字经济蓬勃发展，以互联网、大数据、云计算为代表的网络信息技术加速创新，个人网盘业务正逐渐成为数字经济时代广大网民的主要应用之一，发展前景广阔。在市场快速发展的同时，一些个人网盘业务过度限速、误导宣传等问题群众反映突出，引起社会各界广泛关注，成为网络提速降费的短板环节。</p>
+<p>　　2、在App首次运行时未通过弹窗等明显方式提示用户阅读隐私政策等收集使用规则，或以默认选择同意隐私政策等非明示方式征求用户同意，涉嫌隐私不合规。涉及2款App如下：</p>
 
 
 
-<p>日前，工业和信息化部印发《关于开展信息通信服务感知提升行动的通知》，其中提到网盘相关企业应优化产品服务资费介绍，清晰明示存储空间、传输速率、功能权益及资费水平等内容，不得进行误导宣传。在同一网络条件下，向免费用户提供的上传和下载的最低速率应确保满足基本的下载需求。</p>
+<p>　　《辣选》（版本3.3.6，PC6安卓网）、《无尽噩梦：诡医院》（版本1.0.0，抖音游戏中心）。</p>
 
 
 
-<p>据介绍，《公约》从提供无差别上传/下载速率服务、加强技术产品和商业模式创新、优化资费介绍、规范宣传行为、畅通咨询投诉渠道等方面作出明确约定。会上，8家网盘企业发布了落实《公约》的具体举措，承诺2021年内将推出“无差别速率”产品，为各类用户提供无差别的上传/下载速率服务，改善用户体验，提升服务水平，积极为个人网盘服务业务的健康有序发展作出努力和贡献。</p>
+<p>　　3、未向用户明示申请的全部隐私权限，涉嫌隐私不合规。涉及14款App如下：</p>
 
 
 
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/ZlpJR1VnOUk4OVFOQVpSVTBHZHlxU3luL1ByeE1NbUdONmIraTA5NlVCMG8xUUY3R2UvalpHL29SVnpuV2V4enRSSHQwWnF6UkhYQ3ZyU1RaSy9lNGhCTm14SVkyNzVZOVQ1eWVPb2xkay9mZGN0QmlBUVNpbzBPNjJKR3pJRklTbzZ0bXBkY3NEQzJBUXdUN3BPbGxPOUNuWFdpY0VCVnlERG0rbUpzVnJaZ0I4dHhmWVRhTkI0NEE5VDMxUUZ2dFluZjNWUDA1WGdoWnJFYmNmTT0=/attach/object/9a998624af7a96580a00f62456e8333fb4397cc6" alt=""/></figure>
+<p>　　《春播》（版本6.0.0，PC6安卓网）、《辣选》（版本3.3.6，PC6安卓网）、《神庙逃亡2》（版本5.17.1，安智市场）、《魔与道OL》（版本4.07.18，安智市场）、《淘安装》（版本3.1.0，安智市场）、《律师好帮手》（版本5.3.6，魅族应用商店）、《欧普智慧灯光》（版本3.9.6，魅族应用商店）、《柬单点》（版本3.2.1，魅族应用商店）、《爱下厨》（版本5.1.10，应用宝）、《温暖医生》（版本2.7.3，应用宝）、《血之缘》（版本3.2.6，应用宝）、《盛世芳华》（版本1.0.23，抖音游戏中心）、《无尽噩梦：诡医院》（版本1.0.0，抖音游戏中心）、《奥特曼系列光之消除》（版本1.0.0，抖音游戏中心）。</p>
 
 
 
-<p>工业和信息化部表示，《公约》的签署，不仅是网盘企业回应用户关切、履行社会责任、强化自我约束的集中体现，也是打通网速瓶颈，巩固网络提速降费成果的具体行动，对于鼓励各市场主体突破现有相对单一的发展模式，加强技术、产品和商业模式创新，增强核心竞争力和产业价值具有重要作用。</p>
+<p>　　4、App在征得用户同意前就开始收集个人信息，涉嫌隐私不合规。涉及6款App如下：</p>
 
 
 
-<p>工业和信息化部指出，下一步还将指导相关主体，一是提高认识，切实保障用户权益。聚焦广大人民群众的所急所想所盼，统筹满足用户基本业务使用需求和企业可持续发展，不断提升人民群众使用信息服务的获得感、幸福感和安全感。二是严格自律，抓实抓细贯彻落实。建立长效工作机制，完善投诉监督渠道，及时向社会公布工作进展，确保落实好、执行好、宣传好公约的各项条款要求。三是强化创新，促进行业健康发展。积极转变发展方式，把技术创新放在更加突出的位置，充分利用和弹性调度网络资源，降本增效，增加行业发展动能。</p>
+<p>　　《春播》（版本6.0.0，PC6安卓网）、《辣选》（版本3.3.6，PC6安卓网）、《魔与道OL》（版本4.07.18，安智市场）、《律师好帮手》（版本5.3.6，魅族应用商店）、《血之缘》（版本3.2.6，应用宝）、《盛世芳华》（版本1.0.23，抖音游戏中心）。</p>
+
+
+
+<p>　　5、未提供有效的更正、删除个人信息及注销用户账号功能，或注销用户账号设置不合理条件，涉嫌隐私不合规。涉及9款App如下：</p>
+
+
+
+<p>　　《辣选》（版本3.3.6，PC6安卓网）、《魔与道OL》（版本4.07.18，安智市场）、《宅e修》（版本2.3.8，乐商店）、《柬单点》（版本3.2.1，魅族应用商店）、《温暖医生》（版本2.7.3，应用宝）、《血之缘》（版本3.2.6，应用宝）、《盛世芳华》（版本1.0.23，抖音游戏中心）、《无尽噩梦：诡医院》（版本1.0.0，抖音游戏中心）、《奥特曼系列光之消除》（版本1.0.0，抖音游戏中心）。</p>
+
+
+
+<p>　　6、未建立并公布个人信息安全投诉、举报渠道，或超过承诺处理回复时限，涉嫌隐私不合规。涉及4款App如下：</p>
+
+
+
+<p>　　《辣选》（版本3.3.6，PC6安卓网）、《魔与道OL》（版本4.07.18，安智市场）、《宅e修》（版本2.3.8，乐商店）、《奥特曼系列光之消除》（版本1.0.0，抖音游戏中心）。</p>
+
+
+
+<p>　　针对上述情况，国家计算机病毒应急处理中心提醒广大手机用户首先谨慎下载使用以上违法、违规移动App，同时要注意认真阅读App的用户协议和隐私政策说明，不随意开放和同意不必要的隐私权限，不随意输入个人隐私信息，定期维护和清理相关数据，避免个人隐私信息被泄</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="743" height="483" src="/wp-content/uploads/2021/12/f12d66c8ee0e6af9afde28df5716516c6bad0e65.png" alt="" class="wp-image-2122" srcset="/wp-content/uploads/2021/12/f12d66c8ee0e6af9afde28df5716516c6bad0e65.png 743w, /wp-content/uploads/2021/12/f12d66c8ee0e6af9afde28df5716516c6bad0e65-300x195.png 300w" sizes="(max-width: 743px) 100vw, 743px" /></figure></div>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/archives/832/feed</wfw:commentRss>
+					<wfw:commentRss>/archives/2121/feed</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>政策要闻  全国保密战线：用心用情讲好红色保密故事</title>
-		<link>/archives/847</link>
-					<comments>/archives/847#respond</comments>
+		<title>热点信息  大观点  建设安全、稳定、繁荣的网络空间 推动构建网络空间命运共同体</title>
+		<link>/archives/2113</link>
+					<comments>/archives/2113#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Sun, 14 Nov 2021 03:37:00 +0000</pubDate>
+		<pubDate>Mon, 15 Nov 2021 11:22:00 +0000</pubDate>
 				<category><![CDATA[全部]]></category>
 		<category><![CDATA[推荐]]></category>
-		<guid isPermaLink="false">/?p=847</guid>
+		<guid isPermaLink="false">/?p=2113</guid>
 
-					<description><![CDATA[政策要闻 &#124;&#124; 全国保密战线：用心用情讲好红色保密故事 党的保密工作为党而生、伴党而行、因党而兴。革命战争年代 [&#8230;]]]></description>
+					<description><![CDATA[热点信息 &#124;&#124; 大观点 &#124; 建设安全、稳定、繁荣的网络空间 推动构建网络空间命运共同体 网络空间是人类共同的活 [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<h1><strong>政策要闻 || 全国保密战线：用心用情讲好红色保密故事</strong><strong></strong></h1>
+<h1><strong>热点信息 || 大观点 | 建设安全、稳定、繁荣的网络空间 推动构建网络空间命运共同体</strong><strong></strong></h1>
 
 
 
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/c2VGa1VBYWV1cGVDcWliOHo1VDlVeGErUVYyL1FHcUpyNWZGcm0rdTIxMU5VNis2cGMxeXk5V281U2liL1ZNSi9HOHR3Q2F0Sko1TTJ3angvRFFVaHFEck01QVZkaXNubm9EUUxrWDhwVS9uUkwzckRBWm9kS3lmdFJoajZUZ3dEZDM2UEE3VzlqYXJRSmpQL0hJSmJnaXRya2pKMm5DY3pxWEhPeXhxTHl4azBtcFMwUEIwVmp3R2VLYllwVnhQQVNvNU5lN0JGRmRXQXFYR0lKTT0=/attach/object/089e3b864f1f274a7e4bfdad7f0719f50cfc4902" alt=""/></figure>
+<p>网络空间是人类共同的活动空间。习近平总书记指出：“各国应该共同构建网络空间命运共同体，推动网络空间互联互通、共享共治，为开创人类发展更加美好的未来助力。”一个安全、稳定、繁荣的网络空间，对一国乃至世界和平与发展越来越具有重大意义。“十四五”规划和2035年远景目标纲要提出：“推动构建网络空间命运共同体。”积极推动构建网络空间命运共同体，不仅是实现全球互联网健康、安全、可持续发展的必然选择，也是营造开放、健康、安全数字生态的题中应有之义。推动建立全球互联网治理体系。蓬勃发展的互联网给人类创造了数字化、网络化、智能化的增长动能和发展机遇，但互联网领域发展不平衡、规则不健全、秩序不合理等问题日益凸显，推动建立多边、民主、透明的全球互联网治理体系日益成为国际社会的广泛共识。习近平总书记指出：“国际网络空间治理应该坚持多边参与、多方参与，发挥政府、国际组织、互联网企业、技术社群、民间机构、公民个人等各种主体作用。”推动建立全球互联网治理体系，需明晰主体角色、制定统一规则、形成相应机制。要以联合国为主渠道、以联合国宪章为基本原则，制定数字和网络空间国际规则，使全球互联网治理体系更加公正合理，更加平衡地反映大多数国家意愿和利益，确保全球互联网治理在联合国框架范围内进行。坚持相互信任尊重和国家不分大小、强弱、贫富一律平等的原则，维护网络主权和网络空间平等的发展权、参与权、治理权，完善网络空间对话协商机制，推动形成多边、民主、透明的全球互联网治理体系。发挥好其他国际组织、互联网企业、技术社群、民间机构、公民个人等在全球互联网治理中的作用。共享数字时代红利。当前，互联网、大数据、人工智能等信息技术推动数字产业化和产业数字化，世界经济加速向数字化转型。数字经济发展为共享数字时代红利提供了可能，但全球数字鸿沟也因数字经济发展不平衡而不断拉大。习近平总书记强调：“让更多国家和人民搭乘信息时代的快车、共享互联网发展成果。”共享数字时代红利，既需补齐短板，消弭数字鸿沟；又需强化规制，做大数字经济蛋糕。要加强顶层设计，采取更加积极、包容、协调、普惠的政策，加快全球网络基础设施建设，多措并举、多管齐下向发展中国家提供技术、设备、服务等数字援助，全面提高全球互联网的渗透率和普及率，不断提升不同群体获取、处理、创造数字资源的数字能力。打造开放、公平、公正、非歧视的数字市场和发展环境，建立多边、透明、包容的数字领域国际贸易规则，制定完善数据安全、数字货币、数字税等国际规则和数字技术标准，让各国共乘数字经济发展的快车，为共享数字时代红利奠定坚实的物质基础。携手应对网络安全问题。习近平总书记指出：“网络安全是全球性挑战，没有哪个国家能够置身事外、独善其身，维护网络安全是国际社会的共同责任。”携手应对网络安全问题，需要充分发挥联合国的主渠道作用和其他各类行为主体的积极作用，推动制定各方普遍接受的网络空间国际规则，制定网络空间国际反恐公约，健全打击网络犯罪司法协助机制；需要各国坚持相互尊重、互信共治的基本原则，践行开放合作的网络安全理念，坚持安全与发展并重，深化预警防范、信息共享、应急响应等交流合作，共同遏制网络信息技术滥用，共同反对网络监听、网络攻击、网络空间军备竞赛，共同维护网络空间和平安全。同时，发挥好互联网在推动世界优秀文化交流互鉴中的独特优势，使互联网成为增强各国人民心灵沟通、推动世界网络文化繁荣发展的重要平台和精神家园，为共治全球网络安全问题、构建网络空间命运共同体提供丰厚文化滋养。</p>
 
 
 
-<p>党的保密工作为党而生、伴党而行、因党而兴。革命战争年代，保密就是“保生存、保胜利”；和平建设年代，保密就是“保安全、保发展”；进入新时代，保密就是“保党的长期执政地位、保国家安全、保人民幸福、保民族复兴”。</p>
+<p>（来源：人民日报）</p>
 
 
 
-<p>自党史学习教育开展以来，全国保密战线深入学习贯彻习近平新时代中国特色社会主义思想，紧紧围绕保密工作政治属性，在教育引导党员干部学好百年党史的同时，通过深入挖掘保密史、讲好红色保密故事，总结党的保密工作历史经验，弘扬党的保密工作优良传统，自觉把党史学习教育成效转化为推动党的保密事业高质量发展的实际行动，为“十四五”开好局、起好步凝聚强大精神力量。</p>
-
-
-
-<p><strong>深挖红色保密资源</strong></p>
-
-
-
-<p>中央保密办（国家保密局）在《保密工作》杂志推出“探访红色故地 追忆峥嵘岁月”主题报道，安排记者深入上海、武汉、瑞金、遵义、延安、西柏坡等党史上的重要事件纪念地和革命老区采访，深度挖掘保密工作红色历史和感人往事，追寻保密工作红色足迹。</p>
-
-
-
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/c2VGa1VBYWV1cGVDcWliOHo1VDlVeGErUVYyL1FHcUpyNWZGcm0rdTIxMU5VNis2cGMxeXk5V281U2liL1ZNSi9HOHR3Q2F0Sko1TTJ3angvRFFVaHFEck01QVZkaXNubm9EUUxrWDhwVS9uUkwzckRBWm9kS3lmdFJoajZUZ3dEZDM2UEE3VzlqYXJRSmpQL0hJSmJnaXRya2pKMm5DY3pxWEhPeXhxTHl4azBtcFMwUEIwVmp3R2VLYllwVnhQQVNvNU5lN0JGRmRXQXFYR0lKTT0=/attach/object/5e8697318b1b10286612242508ace8396d6b7037" alt=""/></figure>
-
-
-
-<p>山西保密办（局）把红色保密教育作为创新开展党史学习教育的重要抓手，充分挖掘革命老区红色资源，在八路军太行纪念馆建立首个红色保密教育示范基地。</p>
-
-
-
-<p>内蒙古保密办（局）结合自治区红色保密发展史，组织拍摄《北疆密战》红色保密教育片，以保密工作者的视角再现内蒙古自治区的红色历史，教育引导广大涉密人员和保密战线工作者深入了解党的保密史，更好地继承和弘扬党的保密工作优良传统。</p>
-
-
-
-<p>福建、山东、河南等地保密办（局）深入推动红色保密故事发掘编纂工作，搜集积累当地红色保密历史故事和人物事迹，为《中国红色保密故事大全》地方卷的出版充实素材。</p>
-
-
-
-<p>山东威海保密办（局）立足建党百年历史，着眼本地区丰富的红色革命资源，广泛深入挖掘革命、建设、改革各个时期的历史资料，把保密元素融入总体国家安全观刘公岛教育培训基地建设全过程，形成了以国家安全为主线，全景式、立体化展现保密历史的体系架构。</p>
-
-
-
-<p><strong>讲好红色保密故事</strong></p>
-
-
-
-<p>中央保密办（国家保密局）与北京广播电视台《档案》栏目组合作，制作播出《密事解码：庆祝中国共产党成立100周年》专题节目；制作保密工作纪录片《红色保密 百年征程》、有声读物《红色保密故事》，编辑《风范：老一辈革命家与保密工作》《印迹：中国红色保密故事》《护航百年：中国红色保密故事精选》《剑吼西风：中央特科纪事》等红色书籍。开展“追寻党的历史、追寻红色保密史”系列讲座，邀请党史专家学者、退休老党员讲述老一辈革命家和革命先烈为党为国呕心沥血、不懈奋斗的感人故事，讲述党的保密工作历史经验，让广大干部群众在耳濡目染中重温红色历史、弘扬保密传统，做党和国家秘密的忠诚守护者。</p>
-
-
-
-<p><strong>★ ★ ★</strong></p>
-
-
-
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/c2VGa1VBYWV1cGVDcWliOHo1VDlVeGErUVYyL1FHcUpyNWZGcm0rdTIxMU5VNis2cGMxeXk5V281U2liL1ZNSi9HOHR3Q2F0Sko1TTJ3angvRFFVaHFEck01QVZkaXNubm9EUUxrWDhwVS9uUkwzckRBWm9kS3lmdFJoajZUZ3dEZDM2UEE3VzlqYXJRSmpQL0hJSmJnaXRya2pKMm5DY3pxWEhPeXhxTHl4azBtcFMwUEIwVmp3R2VLYllwVnhQQVNvNU5lN0JGRmRXQXFYR0lKTT0=/attach/object/089e3b864f1f274a7e4bfdad7f0719f50cfc4902" alt=""/></figure>
-
-
-
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/c2VGa1VBYWV1cGVDcWliOHo1VDlVeGErUVYyL1FHcUpyNWZGcm0rdTIxMU5VNis2cGMxeXk5V281U2liL1ZNSi9HOHR3Q2F0Sko1TTJ3angvRFFVaHFEck01QVZkaXNubm9EUUxrWDhwVS9uUkwzckRBWm9kS3lmdFJoajZUZ3dEZDM2UEE3VzlqYXJRSmpQL0hJSmJnaXRya2pKMm5DY3pxWEhPeXhxTHl4azBtcFMwUEIwVmp3R2VLYllwVnhQQVNvNU5lN0JGRmRXQXFYR0lKTT0=/attach/object/089e3b864f1f274a7e4bfdad7f0719f50cfc4902" alt=""/></figure>
-
-
-
-<p>上海保密办（局）主办“百年保密与上海”主题展，与上海沪剧院联合创作沪剧《一号机密》，激励保密战线广大干部职工继承光荣传统、赓续红色血脉，在新征程上创造无愧于历史和人民的新业绩。</p>
-
-
-
-<p>江西和河南保密办（局）协调省电视台播出大型保密文献纪录片《胜利之盾》，帮助广大领导干部、涉密人员和人民群众深入了解党的保密史，继承和发扬党的保密工作优良传统，增强保密意识、筑牢保密防线。</p>
-
-
-
-<p>湖南保密办（局）根据保密工作百年奋斗历程原创5首保密红歌，制作了革命保密题材的现代京剧《向警予》，通过让人耳目一新的表达方式，展现了共产党人坚定信仰、不怕牺牲的精神和胸怀天下的情怀。</p>
-
-
-
-<p>海南保密办（局）举办青年干部“学好党史讲好红色保密故事”活动，感怀革命先烈无比忠贞坚定的革命理想信念，充分展示新时期保密人的精神风貌，发出新时期保密人最强劲的时代声音。</p>
-
-
-
-<p><strong>重温红色保密记忆</strong></p>
-
-
-
-<p>中央保密办（国家保密局）组织理论学习中心组成员参观香山革命纪念地、中国共产党历史展览馆、北大红楼，组织党员干部职工参观新时代中央和国家机关党的建设成就巡礼展、主题档案文献展，组织青年干部瞻仰人民英雄纪念碑、西山无名英雄纪念广场等，实地感受党的百年波澜壮阔的历史，感悟过去我们为什么能够成功、未来我们怎样才能继续成功的深刻道理。</p>
-
-
-
-<p>浙江保密办（局）开展“赓续红色血脉 学好百年党史”主题党日，组织参观中共浙江省委第一次代表大会旧址，瞻仰红色革命文物，感悟初心使命，汲取信仰力量。</p>
-
-
-
-<p>安徽、河南、湖南等地保密办（局）举办庆祝建党100周年书画摄影作品展，弘扬保密革命传统和保密文化，使参与者切身感受到心灵的升华、奋进的动力。</p>
-
-
-
-<p>宁夏保密办（局）开展“弘扬保密优良传统、增强全民保密意识、确保国家秘密安全”主题活动，突出保密优良传统教育，组织离退休老党员参观了解老工业基地历史沿革、转型发展、生态建设等情况，沿着历史足迹感受改革发展的巨大变化，追寻红色记忆。</p>
-
-
-
-<p><strong>传承红色保密基因</strong></p>
-
-
-
-<p>中央保密办（国家保密局）依托“保密观”微信公众号和“保密观”APP平台，以党的保密工作优良传统等内容为重点，面向全国开展“光辉历程 保密有我”保密知识竞赛活动，6654万人次参赛，1106万人得满分，公众号和APP点击量突破10.8亿次。</p>
-
-
-
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/c2VGa1VBYWV1cGVDcWliOHo1VDlVeGErUVYyL1FHcUpyNWZGcm0rdTIxMU5VNis2cGMxeXk5V281U2liL1ZNSi9HOHR3Q2F0Sko1TTJ3angvRFFVaHFEck01QVZkaXNubm9EUUxrWDhwVS9uUkwzckRBWm9kS3lmdFJoajZUZ3dEZDM2UEE3VzlqYXJRSmpQL0hJSmJnaXRya2pKMm5DY3pxWEhPeXhxTHl4azBtcFMwUEIwVmp3R2VLYllwVnhQQVNvNU5lN0JGRmRXQXFYR0lKTT0=/attach/object/089e3b864f1f274a7e4bfdad7f0719f50cfc4902" alt=""/></figure>
-
-
-
-<p>北京保密办（局）与有关单位联合举办“筑牢新时代保密安全防线——庆祝中国共产党成立100周年”主题展览，回顾首都保密工作发展历程，开展保密优良传统和保密形势教育。</p>
-
-
-
-<p>广西保密办（局）举办“学党史·开新局”演讲比赛，深情抒发新时代保密干部传承红色基因、永葆绝对忠诚、践行为民初心的责任与担当，增强保密战线干部职工做好本职工作的荣誉感、使命感、紧迫感和社会公众对保密工作的认同感、亲切感、责任感。</p>
-
-
-
-<p>海南保密办（局）依托省委办公厅“学本领、强作风”每周一讲活动，开展以“传承红色基因、弘扬保密传统”为主题的红色保密历史宣教活动，分享中共一大召开期间鲜为人知的保密故事，生动再现了党的事业与保密工作相生相伴的真实历史记忆。</p>
-
-
-
-<p>四川保密办（局）联合有关单位拍摄《红色电影中的保密基因》短视频、绘制《地图上的红色保密100年》主题地图，将党史、红色资源与保密常识有机结合，传承保密优良传统、激发砥砺奋进精神动力。</p>
-
-
-
-<p>四川成都保密办（局）组织“红色基因我传承 国家安全我接力”接力跑活动，设置10个接力站点，按时间顺序分别展示了党的百年征程中100个重要历史事件，并在沿途完成党史和保密知识快问快答接力任务。</p>
-
-
-
-<p>下一步，全国保密战线将继续深入贯彻落实党中央决策部署和习近平总书记重要讲话精神，切实推进党史学习教育走深走实，重点抓好党的十九届六中全会精神的学习贯彻，传承红色基因、凝聚奋进力量，在新起点上推动党的保密事业高质量发展，为党和国家筑牢安全保密防线。</p>
-
-
-
-<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="675" height="334" src="/wp-content/uploads/2021/11/fa785129a0dead8a109c6ef153a8ac4f8a0ffb40.png" alt="" class="wp-image-848" srcset="/wp-content/uploads/2021/11/fa785129a0dead8a109c6ef153a8ac4f8a0ffb40.png 675w, /wp-content/uploads/2021/11/fa785129a0dead8a109c6ef153a8ac4f8a0ffb40-300x148.png 300w" sizes="(max-width: 675px) 100vw, 675px" /></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="554" height="295" src="/wp-content/uploads/2021/12/1d492e94d415742183703efb4916b596fe967caa.png" alt="" class="wp-image-2114" srcset="/wp-content/uploads/2021/12/1d492e94d415742183703efb4916b596fe967caa.png 554w, /wp-content/uploads/2021/12/1d492e94d415742183703efb4916b596fe967caa-300x160.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure></div>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/archives/847/feed</wfw:commentRss>
+					<wfw:commentRss>/archives/2113/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>热点信息  FBI邮件服务器遭黑客入侵：冒用官方邮箱发送上万份警告邮件</title>
+		<link>/archives/2126</link>
+					<comments>/archives/2126#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Sun, 14 Nov 2021 11:32:00 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[推荐]]></category>
+		<guid isPermaLink="false">/?p=2126</guid>
+
+					<description><![CDATA[美国联邦调查局(FBI)的电子邮件服务器遭黑客入侵，冒用官方邮箱发送上万份警告邮件 FBI 证实以该机构合法电 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h1><strong>美国联邦调查局(FBI)的电子邮件服务器遭黑客入侵，冒用官方邮箱发送上万份警告邮件</strong><strong></strong></h1>
+
+
+
+<p><strong>FBI 证实以该机构合法电子邮箱向 10,000 个收件箱发送了虚假的网络攻击电子邮件的事件，受影响的软件“迅速下线”。</strong></p>
+
+
+
+<p><strong>Spamhaus是一家致力于追踪数字威胁的欧洲非营利组织，它在推特上发文称，它已经“意识到来自 FBI 电子邮件地址的可怕电子邮件”。</strong></p>
+
+
+
+<p><strong>这封由国土安全部 (DHS) 签署的电子邮件被发送给组织，警告他们正受到“复杂的”攻击。</strong></p>
+
+
+
+<p><strong>联邦调查局当地时间11月13日在一份声明中证实了网络攻击，但表示情况仍在“持续”，没有透露 更多细节。</strong></p>
+
+
+
+<p><strong>攻击行动的幕后黑手很可能是为了诋毁暗网情报公司Shadowbyte的创始人文尼·特罗亚(Vinny Troia)。</strong></p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="788" height="476" src="/wp-content/uploads/2021/12/07be480ec7df957c5d1ac83952f49c5c3d29fb42.png" alt="" class="wp-image-2127" srcset="/wp-content/uploads/2021/12/07be480ec7df957c5d1ac83952f49c5c3d29fb42.png 788w, /wp-content/uploads/2021/12/07be480ec7df957c5d1ac83952f49c5c3d29fb42-300x181.png 300w, /wp-content/uploads/2021/12/07be480ec7df957c5d1ac83952f49c5c3d29fb42-768x464.png 768w" sizes="(max-width: 788px) 100vw, 788px" /></figure>
+
+
+
+<p><strong>合法地址发送虚假内容</strong></p>
+
+
+
+<p>Spamhaus项目是一个国际非营利组织，专门跟踪垃圾邮件和相关的网络威胁(钓鱼、僵尸网络、恶意软件)。该项目的研究人员观察到这种活动有两波，一波是在凌晨5点(UTC时间)，另一波是在两小时后。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="795" height="327" src="/wp-content/uploads/2021/12/eb429c912c26e7310f63de3815a2da3b4cb43bc4.png" alt="" class="wp-image-2128" srcset="/wp-content/uploads/2021/12/eb429c912c26e7310f63de3815a2da3b4cb43bc4.png 795w, /wp-content/uploads/2021/12/eb429c912c26e7310f63de3815a2da3b4cb43bc4-300x123.png 300w, /wp-content/uploads/2021/12/eb429c912c26e7310f63de3815a2da3b4cb43bc4-768x316.png 768w" sizes="(max-width: 795px) 100vw, 795px" /></figure>
+
+
+
+<p>这些信息来自一个合法的电子邮件地址eims@ic.fbi.gov，该地址来自FBI的执法企业门户网站(LEEP)，标题为“<strong>紧急:系统中的威胁行为者”</strong>。<br>Spamhaus称，所有电子邮件都来自FBI的IP地址153.31.119.142 (mx- eastern . FBI .gov)。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="831" height="256" src="/wp-content/uploads/2021/12/7f32806f56654168cbe8f26b373a16e9105a8602.png" alt="" class="wp-image-2129" srcset="/wp-content/uploads/2021/12/7f32806f56654168cbe8f26b373a16e9105a8602.png 831w, /wp-content/uploads/2021/12/7f32806f56654168cbe8f26b373a16e9105a8602-300x92.png 300w, /wp-content/uploads/2021/12/7f32806f56654168cbe8f26b373a16e9105a8602-768x237.png 768w" sizes="(max-width: 831px) 100vw, 831px" /></figure>
+
+
+
+<p>该消息警告称，在接收方的网络中检测到威胁行为者，并已从设备中窃取数据。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="352" src="/wp-content/uploads/2021/12/6a46f51e2b8c25389e72b62d1a61955b657f7d8b.png" alt="" class="wp-image-2130" srcset="/wp-content/uploads/2021/12/6a46f51e2b8c25389e72b62d1a61955b657f7d8b.png 830w, /wp-content/uploads/2021/12/6a46f51e2b8c25389e72b62d1a61955b657f7d8b-300x127.png 300w, /wp-content/uploads/2021/12/6a46f51e2b8c25389e72b62d1a61955b657f7d8b-768x326.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
+
+
+
+<p>Spamhaus项目告诉BleepingComputer，这些虚假邮件已经到达了至少10万个邮箱。不过，这个数字是一个非常保守的估计，因为研究人员认为“这场运动的规模可能要大得多。”<br>在今天的一条推特中，该非营利组织表示，这些收件人是从美国互联网号码登记(ARIN)数据库中提取的。<br>虽然这看起来像一个恶作剧，但毫无疑问，这些邮件来自FBI的服务器，因为消息的标题显示，它的来源是由DomainKeys Identified Mail (DKIM)机制验证的。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="659" src="/wp-content/uploads/2021/12/b0cf676563fac3e77811fefd084870d3376818df.png" alt="" class="wp-image-2131" srcset="/wp-content/uploads/2021/12/b0cf676563fac3e77811fefd084870d3376818df.png 830w, /wp-content/uploads/2021/12/b0cf676563fac3e77811fefd084870d3376818df-300x238.png 300w, /wp-content/uploads/2021/12/b0cf676563fac3e77811fefd084870d3376818df-768x610.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
+
+
+
+<p>邮件头还显示了以下处理邮件的FBI内部服务器:<br>dap00025.str0.eims.cjiswvadc-dmz-pmo003-fbi.enet.cjisdap00040.str0.eims.cjis<br><strong>美国联邦调查局证实，这些邮件的内容是假的，他们正在努力解决这个问题，因为忧心忡忡的管理人员打电话给他们的求助台</strong>。<br>FBI在给BleepingComputer的一份声明中表示，由于目前的情况，他们无法分享更多信息。<br><em>“联邦调查局和CISA已经注意到今天上午发生的这起事件，涉及一个@ic.fbi.gov电子邮件账户的虚假邮件。这是一个正在进行的情况，我们目前无法提供任何额外的信息。我们继续鼓励公众对未知发件人保持谨慎，并敦促你向www.ic3.gov或www.cisa.gov报告可疑活动。”</em></p>
+
+
+
+<p><strong>旨在诋毁安全研究人员</strong></p>
+
+
+
+<p>攻击行动的幕后黑手很可能是为了诋毁暗网情报公司Shadowbyte的创始人文尼·特罗亚(Vinny Troia)，他在邮件中被指名为制造虚假供应链攻击的威胁行动者。<br>raidforum黑客社区的成员与Troia有着长期的不和，他们经常破坏网站，并在他们指责安全研究人员的地方进行轻微的黑客攻击。<br>文尼·特罗亚(Vinny Troia)在关于这一垃圾邮件活动的推特上暗示，一个名为“pompomourin”的人可能是这次攻击的发起者。特罗亚说，在过去，这些人曾与旨在损害安全研究员声誉的事件有关。<br>在接受BleepingComputer采访时，特罗亚说:“我猜‘pompomourin’和他的手下是这起事件的幕后黑手。”<br>“上次他们(pompompurin)黑进国家失踪儿童中心的网站博客，并发布了一个关于我是恋童癖的帖子”——Vinny Troia<br>“pompompurin”在垃圾邮件活动开始前的几个小时联系了Troia，只是简单地说“请享受”，以此警告即将发生与研究人员有关的事情，这一事实进一步支持了这一假设。<br>特罗亚说，“pompompurin”每次发动攻击时都会给他发信息，让他不相信研究人员。<br>注：（目前观测，FBI邮件服务器整体被黑的可能性不大，应当是eims@ic.fbi.gov这个邮箱账户被攻陷，黑客可以登录使用这个邮箱账户）<br><strong>参考资源</strong>&nbsp;<br>1、https://www.bignewsnetwork.com/news/271721631/fbi-server-hacked-to-send-thousands-of-cyberattack-warnings?utm_source=feeds.bignewsnetwork.com&amp;utm_medium=referral2、https://www.bleepingcomputer.com/news/security/fbi-system-hacked-to-email-urgent-warning-about-fake-cyberattacks/3、https://www.dailymail.co.uk/news/article-10199139/FBI-confirms-federal-agency-sent-fake-cyberattack-emails-10-000-inboxes.html#comments</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/2126/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>热点信息  美国防部将成立零信任办公室，预计下月开放</title>
+		<link>/archives/2080</link>
+					<comments>/archives/2080#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Sun, 14 Nov 2021 11:12:00 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[推荐]]></category>
+		<guid isPermaLink="false">/?p=2080</guid>
+
+					<description><![CDATA[热点信息 &#124;&#124; 美国防部将成立零信任办公室，预计下月开放 据一位高级官员称，美国国防部正在加紧其网络安全工作， [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h1><strong>热点信息 || 美国防部将成立零信任办公室，预计下月开放</strong><strong></strong></h1>
+
+
+
+<p>据一位高级官员称，美国国防部正在加紧其网络安全工作，专门开设的零信任办公室将于下个月开放。</p>
+
+
+
+<p>领导层对零信任的支持有助于加速开放，这在一定程度上可以被视为对SolarWinds 活动的回应，在该活动中，九个联邦政府部门受到俄罗斯间谍的侵害。五角大楼首席信息官大卫麦基翁说：“我们已经加倍努力，在内部争取以更快地方法解决这个问题。”</p>
+
+
+
+<p>“我们正在组建一个投资组合管理办公室，它将合理化所有网络环境，在未来五、六、七年内对每个网络环境进行优先排序并将其置于零信任的道路上。”</p>
+
+
+
+<p>拜登总统5 月份发布的加强联邦政府网络安全的行政令，要求每个机构的负责人在 60 天内制定实施零信任架构的计划。该计划应包含 NIST 推荐的最佳实践迁移步骤，以及“描述已经完成的任何此类步骤，确定将对安全产生最直接影响的活动，并包括实施这些步骤的时间表。”</p>
+
+
+
+<p>Appgate 的高级研究员 Felipe Duarte 认为，一旦初始漏洞发生，零信任对于防止攻击者在网络中横向移动至关重要。“只有通过对网络进行分段并假设所有连接都可能受到威胁，才能检测到网络中的入侵者”他补充道。</p>
+
+
+
+<p>“零信任需要在核心基础设施中实施。我们必须对尝试连接到网络中的任何设备进行配置，使用多因素身份验证来确保凭据不被泄露，将网络分段创建隔离边界，最重要的是，仅提供对用户或系统需要的访问权限。”</p>
+
+
+
+<p>据悉，早在今年9月初，美国管理与预算办公室（OMB）发布了《美国政府向零信任网络安全原则的迁移》报告，美国国土安全部（DHS）网络安全和基础设施安全局（CISA）发布了《零信任成熟度模式》、《云安全技术参考架构》两份报告。三大文件公开征集意见，共同组成联邦各级机构的网络安全架构路线图，以支持今年5月拜登总统签署发布的关于加强联邦政府网络安全的行政令。</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="740" height="482" src="/wp-content/uploads/2021/12/c1cf9a1316d64c1f75e7a2ffb5dd8e5c8e6605a0.png" alt="" class="wp-image-2081" srcset="/wp-content/uploads/2021/12/c1cf9a1316d64c1f75e7a2ffb5dd8e5c8e6605a0.png 740w, /wp-content/uploads/2021/12/c1cf9a1316d64c1f75e7a2ffb5dd8e5c8e6605a0-300x195.png 300w" sizes="(max-width: 740px) 100vw, 740px" /></figure></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/2080/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>热点信息  美国网络司令部副司令称中国是该司令部的首要作战对象</title>
+		<link>/archives/2083</link>
+					<comments>/archives/2083#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 12 Nov 2021 11:13:00 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[推荐]]></category>
+		<guid isPermaLink="false">/?p=2083</guid>
+
+					<description><![CDATA[热点信息 &#124;&#124; 美国网络司令部副司令称中国是该司令部的首要作战对象 在周三由C4ISRNet网站组织的Cybe [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h1><strong>热点信息 || 美国网络司令部副司令称中国是该司令部的首要作战对象</strong><strong></strong></h1>
+
+
+
+<p>在周三由C4ISRNet网站组织的CyberCon网络会议上，美国网络司令部副司令查尔斯.摩尔（Charles “Tuna” Moore）指出，美国网络司令部目前已将中国视作其首要作战对象，并密切地跟踪监视中国“在国际网络空间内的活动”，同时该司令部也正在与美军印太平洋司令部（INDOPACOM）合作发展针对印太平洋区域未来冲突事件、以中国为主要目标的网络战手段。</p>
+
+
+
+<p>虽然摩尔在会上未就“美国网络司令部的对华网络战规划”这个话题进行深入，但该司令部目前的主要作战任务类型“前出狩猎”（Hunt Forward）显然在其中扮演重要角色。“前出狩猎”是美国网络司令部在“持续交战”（Persistent engagement）作战方针——该方针在2018年美国《国家网络战略》（National Cyber Strategy）文件中正式提出，核心概念是在网络空间内与对手保持接触、持续对抗——指导下，将美国网络司令部的网络战小组部署至美国盟友及伙伴方境内，并帮助后者开展网络防御并获得恶意软件样本、攻击手法等潜在对手第一手情报的网络作战行动。摩尔透露，从2018年开始，美国网络司令部已在14个国家实施了超过24次的“前出狩猎”行动，历次行动共捕获约30种新的恶意软件样本。</p>
+
+
+
+<p>摩尔认为，历次“前出狩猎”行动的成果证明，美国网络司令部这类有机结合网络攻击和网络防御元素的网络作战任务是“非常有效的”，同时由于美国网络司令部通过此类行动展现出来的主动姿态，来自美国盟友及伙伴方的网络协防需求正日益增多。</p>
+
+
+
+<p>摩尔还指出，美国网络司令部希望获得更多的资源和人员配套，这样该司令部就能够在现有“前出狩猎”行动的基础上“做得更多”。目前美国网络司令部正在寻求扩大其“网络任务部队”（Cyber Mission Force，CMF）的规模，其中一半的新增单位将在2024年底前开始与美国太空司令部合作，参与面向美国国防太空资产的网络防御行动。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="570" src="/wp-content/uploads/2021/12/ffbe9c74abedc331814a3b585f266ba46d87ec87.png" alt="" class="wp-image-2084" srcset="/wp-content/uploads/2021/12/ffbe9c74abedc331814a3b585f266ba46d87ec87.png 830w, /wp-content/uploads/2021/12/ffbe9c74abedc331814a3b585f266ba46d87ec87-300x206.png 300w, /wp-content/uploads/2021/12/ffbe9c74abedc331814a3b585f266ba46d87ec87-768x527.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/2083/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>热点信息  近三年内,超过80%的关键基础设施公司遭到网络入侵</title>
+		<link>/archives/2074</link>
+					<comments>/archives/2074#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Fri, 12 Nov 2021 11:07:00 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[推荐]]></category>
+		<guid isPermaLink="false">/?p=2074</guid>
+
+					<description><![CDATA[热点信息 &#124;&#124; 近三年内,超过80%的关键基础设施公司遭到网络入侵 据Skybox security称，尽管在 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h1><strong>热点信息 || 近三年内,超过80%的关键基础设施公司遭到网络入侵</strong><strong></strong></h1>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="797" height="332" src="/wp-content/uploads/2021/12/ec5fb0e56e3313a55ffd096d00de18b3b8a23829-1.png" alt="" class="wp-image-2075" srcset="/wp-content/uploads/2021/12/ec5fb0e56e3313a55ffd096d00de18b3b8a23829-1.png 797w, /wp-content/uploads/2021/12/ec5fb0e56e3313a55ffd096d00de18b3b8a23829-1-300x125.png 300w, /wp-content/uploads/2021/12/ec5fb0e56e3313a55ffd096d00de18b3b8a23829-1-768x320.png 768w" sizes="(max-width: 797px) 100vw, 797px" /></figure>
+
+
+
+<p>据Skybox security称，尽管在过去三年中都遭受了破坏，但关键基础设施（CNI）组织中的大多数IT和安全领导人都低估了网络威胁的规模。</p>
+
+
+
+<p>网络安全供应商Skybox Security对美国、英国、德国和澳大利亚179名运营技术（OT）安全决策者进行了调查，其中大部分来自制造业、能源和公用事业行业收入达10亿美元或以上的公司。</p>
+
+
+
+<p>该研究发现，尽管83%的CIO和CISO在过去36个月内遭受过此类事件，但73%的CIO和CISO“非常有信心”他们的组织明年不会遭受OT违规。</p>
+
+
+
+<p>引人注目的是，只有37%的实际工厂经理有类似的信心，这突显了高级决策层的看法与现实之间的脱节。</p>
+
+
+
+<p>三分之一（34%）的受访者似乎过度依赖保险作为安全“策略”，声称这是一个足够的解决方案。</p>
+
+
+
+<p>然而，一些人确实认识到网络威胁不断升级。五分之二（40%）的人表示，供应链/第三方网络访问是他们的三大安全风险之一，但不到一半（46%）的人表示他们的组织有适用于OT的第三方访问策略。</p>
+
+
+
+<p>技术复杂性也给受访者带来了沉重压力：78%的受访者表示，多供应商环境使保护组织变得更具挑战性，而一半(48%)的受访者抱怨跨OT和IT环境的架构脱节。</p>
+
+
+
+<p><strong>另有40%的人表示IT-OT融合是前三大风险。</strong>随着传统OT技术的连接性增强，它将暴露于能够利用未修补系统的基于internet的威胁。补丁在OT工具包上可能会有问题，因为大部分补丁都是任务关键型的，并且与遗留应用程序和操作系统存在兼容性问题。</p>
+
+
+
+<p>Skybox安全研究实验室威胁情报负责人Sivan Nir认为，与2020年上半年相比，新的OT漏洞增加了46%。</p>
+
+
+
+<p>他补充道：“尽管漏洞和最近的攻击不断增加，但许多安全团队并未将OT安全作为公司的首要任务。原因何在？令人惊讶的发现之一是，一些安全团队人员否认自己易受攻击，但承认受到了破坏。”。</p>
+
+
+
+<p>“尽管有相反的证据，但人们相信他们的基础设施是安全的，这导致安全措施不足。”</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/2074/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>热点信息  关于微软多个安全漏洞的预警</title>
+		<link>/archives/2124</link>
+					<comments>/archives/2124#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Thu, 11 Nov 2021 11:31:00 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[推荐]]></category>
+		<guid isPermaLink="false">/?p=2124</guid>
+
+					<description><![CDATA[热点信息 &#124;&#124; 关于微软多个安全漏洞的预警 近日，微软官方发布了多个安全漏洞的公告，包括MicrosoftWi [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h1><strong>热点信息 || 关于微软多个安全漏洞的预警</strong><strong></strong></h1>
+
+
+
+<p>近日，微软官方发布了多个安全漏洞的公告，包括MicrosoftWindows Active Directory 权限许可和访问控制问题漏洞（CNNVD-202111-788、CVE-2021-42291）、Microsoft Windows ActiveDirectory 权限许可和访问控制问题漏洞（CNNVD-202111-789、CVE-2021-42287）等多个漏洞。成功利用上述漏洞的攻击者可以在目标系统上执行任意代码、获取用户数据，提升权限等。微软多个产品和系统受漏洞影响。目前，微软官方已经发布了漏洞修复补丁，建议用户及时确认是否受到漏洞影响，尽快采取修补措施。<br><strong>一、漏洞介绍</strong>2021年11月9日，微软发布了2021年11月份安全更新，共51个漏洞的补丁程序，CNNVD对这些漏洞进行了收录。本次更新主要涵盖了Microsoft Windows 和Windows 组件、Microsoft Windows CodecsLibrary、Microsoft Azure、Microsoft3D Viewer、Microsoft Windows Feedback Hub、Microsoft Azure Sphere等。CNNVD对其危害等级进行了评价，其中高危漏洞25个，中危漏洞22个，低危漏洞4个。微软多个产品和系统版本受漏洞影响，具体影响范围可访问https://portal.msrc.microsoft.com/zh-cn/security-guidance查询。<strong>二、漏洞详情</strong>此次更新共包括51个漏洞的补丁程序，其中高危漏洞25个，中危漏洞22个，低危漏洞4个。</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td><strong>序号</strong></td><td><strong>漏洞名称</strong></td><td><strong>CNNVD</strong><strong>编号</strong></td><td><strong>CVE</strong><strong>编号</strong></td><td><strong>危害等级</strong></td><td><strong>官方链接</strong></td></tr><tr><td>1</td><td>Microsoft &nbsp;Windows Active Directory&nbsp;权限许可和访问控制问题漏洞</td><td>CNNVD-202111-788</td><td>CVE-2021-42291</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42291</td></tr><tr><td>2</td><td>Microsoft &nbsp;Windows Active Directory&nbsp;权限许可和访问控制问题漏洞</td><td>CNNVD-202111-789</td><td>CVE-2021-42287</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42287</td></tr><tr><td>3</td><td>Microsoft &nbsp;Windows Kernel&nbsp;权限许可和访问控制问题漏洞</td><td>CNNVD-202111-791</td><td>CVE-2021-42285</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42285</td></tr><tr><td>4</td><td>Microsoft &nbsp;Windows&nbsp;权限许可和访问控制问题漏洞</td><td>CNNVD-202111-792</td><td>CVE-2021-42286</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42286</td></tr><tr><td>5</td><td>Microsoft &nbsp;Windows NTFS&nbsp;权限许可和访问控制问题漏洞</td><td>CNNVD-202111-795</td><td>CVE-2021-42283</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42283</td></tr><tr><td>6</td><td>Microsoft &nbsp;Windows Active Directory&nbsp;权限许可和访问控制问题漏洞</td><td>CNNVD-202111-796</td><td>CVE-2021-42282</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42282</td></tr><tr><td>7</td><td>Microsoft &nbsp;Windows Active Directory&nbsp;权限许可和访问控制问题漏洞</td><td>CNNVD-202111-797</td><td>CVE-2021-42278</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42278</td></tr><tr><td>8</td><td>Microsoft &nbsp;Windows NTFS&nbsp;代码注入漏洞</td><td>CNNVD-202111-803</td><td>CVE-2021-41378</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-41378</td></tr><tr><td>9</td><td>Microsoft &nbsp;Windows Codecs Library&nbsp;代码注入漏洞</td><td>CNNVD-202111-804</td><td>CVE-2021-42276</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42276</td></tr><tr><td>10</td><td>Microsoft &nbsp;Windows Fastfat Driver&nbsp;权限许可和访问控制问题漏洞</td><td>CNNVD-202111-805</td><td>CVE-2021-41377</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-41377</td></tr><tr><td>11</td><td>Microsoft &nbsp;Windows COM&nbsp;代码注入漏洞</td><td>CNNVD-202111-806</td><td>CVE-2021-42275</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42275</td></tr><tr><td>12</td><td>Microsoft &nbsp;Windows NTFS&nbsp;权限许可和访问控制问题漏洞</td><td>CNNVD-202111-808</td><td>CVE-2021-4137</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-4137</td></tr><tr><td>13</td><td>Microsoft &nbsp;Windows NTFS&nbsp;权限许可和访问控制问题漏洞</td><td>CNNVD-202111-809</td><td>CVE-2021-41367</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-41367</td></tr><tr><td>14</td><td>Microsoft &nbsp;Windows&nbsp;权限许可和访问控制问题漏洞</td><td>CNNVD-202111-81</td><td>CVE-2021-41366</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-41366</td></tr><tr><td>15</td><td>Microsoft &nbsp;Windows&nbsp;输入验证错误漏洞</td><td>CNNVD-202111-811</td><td>CVE-2021-41356</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-41356</td></tr><tr><td>16</td><td>Microsoft 3D &nbsp;Viewer&nbsp;代码注入漏洞</td><td>CNNVD-202111-812</td><td>CVE-2021-43208</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-43208</td></tr><tr><td>17</td><td>Microsoft 3D &nbsp;Viewer&nbsp;代码注入漏洞</td><td>CNNVD-202111-813</td><td>CVE-2021-43209</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-43209</td></tr><tr><td>18</td><td>Microsoft &nbsp;Windows rdp&nbsp;代码注入漏洞</td><td>CNNVD-202111-815</td><td>CVE-2021-38666</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-38666</td></tr><tr><td>19</td><td>Microsoft &nbsp;Windows Virtual Machine&nbsp;代码注入漏洞</td><td>CNNVD-202111-827</td><td>CVE-2021-26443</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-26443</td></tr><tr><td>20</td><td>Microsoft &nbsp;Dynamics&nbsp;代码注入漏洞</td><td>CNNVD-202111-835</td><td>CVE-2021-42316</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42316</td></tr><tr><td>21</td><td>Microsoft &nbsp;Visual Studio&nbsp;权限许可和访问控制问题漏洞</td><td>CNNVD-202111-839</td><td>CVE-2021-42322</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42322</td></tr><tr><td>22</td><td>Microsoft &nbsp;Exchange Server&nbsp;输入验证错误漏洞</td><td>CNNVD-202111-842</td><td>CVE-2021-42321</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42321</td></tr><tr><td>23</td><td>Microsoft &nbsp;Office&nbsp;代码注入漏洞</td><td>CNNVD-202111-848</td><td>CVE-2021-40442</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-40442</td></tr><tr><td>24</td><td>Microsoft &nbsp;Office&nbsp;输入验证错误漏洞</td><td>CNNVD-202111-857</td><td>CVE-2021-42292</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42292</td></tr><tr><td>25</td><td>Microsoft &nbsp;Office&nbsp;代码注入漏洞</td><td>CNNVD-202111-858</td><td>CVE-2021-42296</td><td>高危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42296</td></tr><tr><td>26</td><td>Microsoft &nbsp;Windows Hello&nbsp;安全特征问题特征问题漏洞</td><td>CNNVD-202111-786</td><td>CVE-2021-42288</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42288</td></tr><tr><td>27</td><td>Microsoft &nbsp;Hyper-V&nbsp;输入验证错误漏洞</td><td>CNNVD-202111-794</td><td>CVE-2021-42284</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42284</td></tr><tr><td>28</td><td>Microsoft &nbsp;Windows Feedback Hub&nbsp;权限许可和访问控制问题漏洞</td><td>CNNVD-202111-798</td><td>CVE-2021-4228</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-4228</td></tr><tr><td>29</td><td>Microsoft &nbsp;Windows Scripting&nbsp;缓冲区错误漏洞</td><td>CNNVD-202111-799</td><td>CVE-2021-42279</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42279</td></tr><tr><td>30</td><td>Microsoft &nbsp;Hyper-V&nbsp;输入验证错误漏洞</td><td>CNNVD-202111-8</td><td>CVE-2021-42274</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42274</td></tr><tr><td>31</td><td>Microsoft &nbsp;Windows Installer&nbsp;权限许可和访问控制问题漏洞</td><td>CNNVD-202111-802</td><td>CVE-2021-41379</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-41379</td></tr><tr><td>32</td><td>Microsoft &nbsp;Windows rdp&nbsp;信息泄露漏洞</td><td>CNNVD-202111-807</td><td>CVE-2021-41371</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-41371</td></tr><tr><td>33</td><td>Microsoft &nbsp;Windows Desktop Bridge&nbsp;权限许可和访问控制问题漏洞</td><td>CNNVD-202111-814</td><td>CVE-2021-36957</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-36957</td></tr><tr><td>34</td><td>Microsoft &nbsp;Exchange Server&nbsp;安全漏洞</td><td>CNNVD-202111-816</td><td>CVE-2021-41349</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-41349</td></tr><tr><td>35</td><td>Microsoft &nbsp;Windows rdp&nbsp;信息泄露漏洞</td><td>CNNVD-202111-817</td><td>CVE-2021-38631</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-38631</td></tr><tr><td>36</td><td>Microsoft &nbsp;Windows rdp&nbsp;信息泄露漏洞</td><td>CNNVD-202111-818</td><td>CVE-2021-38665</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-38665</td></tr><tr><td>37</td><td>Microsoft &nbsp;Azure Sphere&nbsp;数据伪造问题漏洞</td><td>CNNVD-202111-819</td><td>CVE-2021-423</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-423</td></tr><tr><td>38</td><td>Microsoft &nbsp;Power BI Report Server&nbsp;安全漏洞</td><td>CNNVD-202111-821</td><td>CVE-2021-41372</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-41372</td></tr><tr><td>39</td><td>Microsoft &nbsp;Office&nbsp;代码注入漏洞</td><td>CNNVD-202111-822</td><td>CVE-2021-41368</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-41368</td></tr><tr><td>40</td><td>Microsoft &nbsp;Azure Sphere&nbsp;安全漏洞</td><td>CNNVD-202111-823</td><td>CVE-2021-41375</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-41375</td></tr><tr><td>41</td><td>Microsoft &nbsp;Azure Sphere&nbsp;输入验证错误漏洞</td><td>CNNVD-202111-824</td><td>CVE-2021-41374</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-41374</td></tr><tr><td>42</td><td>Microsoft &nbsp;Azure&nbsp;权限许可和访问控制问题漏洞</td><td>CNNVD-202111-826</td><td>CVE-2021-42304</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42304</td></tr><tr><td>43</td><td>Microsoft &nbsp;Azure&nbsp;权限许可和访问控制问题漏洞</td><td>CNNVD-202111-83</td><td>CVE-2021-42302</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42302</td></tr><tr><td>44</td><td>Microsoft &nbsp;Azure&nbsp;权限许可和访问控制问题漏洞</td><td>CNNVD-202111-831</td><td>CVE-2021-42303</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42303</td></tr><tr><td>45</td><td>Microsoft &nbsp;Edge&nbsp;安全漏洞</td><td>CNNVD-202111-838</td><td>CVE-2021-41351</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-41351</td></tr><tr><td>46</td><td>Microsoft &nbsp;Azure&nbsp;信息泄露漏洞</td><td>CNNVD-202111-84</td><td>CVE-2021-41373</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-41373</td></tr><tr><td>47</td><td>Microsoft &nbsp;Exchange Server&nbsp;安全漏洞</td><td>CNNVD-202111-852</td><td>CVE-2021-42305</td><td>中危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42305</td></tr><tr><td>48</td><td>Microsoft &nbsp;Azure Sphere&nbsp;缓冲区错误漏洞</td><td>CNNVD-202111-82</td><td>CVE-2021-41376</td><td>低危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-41376</td></tr><tr><td>49</td><td>Microsoft &nbsp;Azure&nbsp;信息泄露漏洞</td><td>CNNVD-202111-828</td><td>CVE-2021-42323</td><td>低危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42323</td></tr><tr><td>50</td><td>Microsoft &nbsp;Azure&nbsp;信息泄露漏洞</td><td>CNNVD-202111-829</td><td>CVE-2021-26444</td><td>低危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-26444</td></tr><tr><td>51</td><td>Microsoft &nbsp;Azure&nbsp;信息泄露漏洞</td><td>CNNVD-202111-832</td><td>CVE-2021-42301</td><td>低危</td><td>https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42301</td></tr></tbody></table></figure>
+
+
+
+<p><strong>三、修复建议</strong>目前，微软官方已经发布补丁修复了上述漏洞，建议用户及时确认漏洞影响，尽快采取修补措施。微软官方补丁下载地址：https://msrc.microsoft.com/update-guide/en-usCNNVD将继续跟踪上述漏洞的相关情况，及时发布相关信息。如有需要，可与CNNVD联系。联系方式: cnnvdvul@itsec.gov.cn</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img src="https://www.kdocs.cn/api/v3/office/copy/NFdadVJKcTQ2RU1reFVxZjQxSER6U25zUDFmcHh6amIxZVFyRWxOMEFHeC9PSisxZEtiYmpBUGE2RWpvUEViZGZhd1pTQWhvWXEwZ0QvRDBNUExhOENrbEZDMXI1Zm8wVmhyano1Wktsb2dPNENRYmM3RHd1akdBSTIzT05ma2x2dkF5RDZCSjF0VFpVWUFRN3p2NnVqQXc4MzFlRDV1RmZMNGtHVDAwaTRHQnFndGoxQ0hUbmZxNnBlbnhsc2tzNkZhbGtqbjBFWEZvbEdtdHhTcz0=/attach/object/f97a6fbfbc65c575c798844418df3db70fc0eff0" alt=""/></figure></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/2124/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>热点信息  地方卫生网络瘫痪、近14年患者隐私泄露：加拿大遭遇史上最严重网络攻击</title>
+		<link>/archives/2116</link>
+					<comments>/archives/2116#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Thu, 11 Nov 2021 11:24:00 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[推荐]]></category>
+		<guid isPermaLink="false">/?p=2116</guid>
+
+					<description><![CDATA[热点信息 &#124;&#124; 地方卫生网络瘫痪、近14年患者隐私泄露：加拿大遭遇史上最严重网络攻击 攻击者在10月底入侵加拿 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h1><strong>热点信息 || 地方卫生网络瘫痪、近14年患者隐私泄露：加拿大遭遇史上最严重网络攻击</strong><strong></strong></h1>
+
+
+
+<p>攻击者在10月底入侵加拿大健康相关IT系统，窃取到大量患者与员工数据，事件影响直到现在才逐步浮出水面。</p>
+
+
+
+<p><strong>卫生网络大瘫痪，非急诊取消、急诊用纸笔服务</strong></p>
+
+
+
+<p>10月30日，<strong>加拿大纽芬兰和拉布拉多省（简称纽省）的卫生网络遭到网络攻击瘫痪，导致全省数千人的医疗预约（包括化疗）被取消，多个地方卫生系统被迫重新使用纸张</strong>。</p>
+
+
+
+<p>纽省东部地区卫生局受到的冲击最大，由于无法访问电子邮件、诊断图像及实验室结果等信息，<strong>所有非急诊预约都被取消，医生只能依靠纸笔记录继续为患者提供紧急服务</strong>。</p>
+
+
+
+<p>纽省卫生部长John Haggie透露，<strong>由贝尔公司运营的网络数据中心的 &#8220;大脑 &#8220;已经被破坏</strong>，包括主要和备用计算机系统。&#8221;它已经拔掉了数据中心的大脑&#8230;.我们现在的主要目的是减轻影响，为本省人民保持一些服务的连续性，&#8221;Haggie说。</p>
+
+
+
+<p>直到11月4日，管辖着13000名员工的纽省东部地区卫生局才宣布，内部电子邮件系统重新上线运行。</p>
+
+
+
+<p><strong>近14年就诊过的患者个人信息都被窃取</strong></p>
+
+
+
+<p>11月9日，经过数天调查后，纽省政府在公告中表示：</p>
+
+
+
+<p>“在对影响纽芬兰及拉布拉多医疗保健IT系统的网络攻击开展持续调查后，我们已经确定攻击者从系统中接触到了部分个人信息与健康信息。目前调查仍在进行，希望确定事件中是否还有其他信息受到影响，并将酌情对外发布进一步更新。”</p>
+
+
+
+<p><strong>黑客窃取了近14年以来众多东部卫生系统患者与员工的个人信息，以及拉布拉多Grenfell Health近9年以来的敏感内容</strong>。其中患者信息包括姓名、地址、医保编号、就诊原因、主治医师与出生日期等，员工信息则可能包括姓名、地址、联系信息与社会保险号码（与美国的社保号码类似）。</p>
+
+
+
+<p>官方公告没有透露网络攻击的活动类型和嫌疑人，但有外部专家表示，<strong>此次事件具有勒索软件攻击的一切迹象</strong>，包括黑客渗透进IT网络内部，并要求受害者付款以换取访问恢复。</p>
+
+
+
+<p><strong>专家建议：将此次网络攻击升级到国家安全层面</strong></p>
+
+
+
+<p>安全专家认为，加拿大应该把这起针对纽芬兰及拉布拉多卫生系统的网络攻击<strong>视为国家级安全问题</strong>。</p>
+
+
+
+<p>加拿大网络安全厂商Beauceron Security的CEO David Shipley表示，这是加拿大历史上最严重的一次攻击，虽然以往也出现过针对加拿大个别医院或政府事务的类似攻击，但此次纽芬兰与拉布拉多事件在影响程度与后果严重性方面都创下了新的纪录。</p>
+
+
+
+<p>这位反网络犯罪专家接受采访时称，“我们从未经历过类似攻击事件，将整个卫生网络、甚至是多个卫生网络一并打垮。<strong>这不仅影响了纽芬兰，也不止是普通的医疗保健事故，更是一起涉及国家安全的全国性事故</strong>。”</p>
+
+
+
+<p>爱尔兰计算机安全事件响应小组负责人、欧洲刑警组织网络犯罪中心前特别顾问Brian Honan表示，今年5月，爱尔兰医疗保健系统也遭遇过类似的攻击。Honan赞同Shipley的观点，即加拿大政府应该将这起针对纽省的攻击事件放在焦点位置，并<strong>将其视作国家安全问题</strong>。</p>
+
+
+
+<p>Honan说，“勒索软件已经成为一种重大挑战，其影响的不只是是个人或者企业，也在严重威胁着我们的经济、社会乃至国家安全。”</p>
+
+
+
+<p>由于医疗保健系统一旦宕机后果将不堪设想，长期以来针对该行业的攻击一直被视为网络空间中最为紧迫的挑战之一。今年9月的一起诉讼提到，勒索软件攻击导致一名婴儿在美国阿拉巴马州一家医院中死亡。与此同时，目前至少已经有一个勒索软件团伙专门针对医院作案，他们认定<strong>在生命安全的威胁下，院方一定会快速就范、乖乖付款</strong>。</p>
+
+
+
+<p>11月9日，美国国土安全部下辖网络安全与基础设施安全局发布了一份可能影响到几千种医疗设备的软件缺陷警报。</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="602" height="337" src="/wp-content/uploads/2021/12/088f82d77e05721ed4103520a57aeba494fa05a3.png" alt="" class="wp-image-2117" srcset="/wp-content/uploads/2021/12/088f82d77e05721ed4103520a57aeba494fa05a3.png 602w, /wp-content/uploads/2021/12/088f82d77e05721ed4103520a57aeba494fa05a3-300x168.png 300w" sizes="(max-width: 602px) 100vw, 602px" /></figure></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/2116/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>热点信息  我国航空业已成境外情报机构网络攻击的重点目标</title>
+		<link>/archives/2104</link>
+					<comments>/archives/2104#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Sun, 07 Nov 2021 11:19:00 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[推荐]]></category>
+		<guid isPermaLink="false">/?p=2104</guid>
+
+					<description><![CDATA[热点信息 &#124;&#124; 我国航空业已成境外情报机构网络攻击的重点目标 近日，国家安全机关公布某航空公司数据被境外间谍情 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h1><strong>热点信息 || 我国航空业已成境外情报机构网络攻击的重点目标</strong><strong></strong></h1>
+
+
+
+<p>近日，国家安全机关公布某航空公司数据被境外间谍情报机关<a href="http://www.chinaaet.com/tags/%E7%BD%91%E7%BB%9C%E6%94%BB%E5%87%BB"><u>网络攻击</u></a>窃取案，其称在2020年1月，某航空公司向国家安全机关报告，该公司信息系统出现异常，怀疑遭到网络攻击。国家安全机关立即进行技术检查，确认相关信息系统遭到网络武器攻击，多台重要服务器和网络设备被植入特种木马程序，部分乘客出行记录等数据被窃取。</p>
+
+
+
+<p>　　国家安全机关经过进一步排查发现，另有多家航空公司信息系统遭到同一类型的网络攻击和数据窃取。经深入调查，确认相关攻击活动是由某境外间谍情报机关精心谋划、秘密实施，攻击中利用了多个技术漏洞，并利用多个网络设备进行跳转，以隐匿踪迹。</p>
+
+
+
+<p>　　针对这一情况，国家安全机关及时协助有关航空公司全面清除被植入的特种木马程序，调整技术安全防范策略、强化防范措施，制止了危害的进一步扩大。</p>
+
+
+
+<p>　　要知道，航空技术在任何一个国家都是保密程度最高的，关系到国家命脉。因此针对航空系统进行进行攻击的情报机构基本所图甚大，黑鸟不妨将一些历史会攻击我国航空系统的已经公开的APT活动列一下。</p>
+
+
+
+<p>　　2020年04月14日，国家安全机关公布称，2019年9月，某境外APT组织利用特种木马，通过控制多个境外跳板设备对我国航空系统数十台计算机设备实施高强度网络攻击活动。攻击者精心伪装窃密行为，所用特种木马平时处于静默潜伏状态，接收到远程控制指令再激活运行，整个过程十分隐蔽。</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="450" height="191" src="/wp-content/uploads/2021/12/7557bc83c390c564b4a6003700ab6999d6540478.png" alt="" class="wp-image-2105" srcset="/wp-content/uploads/2021/12/7557bc83c390c564b4a6003700ab6999d6540478.png 450w, /wp-content/uploads/2021/12/7557bc83c390c564b4a6003700ab6999d6540478-300x127.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure></div>
+
+
+
+<p>　　</p>
+
+
+
+<p>　　2020年03月，环球时报报道称，根据360披露的部分信息，CIA在针对中国航空航天与科研机构的攻击中，主要是围绕这些机构的系统开发人员来进行定向打击。这些开发人员的工作主要涉及航空信息技术有关服务，如航班控制系统服务、货运信息服务、结算分销服务、乘客信息服务等。因此360方面推测，CIA在过去长达11年的渗透攻击里，或许早已掌握到了中国乃至国际航空的精密信息，甚至不排除CIA已实时追踪定位全球的航班实时动态、飞机飞行轨迹、乘客信息、贸易货运等相关情报。</p>
+
+
+
+<p>　　2019年12月，卡巴斯基发布的APT组织攻击报告总结中，提到了CIA使用的木马针对中国航空部门进行攻击。</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="450" height="75" src="/wp-content/uploads/2021/12/a5eb67faee233c247dbb981a8e459d58c88edb9d.png" alt="" class="wp-image-2106" srcset="/wp-content/uploads/2021/12/a5eb67faee233c247dbb981a8e459d58c88edb9d.png 450w, /wp-content/uploads/2021/12/a5eb67faee233c247dbb981a8e459d58c88edb9d-300x50.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure></div>
+
+
+
+<p>　　</p>
+
+
+
+<p>　　2019年9月，奇安信威胁情报中心红雨滴团队发布报告，对历史曝光的CIA网络武器及相关资料进行研究，并发现了多种网络武器文件，并且根据分析的结果与现有公开资料内容进行了关联和判定。并且还发现这些网络武器曾用于攻击中国的目标人员和机构，其相关攻击活动主要发生在2012年到2017年（与Vault7资料公开时间相吻合），并且在其相关资料被曝光后直至2018年末，依然维持着部分攻击活动，目标涉及国内的航空行业。</p>
+
+
+
+<p>　　从上述攻击事件曝光时间线来看，不难看出针对我国航空行业的针对性窃密攻击是持续性进行，攻击过程使用针对性系统漏洞，并且都异常注重隐蔽性，构建的C2回传网络复杂多变，与传统的鱼叉、水坑攻击不在同一维度。</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="450" height="283" src="/wp-content/uploads/2021/12/f8ae8844f371b9ab0d9a32604736314628677d91.png" alt="" class="wp-image-2107" srcset="/wp-content/uploads/2021/12/f8ae8844f371b9ab0d9a32604736314628677d91.png 450w, /wp-content/uploads/2021/12/f8ae8844f371b9ab0d9a32604736314628677d91-300x189.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure></div>
+
+
+
+<p>　　</p>
+
+
+
+<p>　　航空行业的重要性不言而喻，其中涉及到各类要员的行程、信息等等机密信息。若要让我国航空行业的网络安全防护能够达到防护顶级APT组织的水平，务必需要全方面对整个航空系统运转过程中涉及到的方方面面的系统进行网络安全演练。</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="450" height="212" src="/wp-content/uploads/2021/12/71a0040bf915ad89bca56007fd389248c12dd377.png" alt="" class="wp-image-2108" srcset="/wp-content/uploads/2021/12/71a0040bf915ad89bca56007fd389248c12dd377.png 450w, /wp-content/uploads/2021/12/71a0040bf915ad89bca56007fd389248c12dd377-300x141.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure></div>
+
+
+
+<p>　　</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="450" height="206" src="/wp-content/uploads/2021/12/c2b7cf2e730018fa6d9ee3dd7d7dcdc6c9ebe4c6.png" alt="" class="wp-image-2109" srcset="/wp-content/uploads/2021/12/c2b7cf2e730018fa6d9ee3dd7d7dcdc6c9ebe4c6.png 450w, /wp-content/uploads/2021/12/c2b7cf2e730018fa6d9ee3dd7d7dcdc6c9ebe4c6-300x137.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure></div>
+
+
+
+<p>　　</p>
+
+
+
+<p>　　图片来自国际航空运输协会IATA的《航空网络安全指导手册》译文</p>
+
+
+
+<p>　　http://blog.nsfocus.net/acstf-air-3/</p>
+
+
+
+<p>　　其中不妨参考一下美国国安、五角大楼和运输部的航空电子网络安全计划，该计划不仅对真机（波音）进行安全测试，而且除飞机外，会对航空公司整个系统进行安全检查，以发现哪些地方还有漏洞。同时美国空军会检查内部的飞机网络安全系统，并与黑客问题专家、安全人员和IT专家合作，以听取他们对航空运输如何预防网络攻击的意见，往年就有在blackhat黑客大会上公开波音飞机通过机载网络系统入侵飞机核心系统的技术分析。</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="450" height="216" src="/wp-content/uploads/2021/12/a7de2353eb3249e561c34f01dd4da90b5b2d2c38.png" alt="" class="wp-image-2110" srcset="/wp-content/uploads/2021/12/a7de2353eb3249e561c34f01dd4da90b5b2d2c38.png 450w, /wp-content/uploads/2021/12/a7de2353eb3249e561c34f01dd4da90b5b2d2c38-300x144.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/2104/feed</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
