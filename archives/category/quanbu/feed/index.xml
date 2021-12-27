@@ -12,7 +12,7 @@
 	<atom:link href="/archives/category/quanbu/feed" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Sat, 11 Dec 2021 11:33:47 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 27 Dec 2021 09:34:50 +0000</lastBuildDate>
 	<language>zh-CN</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,2123 +20,1643 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.8.2</generator>
 	<item>
-		<title>热点信息  美国国防部新网安标准：网安成数度等级划分和新增变化</title>
-		<link>/archives/2086</link>
-					<comments>/archives/2086#respond</comments>
+		<title>物联网安全行业研究简析</title>
+		<link>/archives/4414</link>
+					<comments>/archives/4414#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Fri, 19 Nov 2021 11:16:00 +0000</pubDate>
+		<pubDate>Mon, 27 Dec 2021 09:34:50 +0000</pubDate>
 				<category><![CDATA[全部]]></category>
-		<category><![CDATA[推荐]]></category>
-		<guid isPermaLink="false">/?p=2086</guid>
+		<category><![CDATA[物联网安全]]></category>
+		<guid isPermaLink="false">/?p=4414</guid>
 
-					<description><![CDATA[美国国防部新网安标准：网安成数度等级划分和新增变化 网安标准2月14日讯，据外媒报道，于2020年1月31日， [&#8230;]]]></description>
+					<description><![CDATA[物联网安全行业研究简析 一&#160;行业概况 自2005年国际电信联盟（ITU）正式提出“物联网”这一概念以 [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<p><strong>美国国防部新网安标准：网安成数度等级划分和新增变化</strong><strong></strong></p>
+<h2><strong>物联网安全行业研究简析</strong><strong></strong></h2>
 
 
 
-<p>网安标准2月14日讯，据外媒报道，于2020年1月31日，美国国防部发布了新的网络安全标准——《网络安全成熟度模型认证1.0版》(简称CMMC 1.0)。美国防部表示，到2026年，国防承包商在回应政府采购计划的提案请求时，必须满足基本的网络安全标准。美国防部希望通过新版CMMC框架的推出，以增强国防工业基础（DIB）分包商的网络安全准备程度的方式，加强对供应链非机密信息（联邦合同信息（FCI）和受控未分类信息（CUI）的保护。继上一期谈了网安成熟度模型框架分析和进程级别之后，本期将要介绍CMMC的网安成熟度等级划分和新增变化。</p>
+<p><strong>一&nbsp;行业概况</strong></p>
 
 
 
-<p>首先CMMC是一个基于数据保护为中心的安全成熟度评价体系。在这套体系里面，重点提到保护目标是CUI-受控的非机密信息，那这个定义清晰的界定了所保护数据的范围，任何绝密/秘密的涉及国家安全的数据信息不包含在内，CUI是政府创建或拥有的，或组织实体为政府创建或拥有的或代表政府创建或拥有的信息，这些信息是法律，法规或政府范围内的政策要求或允许机构使用保障或传播控制措施进行处理的信息。在CMMC体系文档中没有明确针对所保护数据信息的分类分级做明确的定义和说明，直接引用在美国的国家档案网站中CUI的分类与细分子类的详细描述说明，以及细分子类的分类指南和示例。</p>
+<p>自2005年国际电信联盟（ITU）正式提出“物联网”这一概念以来，物联网在全球范围内迅速获得认可，并成为信息产业革命第三次浪潮和第四次工业革命的核心支撑。物联网技术的发展创新，深刻改变着传统产业形态和社会生活方式，催生了大量新产品、新服务、新模式，引发了产业、经济和社会发展新浪潮。</p>
 
 
 
-<p><br>&nbsp;&nbsp;&nbsp;CUI数据信息的总体分类包括：关键基础设施、防御、出口管制、金融、出入境、情报、国际协定、执法、法律、自然和文化资源、北约、核、隐私、采购与供应链、专有业务信息、临时信息、统计、税务。</p>
+<p>与此同时，数以亿计的设备接入物联网，物联网产业规模不断壮大，针对用户隐私、基础网络环境的安全攻击不断增多，网络安全问题已成为限制物联网服务广泛部署的障碍之一。</p>
 
 
 
-<p><strong>目前，云安全的痛点有以下：</strong><strong></strong></p>
+<p><strong>二行业规模</strong></p>
 
 
 
-<ol type="1"><li>云存储不加密，没有保密的交换文件的网盘</li><li>网盘存储的是明文文件</li><li>网盘共享功能分享的是明文文件</li><li>共享密码只有4个字母</li></ol>
+<p>“万物互联”成为全球网络未来发展的重要方向。据GSMA预测，2025年全球物联网设备（包括蜂窝及非蜂窝）联网数量将达到252亿如图1.1，远高于2017年的63亿；同时，物联网市场规模将达到目前的四倍。此外，工业物联网设备联网数量在2016年至2025年间，将从24亿增加到138亿，增幅达五倍左右1，工业互联网设备联网数量也将在2023年超过消费物联网设备联网数量如图：</p>
 
 
 
-<p><strong>无法区分获取文件的人是否是授权的？</strong><strong></strong></p>
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="283" src="/wp-content/uploads/2021/12/image-36.png" alt="" class="wp-image-4416" srcset="/wp-content/uploads/2021/12/image-36.png 554w, /wp-content/uploads/2021/12/image-36-300x153.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
 
 
 
-<ol type="1"><li>网盘数据是用户的，用户文件在云端没有隐私</li><li>云平台可以看到所有用户数据</li><li>存在云平台的数据没有加密保护</li><li>云平台数据不区分用户保密</li></ol>
+<figure class="wp-block-image size-full"><img loading="lazy" width="549" height="354" src="/wp-content/uploads/2021/12/image-37.png" alt="" class="wp-image-4417" srcset="/wp-content/uploads/2021/12/image-37.png 549w, /wp-content/uploads/2021/12/image-37-300x193.png 300w" sizes="(max-width: 549px) 100vw, 549px" /></figure>
 
 
 
-<p><strong>云安全的痛点？</strong><strong></strong></p>
+<p>当前，基于物联网（IoT）的攻击已经成为现实。据Gartner调查，近20％的企业或相关机构在过去三年内遭受了至少一次基于物联网的攻击。为了防范安全威胁，Gartner预测2018年全球物联网安全支出将达到15亿美元，比2017年增长28％，预计到2021年物联网安全支出将达到31亿美元2如表：</p>
 
 
 
-<ol type="1"><li>加解密影响速度和体感</li><li>如果云端加密，超过百万用户规模，严重加解密占用云计算资源</li><li>用户端软件加密受终端影响感知较差</li><li>现有加密硬件速度不够快小于10MB/s</li><li>软件加密，效率低、不可信</li><li>软件加密占用主机CPU和内存资源</li><li>软件加密可以被篡改，不完全可信</li><li>密钥在那里？</li><li>放在云端？密钥和加密文件放在一起不安全</li></ol>
+<figure class="wp-block-image size-full"><img loading="lazy" width="548" height="195" src="/wp-content/uploads/2021/12/image-39.png" alt="" class="wp-image-4419" srcset="/wp-content/uploads/2021/12/image-39.png 548w, /wp-content/uploads/2021/12/image-39-300x107.png 300w" sizes="(max-width: 548px) 100vw, 548px" /></figure>
 
 
 
-<p>10.放在用户手中？用户口令安全性不确定</p>
+<p><strong>三物联网安全风险分析</strong></p>
 
 
 
-<p><strong>解决方案</strong><strong></strong></p>
+<p>当前，大量物联网设备及云服务端直接暴露于互联网，这些设备和云服务端存在的漏洞一旦被利用，可导致设备被控、用户隐私泄露、云服务端数据被窃取等安全风险，甚至会对基础通信网络造成严重影响。</p>
 
 
 
-<ol type="1"><li>云端存储加密后文档</li><li>加密密钥在用户端存放</li><li>用户端解密使用</li><li><strong>上传、下载：都是以密文传输</strong><strong></strong></li><li>硬件加解密</li><li>上云前加密</li><li>下载后本机解密</li><li>密钥+PIN结合(指纹/按键)</li></ol>
+<p>从全球分布来看，路由器、视频监控设备暴露数量占比较高。路由器暴露数量超过3000万台，视频监控设备暴露数量超过1700万台如图：</p>
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="530" src="/wp-content/uploads/2021/12/6b14cace303714f96ded434ac143b40f1654efd6.png" alt="" class="wp-image-2089" srcset="/wp-content/uploads/2021/12/6b14cace303714f96ded434ac143b40f1654efd6.png 830w, /wp-content/uploads/2021/12/6b14cace303714f96ded434ac143b40f1654efd6-300x192.png 300w, /wp-content/uploads/2021/12/6b14cace303714f96ded434ac143b40f1654efd6-768x490.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="304" src="/wp-content/uploads/2021/12/image-40.png" alt="" class="wp-image-4421" srcset="/wp-content/uploads/2021/12/image-40.png 554w, /wp-content/uploads/2021/12/image-40-300x165.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
 
 
 
-<p><strong>解决方案——链</strong><strong></strong></p>
+<p><strong>四物联网安全未来发展趋势</strong></p>
 
 
 
-<p><strong>认证模式：</strong><strong></strong></p>
+<p>近年来，物联网在蓬勃发展的同时，也暴露出了许多安全问题。服务端、终端以及通信网等物联网应用模型各主要环节，仍然存在网络安全管理和检测工作不规范、传统的安全防护技术不能适应当前的网络安全新形势、尚未建立起有效的安全防护防御体系和安全生态等诸多问题。</p>
 
 
 
-<ol type="1"><li>客户终端必须上报正确的账号和密码</li><li>一次认证AAA：对用户的账号中的域名校验</li><li>国密认证AAA：对用户的身份、账号进行国密认证检验<strong></strong></li></ol>
+<p><strong>1.&nbsp;物联网安全技术标准落地及合规性检测</strong></p>
 
 
 
-<p><strong>终端国密认证：</strong><strong></strong></p>
+<p>推动物联网安全技术标准落地实施，全面推广技术合规性检测，促进物联网产业良性发展。目前，国内已发布《物联网参考体系结构》《物联网术语》《网络安全等级保护基本要求4：物联网安全扩展要求》《信息安全技术物联网安全参考模型及通用要求》等系列国家和行业标准，为设备厂商、服务提供商、安全企业等开展物联网相关工作提供了技术要求和参考规范。下一步要健全完善物联网安全标准体系，加快推动相关技术标准落地实施，全面推广技术合规性检测，进一步促进物联网产业健康良性发展。</p>
 
 
 
-<ol type="1"><li>客户终端设备、身份国密认证</li><li>业务系统高速加密、国密加密</li><li>网络连接VPDN国密认证</li></ol>
+<p><strong>2.&nbsp;以攻促防推进物联网安全技术发展</strong></p>
 
 
 
-<p><strong>高速加密：</strong><strong></strong></p>
+<p>密切关注物联网攻防技术发展趋势，以攻促防，建立适应物联网环境的安全防护机制。当前，针对物联网业务系统的攻击手段已经超出传统网络攻击范畴，攻击形式更加多样化，传统的防御手段难以满足日益增长的安全保护需求。为此，可从攻击的角度出发对物联网系统进行安全风险分析及检测评估，深入研究物联网应用系统可能存在的安全漏洞，以及针对这些漏洞的新型攻击手段，攻防结合，在完整攻击链条中寻找最佳防御点，采取针对性的防御技术，构建有效的物联网安全防护体系。</p>
 
 
 
-<ol type="1"><li>终端数据加密</li><li>业务数据加密</li></ol>
+<p><strong>3.&nbsp;构建物联网全生命周期立体防御体系</strong></p>
 
 
 
-<p><strong>解决方案——端</strong></p>
+<p>加强物联网全生命周期安全管理，构建覆盖物联网系统建设各环节的安全防护体系。在物联网业务系统规划、分析、设计、开发、建设、验收、运营维护以及废弃等各环节，明确安全管理规章制度并严格执行安全管理，使安全融入到物联网系统建设全生命周期中。在开发阶段，严格依据要求和规范进行系统软硬件开发及测试，并阶段性开展安全测试；在建设、验收阶段，严格执行安全管理，在系统建设完成后进行安全风险评估，保障安全防护的有效性和合规性；在运营维护阶段，定期进行安全风险评估，持续跟踪威胁情报和信息，改进安全管理和防护措施；在系统废弃阶段，做好残余信息清理工作，形成全生命周期安全防护管理体系。</p>
 
 
 
-<ol type="1"><li>搭载最新USB 3.1第二代10Gbps接口</li><li>实时6Gbps加解密，支持AES /SM4 256bit 加密引擎</li><li>NIST/CSE认证的硬件加密芯片MX+</li><li>使用者可透过选择任何主机端可读取的存储装置里的文档及文件夹包含云端硬盘，加密既有资料</li><li>您拥有别人所没有的实体钥匙</li></ol>
+<p><strong>4.&nbsp;联合行业力量打造物联网安全生态</strong></p>
 
 
 
-<p><strong>加密终端、身份识别</strong><strong>&nbsp;</strong><strong>保护个人及企业云端资料的安全</strong><strong></strong></p>
+<p>联合物联网产业链各方力量，共同打造物联网安全生态。物联网产业具有高度融合、应用多样、发展迅速等特点，其生态覆盖传感器元器件制造、设备集成生产、网络服务提供、软件服务提供、系统集成开发及销售等环节，安全问题更是涉及传感器、芯片、硬件，通信技术、网络服务以及相关行业领域应用等方面，因此构建开放、合作、共赢的安全生态圈是产业发展的必然趋势和要求。未来，我国需要从整机设备、核心芯片、安全运营服务等板块入手加快产业布局，形成产业链上下游协同创新的局面，推进产业转型升级，提升我国物联网安全产业核心竞争力。</p>
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="509" src="/wp-content/uploads/2021/12/035a8748384eb72aee2d00015a3675191fd44535.png" alt="" class="wp-image-2091" srcset="/wp-content/uploads/2021/12/035a8748384eb72aee2d00015a3675191fd44535.png 830w, /wp-content/uploads/2021/12/035a8748384eb72aee2d00015a3675191fd44535-300x184.png 300w, /wp-content/uploads/2021/12/035a8748384eb72aee2d00015a3675191fd44535-768x471.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
+<p><strong>5.&nbsp;探索新技术在物联网安全领域的应用</strong></p>
 
 
 
-<p><strong>解决方案——加密网盘</strong></p>
-
-
-
-<ol type="1"><li>文件本端硬件加密</li><li>密钥=硬件+PIN组合（密码、按键、指纹）</li><li>对接云存储，云上存密文</li><li>可共享，分享者硬件授权和解密</li></ol>
-
-
-
-<p><strong>加密网盘——用户侧加密、解密文件</strong><strong></strong></p>
-
-
-
-<ol type="1"><li>右键单击执行文档或文件夹加密 (Windows版本)</li><li>选取位于右方窗格的一个文档 (或可使用Shift或Ctrl键选取多个文档)，接着右键单击选择 “加密至目前路径”进行加密</li><li>选取左方窗格的一个文件夹并选择 “加密至目前路径”</li><li>欲解密文档，选取加密的文档/文件夹并右键单击选择“解密至目前路径</li></ol>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="344" height="303" src="/wp-content/uploads/2021/12/a74e73301021d17381dafffa4139501d53dcfb27.png" alt="" class="wp-image-2092" srcset="/wp-content/uploads/2021/12/a74e73301021d17381dafffa4139501d53dcfb27.png 344w, /wp-content/uploads/2021/12/a74e73301021d17381dafffa4139501d53dcfb27-300x264.png 300w" sizes="(max-width: 344px) 100vw, 344px" /></figure>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="355" height="305" src="/wp-content/uploads/2021/12/263152a5fc2f044bc869fe3f234982ae0c0bb993.png" alt="" class="wp-image-2093" srcset="/wp-content/uploads/2021/12/263152a5fc2f044bc869fe3f234982ae0c0bb993.png 355w, /wp-content/uploads/2021/12/263152a5fc2f044bc869fe3f234982ae0c0bb993-300x258.png 300w" sizes="(max-width: 355px) 100vw, 355px" /></figure>
-
-
-
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/MXNzK3hyMm9DTkl3YllQeWlHdWlFbTlVeVk1TmVXZjlHdDlHY3JyaVJvWEVsQjdqVWIwNGF0cmY5K3hjR3RoQmJvTllUVDUzN2xtcitMT29ZVmFlWnZKQVRueDJFdEpsaFh1YnJETndsOHV4VzFZQ0ZCQVYvcGN1cE5jNTdsekZxN2FXSXZOSTlKSDg4V1haWXJTKzBqclZGK0hMWUlLS1loMHRqRit2Njcrc1ZyUWI2ZkgvZC9LdnB2NjJuS2x0bERBRGpnWXVxbG51MUJPTTBRRT0=/attach/object/f9689ef8a8c6e8aff187fbae99f007c42ac41670" alt=""/></figure>
-
-
-
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/MXNzK3hyMm9DTkl3YllQeWlHdWlFbTlVeVk1TmVXZjlHdDlHY3JyaVJvWEVsQjdqVWIwNGF0cmY5K3hjR3RoQmJvTllUVDUzN2xtcitMT29ZVmFlWnZKQVRueDJFdEpsaFh1YnJETndsOHV4VzFZQ0ZCQVYvcGN1cE5jNTdsekZxN2FXSXZOSTlKSDg4V1haWXJTKzBqclZGK0hMWUlLS1loMHRqRit2Njcrc1ZyUWI2ZkgvZC9LdnB2NjJuS2x0bERBRGpnWXVxbG51MUJPTTBRRT0=/attach/object/43930fbf355f4b940c32f28d57e2db434f066937" alt=""/></figure>
-
-
-
-<p><strong>加密网盘——通过网盘客户端上传</strong><strong></strong></p>
-
-
-
-<ol type="1"><li>通过网盘客户端软件上传加密文件(Windows版本)</li><li>登录网盘</li><li>点击上传</li><li>选取已经用Enigma加密的文件，点击签名上传</li><li>客户端软件调用Enigma完成签名，并上传</li></ol>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="301" height="251" src="/wp-content/uploads/2021/12/fc527ce569306b1ab55d105e7834ac69f504f0fa.png" alt="" class="wp-image-2094"/></figure>
-
-
-
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/MXNzK3hyMm9DTkl3YllQeWlHdWlFbTlVeVk1TmVXZjlHdDlHY3JyaVJvWEVsQjdqVWIwNGF0cmY5K3hjR3RoQmJvTllUVDUzN2xtcitMT29ZVmFlWnZKQVRueDJFdEpsaFh1YnJETndsOHV4VzFZQ0ZCQVYvcGN1cE5jNTdsekZxN2FXSXZOSTlKSDg4V1haWXJTKzBqclZGK0hMWUlLS1loMHRqRit2Njcrc1ZyUWI2ZkgvZC9LdnB2NjJuS2x0bERBRGpnWXVxbG51MUJPTTBRRT0=/attach/object/ae5c379b0c3d46606dd95b31e41a1205f68d6cbe" alt=""/></figure>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="407" height="242" src="/wp-content/uploads/2021/12/d56d11ac0c8d8b3692e877b318196974e355d2f9.png" alt="" class="wp-image-2095" srcset="/wp-content/uploads/2021/12/d56d11ac0c8d8b3692e877b318196974e355d2f9.png 407w, /wp-content/uploads/2021/12/d56d11ac0c8d8b3692e877b318196974e355d2f9-300x178.png 300w" sizes="(max-width: 407px) 100vw, 407px" /></figure>
-
-
-
-<p><strong>加密网盘——文件加密上传过程实例</strong><strong></strong></p>
-
-
-
-<p>以PC端和云网盘使用Encryption Cloud Storage通过互联网交换和传输加密文件内容为例说明如下：</p>
-
-
-
-<p><strong>第一步: PC端使用Enigma高速硬件AES（密钥为个人私有）加密文件资料</strong><strong></strong></p>
-
-
-
-<p><strong>第二步: PC端用云网盘的Public Key加密第二步的结果</strong><strong></strong></p>
-
-
-
-<p><strong>第三步: 用云网盘的Private Key签名，并发送</strong><strong></strong></p>
-
-
-
-<p><strong>第四步: 云网盘收到后，用PC端的Public Key进行签名验证</strong><strong></strong></p>
-
-
-
-<p><strong>第五步: 用云网盘的Private Key解密第三步的结果</strong><strong></strong></p>
-
-
-
-<p><strong>第六步: 云网盘存储已经在PC端使用Enigma加密的文件资料</strong><strong></strong></p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="202" src="/wp-content/uploads/2021/12/a629756b0e28cf9c5c9bb481c470ac770cd696d1.png" alt="" class="wp-image-2096" srcset="/wp-content/uploads/2021/12/a629756b0e28cf9c5c9bb481c470ac770cd696d1.png 830w, /wp-content/uploads/2021/12/a629756b0e28cf9c5c9bb481c470ac770cd696d1-300x73.png 300w, /wp-content/uploads/2021/12/a629756b0e28cf9c5c9bb481c470ac770cd696d1-768x187.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
-
-
-
-<p><strong>解决方案——加密文档</strong><strong></strong></p>
-
-
-
-<ol type="1"><li>硬件身份认证</li><li>文档加密</li><li>加密文档网络共享</li><li>加密文档传递</li></ol>
-
-
-
-<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>支持多用户、群组的PKI部署</strong><strong></strong></p>
-
-
-
-<p><strong>文档和要素采用高性能硬件加解密引擎</strong><strong></strong></p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="829" height="471" src="/wp-content/uploads/2021/12/c1b8401f0c631195d72117b2c5488674acd9089f.png" alt="" class="wp-image-2097" srcset="/wp-content/uploads/2021/12/c1b8401f0c631195d72117b2c5488674acd9089f.png 829w, /wp-content/uploads/2021/12/c1b8401f0c631195d72117b2c5488674acd9089f-300x170.png 300w, /wp-content/uploads/2021/12/c1b8401f0c631195d72117b2c5488674acd9089f-768x436.png 768w" sizes="(max-width: 829px) 100vw, 829px" /></figure>
-
-
-
-<p><strong>加密文档——加密、解密文件</strong><strong></strong></p>
-
-
-
-<ol type="1"><li>右键单击执行文档或文件夹加密 (Windows版本)</li><li>选取位于右方窗格的一个文档 (或可使用Shift或Ctrl键选取多个文档)，接着右键单击选</li><li>择 “加密至目前路径”进行加密</li><li>选取左方窗格的一个文件夹并选择 “加密至目前路径”</li><li>欲解密文档，选取加密的文档/文件夹并右键单击选择“解密至目前路径”</li></ol>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="470" height="384" src="/wp-content/uploads/2021/12/bbbb200430ee28ca746d746b7d0cfdc262c18fa7.png" alt="" class="wp-image-2098" srcset="/wp-content/uploads/2021/12/bbbb200430ee28ca746d746b7d0cfdc262c18fa7.png 470w, /wp-content/uploads/2021/12/bbbb200430ee28ca746d746b7d0cfdc262c18fa7-300x245.png 300w" sizes="(max-width: 470px) 100vw, 470px" /></figure>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="466" height="376" src="/wp-content/uploads/2021/12/570bf7a9b97d2654b235b862d6f0639714621032.png" alt="" class="wp-image-2099" srcset="/wp-content/uploads/2021/12/570bf7a9b97d2654b235b862d6f0639714621032.png 466w, /wp-content/uploads/2021/12/570bf7a9b97d2654b235b862d6f0639714621032-300x242.png 300w" sizes="(max-width: 466px) 100vw, 466px" /></figure>
-
-
-
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/MXNzK3hyMm9DTkl3YllQeWlHdWlFbTlVeVk1TmVXZjlHdDlHY3JyaVJvWEVsQjdqVWIwNGF0cmY5K3hjR3RoQmJvTllUVDUzN2xtcitMT29ZVmFlWnZKQVRueDJFdEpsaFh1YnJETndsOHV4VzFZQ0ZCQVYvcGN1cE5jNTdsekZxN2FXSXZOSTlKSDg4V1haWXJTKzBqclZGK0hMWUlLS1loMHRqRit2Njcrc1ZyUWI2ZkgvZC9LdnB2NjJuS2x0bERBRGpnWXVxbG51MUJPTTBRRT0=/attach/object/1c849b500ac4181089e8d0eb1aeccf18b8522e21" alt=""/></figure>
-
-
-
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/MXNzK3hyMm9DTkl3YllQeWlHdWlFbTlVeVk1TmVXZjlHdDlHY3JyaVJvWEVsQjdqVWIwNGF0cmY5K3hjR3RoQmJvTllUVDUzN2xtcitMT29ZVmFlWnZKQVRueDJFdEpsaFh1YnJETndsOHV4VzFZQ0ZCQVYvcGN1cE5jNTdsekZxN2FXSXZOSTlKSDg4V1haWXJTKzBqclZGK0hMWUlLS1loMHRqRit2Njcrc1ZyUWI2ZkgvZC9LdnB2NjJuS2x0bERBRGpnWXVxbG51MUJPTTBRRT0=/attach/object/eb6c4677e77923f2cb3335e89e3990b0f6d8b755" alt=""/></figure>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="829" height="361" src="/wp-content/uploads/2021/12/82a1f9a74d9cc838abca77e0699edec3e3781e17.png" alt="" class="wp-image-2100" srcset="/wp-content/uploads/2021/12/82a1f9a74d9cc838abca77e0699edec3e3781e17.png 829w, /wp-content/uploads/2021/12/82a1f9a74d9cc838abca77e0699edec3e3781e17-300x131.png 300w, /wp-content/uploads/2021/12/82a1f9a74d9cc838abca77e0699edec3e3781e17-768x334.png 768w" sizes="(max-width: 829px) 100vw, 829px" /></figure>
-
-
-
-<p><strong>加密文档——用户端到端加密文档传递</strong><strong></strong></p>
-
-
-
-<p>以Alice和Bob使用Encryption Cloud Storage通过互联网交换和传输加密文件内容为例说明如下：</p>
-
-
-
-<p>第一步: Alice使用CloudKey高速硬件AES加密文件资料</p>
-
-
-
-<p>第二步: Alice用Bob的Public Key加密第二步的结果</p>
-
-
-
-<p>第三步: 用Alice的Private Key签名，并发送</p>
-
-
-
-<p>第四步: Bob收到后，用Alice的Public Key进行签名验证</p>
-
-
-
-<p>第五步: 用Bob的Private Key解密第三步的结果</p>
-
-
-
-<p>第六步: Bob使用CloudKey的高速硬件AES解密文件资料</p>
-
-
-
-<h1><strong>CMMC等级划分</strong><strong></strong></h1>
-
-
-
-<p>除了网络安全控制标准外，CMMC将更广泛地“衡量一家公司网络安全实践和安全运营过程制度化的成熟度”。CMMC将实现多个级别的网络安全。除了评估公司实施网络安全控制措施的成熟度外，CMMC还将评估公司网络安全实践和流程的成熟度/制度化水平。</p>
-
-
-
-<p>从美国国防部各级官员对于网络安全成熟度模型认证的要求可以看到美国正在倾力打造国防相关的信息数据保护和安全防御体系，强制要求所有国防相关企业快速落地网络安全成熟度模型认证等级划分(CMMC)框架。</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="525" src="/wp-content/uploads/2021/12/3302c5bad1cca29fb95d3b096afa7e8a83190679.png" alt="" class="wp-image-2101" srcset="/wp-content/uploads/2021/12/3302c5bad1cca29fb95d3b096afa7e8a83190679.png 830w, /wp-content/uploads/2021/12/3302c5bad1cca29fb95d3b096afa7e8a83190679-300x190.png 300w, /wp-content/uploads/2021/12/3302c5bad1cca29fb95d3b096afa7e8a83190679-768x486.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
-
-
-
-<p><strong>第一级：基础的网络卫生</strong></p>
-
-
-
-<ul><li>相当于联邦收购法规48 CFR 52.204-21中的所有实践。</li></ul>
-
-
-
-<p>一级要求最低。据国防部负责采办的助理部长办公室网络事务特别助理凯蒂·阿灵顿介绍，CMMC框架大约确定了17个网络安全特定“领域”，一级合规性仅要求在各个领域制定一项基本的“控制”措施</p>
-
-
-
-<p><strong>第二级：中级网络卫生，72种实践</strong></p>
-
-
-
-<ul><li>与联邦收购法相符</li><li>包括从NIST SP 800-171 r 1中选择的48个实践所组成的例集。</li><li>外加7个支持网络卫生的额外实践</li></ul>
-
-
-
-<p>二级被认为是过渡阶段。五角大楼可通过建立新的流程、规划和预算帮助各企业为更高的认证级别做好准备，其主要目标仍是“帮助小企业”。</p>
-
-
-
-<p><strong>第三级：良好的网络卫生，130种实践</strong></p>
-
-
-
-<ul><li>与联邦收购法相符</li><li>包括NIST SP 800-171 r 1中的所有实践案例。</li><li>外加20支持良好网络卫生的额外实践。</li></ul>
-
-
-
-<p>三级被认为是跨度最大的一级，是处理受控非机密信息的最低要求。企业的控制措施必须从前两级要求的17项增加到110多项。这些标准出自美国国家标准技术研究院的NIST 800-171修订版文件，也是目前许多企业声称已经达到的标准。</p>
-
-
-
-<p><strong>第四级：主动型，156种实践</strong></p>
-
-
-
-<ul><li>与联邦收购法相符</li><li>包括NIST SP 800-171 r 1中的所有实践。</li><li>外加NIST SP800-171B草案的11个额外实践。</li><li>包含额外15个实践，这些实践对一个主动出击型的网络项目进行了阐述。</li></ul>
-
-
-
-<p><strong>第五级：高级别，171个实践</strong></p>
-
-
-
-<ul><li>与联邦收购法相符</li><li>包括NIST SP 800-171 r 1中的所有实践。</li><li>从NIST SP800-171B草案中选择了4个额外实践案例。</li><li>还包含11个阐述高级网络安全计划的额外案例。</li></ul>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="987" height="739" src="/wp-content/uploads/2021/12/image.jpeg" alt="" class="wp-image-2102" srcset="/wp-content/uploads/2021/12/image.jpeg 987w, /wp-content/uploads/2021/12/image-300x225.jpeg 300w, /wp-content/uploads/2021/12/image-768x575.jpeg 768w" sizes="(max-width: 987px) 100vw, 987px" /></figure>
-
-
-
-<p>据悉，第四级和第五级针对承包最敏感合同的“极核心技术企业”，增加了额外的控制措施。而综上可知，这些标准将来自美国国家标准技术研究院、国际标准组织（ISO）、航空航天工业协会（AIA）等机构已经发布或正在制定的标准。</p>
-
-
-
-<p><strong>新版CMCC主要变化</strong><strong></strong></p>
-
-
-
-<p>新版CMMC模型利用了多处资源，进行了多方参考，包括：</p>
-
-
-
-<ul><li>CMMC第一级 只解决联邦并购法52.204-21条款涉及的惯例。</li><li>CMMC第三级 包括NIST SP 800-171r1等条款所涉实践（案例/惯例）。</li><li>CMMC第四和第五级整合了NIST SP 800-171B草案和其他法案中的部分实践（案例/惯例）。</li><li>此外，新版本的CMCC还参考了其他资源，如英国网络要素和澳大利亚网络安全中心必要的八种成熟度模型。</li></ul>
-
-
-
-<p>在CMMC认证方案中，企业不再“自行认证”而由美国防部授权第三方进行评估是最大的变化之一，且费用由企业承担。</p>
-
-
-
-<p>理论上，企业今后可以在不遵守规定的情况下竞标，但必须在选出“中标者”前获得所要求的等级的认证，否则将失去资格。因为未经认证的企业无法获得合同，且五角大楼官员无权给予任何企业网络安全认证的通行证。</p>
-
-
-
-<p>据报道，CMMC认证尤其会对小企业造成负担，美国防部将在不影响国家安全的前提下将影响降至最低。主承包商和工业界协会都在研究构建满足各种CMMC等级的计算基础架构，供分包商访问，让后者不必自己支付创建这些设施的费用</p>
+<p>加快探索物联网安全新技术新应用，满足不断发展的物联网安全防护新需求。随着物联网技术的发展和应用的创新，未来物联网在服务系统、终端、通信网络等方面都将面临巨大挑战，例如如何有效管理百亿级别的多源异构终端设备、如何解决海量数据对网络带宽带来挑战等，同时也给物联网安全提出了更高要求。下一步，我们要着眼于物联网未来发展趋势，加快对去中心化认证、边缘计算、终端安全轻量化防护技术、软件定义边界等新技术新应用的研究和探索，将其应用于物联网安全防护中，满足物联网未来发展的安全保护需求。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/archives/2086/feed</wfw:commentRss>
+					<wfw:commentRss>/archives/4414/feed</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>热点信息  关注15款违法App涉嫌超范围采集个人隐私信息</title>
-		<link>/archives/2121</link>
-					<comments>/archives/2121#respond</comments>
+		<title>物联网安全概述</title>
+		<link>/archives/4401</link>
+					<comments>/archives/4401#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Wed, 17 Nov 2021 11:30:00 +0000</pubDate>
+		<pubDate>Mon, 27 Dec 2021 09:33:32 +0000</pubDate>
 				<category><![CDATA[全部]]></category>
-		<category><![CDATA[推荐]]></category>
-		<guid isPermaLink="false">/?p=2121</guid>
+		<category><![CDATA[物联网安全]]></category>
+		<guid isPermaLink="false">/?p=4401</guid>
 
-					<description><![CDATA[热点信息 &#124;&#124; 关注15款违法App涉嫌超范围采集个人隐私信息 新华社天津9月9日电（记者张建新）国家计算机病 [&#8230;]]]></description>
+					<description><![CDATA[物联网安全概述 第一章：物联网安全概述 1.物联网安全概述 1.1.1 物联网的简介 广义物联网：物联网是一个 [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<h1><strong>热点信息 || 关注15款违法App涉嫌超范围采集个人隐私信息</strong><strong></strong></h1>
+<h1><strong>物联网安全概述</strong></h1>
 
 
 
-<p>新华社天津9月9日电（记者张建新）国家计算机病毒应急处理中心近期通过互联网监测发现15款移动应用存在隐私不合规行为，违反《网络安全法》相关规定，涉嫌超范围采集个人隐私信息。</p>
+<p><strong>第一章：物联网安全概述</strong><strong></strong></p>
 
 
 
-<p>　　1、App中无隐私政策，涉嫌隐私不合规。涉及1款App如下：</p>
+<p><strong>1.物联网安全概述</strong><strong></strong></p>
 
 
 
-<p>　　《魔与道OL》（版本4.07.18，安智市场）。</p>
+<p><strong>1.1.1 物联网的简介</strong><strong></strong></p>
 
 
 
-<p>　　2、在App首次运行时未通过弹窗等明显方式提示用户阅读隐私政策等收集使用规则，或以默认选择同意隐私政策等非明示方式征求用户同意，涉嫌隐私不合规。涉及2款App如下：</p>
+<p><strong>广义物联网：</strong><br>物联网是一个未来发展的愿景，等同于“未来的互联网”，能够实现人在任何时间、地点、使用任何网络与任何人与物的信息交换，以及物与物之间的信息交换。<br><strong>狭义物联网：</strong><br>物联网是物品之间通过网络连接起来的局域网，不论该局域网是否接入互联网，只要具有感、联、知、控（用）四个环节，都属于物联网的范畴。</p>
 
 
 
-<p>　　《辣选》（版本3.3.6，PC6安卓网）、《无尽噩梦：诡医院》（版本1.0.0，抖音游戏中心）。</p>
+<p><strong>1.1.2 物联网的特点</strong><strong></strong></p>
 
 
 
-<p>　　3、未向用户明示申请的全部隐私权限，涉嫌隐私不合规。涉及14款App如下：</p>
+<ul><li>普通对象设备化</li><li>自治终端互联化</li><li>普适服务智能化</li></ul>
 
 
 
-<p>　　《春播》（版本6.0.0，PC6安卓网）、《辣选》（版本3.3.6，PC6安卓网）、《神庙逃亡2》（版本5.17.1，安智市场）、《魔与道OL》（版本4.07.18，安智市场）、《淘安装》（版本3.1.0，安智市场）、《律师好帮手》（版本5.3.6，魅族应用商店）、《欧普智慧灯光》（版本3.9.6，魅族应用商店）、《柬单点》（版本3.2.1，魅族应用商店）、《爱下厨》（版本5.1.10，应用宝）、《温暖医生》（版本2.7.3，应用宝）、《血之缘》（版本3.2.6，应用宝）、《盛世芳华》（版本1.0.23，抖音游戏中心）、《无尽噩梦：诡医院》（版本1.0.0，抖音游戏中心）、《奥特曼系列光之消除》（版本1.0.0，抖音游戏中心）。</p>
+<p><strong>1.1.3 物联网的四层模型</strong><strong></strong></p>
 
 
 
-<p>　　4、App在征得用户同意前就开始收集个人信息，涉嫌隐私不合规。涉及6款App如下：</p>
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="269" src="/wp-content/uploads/2021/12/image-25.png" alt="" class="wp-image-4402" srcset="/wp-content/uploads/2021/12/image-25.png 554w, /wp-content/uploads/2021/12/image-25-300x146.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
 
 
 
-<p>　　《春播》（版本6.0.0，PC6安卓网）、《辣选》（版本3.3.6，PC6安卓网）、《魔与道OL》（版本4.07.18，安智市场）、《律师好帮手》（版本5.3.6，魅族应用商店）、《血之缘》（版本3.2.6，应用宝）、《盛世芳华》（版本1.0.23，抖音游戏中心）。</p>
+<p><strong>1.1.4 物联网中的安全问题</strong><strong></strong></p>
 
 
 
-<p>　　5、未提供有效的更正、删除个人信息及注销用户账号功能，或注销用户账号设置不合理条件，涉嫌隐私不合规。涉及9款App如下：</p>
+<ul><li><strong>数据安全</strong></li><li><strong>隐私</strong></li><li><strong>复制</strong></li><li><strong>RFID系统的威胁</strong>：从应用系统的角度考虑面临的安全问题，如数据机密性、可用性、隐私保护。</li></ul>
 
 
 
-<p>　　《辣选》（版本3.3.6，PC6安卓网）、《魔与道OL》（版本4.07.18，安智市场）、《宅e修》（版本2.3.8，乐商店）、《柬单点》（版本3.2.1，魅族应用商店）、《温暖医生》（版本2.7.3，应用宝）、《血之缘》（版本3.2.6，应用宝）、《盛世芳华》（版本1.0.23，抖音游戏中心）、《无尽噩梦：诡医院》（版本1.0.0，抖音游戏中心）、《奥特曼系列光之消除》（版本1.0.0，抖音游戏中心）。</p>
+<p><strong>2.物联网安全问题分析</strong><strong></strong></p>
 
 
 
-<p>　　6、未建立并公布个人信息安全投诉、举报渠道，或超过承诺处理回复时限，涉嫌隐私不合规。涉及4款App如下：</p>
+<p><strong>1.2.1信息网安全</strong><strong></strong></p>
 
 
 
-<p>　　《辣选》（版本3.3.6，PC6安卓网）、《魔与道OL》（版本4.07.18，安智市场）、《宅e修》（版本2.3.8，乐商店）、《奥特曼系列光之消除》（版本1.0.0，抖音游戏中心）。</p>
+<p>针对信息安全的攻击，主要包括<strong>主动攻击</strong>和<strong>被动攻击</strong>。<br>主动攻击包括：</p>
 
 
 
-<p>　　针对上述情况，国家计算机病毒应急处理中心提醒广大手机用户首先谨慎下载使用以上违法、违规移动App，同时要注意认真阅读App的用户协议和隐私政策说明，不随意开放和同意不必要的隐私权限，不随意输入个人隐私信息，定期维护和清理相关数据，避免个人隐私信息被泄</p>
+<ul><li>中断（Interruption），阻止通信设施的正常工作，破坏可用性。</li><li>篡改（Modification），更改数据流。</li><li>伪造（Fabrication），将一个非法实体伪装成一个合法的实体。</li><li>重放（Replay）攻击，将一个数据单元截获后进行重传。</li></ul>
 
 
 
-<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="743" height="483" src="/wp-content/uploads/2021/12/f12d66c8ee0e6af9afde28df5716516c6bad0e65.png" alt="" class="wp-image-2122" srcset="/wp-content/uploads/2021/12/f12d66c8ee0e6af9afde28df5716516c6bad0e65.png 743w, /wp-content/uploads/2021/12/f12d66c8ee0e6af9afde28df5716516c6bad0e65-300x195.png 300w" sizes="(max-width: 743px) 100vw, 743px" /></figure></div>
+<p>被动攻击包括：</p>
+
+
+
+<ul><li>截取（Interception），指未授权地窃听传输的信息，企图分析出消息内容或者是通信模式。</li></ul>
+
+
+
+<p><strong>1.2.2 信息安全的目标</strong><strong></strong></p>
+
+
+
+<ul><li><strong>机密性</strong>（Confidentiality）。指保证信息不泄露给非授权的用户或者实体，确保保存的信息和被传输的信息仅能被授权的各方得到。通常通过访问控制机制阻止非授权的访问，通过加密机制阻止非授权用户或者信息的内容。</li><li><strong>完整性</strong>（Integrity）。指消息未经授权不能进行篡改，要保证消息的一致性。一般通过访问控制阻止篡改行为，同时通过消息鉴别算法来检测信息是否被篡改。</li><li><strong>认证性</strong>（Authentication）。指确保一个消息的来源或者消息本身被正确地标识，同时确保该标识没有被伪造，认证分为消息鉴别和实体认证。</li><li><strong>不可否认性</strong>（Non-Repudiation）。指能保证用户无法事后否认曾经对信息进行的生成、签发、接收等行为。分源不可否认性、宿不可否认性。一般通过数字签名来提供不可否认服务。</li><li><strong>可用性</strong>（Availability）。指保障信息资源随时可提供服务的能力。即授权用户根据需要可以随时访问所需信息，保证合法用户对信息资源的使用不被非法拒绝。典型的对可用性的攻击是拒绝服务攻击。</li></ul>
+
+
+
+<p><strong>1.2.3受到攻击的方式</strong></p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="295" src="/wp-content/uploads/2021/12/image-26.png" alt="" class="wp-image-4403" srcset="/wp-content/uploads/2021/12/image-26.png 554w, /wp-content/uploads/2021/12/image-26-300x160.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="306" src="/wp-content/uploads/2021/12/image-27.png" alt="" class="wp-image-4404" srcset="/wp-content/uploads/2021/12/image-27.png 554w, /wp-content/uploads/2021/12/image-27-300x166.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p><strong>1.2.4 密码学（Cryptology）</strong><strong></strong></p>
+
+
+
+<ul><li>研究了实现信息安全各目标的相关的数学、方法和技术。</li><li>密码学不是提供信息安全的唯一方式。</li><li>主要包括：机密性、完整性、认证性、不可否认性。</li><li>大的方面可分为密码编码学和密码分析学两类<br><br></li></ul>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="351" src="/wp-content/uploads/2021/12/image-28.png" alt="" class="wp-image-4405" srcset="/wp-content/uploads/2021/12/image-28.png 554w, /wp-content/uploads/2021/12/image-28-300x190.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="518" height="370" src="/wp-content/uploads/2021/12/image-29.png" alt="" class="wp-image-4406" srcset="/wp-content/uploads/2021/12/image-29.png 518w, /wp-content/uploads/2021/12/image-29-300x214.png 300w" sizes="(max-width: 518px) 100vw, 518px" /></figure>
+
+
+
+<p><strong>1.2.5 信息网安全威胁</strong><strong></strong></p>
+
+
+
+<ul><li>安全威胁可分为故意的和偶然的（故意威胁危害性大）。</li><li>故意威胁分为主动的和被动的</li><li>被动威胁只对信息进行监听，而不进行修改</li><li>主动威胁包括对信息进行故意篡改（包含插入、删减、添加等）、伪造虚假信息等</li></ul>
+
+
+
+<p>网络环境中的安全威胁表现的3个方面</p>
+
+
+
+<ul><li><strong>无线以及有线链路上存在的安全威胁:</strong><ul><li>攻击者被动窃听链路上的未加密信息，或者收集并分析使用弱密码体制加密的信息。</li></ul><ul><li>攻击者篡改、插入、添加或删除链路上的数据。攻击者重放截获的信息已达到欺骗的目的。</li></ul><ul><li>因链路被干扰或攻击而导致移动终端和无线网络的信息不同步或者服务中断。</li></ul><ul><li>攻击者从链路上非法获取用户的隐私，包括定位、追踪合法用户的位置、记录用户使用过的服务、根据链路流量特征推测用户个人行为的隐私等</li></ul></li><li><strong>网络实体上存在的安全威胁</strong><ul><li>攻击者伪装成合法用户使用网络服务。攻击者伪装成合法网络实体欺骗用户使其接入，或者与其他网络实体进行通信，从而获取有效的用户信息，便于展开进一步攻击。</li></ul><ul><li>合法用户超越原有权限使用网络服务。</li></ul><ul><li>攻击者针对无线网络实施阻塞、干扰等攻击。</li></ul><ul><li>用户否认其使用过某种服务、资源、或完成的某种行为</li></ul></li><li><strong>移动终端上存在的安全威胁</strong><ul><li>移动终端由于丢失或被窃取而造成其中的机密信息泄漏；</li></ul><ul><li>现有移动终端操作系统缺乏完整性保护和完善的访问控制策略，容易被病毒或恶意代码所侵入，造成用户的机密信息被泄漏或篡改</li></ul></li></ul>
+
+
+
+<p><strong>1.2.6 四层的安全威胁</strong><strong></strong></p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="346" src="/wp-content/uploads/2021/12/image-30.png" alt="" class="wp-image-4407" srcset="/wp-content/uploads/2021/12/image-30.png 554w, /wp-content/uploads/2021/12/image-30-300x187.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="265" src="/wp-content/uploads/2021/12/image-31.png" alt="" class="wp-image-4408" srcset="/wp-content/uploads/2021/12/image-31.png 554w, /wp-content/uploads/2021/12/image-31-300x144.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="173" src="/wp-content/uploads/2021/12/image-32.png" alt="" class="wp-image-4409" srcset="/wp-content/uploads/2021/12/image-32.png 554w, /wp-content/uploads/2021/12/image-32-300x94.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="217" src="/wp-content/uploads/2021/12/image-33.png" alt="" class="wp-image-4410" srcset="/wp-content/uploads/2021/12/image-33.png 554w, /wp-content/uploads/2021/12/image-33-300x118.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p><strong>3.物联网的安全架构</strong><strong></strong></p>
+
+
+
+<p><strong>1.3.1物联网安全层次模型</strong><strong></strong></p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="367" src="/wp-content/uploads/2021/12/image-34.png" alt="" class="wp-image-4411" srcset="/wp-content/uploads/2021/12/image-34.png 554w, /wp-content/uploads/2021/12/image-34-300x199.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p><strong>1.3.2 感知层安全</strong><strong></strong></p>
+
+
+
+<ul><li>物联网感知层的任务是实现智能感知外界信息的功能，包括信息采集、捕获和物体识别</li><li>该层的典型设备包括：RFID、传感器、GPS……</li><li>涉及的关键技术：RFID、自组织网络、短距离无线通信、低功耗路由等。</li><li>面临的安全问题：物理破坏、传感阻塞、碰撞攻击、伪装攻击</li></ul>
+
+
+
+<p>1.传感网络安全技术<br></p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="244" src="/wp-content/uploads/2021/12/image-35.png" alt="" class="wp-image-4412" srcset="/wp-content/uploads/2021/12/image-35.png 554w, /wp-content/uploads/2021/12/image-35-300x132.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p><br>2.RFID相关安全问题</p>
+
+
+
+<ul><li>包含阅读器和标签</li><li>标签本身访问的缺陷：任何用户都可以通过合法的阅读器读取RFID标签</li><li>通信链路的安全</li><li>移动RFID的安全：主要存在假冒和非授权服务访问的问题</li></ul>
+
+
+
+<p><strong>1.3.3 网络层安全</strong><strong></strong></p>
+
+
+
+<p>物联网的接入层将采用如移动互联网、有线网、WiFi、WiMAX等各种无线接入技术</p>
+
+
+
+<p><strong>1.3.4 应用层安全</strong><strong></strong></p>
+
+
+
+<p>1)业务控制、管理和认证机制<br>解决物联网设备远程签约问题<br>2) 中间件：<br>通过中间件系统、WebServices<br>3) 隐私保护：<br>当前隐私保护方法主要有两个发展方向：一是对等计算（P2P），通过直接交换共享计算机资源和服务；二是语义Web，通过规范定义和组织信息内容，使之具有语义信息，能被计算和理解</p>
+
+
+
+<p><strong>4.物联网的安全技术分析</strong><strong></strong></p>
+
+
+
+<p><strong>1.4.1物联网面临的特殊安全问题</strong><strong></strong></p>
+
+
+
+<ul><li>感知节点的本地安全问题<ul><li>部署在无人值守环境</li></ul></li><li>感知网络的传输与信息安全问题<ul><li>能耗少</li></ul><ul><li>无统一数据标准</li></ul></li><li>核心网络的传输与信息安全问题</li><li>物联网业务的安全问题</li></ul>
+
+
+
+<p><strong>1.4.2物联网的安全技术分析</strong><strong></strong></p>
+
+
+
+<p>物联网中的加密机制<br><strong>感知层：</strong>&nbsp;密码技术、高速密码芯片、PKI公钥基础设施、信息系统平台安全<br><strong>网络层：</strong>&nbsp;攻击监控、内容分析、病毒防治、访问控制、应急反应、战略预警<br><strong>管理层：</strong>&nbsp;无线网安全、虚拟专用网安全、传输安全、路由安全、防火墙、安全域策略、安全审计<br><strong>应用层：</strong>&nbsp;可信终端、身份认证、访问控制、安全审计</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/archives/2121/feed</wfw:commentRss>
+					<wfw:commentRss>/archives/4401/feed</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>政策要闻  工信部就“关于加强工业互联网平台安全建设的建议”进行答复</title>
-		<link>/archives/836</link>
-					<comments>/archives/836#respond</comments>
+		<title>物联网发展中的安全风险及对策研究</title>
+		<link>/archives/4398</link>
+					<comments>/archives/4398#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Wed, 17 Nov 2021 03:29:00 +0000</pubDate>
+		<pubDate>Mon, 27 Dec 2021 09:31:24 +0000</pubDate>
 				<category><![CDATA[全部]]></category>
-		<category><![CDATA[国家政策]]></category>
-		<guid isPermaLink="false">/?p=836</guid>
+		<category><![CDATA[物联网安全]]></category>
+		<guid isPermaLink="false">/?p=4398</guid>
 
-					<description><![CDATA[政策要闻 &#124;&#124; 工信部就“关于加强工业互联网平台安全建设的建议”进行答复 为贯彻落实习近平总书记关于坚持和完善 [&#8230;]]]></description>
+					<description><![CDATA[物联网发展中的安全风险及对策研究 摘　要 分析了国内外物联网安全政策、技术、标准、产业等形势，重点强调了当前我 [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<h1><strong>政策要闻 || 工信部就“关于加强工业互联网平台安全建设的建议”进行答复</strong><strong></strong></h1>
+<h2><strong>物联网发展中的安全风险及对策研究</strong><strong></strong></h2>
 
 
 
-<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="378" height="212" src="/wp-content/uploads/2021/11/49b3dd17614cecc1dd2526093188f6765cf9881f.png" alt="" class="wp-image-837" srcset="/wp-content/uploads/2021/11/49b3dd17614cecc1dd2526093188f6765cf9881f.png 378w, /wp-content/uploads/2021/11/49b3dd17614cecc1dd2526093188f6765cf9881f-300x168.png 300w" sizes="(max-width: 378px) 100vw, 378px" /></figure></div>
+<p><strong>摘　要</strong></p>
 
 
 
-<p>为贯彻落实习近平总书记关于坚持和完善人民代表大会制度的重要思想、关于加强和改进人民政协工作的重要思想，工业和信息化部积极做好十三届全国人大四次会议代表建议、全国政协十三届四次会议提案的办理工作，特别是结合党史学习教育，切实为民办实事、解难题，强化组织指导，创新沟通机制，努力将代表委员提出的有价值、高质量建议转化为破解难题的政策措施，推动工业和信息化事业高质量发展。为深入宣传工业和信息化部2021年全国两会建议提案办理工作成果，工业和信息化部政务新媒体“工信微报”特开设“复文选编”栏目，陆续编发部分建议提案复文案例。</p>
+<p>分析了国内外物联网安全政策、技术、标准、产业等形势，重点强调了当前我国物联网发展中存在的安全风险，包括大连接环境下的设备风险、物联网网络本身安全风险以及物联网上承载的各类应用安全风险，提出了打造以密码为核心的物联网安全体系 , 加速新技术在物联网安全的应用，以新基建为契机建立物联网领域安全设备泛在化部署新体系，以多层次立体式理念确保物联网安全，呼吁供给侧需求侧建立安全协同新机制，共同促进物联网产业安全可持续发展。</p>
 
 
 
-<p><strong>对十三届全国人大四次会议第9992号建议的答复</strong></p>
+<p><strong>00 引言</strong></p>
 
 
 
-<p>田立坤代表：</p>
+<p><br>物联网是继计算机、互联网和移动通信之后新一轮信息技术革命，自1999年美国麻省理工学院的凯文·阿什顿教授提出物联网的概念以来，同时伴随着5G、人工智能、区块链等新兴技术的快速发展和逐步应用，以及智慧城市、工业互联网、车联网等新应用的快速落地，物联网和移动互联网进一步深度融合，正进入“跨界融合、集成创新、规模化发展”新阶段。在物联网快速发展的同时，安全问题日益凸显，安全事件不断爆发。<br>从2007年美国副总统迪克·切尼心脏病发作、疑似心脏除颤器被模拟攻击，到2014年360发现特斯拉Tesla Model S车型汽车应用存在设计漏洞、可致使攻击者远程控制车辆，以及2017年央视曝光目前智能城市的家庭摄像头存在重大隐私泄露问题等，都不同程度反应出物联网不同应用场景下的安全问题。可以说，在万物互联时代，安全正逐步成为物联网发展的核心要素和关键一环。</p>
 
 
 
-<p>您提出的关于加强工业互联网平台安全建设的建议收悉，现答复如下：</p>
+<p><strong>1 物联网及安全风险概述</strong></p>
 
 
 
-<p>当前，工业互联网快速发展，平台数量显著增长，融合应用日趋成熟。工业互联网平台作为工业互联网的中枢，向上承载应用生态，向下接入海量设备，面临的网络安全风险挑战与日俱增。我部赞同您提出的健全平台安全管理体系、提升平台安全技术防护能力、实施平台数据安全分类分级管理、加强安全检查评估等建议，将积极纳入相关工作举措。</p>
+<ol type="1"><li><strong>物联网介绍</strong><br>根据ITU的定义，物联网是：通过二维码识读设备、射频识别 (RFID) 装置、红外感应器、全球定位系统和激光扫描器等信息传感设备，按约定的协议，把任何物品与互联网相连接， 并进行信息交换和通信，实现智能化识别、定位、跟踪、监控和管理的一种网络。<br>根据行业划分维度，一般从感知层、网络层和应用层描述其结构，如图1所示。</li></ol>
 
 
 
-<p><strong>一、已开展工作</strong></p>
+<figure class="wp-block-image size-full"><img loading="lazy" width="356" height="223" src="/wp-content/uploads/2021/12/image-24.png" alt="" class="wp-image-4399" srcset="/wp-content/uploads/2021/12/image-24.png 356w, /wp-content/uploads/2021/12/image-24-300x188.png 300w" sizes="(max-width: 356px) 100vw, 356px" /></figure>
 
 
 
-<p><strong>（一）推动构建工业互联网平台安全政策体系。一是</strong>根据《国务院关于深化“互联网+先进制造业”发展工业互联网的指导意见》《加强工业互联网安全工作的指导意见》等文件要求，推动构建多部门协同推进、政府监管、企业主责的安全管理格局，明确由各地通信管理局加强工业互联网平台安全监管，并对联网设备、系统进行安全监测。<strong>二是</strong>印发《关于开展工业互联网企业网络安全分类分级管理试点工作的通知》，部署启动分类分级管理试点工作，分类施策、分级防护，进一步加强平台企业网络安全管理。<strong>三是</strong>推动《工业互联网平台企业网络安全防护规范》《工业互联网数据安全防护规范》等四项国家标准立项，加快研制工业互联网平台安全防护、安全评估、安全测试等30余项行业标准。</p>
+<ol type="1"><li>可以理解为，物联网就是“物与物相互连接的互联网”，包含两方面含义：<strong>一是物联网是在互联网的基础上进行延伸并扩展的网络；二是物联网的用户端延伸并扩展到任何物品之间，实现万物互联。</strong></li><li>因此，物联网是建立在互联网基础上的一个泛在化的网络，是发展的一个新阶段，它通过各种有线和无线的网络与互联网融合，并在各类应用场景中利用海量传感器、终端设备等 , 实现物与物、物与人的随时随地连接。</li><li>业内普遍认为，物联网有望成为未来社会经济发展、社会进步和科技创新的最重要的基础设施，极大改变人们的生产生活方式。</li><li><strong>1.2　物联网发展形势</strong></li><li>当前，各国加速从政策、技术、标准、产业发展等方面加速物联网发展。</li><li>政策层面，各国政府抢抓物联网安全发展先机，塑造在物联网领域的国际竞争优势。美国2016年、2017年相继发布《保障物联网安全战略原则》《2017物联网网络安全改进法》等战略法律，指出要重点提升物联网的安全防护能力，促进物联网安全发展；英国2015年成立物联网安全基金会，从资金投入方面支撑物联网安全发展；欧盟2016年制定新的物联网设备安全规范。</li><li>我国高度重视物联网安全发展，并将物联网纳入国家战略高度，在《“十二五”规划纲要》中，明确指出要推动物联网关键技术研发和重点领域的应用示范。2013年《国务院关于推进物联网有序健康发展的指导意见》发布，提出要基本形成安全可控、具有国际竞争力的物联网产业体系。</li><li>工信部2017年发布《工业和信息化部办公厅关于全面推进移动物联网（NB-IoT）建设发展的通知》，要求加快推动物联网的网络和信息安全保障体系建设。2009年、2016年、2018年物联网三次被写入政府工作报告，习近平总书记在2018年的中国科学院第十九次院士大会、中国工程院第十四次院士大会上提出，要加速以物联网等为代表的新一代信息技术的应用突破，对物联网发展高度关注。</li><li>技术层面，随着第五代移动通讯技术（5G）、窄带物联网（NB-IOT）等新技术为万物互联提供基础设施支撑，万物互联的泛在介入、高效传输、海量异构信息处理和设备智能控制，由此推动了信任统一化、密码防护轻量化、安全服务化等安全技术的变革。物联网软硬件、操作系统、通信协议、云平台等方面的安全技术关注力度也逐年上升，如何解决大连接下的安全问题也成为业界普遍关注的重要议题。</li><li>标准方面，我国在物联网标准制定工作方面的组织机构主要包括发展和改革委员会、国家标准化管理委员会、工业和信息化部等。在OneM2M、3GPP、ITU、IEEE等国际主要标准化组织物联网相关领域已经获得多项物联网相关标准，自主研发的物联网安全TRAIS和NEAU标准被相继纳入RFID安全和NFC安全国际标准，在物联网语义、物联网大数据、物联网网关等重要领域主导相关标准的制定工作，逐步在重要标准上确立主导优势，和其他国家共同推进了全球移动物联网基础设施和业务应用的发展。</li><li>产业发展方面，据国际数据公司预计，2019年全球物联网支出将达1.3万亿美元，较2015年6986亿美元增长近一倍；Gartner发布的数据显示，2020年全球物联网市场规模将达1.9万亿美元。</li><li>同时，我国物联网产业高速发展，根据《2018-2019中国物联网发展年度报告》显示，2018年我国物联网产业规模已超1.2万亿元， 业务收入较上年增长72.9%，目前我国已经初步形成了覆盖芯片、元器件、软件、系统、集成、服务在内的较为完整的物联网产业链。伴随我国不断加大IPV6、5G等基础设施建设，以及智慧城市的应用推广，预计未来5—10年，我国物联网产业将会引来发展的爆发期。</li><li><strong>1.3　物联网安全风险介绍</strong></li><li>经过多年发展，我国初步形成物联网政策体系，在技术研发、标准研制、产业培育和行业应用等方面具备一定基础，但也面临关键核心技术待突破、行业安全产品部署不够等突出短板。物联网具有大连接、高并发访问、多点接入、大规模数据量处理等特点，网络安全边界越来越模糊，网络安全威胁多元化、攻击手段多样化。</li><li>物联网安全问题的多样性和复杂性，对发展物联网技术和应用提出了更高要求，物联网安全的发展形势依旧严峻。万物互联使网络安全的威胁已经超越信息安全本身，直接关系到人们的财产、人身安全甚至国家基础设施和社会服务的安全。其存在安全威胁主要有以下几方面：</li><li><strong>一是物联网终端设备更容易遭受攻击和信息泄露。</strong>物联网终端类型多样、数量众多、部署场景复杂，现有物联网大多从满足可用性出发，对其软硬件平台、通信协议等普遍缺乏完善的完整性保护、机密性保护和身份的验证机制。终端作为物联网感知层面和用户广泛交互的设备，在当前的操作环境下极易遭受非法入侵和非授权者的访问。</li><li>并且作为物联网安全领域最为核心的密码设备，当前的部署规模远远跟不上物联网发展速度，已有的密码应用主要集中于轻量级密码算法、物联网安全芯片和模组等较为简单的加密处理和保护，目前仍有大量设备未按国家有关要求采用密码保护。</li><li><strong>二是物联网网络本身的安全性问题突出。</strong>除传统网络安全问题外，物联网在万物互联网环境中存在无线传感器网络、蜂窝移动通信网、因特网、各类专网等各类异构网络的互联互通的应用场景，这些网络本身都存在着各类网络安全问题。同时，物联网由于存在各类异构网络互联互通的应用场景，异构网络的安全问题也必将在物联网的网络层中进一步凸显，各类不同网络间协议的适配、通信机制的安全更具有挑战性，也更容易出现安全漏洞。</li><li><strong>三是物联网的数据安全问题日益严重。</strong>当前物联网领域设备类型多，收集的各类数据类型多。各类摄像头、视频监控等传感器数据，各类单车、汽车、公交、出租车等联网交通工具数据，智能家居和智能生活设备数据等汇聚处理难度大，多源数据的鉴别与发现、异构网络的数据融合与处理、核心设备参数配置与更新等问题处理难度大，数据在各业务平台和系统中容易被窃取利用。</li><li><strong>四是物联网上承载的各类应用安全问题。</strong>物联网面临各种各样的行业应用需求，需要对各类信息进行分类处理，在这个过程中，攻击者通过篡改、伪造用户的信息，往往以合法身份进行短信彩信信息、用户的健康状况、出行线路、家居信息及消费习惯等非法交易和动作，用户隐私安全隐患巨大。同时，目前行业应用系统的建设并没有统一技术标准和安全措施，各种网络互联成为一个大的网络平台的融合问题以及相应的安全问题日益凸显。</li></ol>
 
 
 
-<p><strong>（二）强化工业互联网平台安全防护。一是</strong>依托工业互联网创新发展工程，支持海尔、富士康等工业互联网平台企业建立安全接入、态势感知、风险预警等技术手段，建成测试验证、安全众测等多个公共服务平台，鼓励威胁诱捕、工业APP安全检测等安全技术产品加快突破。<strong>二是</strong>依托国家工业互联网安全技术监测服务平台，累计覆盖重点工业互联网平台百余个，持续监测和处置恶意网络行为。<strong>三是</strong>持续开展网络安全技术应用试点示范，围绕边缘层、基础设施层（云IaaS）、平台层（工业PaaS）、应用层（工业SaaS）以及工业APP等安全防护需求，遴选平台安全防护优秀解决方案，不断加强平台安全防护能力建设。</p>
+<p><strong>2 物联网安全对策建议</strong></p>
 
 
 
-<p><strong>（三）扎实推进行业数据安全管理工作。一是</strong>坚持法律法规制度先行，积极参与《数据安全法》等法律制定工作，夯实数据安全工作法律基础。<strong>二是</strong>印发《电信和互联网行业数据安全标准体系建设指南》等文件，研究发布行业网络数据分类分级、重要数据识别等40余项重点行业标准。<strong>三是</strong>部署开展行业网络数据安全保护能力提升专项行动，印发《电信和互联网企业网络数据安全合规性评估要点（2020年）》，明确合规评估指引。组织基础电信企业开展数据分类分级、重要数据识别、数据安全评估等标准贯标，指导重点互联网企业开展数据安全治理能力评估。</p>
+<p><strong>2.1　瞄准内生安全，打造以密码为核心的物联网安全体系</strong><br>相对于互联网和移动通信网安全而言，物联网安全研究处于起步阶段。由于物联网本身特点，使其研究难度增大。当前已有一些轻量级加密、认证算法，但是还没有提出完整的适用于物联网的整体安全方案。<br>围绕物联网的行业应用和安全需求，应加强以密码为核心的物联网整体安全框架设计，在物联网芯片、模组、设备、网络和系统等多个层次推动密码技术融合，实现从物联网感知、传输、存储到应用的全过程密码安全保障，以一体化、协同化、智能化物联网安全理念，提升物联网内生安全，明确物联网安全目标和保障对象，描述物联网安全角色与职责，提出物联网安全总体要求，确保物联网安全可持续发展。<br><strong>2.2　结合物联网业务特性，加速新技术在物联网安全的应用</strong><br><strong>一是大力推动人工智能在物联网安全的应用。</strong>物联网广泛互联、异构特性需要智能化的发现、威胁识别和处理能力。充分利用人工智能技术，提高对物联网各类终端自动感知，根据不同网络进行协议自适配、连接自动化等操作；对安全威胁自动识别、安全隐患自适应分析和处理。<br><strong>二是大力推动大数据技术在物联网安全中的应用。</strong>物联网海量部署，必然带来海量数据计算和高速处理需求。要积极运用大数据技术开展数据分析、数据融合、数据呈现、数据预测等工作，构建基于大数据的安全防护体系。<br><strong>三是加大区块链技术在物联网安全中的应用。</strong>区块链本身去中心化、分布式、抗抵赖的特性，与物联网海量节点具有天然的契合点， 能有效解决物联网中各类伪节点的安全隐患， 降低单元内计算处理数据量，减少各类安全冲突，有力确保物联网各类节点安全。<br><strong>2.3　以新基建为契机，建立物联网领域安全设备泛在化部署新体系</strong><br>国家启动新基建战略部署，要求利用新一代信息技术赋能国家重要领域基础设施。5G和物联网作为新基建的重要内容，将迎来大规模部署新阶段。在物联网终端数量海量化、设备类型多样化、网络异构化、应用部署多样化等场景下，急需建立安全设备泛在化部署新体系。加强具有自适应性、云网端协同的物联网安全机制研究，加快在物联网架构安全、异构网络安全、认证与信任、隐私保护等方面突破，在物联网应用方面重点打造专用安全（加密）芯片、安全LoRa 模块 /NB-IoT模块、安全物联网网关、安全业务平台等产品。<br>加大安全设备在物联网各领域的泛在化应用和规模化部署，协调推动处理好安全和业务发展的内在关系，在网络和系统等多个层次推动安全技术融合，在物联网设计、开发、应用、维护等多个环节同步考虑安全要素，大力推动物联网标识、智能装备安全网关、司法电子取证等产品和设备在物联网相关垂直行业的应用，实现安全设备在物联网的泛在化部署。<br><strong>2.4　加强全方位安全防护，以多层次立体式理念确保物联网安全</strong><br><strong>一是在感知层加强感知节点物理防护和感知节点设备安全。</strong>加强对感知节点和终端进行有效的物理安全防护，要采取节点身份认证、数据加密、节点监控等安全防护手段，对标签身份进行统一管理，有效平衡安全性和认证效率，有效保护RFID安全性和隐私。<br><strong>二是在网络层加强节点和汇聚节点之间以及节点和网络之间的安全认证，特别是要使用标准算法、轻量级密码算法在物联网的终端设备和后台系统端点或传输过程中进行加密；提高入侵检测的手段，增强物联网端点智能安全能力。</strong>加强反病毒、反蠕虫软件在规模异构数据场景的适配和适应性改造。重点建立完善异构网络统一、兼容、一致的跨网认证机制和网络安全协议。加强数据传输过程的机密性、完整性、可用性的保护。<br><strong>三是在应用层重点开展数据智能化处理基础上，加强数据库访问控制策略方面的安全。</strong>加强数据溯源能力和网络取证能力，完善网络犯罪取证机制。以无感方式，在不影响物联网业务情况下，以安全服务化方式开展各项安全防护工作，有效开展物联网环境下的安全运维服务。<br>此外，根据物联网具体业务及应用相关数据、对国家、社会和个人影响程度，建立分级分类保护制度。针对不同业务和应用需求，结合等保2.0，制定不同等级、不同场景下的安全防护措施，有效利用现有资源，开展有针对性的安全防护。<br><strong>2.5　强化供应链安全，建立供给侧需求侧安全协同新机制</strong><br><strong>一是加强物联网的供应链安全。</strong>物联网由于覆盖面广，其产业链涉及的行业类型多、产品更将是丰富多样，厂商不计其数。但也应该看到，部分核心技术仍为一些国际寡头所掌控，我国应及早培育相关企业，打造安全可靠产品，掌握基于云化的安全管理策略和技术手段，采用集中和分布式相结合的方式，构建安全可靠、可控、可管、可追溯的供应链管理体系。同时开展供应链安全审查技术的研究，加强核心关键产品的安全审查力度，培育供应链安全相关人才，从多方面保障供应链的安全。<br><strong>二是构建物联网安全协同新机制。</strong>物联网产业发展和产品推广离不开行业，要进一步加强物联网在智能家居、工业互联网、车联网等行业的推广力度，进一步联动上游生产资料企业、中游设备生产制造商、下游个体和行业用户，建立覆盖行业生态链和全生命周期的安全协同新机制。<br>同时，要加强安全技术与物联网在智能家居、智慧交通等垂直行业的有效衔接和融合，积极打造物联网安全产业生态，联合传感器元器件制造商、设备生产集成商、网络安全服务提供商、销售商等产业链各方力量，共同构建开放合作的物联网安全产业生态圈；积极建立网络安全企业和物联网企业、网络安全企业与物联网垂直行业企业的互动体验机制， 在不断的应用实践中发现问题、解决问题，构建供给侧、需求侧的人、机、物安全协同新机制， 共同促进物联网安全发展。</p>
 
 
 
-<p><strong>（四）加快建设工业互联网安全技术防护体系。一是</strong>基本建成国家、省、企业三级协同工业互联网安全技术监测服务体系，国家平台已覆盖汽车、电子、钢铁等14个重要行业领域，涉及工业企业10万余家。<strong>二是</strong>组织开展工业互联网安全检查，开发检测工具箱和验证平台，及时发现、通报和整改安全风险隐患近2000个。<strong>三是</strong>依托工业互联网企业网络安全分类分级管理试点，面向平台企业开展检测评估，指导平台企业有效落实网络安全防护措施。</p>
+<p><strong>3 结　语</strong></p>
 
 
 
-<p><strong>二、下一步工作考虑</strong></p>
+<p><br>物联网高速发展，呈现出前所未有的发展活力，物联网正成为新一代信息技术革命的典型代表。而当前物联网安全的研究尚处于初步阶段，海量节点汇聚、规模化数据处理、多场景应用的安全研究需后续更多实践和分析，也需要高校院所、行业主管、政府部门、企业和行业应用者等共同推动，参与物联网安全的研究，共筑物联网发展的安全防线，护航我国物联网产业，占据在全球的发展优势。</p>
 
 
 
-<p>做好平台安全保障对提升工业互联网高质量发展水平具有重要意义。下一步，我部将围绕健全平台安全管理体系、提升平台安全防护能力、强化平台数据安全保护等方面着力做好以下有关工作：</p>
-
-
-
-<p><strong>（一）健全完善工业互联网平台安全管理体系。一是</strong>推动出台工业互联网企业网络安全分类分级管理指南，深入实施平台企业网络安全分类分级管理，强化重点平台企业网络安全管理。<strong>二是</strong>推动印发《工业互联网综合标准化体系建设指南》（2021版），加快工业互联网平台安全分类分级管理等系列国家标准研制发布，指导企业落实网络安全主体责任。</p>
-
-
-
-<p><strong>（二）持续提升工业互联网平台安全防护水平。一是</strong>鼓励重点平台企业建设企业级安全态势感知能力，将重点平台纳入安全监测体系，加强平台安全监测预警、应急处置。<strong>二是</strong>出台中小企业安全上云上平台政策措施，实施中小企业安全上云专项行动，为中小企业上云全流程提供安全指引。<strong>三是</strong>依托工程项目、试点示范等，进一步加大平台安全关键技术攻关和优秀项目遴选，促进网络安全技术创新应用，提升平台安全保障和服务能力。</p>
-
-
-
-<p><strong>（三）切实开展工业互联网数据安全保护。一是</strong>落实《数据安全法》，研究制定工业互联网数据安全管理政策文件，建立健全数据分类分级保护、重要数据保护等基础制度。<strong>二是</strong>加快制定工业互联网等重点领域数据安全标准规范，组织开展标准验证和试点示范，指导企业做好数据安全保护工作。<strong>三是</strong>大力发展数据安全技术和产业，鼓励相关企业、研究机构积极参与数据可信采集、数据安全态势感知、数据溯源等数据安全关键技术研发创新和应用推广。<strong>四是</strong>组织研究数据安全保护认证体系，制定行业数据安全保护能力评估规范，建立产学研共同参与的评估认证机制，开展认证工作。</p>
-
-
-
-<p><strong>（四）系统强化工业互联网安全保障能力。一是</strong>完善安全技术监测服务体系，扩大监测范围，丰富平台功能，提升监测质量，提高支撑政府决策、保障企业安全的能力。<strong>二是</strong>充分发挥行业威胁信息共享平台作用，推动建立跨地区、跨行业通报处置和应急联动机制，增强工业互联网重大安全风险、重大安全事件应对能力。<strong>三是</strong>健全安全检查检测机制，定期对重点平台、工业企业、工业APP开展检测评估，推动安全检测评估工作规范化、常态化、体系化。</p>
-
-
-
-<p>感谢您对工业互联网安全工作的关心和支持。</p>
-
-
-
-<p>工业和信息化部</p>
-
-
-
-<p>2021年9月14日</p>
+<p><strong>引用本文：</strong>黄云霞,董哲一,孟凡欣.物联网发展中的安全风险及对策研究[J].信息安全与通信保密,2020(05):78-84.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/archives/836/feed</wfw:commentRss>
+					<wfw:commentRss>/archives/4398/feed</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>政策要闻  网盘不再限速！8家企业共同承诺</title>
-		<link>/archives/832</link>
-					<comments>/archives/832#respond</comments>
+		<title>工信部：到2022年，初步建立物联网基础安全标准体系</title>
+		<link>/archives/4386</link>
+					<comments>/archives/4386#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Wed, 17 Nov 2021 03:26:00 +0000</pubDate>
+		<pubDate>Mon, 27 Dec 2021 09:30:28 +0000</pubDate>
 				<category><![CDATA[全部]]></category>
-		<category><![CDATA[国家政策]]></category>
-		<guid isPermaLink="false">/?p=832</guid>
+		<category><![CDATA[物联网安全]]></category>
+		<guid isPermaLink="false">/?p=4386</guid>
 
-					<description><![CDATA[网盘不再限速！8家企业共同承诺！ 11月17日，在工业和信息化部信息通信发展司指导下，中国互联网协会、中国信息 [&#8230;]]]></description>
+					<description><![CDATA[工信部：到2022年，初步建立物联网基础安全标准体系 10月25日，工信部发布《物联网基础安全标准体系建设指南 [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<h1><strong>网盘不再限速！8家企业共同承诺！</strong><strong></strong></h1>
+<h2><strong>工信部：到2022年，初步建立物联网基础安全标准体系</strong><strong></strong></h2>
 
 
 
-<p>11月17日，在工业和信息化部信息通信发展司指导下，中国互联网协会、中国信息通信研究院组织百度网盘、腾讯微云、天翼云盘、和彩云、阿里云盘、迅雷云盘、360安全云盘和网易网盘等<strong>首批8家网盘企业在京共同签署《个人网盘服务业务用户体验保障自律公约》（以下简称《公约》），承诺2021年内将推出“无差别速率”产品，为各类用户提供无差别的上传/下载速率服务。</strong><strong></strong></p>
+<figure class="wp-block-image size-full"><img loading="lazy" width="553" height="310" src="/wp-content/uploads/2021/12/image-14.png" alt="" class="wp-image-4387" srcset="/wp-content/uploads/2021/12/image-14.png 553w, /wp-content/uploads/2021/12/image-14-300x168.png 300w" sizes="(max-width: 553px) 100vw, 553px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="823" height="485" src="/wp-content/uploads/2021/11/bf43eb8e9d9b8f0ac135cd3e28e64e5f675b415d.png" alt="" class="wp-image-834" srcset="/wp-content/uploads/2021/11/bf43eb8e9d9b8f0ac135cd3e28e64e5f675b415d.png 823w, /wp-content/uploads/2021/11/bf43eb8e9d9b8f0ac135cd3e28e64e5f675b415d-300x177.png 300w, /wp-content/uploads/2021/11/bf43eb8e9d9b8f0ac135cd3e28e64e5f675b415d-768x453.png 768w" sizes="(max-width: 823px) 100vw, 823px" /></figure>
+<p>10月25日，工信部发布《物联网基础安全标准体系建设指南（2021版）》（以下简称《指南》）。</p>
 
 
 
-<p>11月17日，首批8家网盘企业在京签署《个人网盘服务业务用户体验保障自律公约》。图片来源：工业和信息化部官方微信“工信微报”</p>
+<p>《指南》提出，到2022年，初步建立物联网基础安全标准体系，研制重点行业标准10项以上，明确物联网终端、网关、平台等关键基础环节安全要求，促进物联网基础安全能力提升。</p>
 
 
 
-<p>当前，全球数字经济蓬勃发展，以互联网、大数据、云计算为代表的网络信息技术加速创新，个人网盘业务正逐渐成为数字经济时代广大网民的主要应用之一，发展前景广阔。在市场快速发展的同时，一些个人网盘业务过度限速、误导宣传等问题群众反映突出，引起社会各界广泛关注，成为网络提速降费的短板环节。</p>
+<p>《指南》要求，跟踪物联网新技术、新应用的发展趋势，主动适应物联网安全发展水平的不断提升，加强标准体系的动态更新和完善，有效满足产业安全发展需求。</p>
 
 
 
-<p>日前，工业和信息化部印发《关于开展信息通信服务感知提升行动的通知》，其中提到网盘相关企业应优化产品服务资费介绍，清晰明示存储空间、传输速率、功能权益及资费水平等内容，不得进行误导宣传。在同一网络条件下，向免费用户提供的上传和下载的最低速率应确保满足基本的下载需求。</p>
+<p>《指南》称，鼓励行业协会、标准化技术组织等面向生产者、用户、第三方检测认证机构等，开展重点标准的宣传和培训，引导企业对标达标，推动标准落地实施。四是开展交流合作。支持中外企业、协会、标准化机构等开展物联网基础安全标准的国际交流合作，积极参与物联网安全国际标准制定，为提升全球物联网安全水平贡献中国技术方案。</p>
 
 
 
-<p>据介绍，《公约》从提供无差别上传/下载速率服务、加强技术产品和商业模式创新、优化资费介绍、规范宣传行为、畅通咨询投诉渠道等方面作出明确约定。会上，8家网盘企业发布了落实《公约》的具体举措，承诺2021年内将推出“无差别速率”产品，为各类用户提供无差别的上传/下载速率服务，改善用户体验，提升服务水平，积极为个人网盘服务业务的健康有序发展作出努力和贡献。</p>
+<hr class="wp-block-separator"/>
 
 
 
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/ZlpJR1VnOUk4OVFOQVpSVTBHZHlxU3luL1ByeE1NbUdONmIraTA5NlVCMG8xUUY3R2UvalpHL29SVnpuV2V4enRSSHQwWnF6UkhYQ3ZyU1RaSy9lNGhCTm14SVkyNzVZOVQ1eWVPb2xkay9mZGN0QmlBUVNpbzBPNjJKR3pJRklTbzZ0bXBkY3NEQzJBUXdUN3BPbGxPOUNuWFdpY0VCVnlERG0rbUpzVnJaZ0I4dHhmWVRhTkI0NEE5VDMxUUZ2dFluZjNWUDA1WGdoWnJFYmNmTT0=/attach/object/9a998624af7a96580a00f62456e8333fb4397cc6" alt=""/></figure>
+<p><strong>物联网基础安全标准体系建设指南</strong></p>
 
 
 
-<p>工业和信息化部表示，《公约》的签署，不仅是网盘企业回应用户关切、履行社会责任、强化自我约束的集中体现，也是打通网速瓶颈，巩固网络提速降费成果的具体行动，对于鼓励各市场主体突破现有相对单一的发展模式，加强技术、产品和商业模式创新，增强核心竞争力和产业价值具有重要作用。</p>
+<p><strong>（2021版）</strong></p>
 
 
 
-<p>工业和信息化部指出，下一步还将指导相关主体，一是提高认识，切实保障用户权益。聚焦广大人民群众的所急所想所盼，统筹满足用户基本业务使用需求和企业可持续发展，不断提升人民群众使用信息服务的获得感、幸福感和安全感。二是严格自律，抓实抓细贯彻落实。建立长效工作机制，完善投诉监督渠道，及时向社会公布工作进展，确保落实好、执行好、宣传好公约的各项条款要求。三是强化创新，促进行业健康发展。积极转变发展方式，把技术创新放在更加突出的位置，充分利用和弹性调度网络资源，降本增效，增加行业发展动能。</p>
+<p><strong>一、总体要求</strong></p>
+
+
+
+<p>以习近平新时代中国特色社会主义思想为指导，深入贯彻落实习近平总书记关于网络强国的重要思想，坚持总体国家安全观，以筑牢物联网基础安全、防范公共网络安全风险为目标，着力构建物联网基础安全标准体系，加强标准统筹规划，扎实推进标准研制，促进标准落地实施，支撑和保障物联网产业安全有序发展。</p>
+
+
+
+<p>（一）基本原则</p>
+
+
+
+<p>需求牵引，加强统筹。紧密贴合物联网产业发展现状和趋势，着力构建科学合理、先进适用、开放融合的基础安全标准体系，强化标准工作统筹协调，指导标准制定有序开展。聚焦重点，急用先行。围绕物联网基础设施和重点行业应用，加快推进基础通用、关键技术、试验方法等重点和急需标准制定，及时满足物联网产业的安全需求。广泛参与，强化实施。凝聚设备厂商、电信企业、安全企业、互联网企业、科研单位、高校等产学研用各方力量，鼓励头部企业发挥示范带头作用，推动标准有效实施。</p>
+
+
+
+<p>（二）建设目标</p>
+
+
+
+<p>到2022年，初步建立物联网基础安全标准体系，研制重点行业标准10项以上，明确物联网终端、网关、平台等关键基础环节安全要求，满足物联网基础安全保障需要，促进物联网基础安全能力提升。</p>
+
+
+
+<p>到2025年，推动形成较为完善的物联网基础安全标准体系，研制行业标准30项以上，提升标准在细分行业及领域的覆盖程度，提高跨行业物联网应用安全水平，保障消费者安全使用。</p>
+
+
+
+<p><strong>二、建设内容</strong></p>
+
+
+
+<p>（一）标准体系框架</p>
+
+
+
+<p>物联网基础安全标准主要是指物联网终端、网关、平台等关键基础环节的安全标准。物联网基础安全标准体系包括总体安全、终端安全、网关安全、平台安全、安全管理等5大类标准（见图1）。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="553" height="341" src="/wp-content/uploads/2021/12/image-15.png" alt="" class="wp-image-4388" srcset="/wp-content/uploads/2021/12/image-15.png 553w, /wp-content/uploads/2021/12/image-15-300x185.png 300w" sizes="(max-width: 553px) 100vw, 553px" /></figure>
+
+
+
+<p>（二）重点领域</p>
+
+
+
+<p>1.总体安全</p>
+
+
+
+<p>总体安全是物联网基础安全的基础性、指导性和通用性3标准，主要包括物联网基础安全术语定义、架构模型、安全场景、安全集成、安全分级、安全协议等（见图2）。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="553" height="402" src="/wp-content/uploads/2021/12/image-16.png" alt="" class="wp-image-4389" srcset="/wp-content/uploads/2021/12/image-16.png 553w, /wp-content/uploads/2021/12/image-16-300x218.png 300w" sizes="(max-width: 553px) 100vw, 553px" /></figure>
+
+
+
+<p>（1）物联网基础安全术语定义：规范物联网基础安全的概念，统一相关术语的理解和使用。</p>
+
+
+
+<p>（2）物联网基础安全架构模型：主要提出物联网基础安全体系框架以及各部分参考模型，明确和界定云、管、端各层面功能、关系、角色、边界、责任等内容。</p>
+
+
+
+<p>（3）物联网基础安全场景：主要对不同类型场景中的安全需求进行示例和规范。</p>
+
+
+
+<p>（4）物联网基础安全集成：在物联网系统规划、集成、实施等过程中，通过建立安全模型等方式，保障基础设施系统各层级对象安全性和可靠性。</p>
+
+
+
+<p>（5）物联网基础安全分级：明确物联网基础安全分级的基本原则、维度、方法、示例等要求，为实施分级安全管理提供基础支撑。</p>
+
+
+
+<p>（6）物联网基础安全协议：主要是物联网平台、网关、终端本身及设备之间的基础安全协议，包括有线协议安全、无线协议安全、存储协议安全等。</p>
+
+
+
+<p>2.终端安全</p>
+
+
+
+<p>终端安全是物联网基础安全体系中感知层面的标准，主要包括终端通用安全、模组安全、通信芯片安全、卡安全、行业终端安全、终端测试评估等（见图3）。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="553" height="365" src="/wp-content/uploads/2021/12/image-17.png" alt="" class="wp-image-4390" srcset="/wp-content/uploads/2021/12/image-17.png 553w, /wp-content/uploads/2021/12/image-17-300x198.png 300w" sizes="(max-width: 553px) 100vw, 553px" /></figure>
+
+
+
+<p>（1）终端通用安全：主要包括物联网终端硬件安全、操作系统安全、软件安全、接入认证、数据安全、协议安全、隐私保护、证书规范、固件安全、插件/组件安全等。</p>
+
+
+
+<p>（2）模组安全：规范通信模组在接入认证、数据交互、数据传输、抗电磁干扰等方面的安全要求，包括蜂窝通信模组和其他类型通信模组等。</p>
+
+
+
+<p>（3）通信芯片安全：主要包括通信加密算法、密钥管理、加解密能力、签名验签、数据存储、芯片安全基线要求等。</p>
+
+
+
+<p>（4）卡安全：分为管理要求和技术要求。其中，管理要求主要是规范物联网卡销售、登记、使用管理等；技术要求主要包括卡身份认证、分级分类、技术手段建设等。</p>
+
+
+
+<p>（5）行业终端安全：主要是指与各垂直行业密切相关的、具有特定功能的物联网终端安全要求，如智能门锁、监控设备等特定行业终端的特有安全要求。</p>
+
+
+
+<p>（6）终端测试评估：主要包括物联网卡安全测试、硬件安全测试、操作系统安全测试、软件安全测试、接入认证安全测试、数据安全测试、通信协议安全测试、固件安全测试等。</p>
+
+
+
+<p>3.网关安全</p>
+
+
+
+<p>网关安全主要包括物联网网关通用安全、网关通信与接口安全、网关物理环境安全、网关组件安全、网关测试评估等（见图4）。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="553" height="454" src="/wp-content/uploads/2021/12/image-18.png" alt="" class="wp-image-4391" srcset="/wp-content/uploads/2021/12/image-18.png 553w, /wp-content/uploads/2021/12/image-18-300x246.png 300w" sizes="(max-width: 553px) 100vw, 553px" /></figure>
+
+
+
+<p>（1）网关通用安全：规范物联网网关相关的功能架构、安全协议、安全防护，以及数据传输、处理和存储等方面的安全技术要求，主要包括网关安全模型、安全架构、安全功能、安全性能、数据安全、边缘计算安全、安全协议等。</p>
+
+
+
+<p>（2）网关通信与接口安全：规范网关与其他设备互联时通信接口和管理接口的安全通信协议、黑白名单、鉴权认证等方面技术要求，主要包括网关南向和北向接口安全规程、安全协议流程、端口防护等。</p>
+
+
+
+<p>（3）网关物理环境安全：规范网关贮存、运输和使用环境条件下电磁辐射、防电磁干扰、抗硬力破坏、温湿盐雾环境适应能力等方面技术要求，主要包括网关设备电磁兼容、机械环境适应性、气候环境适应性等。</p>
+
+
+
+<p>（4）网关组件安全：规范网关功能服务、数据采集、7数据传输处理等软硬件组件的安全设计、安全功能等方面技术要求，主要包括网关设备组件安全架构、开源组件安全、应用启动安全等。</p>
+
+
+
+<p>（5）网关测试评估：规范网关安全评估测试方法，主要包括设备安全测试、组件安全测试、接口安全测试、安全管理维护测试、数据传输处理安全测试、环境适应性测试、分级分类评估测试等。</p>
+
+
+
+<p>4.平台安全</p>
+
+
+
+<p>物联网平台包括设备管理平台、连接管理平台、应用使能平台、业务分析平台、态势感知及风险处置平台等。物联网平台安全标准主要包括平台通用安全、平台安全防护、平台交互安全、平台安全监测、平台测试评估等（见图5）。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="553" height="413" src="/wp-content/uploads/2021/12/image-22.png" alt="" class="wp-image-4395" srcset="/wp-content/uploads/2021/12/image-22.png 553w, /wp-content/uploads/2021/12/image-22-300x224.png 300w" sizes="(max-width: 553px) 100vw, 553px" /></figure>
+
+
+
+<p>（1）平台通用安全：规范各类物联网平台通用数据安全、通信安全、身份鉴别、安全监测、物理安全、安全可信等方面要求，主要包括通用安全框架、平台可信计算等。</p>
+
+
+
+<p>（2）平台安全防护：规范物联网平台以及基于物联网平台开发的行业业务系统和对外应用组件的访问控制、防代码逆向、安全审计、篡改和注入防范等安全防护要求，主要包括平台业务基础安全、平台安全防护要求等。</p>
+
+
+
+<p>（3）平台交互安全：规范物联网平台之间、平台与上层业务系统或管理系统、平台与下层接入设备之间的数据交互、加密传输、交互接口配置和审计等方面的安全要求，主要包括不同物联网平台之间交互、平台与南向和北向之间交互等。</p>
+
+
+
+<p>（4）平台安全监测：规范物联网平台的安全监测、态势汇总等功能建设，主要包括物联网网络安全监测预警平台、物联网网络安全态势感知平台等。</p>
+
+
+
+<p>（5）平台测试评估：规范物联网平台的通用安全、平台安全防护、平台内部和平台之间交互安全、平台安全管理等方面的测试评估方法，主要包括物联网平台能力评估、安全防护测试、交互安全测试和安全管理评估等。</p>
+
+
+
+<p>5.安全管理</p>
+
+
+
+<p>安全管理标准用于指导行业落实通用安全管理要求，主要包括数据安全管理、安全信息协同、管理与维护安全、安全认证等（见图6）。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="553" height="432" src="/wp-content/uploads/2021/12/image-23.png" alt="" class="wp-image-4396" srcset="/wp-content/uploads/2021/12/image-23.png 553w, /wp-content/uploads/2021/12/image-23-300x234.png 300w" sizes="(max-width: 553px) 100vw, 553px" /></figure>
+
+
+
+<p>（1）数据安全管理：面向物联网业务应用产生的各类数据，保障数据在各环节的安全可控和使用，主要包括在采集、传输、存储、处理、共享、销毁等关键环节的数据安全基础管理和技术保障等。</p>
+
+
+
+<p>（2）安全信息协同：针对物联网协议类型众多，明确物联网基础安全相关数据互联互通标准，实现跨协议安全互联互通，主要包括接口规范、测试方法等。</p>
+
+
+
+<p>（3）管理与维护安全：规范不同物联网场景下终端、网关、平台的运维管理等方面安全要求，主要包括制度建设、安全组织、人员管理、运行安全、资产管理、配置管理、远程维护安全、脆弱性检测、应急响应与管理、灾备恢复等。</p>
+
+
+
+<p>（4）安全认证：规范不同类型的物联网终端、网关、平台的认证管理，用于不同类型设备的安全认证互通互认，主要包括证书生成、证书管理、证书更换等。</p>
+
+
+
+<p><strong>三、组织实施</strong></p>
+
+
+
+<p>一是加快标准研制。按照《标准体系》明确的目标和任务，加强产学研用等各方的工作协同，注重物联网基础安全标准与行业发展实际相结合，成体系推进标准研制。</p>
+
+
+
+<p>二是实施动态更新。跟踪物联网新技术、新应用的发展趋势，主动适应物联网安全发展水平的不断提升，加强标准体系的动态更新和完善，有效满足产业安全发展需求。</p>
+
+
+
+<p>三是深化标准应用。鼓励行业协会、标准化技术组织等面向生产者、用户、第三方检测认证机构等，开展重点标准的宣传和培训，引导企业对标达标，推动标准落地实施。四是开展交流合作。支持中外企业、协会、标准化机构等开展物联网基础安全标准的国际交流合作，积极参与物联网安全国际标准制定，为提升全球物联网安全水平贡献中国技术方案。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/archives/832/feed</wfw:commentRss>
+					<wfw:commentRss>/archives/4386/feed</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>热点信息  大观点  建设安全、稳定、繁荣的网络空间 推动构建网络空间命运共同体</title>
-		<link>/archives/2113</link>
-					<comments>/archives/2113#respond</comments>
+		<title>为什么物联网安全如此重要？</title>
+		<link>/archives/4383</link>
+					<comments>/archives/4383#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Mon, 15 Nov 2021 11:22:00 +0000</pubDate>
+		<pubDate>Mon, 27 Dec 2021 09:28:32 +0000</pubDate>
 				<category><![CDATA[全部]]></category>
-		<category><![CDATA[推荐]]></category>
-		<guid isPermaLink="false">/?p=2113</guid>
+		<category><![CDATA[物联网安全]]></category>
+		<guid isPermaLink="false">/?p=4383</guid>
 
-					<description><![CDATA[热点信息 &#124;&#124; 大观点 &#124; 建设安全、稳定、繁荣的网络空间 推动构建网络空间命运共同体 网络空间是人类共同的活 [&#8230;]]]></description>
+					<description><![CDATA[为什么物联网安全如此重要？ 针对物联网设备的恶意软件日益增加，网络犯罪分子在攻击中更频繁地利用僵尸网络。特别是 [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<h1><strong>热点信息 || 大观点 | 建设安全、稳定、繁荣的网络空间 推动构建网络空间命运共同体</strong><strong></strong></h1>
+<h2><strong>为什么物联网安全如此重要？</strong></h2>
 
 
 
-<p>网络空间是人类共同的活动空间。习近平总书记指出：“各国应该共同构建网络空间命运共同体，推动网络空间互联互通、共享共治，为开创人类发展更加美好的未来助力。”一个安全、稳定、繁荣的网络空间，对一国乃至世界和平与发展越来越具有重大意义。“十四五”规划和2035年远景目标纲要提出：“推动构建网络空间命运共同体。”积极推动构建网络空间命运共同体，不仅是实现全球互联网健康、安全、可持续发展的必然选择，也是营造开放、健康、安全数字生态的题中应有之义。推动建立全球互联网治理体系。蓬勃发展的互联网给人类创造了数字化、网络化、智能化的增长动能和发展机遇，但互联网领域发展不平衡、规则不健全、秩序不合理等问题日益凸显，推动建立多边、民主、透明的全球互联网治理体系日益成为国际社会的广泛共识。习近平总书记指出：“国际网络空间治理应该坚持多边参与、多方参与，发挥政府、国际组织、互联网企业、技术社群、民间机构、公民个人等各种主体作用。”推动建立全球互联网治理体系，需明晰主体角色、制定统一规则、形成相应机制。要以联合国为主渠道、以联合国宪章为基本原则，制定数字和网络空间国际规则，使全球互联网治理体系更加公正合理，更加平衡地反映大多数国家意愿和利益，确保全球互联网治理在联合国框架范围内进行。坚持相互信任尊重和国家不分大小、强弱、贫富一律平等的原则，维护网络主权和网络空间平等的发展权、参与权、治理权，完善网络空间对话协商机制，推动形成多边、民主、透明的全球互联网治理体系。发挥好其他国际组织、互联网企业、技术社群、民间机构、公民个人等在全球互联网治理中的作用。共享数字时代红利。当前，互联网、大数据、人工智能等信息技术推动数字产业化和产业数字化，世界经济加速向数字化转型。数字经济发展为共享数字时代红利提供了可能，但全球数字鸿沟也因数字经济发展不平衡而不断拉大。习近平总书记强调：“让更多国家和人民搭乘信息时代的快车、共享互联网发展成果。”共享数字时代红利，既需补齐短板，消弭数字鸿沟；又需强化规制，做大数字经济蛋糕。要加强顶层设计，采取更加积极、包容、协调、普惠的政策，加快全球网络基础设施建设，多措并举、多管齐下向发展中国家提供技术、设备、服务等数字援助，全面提高全球互联网的渗透率和普及率，不断提升不同群体获取、处理、创造数字资源的数字能力。打造开放、公平、公正、非歧视的数字市场和发展环境，建立多边、透明、包容的数字领域国际贸易规则，制定完善数据安全、数字货币、数字税等国际规则和数字技术标准，让各国共乘数字经济发展的快车，为共享数字时代红利奠定坚实的物质基础。携手应对网络安全问题。习近平总书记指出：“网络安全是全球性挑战，没有哪个国家能够置身事外、独善其身，维护网络安全是国际社会的共同责任。”携手应对网络安全问题，需要充分发挥联合国的主渠道作用和其他各类行为主体的积极作用，推动制定各方普遍接受的网络空间国际规则，制定网络空间国际反恐公约，健全打击网络犯罪司法协助机制；需要各国坚持相互尊重、互信共治的基本原则，践行开放合作的网络安全理念，坚持安全与发展并重，深化预警防范、信息共享、应急响应等交流合作，共同遏制网络信息技术滥用，共同反对网络监听、网络攻击、网络空间军备竞赛，共同维护网络空间和平安全。同时，发挥好互联网在推动世界优秀文化交流互鉴中的独特优势，使互联网成为增强各国人民心灵沟通、推动世界网络文化繁荣发展的重要平台和精神家园，为共治全球网络安全问题、构建网络空间命运共同体提供丰厚文化滋养。</p>
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="377" src="/wp-content/uploads/2021/12/image-13.png" alt="" class="wp-image-4384" srcset="/wp-content/uploads/2021/12/image-13.png 554w, /wp-content/uploads/2021/12/image-13-300x204.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
 
 
 
-<p>（来源：人民日报）</p>
+<p>针对物联网设备的恶意软件日益增加，网络犯罪分子在攻击中更频繁地利用僵尸网络。特别是在疫情期间，远程工作促使网络犯罪大幅增加，各种网络更加容易受到攻击。</p>
 
 
 
-<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="554" height="295" src="/wp-content/uploads/2021/12/1d492e94d415742183703efb4916b596fe967caa.png" alt="" class="wp-image-2114" srcset="/wp-content/uploads/2021/12/1d492e94d415742183703efb4916b596fe967caa.png 554w, /wp-content/uploads/2021/12/1d492e94d415742183703efb4916b596fe967caa-300x160.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure></div>
+<p><strong>日益增长的物联网恶意软件</strong></p>
+
+
+
+<p><strong>和勒索软件威胁</strong></p>
+
+
+
+<p>大多数新的 IoT 攻击都是由两个著名的 IoT 僵尸网络驱动的：Mozi 和 Mirai。Mirai 是一个较老的僵尸网络，最早出现在 2016 年，而 Mozi 部署于 2019 年。Mozi 很可能基于 Mirai，因为这两个僵尸网络有明显的代码重叠。</p>
+
+
+
+<p>据 IBM 安全研究，它们占到“所有物联网 (IoT) 设备流入和流出的观察到的流量的 90%”。僵尸网络通过使用已经感染的设备来瞄准和感染他人，利用漏洞试图用代码感染他们，使他们成为僵尸网络的一部分。</p>
+
+
+
+<p>一旦僵尸网络足够大，网络背后的黑客就可以利用它们发起 DDoS 攻击。由于它们分布在受感染智能设备的庞大网络中，因此主机几乎不可能响应它们。</p>
+
+
+
+<p>除了僵尸网络恶意软件，物联网终端用户和制造商还必须应对日益频繁的勒索软件和泄漏软件攻击。勒索软件攻击将设备或文件扣为人质，以换取受害者的付款。泄漏软件与此类似，但如果受害者不付款，黑客反而威胁要泄漏或发布机密文件。</p>
+
+
+
+<p><strong>具体情况</strong></p>
+
+
+
+<p>Mozi 和 Moirai 僵尸网络通常通过使用命令注入 (CMDi) 攻击来感染新设备。这是一种针对物联网设备的常见策略，因为它允许黑客利用常见的物联网安全漏洞和错误配置。</p>
+
+
+
+<p>三个主要因素会使设备更容易受到 CMDi 攻击。物联网系统通常包含固件开发遗留下来的 Web 和调试界面。黑客可以利用它们来访问设备。内置于物联网 Web 界面的 PHP 模块也可以为黑客提供访问权限。</p>
+
+
+
+<p>在线物联网接口也可以使设备更容易受到攻击。管理员通常无法通过不清理远程输入来强化这些接口。如果没有清理，网络攻击者可以输入 shell 命令，让他们可以做任何他们想做的事情——包括使用诸如“curl”或“wget”之类的 shell 命令来检索恶意网站。</p>
+
+
+
+<p>最终用户应在购买前仔细研究 IoT 设备及其开发人员。具有良好安全记录的开发人员通常更有可能销售更易于保护的物联网设备。他们还应该实施良好的安全实践。</p>
+
+
+
+<p>更改新设备的默认密码、下载安全补丁以及停用不必要的功能（如远程访问工具）都是不错的起点。定期维护物联网设备以确保它们被商业安全软件完全修补和监控也将有所帮助。</p>
+
+
+
+<p>网络分段可以限制物联网设备对业务网络的访问。如果受到损害，这种分段将减少这些机器可能造成的潜在损害。</p>
+
+
+
+<p>使用防病毒软件、网络流量分析工具和其他网络安全软件可以帮助最终用户管理和监控潜在威胁。</p>
+
+
+
+<p>公司还应该了解员工智能设备如何与其业务网络交互。它们可能不如 IT 员工可以直接访问的项目那么安全。</p>
+
+
+
+<p>在不久的将来，网络犯罪分子可能会加大攻击力度。物联网设备的所有者可能会继续面临恶意软件、勒索软件和泄漏软件的威胁。最佳实践可以帮助最终用户确保他们的物品安全。即使是像定期修补这样简单的技术，也可以在保持智能技术安全方面大有帮助。</p>
+
+
+
+<p>制造商还可以采取行动来创造更安全的物联网设备。避免常见漏洞并采用安全设计实践将有助于确保最终产品不易受到攻击。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/archives/2113/feed</wfw:commentRss>
+					<wfw:commentRss>/archives/4383/feed</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>热点信息  FBI邮件服务器遭黑客入侵：冒用官方邮箱发送上万份警告邮件</title>
-		<link>/archives/2126</link>
-					<comments>/archives/2126#respond</comments>
+		<title>为什么 Web3 与区块链有关</title>
+		<link>/archives/4373</link>
+					<comments>/archives/4373#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Sun, 14 Nov 2021 11:32:00 +0000</pubDate>
+		<pubDate>Mon, 27 Dec 2021 09:26:29 +0000</pubDate>
 				<category><![CDATA[全部]]></category>
-		<category><![CDATA[推荐]]></category>
-		<guid isPermaLink="false">/?p=2126</guid>
+		<category><![CDATA[区块链]]></category>
+		<guid isPermaLink="false">/?p=4373</guid>
 
-					<description><![CDATA[美国联邦调查局(FBI)的电子邮件服务器遭黑客入侵，冒用官方邮箱发送上万份警告邮件 FBI 证实以该机构合法电 [&#8230;]]]></description>
+					<description><![CDATA[为什么 Web3 与区块链有关 互联网迄今有两个阶段：Web 1.0 和 Web 2.0。 下一个阶段自然就是 [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<h1><strong>美国联邦调查局(FBI)的电子邮件服务器遭黑客入侵，冒用官方邮箱发送上万份警告邮件</strong><strong></strong></h1>
+<h1><strong>为什么 Web3 与区块链有关</strong><strong></strong></h1>
 
 
 
-<p><strong>FBI 证实以该机构合法电子邮箱向 10,000 个收件箱发送了虚假的网络攻击电子邮件的事件，受影响的软件“迅速下线”。</strong></p>
+<p>互联网迄今有两个阶段：Web 1.0 和 Web 2.0。</p>
 
 
 
-<p><strong>Spamhaus是一家致力于追踪数字威胁的欧洲非营利组织，它在推特上发文称，它已经“意识到来自 FBI 电子邮件地址的可怕电子邮件”。</strong></p>
+<p>下一个阶段自然就是 Web 3.0（简称 Web3）。本文谈谈我对 Web3 的一些初步理解，它到底是什么。</p>
 
 
 
-<p><strong>这封由国土安全部 (DHS) 签署的电子邮件被发送给组织，警告他们正受到“复杂的”攻击。</strong></p>
+<figure class="wp-block-image size-full"><img loading="lazy" width="565" height="318" src="/wp-content/uploads/2021/12/image-7.png" alt="" class="wp-image-4375" srcset="/wp-content/uploads/2021/12/image-7.png 565w, /wp-content/uploads/2021/12/image-7-300x169.png 300w" sizes="(max-width: 565px) 100vw, 565px" /></figure>
 
 
 
-<p><strong>联邦调查局当地时间11月13日在一份声明中证实了网络攻击，但表示情况仍在“持续”，没有透露 更多细节。</strong></p>
+<p>一、历史回顾</p>
 
 
 
-<p><strong>攻击行动的幕后黑手很可能是为了诋毁暗网情报公司Shadowbyte的创始人文尼·特罗亚(Vinny Troia)。</strong></p>
+<p>Web 1.0 阶段，用户是单纯的内容消费者，内容由网站提供，网站让你看什么，你就看什么，典型例子就是新闻门户网站。</p>
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="788" height="476" src="/wp-content/uploads/2021/12/07be480ec7df957c5d1ac83952f49c5c3d29fb42.png" alt="" class="wp-image-2127" srcset="/wp-content/uploads/2021/12/07be480ec7df957c5d1ac83952f49c5c3d29fb42.png 788w, /wp-content/uploads/2021/12/07be480ec7df957c5d1ac83952f49c5c3d29fb42-300x181.png 300w, /wp-content/uploads/2021/12/07be480ec7df957c5d1ac83952f49c5c3d29fb42-768x464.png 768w" sizes="(max-width: 788px) 100vw, 788px" /></figure>
+<figure class="wp-block-image size-full"><img loading="lazy" width="385" height="254" src="/wp-content/uploads/2021/12/image-8.png" alt="" class="wp-image-4376" srcset="/wp-content/uploads/2021/12/image-8.png 385w, /wp-content/uploads/2021/12/image-8-300x198.png 300w" sizes="(max-width: 385px) 100vw, 385px" /></figure>
 
 
 
-<p><strong>合法地址发送虚假内容</strong></p>
+<p>Web 2.0 阶段，用户是内容的生产者，网站只是一个向用户提供服务的平台，典型的 Web 2.0 平台有维基百科、抖音、微信等等。</p>
 
 
 
-<p>Spamhaus项目是一个国际非营利组织，专门跟踪垃圾邮件和相关的网络威胁(钓鱼、僵尸网络、恶意软件)。该项目的研究人员观察到这种活动有两波，一波是在凌晨5点(UTC时间)，另一波是在两小时后。</p>
+<figure class="wp-block-image size-full"><img loading="lazy" width="429" height="495" src="/wp-content/uploads/2021/12/image-9.png" alt="" class="wp-image-4377" srcset="/wp-content/uploads/2021/12/image-9.png 429w, /wp-content/uploads/2021/12/image-9-260x300.png 260w" sizes="(max-width: 429px) 100vw, 429px" /></figure>
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="795" height="327" src="/wp-content/uploads/2021/12/eb429c912c26e7310f63de3815a2da3b4cb43bc4.png" alt="" class="wp-image-2128" srcset="/wp-content/uploads/2021/12/eb429c912c26e7310f63de3815a2da3b4cb43bc4.png 795w, /wp-content/uploads/2021/12/eb429c912c26e7310f63de3815a2da3b4cb43bc4-300x123.png 300w, /wp-content/uploads/2021/12/eb429c912c26e7310f63de3815a2da3b4cb43bc4-768x316.png 768w" sizes="(max-width: 795px) 100vw, 795px" /></figure>
+<h2><strong>二、Web3 的特征</strong><strong></strong></h2>
 
 
 
-<p>这些信息来自一个合法的电子邮件地址eims@ic.fbi.gov，该地址来自FBI的执法企业门户网站(LEEP)，标题为“<strong>紧急:系统中的威胁行为者”</strong>。<br>Spamhaus称，所有电子邮件都来自FBI的IP地址153.31.119.142 (mx- eastern . FBI .gov)。</p>
+<p>Web3 的很多特征还不明确，但是国外很多文章认为，它跟区块链有关。</p>
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="831" height="256" src="/wp-content/uploads/2021/12/7f32806f56654168cbe8f26b373a16e9105a8602.png" alt="" class="wp-image-2129" srcset="/wp-content/uploads/2021/12/7f32806f56654168cbe8f26b373a16e9105a8602.png 831w, /wp-content/uploads/2021/12/7f32806f56654168cbe8f26b373a16e9105a8602-300x92.png 300w, /wp-content/uploads/2021/12/7f32806f56654168cbe8f26b373a16e9105a8602-768x237.png 768w" sizes="(max-width: 831px) 100vw, 831px" /></figure>
+<figure class="wp-block-image size-full"><img loading="lazy" width="463" height="495" src="/wp-content/uploads/2021/12/image-10.png" alt="" class="wp-image-4378" srcset="/wp-content/uploads/2021/12/image-10.png 463w, /wp-content/uploads/2021/12/image-10-281x300.png 281w" sizes="(max-width: 463px) 100vw, 463px" /></figure>
 
 
 
-<p>该消息警告称，在接收方的网络中检测到威胁行为者，并已从设备中窃取数据。</p>
+<p>Web 1.0 是用户<strong>读取互联网</strong>，Web 2.0 是用户<strong>写入互联网</strong>，Web3 是用户<strong>生活在互联网</strong>。</p>
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="352" src="/wp-content/uploads/2021/12/6a46f51e2b8c25389e72b62d1a61955b657f7d8b.png" alt="" class="wp-image-2130" srcset="/wp-content/uploads/2021/12/6a46f51e2b8c25389e72b62d1a61955b657f7d8b.png 830w, /wp-content/uploads/2021/12/6a46f51e2b8c25389e72b62d1a61955b657f7d8b-300x127.png 300w, /wp-content/uploads/2021/12/6a46f51e2b8c25389e72b62d1a61955b657f7d8b-768x326.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
+<p>娱乐、工作、学习、消费、交际，都在网上发生。网站不仅提供服务，还是一个生活空间，人们的一部分生活可以在网上完成。</p>
 
 
 
-<p>Spamhaus项目告诉BleepingComputer，这些虚假邮件已经到达了至少10万个邮箱。不过，这个数字是一个非常保守的估计，因为研究人员认为“这场运动的规模可能要大得多。”<br>在今天的一条推特中，该非营利组织表示，这些收件人是从美国互联网号码登记(ARIN)数据库中提取的。<br>虽然这看起来像一个恶作剧，但毫无疑问，这些邮件来自FBI的服务器，因为消息的标题显示，它的来源是由DomainKeys Identified Mail (DKIM)机制验证的。</p>
+<p>在教育网站学习，在会议网站开会，在社交网站交友，在游戏网站玩乐。所有网站共同构成了一个无所不包的网络世界。</p>
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="659" src="/wp-content/uploads/2021/12/b0cf676563fac3e77811fefd084870d3376818df.png" alt="" class="wp-image-2131" srcset="/wp-content/uploads/2021/12/b0cf676563fac3e77811fefd084870d3376818df.png 830w, /wp-content/uploads/2021/12/b0cf676563fac3e77811fefd084870d3376818df-300x238.png 300w, /wp-content/uploads/2021/12/b0cf676563fac3e77811fefd084870d3376818df-768x610.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
+<h2><strong>三、虚拟世界</strong><strong></strong></h2>
 
 
 
-<p>邮件头还显示了以下处理邮件的FBI内部服务器:<br>dap00025.str0.eims.cjiswvadc-dmz-pmo003-fbi.enet.cjisdap00040.str0.eims.cjis<br><strong>美国联邦调查局证实，这些邮件的内容是假的，他们正在努力解决这个问题，因为忧心忡忡的管理人员打电话给他们的求助台</strong>。<br>FBI在给BleepingComputer的一份声明中表示，由于目前的情况，他们无法分享更多信息。<br><em>“联邦调查局和CISA已经注意到今天上午发生的这起事件，涉及一个@ic.fbi.gov电子邮件账户的虚假邮件。这是一个正在进行的情况，我们目前无法提供任何额外的信息。我们继续鼓励公众对未知发件人保持谨慎，并敦促你向www.ic3.gov或www.cisa.gov报告可疑活动。”</em></p>
+<p>所有网站的生活功能，如果能够连在一起，让用户无缝地从一个场景进入另一个场景，那就构成了一个虚拟世界。这大概就是最近很热门的元宇宙（metaverse）的样子。</p>
 
 
 
-<p><strong>旨在诋毁安全研究人员</strong></p>
+<p>到了那个阶段，用户不再是访问网站，而是进入虚拟世界，过着虚拟的线上生活。</p>
 
 
 
-<p>攻击行动的幕后黑手很可能是为了诋毁暗网情报公司Shadowbyte的创始人文尼·特罗亚(Vinny Troia)，他在邮件中被指名为制造虚假供应链攻击的威胁行动者。<br>raidforum黑客社区的成员与Troia有着长期的不和，他们经常破坏网站，并在他们指责安全研究人员的地方进行轻微的黑客攻击。<br>文尼·特罗亚(Vinny Troia)在关于这一垃圾邮件活动的推特上暗示，一个名为“pompomourin”的人可能是这次攻击的发起者。特罗亚说，在过去，这些人曾与旨在损害安全研究员声誉的事件有关。<br>在接受BleepingComputer采访时，特罗亚说:“我猜‘pompomourin’和他的手下是这起事件的幕后黑手。”<br>“上次他们(pompompurin)黑进国家失踪儿童中心的网站博客，并发布了一个关于我是恋童癖的帖子”——Vinny Troia<br>“pompompurin”在垃圾邮件活动开始前的几个小时联系了Troia，只是简单地说“请享受”，以此警告即将发生与研究人员有关的事情，这一事实进一步支持了这一假设。<br>特罗亚说，“pompompurin”每次发动攻击时都会给他发信息，让他不相信研究人员。<br>注：（目前观测，FBI邮件服务器整体被黑的可能性不大，应当是eims@ic.fbi.gov这个邮箱账户被攻陷，黑客可以登录使用这个邮箱账户）<br><strong>参考资源</strong>&nbsp;<br>1、https://www.bignewsnetwork.com/news/271721631/fbi-server-hacked-to-send-thousands-of-cyberattack-warnings?utm_source=feeds.bignewsnetwork.com&amp;utm_medium=referral2、https://www.bleepingcomputer.com/news/security/fbi-system-hacked-to-email-urgent-warning-about-fake-cyberattacks/3、https://www.dailymail.co.uk/news/article-10199139/FBI-confirms-federal-agency-sent-fake-cyberattack-emails-10-000-inboxes.html#comments</p>
+<h2><strong>四、Web3 是分布式的</strong><strong></strong></h2>
+
+
+
+<p>这样的虚拟世界，显然不能被一家或几家巨头垄断，否则我们就会依赖这些巨头，不得不遵守它制定的规则。当你的生活都在虚拟世界里面，某一天巨头突然决定关闭你的账号，你的虚拟人生岂不嘎然而止了！</p>
+
+
+
+<p>这就是很多人提出 Web3 应该是分布式的原因。这有两层含义：</p>
+
+
+
+<p>（1）它不是集中式的，就没有单一的公司可以控制它；</p>
+
+
+
+<p>（2）任何一种服务都有多家提供商，通过分布式协议连起来，用户可以极小的成本，从一个提供商转移到另一个服务商。</p>
+
+
+
+<h2><strong>五、区块链的作用</strong><strong></strong></h2>
+
+
+
+<p>如果 Web3 确定是分布式的，那么区块链简直就是天然的基础设施。因为区块链是分布式数据库的一种实现，本身就是分布式的，而且信息一旦上链，就无法修改。</p>
+
+
+
+<p><strong>这解决了 Web3 的核心问题：不同网站的数据交换。</strong>&nbsp;不同网站都可以自由读写同一个用户的数据，并且这些数据是可以信赖的，从而保证用户进入另一个网站，就好像进入同一个世界的不同地区。</p>
+
+
+
+<p>一旦 Web3 构建于区块链之上，按照区块链的设计，用户需要有一个数字钱包，它是你在虚拟世界的身份证和银行账户。你的身份、财产、消费，都通过这个数字钱包来标识。网站通过数字钱包的 ID，来识别你是谁。</p>
+
+
+
+<p>另一方面，有了数字钱包以后，银行和金融也就变成虚拟的了，这让虚拟世界更像现实世界了。</p>
+
+
+
+<h2><strong>六、数字资产</strong><strong></strong></h2>
+
+
+
+<p>区块链允许写入任意数据，那么不可避免的，我们虚拟生活的所有数字记录都可以放在区块链上面。</p>
+
+
+
+<p>如果每一样虚拟物品都有自己的一个编号，把它们记录在区块链，那么就可以确定它们的主人（即关联到数字钱包）。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="415" height="223" src="/wp-content/uploads/2021/12/image-11.png" alt="" class="wp-image-4379" srcset="/wp-content/uploads/2021/12/image-11.png 415w, /wp-content/uploads/2021/12/image-11-300x161.png 300w" sizes="(max-width: 415px) 100vw, 415px" /></figure>
+
+
+
+<p>举例来说，虚拟世界的每一把数字牙刷，都可以在区块链上有一个唯一编号，不会跟别的牙刷混淆，并且通过关联到数字钱包，确定每把牙刷的主人。</p>
+
+
+
+<p>我也不知道，为什么要把牙刷放到区块链上，我只是举一个例子，说明区块链可以做到这一点。</p>
+
+
+
+<p>我们甚至可以交易这把牙刷，把它登记到另一个数字钱包，让它的主人变成其他人。现在很热门的 NFT，就是这么搞的，只不过它在区块链上登记的不是牙刷，而是数字收藏品。</p>
+
+
+
+<p>创业家&nbsp;Chris Dixon<sup>[2]</sup>&nbsp;前不久公开说：“Web3 就是所有权”，就是这个意思。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="476" height="245" src="/wp-content/uploads/2021/12/image-12.png" alt="" class="wp-image-4380" srcset="/wp-content/uploads/2021/12/image-12.png 476w, /wp-content/uploads/2021/12/image-12-300x154.png 300w" sizes="(max-width: 476px) 100vw, 476px" /></figure>
+
+
+
+<p>如果所有人、所有物品、所有交易都登记在区块链上，那么基于它的 Web3 的玩法简直是无穷无尽，是现在难以想象的。虚拟世界的可能性，比现实世界多100倍、1000倍。</p>
+
+
+
+<p>目前只是 Web3 的初始阶段，基础设施都还没有建成，玩法还在探索，但是进展很快。这个领域应该会诞生无数的创新和机会，值得密切关注。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/archives/2126/feed</wfw:commentRss>
+					<wfw:commentRss>/archives/4373/feed</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>热点信息  美国防部将成立零信任办公室，预计下月开放</title>
-		<link>/archives/2080</link>
-					<comments>/archives/2080#respond</comments>
+		<title>助力碳中和，区块链有妙用</title>
+		<link>/archives/4368</link>
+					<comments>/archives/4368#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Sun, 14 Nov 2021 11:12:00 +0000</pubDate>
+		<pubDate>Mon, 27 Dec 2021 09:25:45 +0000</pubDate>
 				<category><![CDATA[全部]]></category>
-		<category><![CDATA[推荐]]></category>
-		<guid isPermaLink="false">/?p=2080</guid>
+		<category><![CDATA[区块链]]></category>
+		<guid isPermaLink="false">/?p=4368</guid>
 
-					<description><![CDATA[热点信息 &#124;&#124; 美国防部将成立零信任办公室，预计下月开放 据一位高级官员称，美国国防部正在加紧其网络安全工作， [&#8230;]]]></description>
+					<description><![CDATA[助力碳中和，区块链有妙用 降低碳排放是联合国可持续发展目标（SDGs）中的主要任务之一。去年9月，中国宣布将力 [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<h1><strong>热点信息 || 美国防部将成立零信任办公室，预计下月开放</strong><strong></strong></h1>
+<h1><strong>助力碳中和，区块链有妙用</strong><strong></strong></h1>
 
 
 
-<p>据一位高级官员称，美国国防部正在加紧其网络安全工作，专门开设的零信任办公室将于下个月开放。</p>
+<p>降低碳排放是联合国可持续发展目标（SDGs）中的主要任务之一。去年9月，中国宣布将力争2030年碳达峰，2060年实现碳中和的目标。一场有力的全国行动已经自上而下迅速展开，展现了中国全面开启向低碳经济转型的决心。</p>
 
 
 
-<p>领导层对零信任的支持有助于加速开放，这在一定程度上可以被视为对SolarWinds 活动的回应，在该活动中，九个联邦政府部门受到俄罗斯间谍的侵害。五角大楼首席信息官大卫麦基翁说：“我们已经加倍努力，在内部争取以更快地方法解决这个问题。”</p>
+<p>置身其中的企业怎样才能把握住这次重大的经济转型机遇？如何在业务中减少碳排放？如何构建可持续的商业模式并实现碳中和？这已经是每个决策者正在思考的问题。</p>
 
 
 
-<p>“我们正在组建一个投资组合管理办公室，它将合理化所有网络环境，在未来五、六、七年内对每个网络环境进行优先排序并将其置于零信任的道路上。”</p>
+<p>具有数据可追溯、多方信任、分布式网络、智能合约等诸多特性的区块链则是帮助企业实现碳中和的关键技术之一。甚至有专家们认为，碳中和正是区块链技术能够真正大显身手的领域，必将会诞生许多“杀手级应用”。</p>
 
 
 
-<p>拜登总统5 月份发布的加强联邦政府网络安全的行政令，要求每个机构的负责人在 60 天内制定实施零信任架构的计划。该计划应包含 NIST 推荐的最佳实践迁移步骤，以及“描述已经完成的任何此类步骤，确定将对安全产生最直接影响的活动，并包括实施这些步骤的时间表。”</p>
+<p><strong>助力全供应链碳披露</strong></p>
 
 
 
-<p>Appgate 的高级研究员 Felipe Duarte 认为，一旦初始漏洞发生，零信任对于防止攻击者在网络中横向移动至关重要。“只有通过对网络进行分段并假设所有连接都可能受到威胁，才能检测到网络中的入侵者”他补充道。</p>
+<p>如今，各行各业的分工越来越精细，任何商品或服务从研发到销售的过程中，都涉及复杂的供应链体系，“链条”背后则是上百家大大小小的供应商。但在整个供应链条中，产生的碳排放和碳补偿相关数据目前并没有被收集和汇总分析，核心企业通常也不清楚各级供应商的碳足迹。这让碳披露和碳减排工作难以展开。</p>
 
 
 
-<p>“零信任需要在核心基础设施中实施。我们必须对尝试连接到网络中的任何设备进行配置，使用多因素身份验证来确保凭据不被泄露，将网络分段创建隔离边界，最重要的是，仅提供对用户或系统需要的访问权限。”</p>
+<p><strong>区块链技术利用其数据不可篡改、数据可追溯、促成多方信任等特点，可建立覆盖整条供应链的溯源应用，充分评估供应商的碳足迹，从而判断是否能够将其纳入自己的供应链体系。</strong>供应链上的各家企业也可以通过溯源数据收集分析自己的碳排放表现，来减少碳排放，提高能源利用率，优化业务以达成碳中和。</p>
 
 
 
-<p>据悉，早在今年9月初，美国管理与预算办公室（OMB）发布了《美国政府向零信任网络安全原则的迁移》报告，美国国土安全部（DHS）网络安全和基础设施安全局（CISA）发布了《零信任成熟度模式》、《云安全技术参考架构》两份报告。三大文件公开征集意见，共同组成联邦各级机构的网络安全架构路线图，以支持今年5月拜登总统签署发布的关于加强联邦政府网络安全的行政令。</p>
+<p>区块链溯源的应用，还能够提升产业链和供应链的透明度。有了透明且可信的数据，企业才可以进行有效的碳披露，同时制定相应的碳补偿方案，进而实现真正的碳中和供应链、负碳供应链。</p>
 
 
 
-<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="740" height="482" src="/wp-content/uploads/2021/12/c1cf9a1316d64c1f75e7a2ffb5dd8e5c8e6605a0.png" alt="" class="wp-image-2081" srcset="/wp-content/uploads/2021/12/c1cf9a1316d64c1f75e7a2ffb5dd8e5c8e6605a0.png 740w, /wp-content/uploads/2021/12/c1cf9a1316d64c1f75e7a2ffb5dd8e5c8e6605a0-300x195.png 300w" sizes="(max-width: 740px) 100vw, 740px" /></figure></div>
+<p>埃森哲为荷兰喜力（Heineken®）使用Hyperledger区块链构建了一个试点项目，全程追踪其旗下品牌Brand Blond啤酒从啤酒花种植环节直到啤酒厂装瓶整个过程的碳排放。消费者通过扫描瓶身上的二维码，可以查看啤酒的碳足迹和水足迹。</p>
+
+
+
+<p>供应链的高透明度不仅可以帮助我们减少整条供应链中的环境足迹，还能够通过提供详细的产品溯源信息，让消费者对品牌和产品更加信任，进而增强消费者的复购意愿和品牌忠诚度。</p>
+
+
+
+<p><strong>实现碳数据共享并保证其安全</strong></p>
+
+
+
+<p>企业的碳排放和碳减排数据与生产、经营情况相关，也侧面体现了一家企业的研发方向和技术选型。出于数据安全和保护商业机密的考虑，多数企业对碳披露持保守态度，而基于区块链的数据共享应用能够有效消除企业在这方面的担忧。</p>
+
+
+
+<p><strong>利用区块链结合隐私计算技术，可以做到信息可验证但不可见。</strong>通过数据所有者的私钥签名授权，数据访问权可临时开放给特定的潜在合作伙伴、上下游企业、第三方监管机构验证碳排放相关数据，一切可量化的碳排放数据都可以用这种方式实现数据安全共享。</p>
+
+
+
+<p>一旦消除了企业数据安全的担忧，碳排放数据可以在产业级范围内实现流通和共享，数据的价值能够真正被解锁。这将推进碳中和目标的实现进程。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="572" height="322" src="/wp-content/uploads/2021/12/image-5.png" alt="" class="wp-image-4369" srcset="/wp-content/uploads/2021/12/image-5.png 572w, /wp-content/uploads/2021/12/image-5-300x169.png 300w" sizes="(max-width: 572px) 100vw, 572px" /></figure>
+
+
+
+<p><strong>落实碳数据留存和数据可信</strong></p>
+
+
+
+<p>在目前碳披露和碳排放数据收集的过程中，依然存在大量人为因素，数据采集和流转过程中的数据录入错误、数据瞒报、谎报等风险难以避免，导致碳排放相关数据质量较低、标准化不足。这不但阻碍了企业实现碳中和，还带来了公关和舆情风险。</p>
+
+
+
+<p><strong>区块链结合物联网和边缘计算技术的应用，让碳排放数据在产生的同时就被加密并写入区块链网络，能够有效提升数据的实时性、精确度和可信度。</strong>同时，任何企图关停数据采集设备、篡改数据、删除数据的行为都将被记录留存，在碳排放、碳补偿数据方面的造假、作弊、欺诈门槛被大幅提高。</p>
+
+
+
+<p>事实上，这方面的应用案例已经逐渐落地，7月15日，天津排放权交易所发布了基于区块链的碳中和存证产品，该产品可以协助企业和组织解决碳排放、碳补偿数据留存和数据可信的问题，通过物联网监测设备接入、自动碳数据上报、系统数据集成等方式收集碳排放相关数据。</p>
+
+
+
+<p>此外，利用区块链的分布式存储特性，还可以避免中心化数据系统的单点故障脆弱性。能够解决数据长期留存的问题，避免出现因数据丢失而无法核算碳排放、碳补偿的情况。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="615" height="410" src="/wp-content/uploads/2021/12/image-6.png" alt="" class="wp-image-4370" srcset="/wp-content/uploads/2021/12/image-6.png 615w, /wp-content/uploads/2021/12/image-6-300x200.png 300w" sizes="(max-width: 615px) 100vw, 615px" /></figure>
+
+
+
+<p><strong>建立碳账户</strong></p>
+
+
+
+<p>浙江省衢州市是国家级绿色金融改革创新试验区，在全国首创了工业、农业、个人领域三大碳账户体系。其中，已经试点一年的“个人碳账户”可以从节约纸张、用电用水、交通碳排等18类日常场景中折算个人绿色行为节省的碳排放量。目前，衢州全市已有银行个人碳账户137万户，累计碳减排已达3000吨以上。</p>
+
+
+
+<p>碳账户表示个人和企业减少的碳排放量。在不远的将来，这将成为个人和企业在银行账户和信用账户外的又一个标配，是管理人类与气候环境关系的有力工具。碳账户的建立和普及能让每一个企业和个人都参与到碳中和目标的实现中来。</p>
+
+
+
+<p>传统的中心化碳账户体系往往存在多方对账难、数据孤岛林立、清算周期长等问题，而<strong>基于区块链网络的通证化以及无需中间人的点对点价值交换能力，企业可以快速构建一套分布式、安全可靠的碳账户系统。</strong>用碳账户管理企业员工、部门、楼宇空间的碳排放和碳补偿，在提升企业治理的数字化程度的同时，将碳中和理念贯彻到企业经营行为中，进而实现真正的可持续发展。</p>
+
+
+
+<p>得益于区块链技术的特点及不可替代性，其在碳中和领域的应用必将成为大势所趋。除了上述四点，企业还可以结合自身的行业背景、商业模式以及业务特点，在碳资产数字化、跨国跨地区碳交易、智能合约碳披露、绿色债券发行等领域进行区块链技术的创新应用探索。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/archives/2080/feed</wfw:commentRss>
+					<wfw:commentRss>/archives/4368/feed</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>政策要闻  全国保密战线：用心用情讲好红色保密故事</title>
-		<link>/archives/847</link>
-					<comments>/archives/847#respond</comments>
+		<title>全球加速区块链技术发展，筑网络安全未来</title>
+		<link>/archives/4359</link>
+					<comments>/archives/4359#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Sun, 14 Nov 2021 03:37:00 +0000</pubDate>
+		<pubDate>Mon, 27 Dec 2021 09:23:47 +0000</pubDate>
 				<category><![CDATA[全部]]></category>
-		<category><![CDATA[国家政策]]></category>
-		<guid isPermaLink="false">/?p=847</guid>
+		<category><![CDATA[区块链]]></category>
+		<guid isPermaLink="false">/?p=4359</guid>
 
-					<description><![CDATA[政策要闻 &#124;&#124; 全国保密战线：用心用情讲好红色保密故事 党的保密工作为党而生、伴党而行、因党而兴。革命战争年代 [&#8230;]]]></description>
+					<description><![CDATA[全球加速区块链技术发展，筑网络安全未来 关键基础设施安全应急响应中心&#160;2021-12-10 14:3 [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<h1><strong>政策要闻 || 全国保密战线：用心用情讲好红色保密故事</strong><strong></strong></h1>
+<h1><strong>全球加速区块链技术发展，筑网络安全未来</strong><strong></strong></h1>
 
 
 
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/c2VGa1VBYWV1cGVDcWliOHo1VDlVeGErUVYyL1FHcUpyNWZGcm0rdTIxMU5VNis2cGMxeXk5V281U2liL1ZNSi9HOHR3Q2F0Sko1TTJ3angvRFFVaHFEck01QVZkaXNubm9EUUxrWDhwVS9uUkwzckRBWm9kS3lmdFJoajZUZ3dEZDM2UEE3VzlqYXJRSmpQL0hJSmJnaXRya2pKMm5DY3pxWEhPeXhxTHl4azBtcFMwUEIwVmp3R2VLYllwVnhQQVNvNU5lN0JGRmRXQXFYR0lKTT0=/attach/object/089e3b864f1f274a7e4bfdad7f0719f50cfc4902" alt=""/></figure>
+<p><a href="https://mp.weixin.qq.com/javascript:void(0);">关键基础设施安全应急响应中心</a>&nbsp;2021-12-10 14:34</p>
 
 
 
-<p>党的保密工作为党而生、伴党而行、因党而兴。革命战争年代，保密就是“保生存、保胜利”；和平建设年代，保密就是“保安全、保发展”；进入新时代，保密就是“保党的长期执政地位、保国家安全、保人民幸福、保民族复兴”。</p>
+<p>以下文章来源于信息安全与通信保密杂志社&nbsp;，作者Cismag</p>
 
 
 
-<p>自党史学习教育开展以来，全国保密战线深入学习贯彻习近平新时代中国特色社会主义思想，紧紧围绕保密工作政治属性，在教育引导党员干部学好百年党史的同时，通过深入挖掘保密史、讲好红色保密故事，总结党的保密工作历史经验，弘扬党的保密工作优良传统，自觉把党史学习教育成效转化为推动党的保密事业高质量发展的实际行动，为“十四五”开好局、起好步凝聚强大精神力量。</p>
+<p><a href="https://mp.weixin.qq.com/s?subscene=88&amp;__biz=MzkyMzAwMDEyNg==&amp;mid=2247523209&amp;idx=2&amp;sn=19f7129cafa752f0ab920a5dd49ba2da&amp;chksm=c1e917d8f69e9ecedf981891d923306f9be7518d910af40e887b89032adeb9e40d1a24d5d121&amp;scene=7&amp;key=9fe78104b921057869ccc7b72907d85a206a85fb02e914783dd6567d51697e16146d0dcee033a0000ca74dcd5412bafac4d7f3fb91f4dfb016a082082ac238709b61caf50e3a5bdba0f55dcf8fb66215ced9ab6af61707d3b5de5a477c6690e2b0fe7fcb6cfed81f6f75f4d8320887e37939217db7c56dbac33268b652bf1239&amp;ascene=0&amp;uin=NDgzODI4MDE5&amp;devicetype=Windows+10+x64&amp;version=6304051b&amp;lang=zh_CN&amp;exportkey=A87j3KpORz2eb7P04sFspLw=&amp;pass_ticket=AEIebfUkxX2k+jxiAzkMwimjSHo30ydMKDwyr6f4jdcbhMHfKjKEIgf0sIfrGJmh&amp;wx_header=0&amp;fontgear=2"></a></p>
 
 
 
-<p><strong>深挖红色保密资源</strong></p>
+<figure class="wp-block-image size-full"><img loading="lazy" width="512" height="512" src="/wp-content/uploads/2021/12/1f3b074fe2acde8e2b2ae046ec8c0d61736a8cc6.png" alt="" class="wp-image-4360" srcset="/wp-content/uploads/2021/12/1f3b074fe2acde8e2b2ae046ec8c0d61736a8cc6.png 512w, /wp-content/uploads/2021/12/1f3b074fe2acde8e2b2ae046ec8c0d61736a8cc6-300x300.png 300w, /wp-content/uploads/2021/12/1f3b074fe2acde8e2b2ae046ec8c0d61736a8cc6-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
 
 
 
-<p>中央保密办（国家保密局）在《保密工作》杂志推出“探访红色故地 追忆峥嵘岁月”主题报道，安排记者深入上海、武汉、瑞金、遵义、延安、西柏坡等党史上的重要事件纪念地和革命老区采访，深度挖掘保密工作红色历史和感人往事，追寻保密工作红色足迹。</p>
+<p><strong>信息安全与通信保密杂志社</strong>.</p>
 
 
 
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/c2VGa1VBYWV1cGVDcWliOHo1VDlVeGErUVYyL1FHcUpyNWZGcm0rdTIxMU5VNis2cGMxeXk5V281U2liL1ZNSi9HOHR3Q2F0Sko1TTJ3angvRFFVaHFEck01QVZkaXNubm9EUUxrWDhwVS9uUkwzckRBWm9kS3lmdFJoajZUZ3dEZDM2UEE3VzlqYXJRSmpQL0hJSmJnaXRya2pKMm5DY3pxWEhPeXhxTHl4azBtcFMwUEIwVmp3R2VLYllwVnhQQVNvNU5lN0JGRmRXQXFYR0lKTT0=/attach/object/5e8697318b1b10286612242508ace8396d6b7037" alt=""/></figure>
+<p>网络强国建设的思想库 安全产业发展的情报站 创新企业腾飞的动力源</p>
 
 
 
-<p>山西保密办（局）把红色保密教育作为创新开展党史学习教育的重要抓手，充分挖掘革命老区红色资源，在八路军太行纪念馆建立首个红色保密教育示范基地。</p>
+<p>2020年2月7日, 澳大利亚政府发布了“国家区块链路线图”， 此次发布的区块链路线图意义深远，旨在使澳大利亚成为区块链产业的全球领导者。路线图提出，区块链技术带来的巨大机遇，不仅是在金融领域，还包括供应链、物流、农业、可信凭证和智能合约等领域。这是继欧盟和德国外，又一国家将区块链技术发展提升到战略的高度。当前，全球区块链技术发展热度不减。以美国、俄罗斯等国为代表的国家，加快顶层设计，牢牢紧握战略先机；加速区块链技术的落地，并采用了一系列措施来鼓励区块链技术的发展；同时发现了区块链技术在网络安全领域的潜力，加速推动区块链技术与网络安全领域的融合发展。</p>
 
 
 
-<p>内蒙古保密办（局）结合自治区红色保密发展史，组织拍摄《北疆密战》红色保密教育片，以保密工作者的视角再现内蒙古自治区的红色历史，教育引导广大涉密人员和保密战线工作者深入了解党的保密史，更好地继承和弘扬党的保密工作优良传统。</p>
+<p><strong>&nbsp;一、全球区块链技术发展现状</strong><strong></strong></p>
 
 
 
-<p>福建、山东、河南等地保密办（局）深入推动红色保密故事发掘编纂工作，搜集积累当地红色保密历史故事和人物事迹，为《中国红色保密故事大全》地方卷的出版充实素材。</p>
+<p>在区块链掀起的这场技术革命与革新浪潮中，全球区块链热度不减，正如图1所示。以中、美、英、等为代表的国家开始主动作为、牢牢紧握战略先机，不断加快顶层设计及政策法规的制定，积极转变区块链技术发展态度，加速区块链技术的落地。</p>
 
 
 
-<p>山东威海保密办（局）立足建党百年历史，着眼本地区丰富的红色革命资源，广泛深入挖掘革命、建设、改革各个时期的历史资料，把保密元素融入总体国家安全观刘公岛教育培训基地建设全过程，形成了以国家安全为主线，全景式、立体化展现保密历史的体系架构。</p>
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="251" src="/wp-content/uploads/2021/12/image-2.png" alt="" class="wp-image-4361" srcset="/wp-content/uploads/2021/12/image-2.png 554w, /wp-content/uploads/2021/12/image-2-300x136.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
 
 
 
-<p><strong>讲好红色保密故事</strong></p>
+<p>图1&nbsp;&nbsp; 各国对区块链的重视</p>
 
 
 
-<p>中央保密办（国家保密局）与北京广播电视台《档案》栏目组合作，制作播出《密事解码：庆祝中国共产党成立100周年》专题节目；制作保密工作纪录片《红色保密 百年征程》、有声读物《红色保密故事》，编辑《风范：老一辈革命家与保密工作》《印迹：中国红色保密故事》《护航百年：中国红色保密故事精选》《剑吼西风：中央特科纪事》等红色书籍。开展“追寻党的历史、追寻红色保密史”系列讲座，邀请党史专家学者、退休老党员讲述老一辈革命家和革命先烈为党为国呕心沥血、不懈奋斗的感人故事，讲述党的保密工作历史经验，让广大干部群众在耳濡目染中重温红色历史、弘扬保密传统，做党和国家秘密的忠诚守护者。</p>
+<h3><strong>(一）区块链技术上升为国家战略新高度</strong><strong></strong></h3>
 
 
 
-<p><strong>★ ★ ★</strong></p>
+<p>欧盟地区及相关国家把区块链技术提升到国家战略高度，从战略布局上加大重视和支持力度。2019年9月，欧盟科学中心在举行的OECD区块链论坛上发布报告《Blockchain Now And Tomorrow》(区块链：当前和未来)。该报告的发布表明欧盟已经认识到区块链(分布式账本技术)的重要性，而此前欧盟对区块链技术的关注度从未提升到政策层面。区块链会对经济、行业和社会当前和未来产生广泛的变化和影响。该报告通过识别区块链技术在多个领域的应用和潜在应用对区块链进行了多维度的分析。2019年9月18日，德国政府审议通过并发布区块链战略。德国政府的区块链战略明确了五大领域的行动措施，包括在金融领域确保稳定并刺激创新；支持技术创新项目与应用实验；制定清晰可靠的投资框架；加强数字行政服务领域的技术应用；传播普及区块链相关信息与知识，加强有关教育培训及合作等方面。</p>
 
 
 
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/c2VGa1VBYWV1cGVDcWliOHo1VDlVeGErUVYyL1FHcUpyNWZGcm0rdTIxMU5VNis2cGMxeXk5V281U2liL1ZNSi9HOHR3Q2F0Sko1TTJ3angvRFFVaHFEck01QVZkaXNubm9EUUxrWDhwVS9uUkwzckRBWm9kS3lmdFJoajZUZ3dEZDM2UEE3VzlqYXJRSmpQL0hJSmJnaXRya2pKMm5DY3pxWEhPeXhxTHl4azBtcFMwUEIwVmp3R2VLYllwVnhQQVNvNU5lN0JGRmRXQXFYR0lKTT0=/attach/object/089e3b864f1f274a7e4bfdad7f0719f50cfc4902" alt=""/></figure>
+<p>在英国，2016年1月l9日，英国政府率先发布《分布式账本技术：超越区块链》的战略白皮书，明确提出区块链是一项能给英国社会经济发展带来颠覆性变革的优势潜力技术，将它上升为国家的战略意志，是英国巩固其金融强国和网络强国地位的必然选择。</p>
 
 
 
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/c2VGa1VBYWV1cGVDcWliOHo1VDlVeGErUVYyL1FHcUpyNWZGcm0rdTIxMU5VNis2cGMxeXk5V281U2liL1ZNSi9HOHR3Q2F0Sko1TTJ3angvRFFVaHFEck01QVZkaXNubm9EUUxrWDhwVS9uUkwzckRBWm9kS3lmdFJoajZUZ3dEZDM2UEE3VzlqYXJRSmpQL0hJSmJnaXRya2pKMm5DY3pxWEhPeXhxTHl4azBtcFMwUEIwVmp3R2VLYllwVnhQQVNvNU5lN0JGRmRXQXFYR0lKTT0=/attach/object/089e3b864f1f274a7e4bfdad7f0719f50cfc4902" alt=""/></figure>
+<p>在澳大利亚，澳大利亚政府在2020年2月7日发布了“国家区块链路线图”，但澳大利亚在改进区块链的技术和监管环境的一些项目的国际协作中已经处于领先地位。同时，澳大利亚也证明了在区块链的创新和领导地位，其中包括国际标准、科研、智能可编程货币，并且在能源、农业和公共领域都有试用。2019年3月，澳大利亚公布国家区块链战略路线图，并增加了10万澳元的联邦政府资金。新的区块链战略路线图旨在促进澳成为新兴区块链产业的全球领导者，该路线图将加强对区块链产业的监管引导、技能培训和能力建设，加大产业投资力度，增强国际合作，提升产业竞争力。</p>
 
 
 
-<p>上海保密办（局）主办“百年保密与上海”主题展，与上海沪剧院联合创作沪剧《一号机密》，激励保密战线广大干部职工继承光荣传统、赓续红色血脉，在新征程上创造无愧于历史和人民的新业绩。</p>
+<h3><strong>(二）积极转变区块链技术发展态度</strong><strong></strong></h3>
 
 
 
-<p>江西和河南保密办（局）协调省电视台播出大型保密文献纪录片《胜利之盾》，帮助广大领导干部、涉密人员和人民群众深入了解党的保密史，继承和发扬党的保密工作优良传统，增强保密意识、筑牢保密防线。</p>
+<p>以俄罗斯为代表，俄罗斯政府积极转变态度，下决心推进区块链技术发展。从最初严禁比特币交易，到逐渐转为积极态度，再到将区块链作为国家未来发展的重要部分，俄罗斯政府的态度转变正显示出其推进区块链技术发展的决心和力量，在这场新技术的角逐中，“战斗民族”俄罗斯正清理跑道，全速奔跑。</p>
 
 
 
-<p>湖南保密办（局）根据保密工作百年奋斗历程原创5首保密红歌，制作了革命保密题材的现代京剧《向警予》，通过让人耳目一新的表达方式，展现了共产党人坚定信仰、不怕牺牲的精神和胸怀天下的情怀。</p>
+<p>2019 年，俄罗斯在计划颁布“实施去中心化登记和合法证书中技术应用管理的监管法案”，以明确对区块链技术的监管。2018年8月，俄罗斯总统普京批准关于在Primorski Krai地区、Oktyabrsky岛以及Russky岛建立“经济特区”的政策，并于9月提出将这些地区发展成俄“数字发展中心”。</p>
 
 
 
-<p>海南保密办（局）举办青年干部“学好党史讲好红色保密故事”活动，感怀革命先烈无比忠贞坚定的革命理想信念，充分展示新时期保密人的精神风貌，发出新时期保密人最强劲的时代声音。</p>
+<p>区块链产业在各国发展阶段和发展特色(如图2所示)各有不同，鼓励技术与政策监管各有侧重，但是各国政策基本持支持态度。其中，英国、美国等地区对于区块链的政策补贴较为突出，如美国国土安全部多次向区块链技术公司颁发研究合同，英国则是国家层面设立基金进行支持等。法、德等国家对区块链发展持谨慎观望的态度，仅在技术发展方面较为支持。</p>
 
 
 
-<p><strong>重温红色保密记忆</strong></p>
+<figure class="wp-block-image size-full"><img loading="lazy" width="538" height="285" src="/wp-content/uploads/2021/12/image-4.png" alt="" class="wp-image-4364" srcset="/wp-content/uploads/2021/12/image-4.png 538w, /wp-content/uploads/2021/12/image-4-300x159.png 300w" sizes="(max-width: 538px) 100vw, 538px" /></figure>
 
 
 
-<p>中央保密办（国家保密局）组织理论学习中心组成员参观香山革命纪念地、中国共产党历史展览馆、北大红楼，组织党员干部职工参观新时代中央和国家机关党的建设成就巡礼展、主题档案文献展，组织青年干部瞻仰人民英雄纪念碑、西山无名英雄纪念广场等，实地感受党的百年波澜壮阔的历史，感悟过去我们为什么能够成功、未来我们怎样才能继续成功的深刻道理。</p>
+<p>图2&nbsp; 主要国家和地区对区块链技术和应用情况</p>
 
 
 
-<p>浙江保密办（局）开展“赓续红色血脉 学好百年党史”主题党日，组织参观中共浙江省委第一次代表大会旧址，瞻仰红色革命文物，感悟初心使命，汲取信仰力量。</p>
+<h3><strong>(三）加速推进区块链技术的应用</strong><strong></strong></h3>
 
 
 
-<p>安徽、河南、湖南等地保密办（局）举办庆祝建党100周年书画摄影作品展，弘扬保密革命传统和保密文化，使参与者切身感受到心灵的升华、奋进的动力。</p>
+<p>以美国为代表，2019年8月，美国财政部提交给美国总统特朗普的一份报告中对当前货币体系进行了分析，提议对加密货币进行彻底改革，在削弱监管的环境下培育新技术。美国财政部承认加密货币和区块链技术的崛起和快速发展，并表示区块链和分布式账本技术目前在美国金融稳定监督委员会的直接管理之下，美国政府支持这项技术并表示制定促进新兴产业增长的法规，对整个监管体系至关重要。2018年，美国国会发布《2018年联合经济报告》，提出区块链技术可以作为打击网络犯罪和保护国家经济和基础设施的潜在工具，指出这一领域的应用应成为立法者和监管者的首要任务。2017年，总统特朗普签署了一份7000亿美元的军费开支法案，其中包括授权一项区块链安全性研究，呼吁“调查区块链技术和其他分布式数据库技术的潜在攻击和防御网络应用”，支持美国土安全部开展加密货币跟踪、取证和分析工具开发项目。</p>
 
 
 
-<p>宁夏保密办（局）开展“弘扬保密优良传统、增强全民保密意识、确保国家秘密安全”主题活动，突出保密优良传统教育，组织离退休老党员参观了解老工业基地历史沿革、转型发展、生态建设等情况，沿着历史足迹感受改革发展的巨大变化，追寻红色记忆。</p>
+<p><strong>&nbsp;二、全球区块链产业发展</strong><strong></strong></p>
 
 
 
-<p><strong>传承红色保密基因</strong></p>
+<p>随着全球各个国家对区块链技术的重视，各国加大布局和战略制定，全力推动区块链产业的发展，区块链技术在各领域应用落地的步伐不断加快，但产业规模和增长见缓，投融资交易热度下降。</p>
 
 
 
-<p>中央保密办（国家保密局）依托“保密观”微信公众号和“保密观”APP平台，以党的保密工作优良传统等内容为重点，面向全国开展“光辉历程 保密有我”保密知识竞赛活动，6654万人次参赛，1106万人得满分，公众号和APP点击量突破10.8亿次。</p>
+<h3><strong>(一）各领域应用落地步伐加快</strong><strong></strong></h3>
 
 
 
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/c2VGa1VBYWV1cGVDcWliOHo1VDlVeGErUVYyL1FHcUpyNWZGcm0rdTIxMU5VNis2cGMxeXk5V281U2liL1ZNSi9HOHR3Q2F0Sko1TTJ3angvRFFVaHFEck01QVZkaXNubm9EUUxrWDhwVS9uUkwzckRBWm9kS3lmdFJoajZUZ3dEZDM2UEE3VzlqYXJRSmpQL0hJSmJnaXRya2pKMm5DY3pxWEhPeXhxTHl4azBtcFMwUEIwVmp3R2VLYllwVnhQQVNvNU5lN0JGRmRXQXFYR0lKTT0=/attach/object/089e3b864f1f274a7e4bfdad7f0719f50cfc4902" alt=""/></figure>
+<p>2019年以来，区块链在各领域应用落地的步伐不断加快，正在贸易金融、供应链、社会公共服务、选举、司法存证、税务、物流、医疗健康、农业、能源等多个垂直行业探索应用。截止 2019 年 8 月，由全球各国政府推动的区块链项目数量达 154 项，主要涉及金融业、政府档案、数字资产管理、投票、政府采购、土地认证/不动产登记、医疗健康等领域。其中，荷兰、韩国、美国、英国、澳大利亚等国的政府推动项目数排名前五，在探索区块链技术研发与应用落地方面表现更加积极主动。2019 年 6 月脸书(Facebook)牵头发布全球数字加密货币项目天秤座(Libra)的白皮书，天秤座(Libra)将作为一种简单、无国界的货币和为数十亿人服务的金融基础设施，为数十亿人提供无国界、低成本、普惠的金融服务。天秤座项目一经宣布就受到了全球各界的关注与讨论，各国监管部门先后发声，显示出区块链技术在重塑全球金融基础设施方面的巨大潜力。</p>
 
 
 
-<p>北京保密办（局）与有关单位联合举办“筑牢新时代保密安全防线——庆祝中国共产党成立100周年”主题展览，回顾首都保密工作发展历程，开展保密优良传统和保密形势教育。</p>
+<h3><strong>(二）产业规模增长减缓</strong><strong></strong></h3>
 
 
 
-<p>广西保密办（局）举办“学党史·开新局”演讲比赛，深情抒发新时代保密干部传承红色基因、永葆绝对忠诚、践行为民初心的责任与担当，增强保密战线干部职工做好本职工作的荣誉感、使命感、紧迫感和社会公众对保密工作的认同感、亲切感、责任感。</p>
+<p>产业规模层面，全球新增区块链企业数量出现减缓迹象。在经历了 2014 年和 2017 年的新成立区块链企业数量高峰后，2018 年起新成立企业数量开始下降。截止 2019 年 8 月，全球共有 2450 家区块链企业，新成立区块链企业数量锐减。行业应用方面，当前全球区块链企业 38%集中在加密货币领域，23%的企业专注于区块链技术研发，互联网、金融业是应用最多的两个领域。美国、中国、英国区块链企业数量分列前三位；加拿大、新加坡、瑞士等国由于相对宽松的产业监管环境，区块链企业数量也较多。城市分布方面，旧金山、北京、伦敦是拥有区块链企业最多的三个城市。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
 
 
-<p>海南保密办（局）依托省委办公厅“学本领、强作风”每周一讲活动，开展以“传承红色基因、弘扬保密传统”为主题的红色保密历史宣教活动，分享中共一大召开期间鲜为人知的保密故事，生动再现了党的事业与保密工作相生相伴的真实历史记忆。</p>
+<h3><strong>(三）资本投融资热度下降</strong><strong></strong></h3>
 
 
 
-<p>四川保密办（局）联合有关单位拍摄《红色电影中的保密基因》短视频、绘制《地图上的红色保密100年》主题地图，将党史、红色资源与保密常识有机结合，传承保密优良传统、激发砥砺奋进精神动力。</p>
+<p>投融资层面，区块链产业投融资交易热度下降。进入 2019 年，整个互联网投融资市场活跃度低位运行，2019 年Q2 中国市场互联网投融资总金额 81.3 亿美元，环比上涨 3.8%，但同比跌幅达 70.8%，资本环境趋紧态势明显，区块链投融资交易热度也有所下降。截止 2019 年 8 月底，2019 年区块链投融资交易规模仅为20.28 亿美元。2019 年 1-8 月区块链企业种子轮、天使轮、A 轮投融资交易共 273 笔，6.74 亿美元；均低于去年同期的 374 笔和 9.69 亿美元。美国、中国、韩国、瑞士、加拿大是全球区块链产业投融资金额最多的5个国家。其中，仅美国占比达到 49%。从五国近年投融资发展变化来看，美国区块链产业在 2015、2018 年出现投融资两次高峰，而韩国自2017 年起加速，2018 年投融资额位居全球第三位。2009 年至 2019年8月，全球区块链产业累计投融资金额达到 103.69亿美元。其中，2017、2018 是区块链产业投融资最活跃的时期。</p>
 
 
 
-<p>四川成都保密办（局）组织“红色基因我传承 国家安全我接力”接力跑活动，设置10个接力站点，按时间顺序分别展示了党的百年征程中100个重要历史事件，并在沿途完成党史和保密知识快问快答接力任务。</p>
+<p>据Gartner预测，到2030年，区块链的商业价值将达到3.1万亿美元。据2018年麦肯锡的预测，到2027年全球GDP的10%将被存储到区块链上。全球数字货币总市值在2018年初达到了7000 亿美金，后经历了较大波动，2018年6月份其总市值约为3000 亿美元。即便是经历了较大的起伏，数字货币的价值依然超过了世界上过半国家的GDP和大量世界级大公司的市值。根据国际数据公司(IDC)2017年发布的其全球半年度区块链支出指南，到2022年，全球区块链解决方案支出将达到117亿美元。</p>
 
 
 
-<p>下一步，全国保密战线将继续深入贯彻落实党中央决策部署和习近平总书记重要讲话精神，切实推进党史学习教育走深走实，重点抓好党的十九届六中全会精神的学习贯彻，传承红色基因、凝聚奋进力量，在新起点上推动党的保密事业高质量发展，为党和国家筑牢安全保密防线。</p>
+<p><strong>&nbsp;三、区块链技术之于网络安全</strong><strong></strong></p>
 
 
 
-<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="675" height="334" src="/wp-content/uploads/2021/11/fa785129a0dead8a109c6ef153a8ac4f8a0ffb40.png" alt="" class="wp-image-848" srcset="/wp-content/uploads/2021/11/fa785129a0dead8a109c6ef153a8ac4f8a0ffb40.png 675w, /wp-content/uploads/2021/11/fa785129a0dead8a109c6ef153a8ac4f8a0ffb40-300x148.png 300w" sizes="(max-width: 675px) 100vw, 675px" /></figure></div>
+<p>当前，几乎没有哪个行业是绝对安全的，黑客从未放弃寻找有漏洞的系统。虽然没有万无一失的方法来阻止黑客，但我们可以采取一些措施来减少设备被攻击的概率。通过将区块链技术与网络安全领域相结合，可以有效保护数据和信息的安全，主要体现在身份验证识别、安全保护、抵御入侵三个方面。</p>
+
+
+
+<h3><strong>(一）身份识别验证</strong><strong></strong></h3>
+
+
+
+<h4><strong>1、哈希值验证软件下载/更新的有效性</strong><strong></strong></h4>
+
+
+
+<p>当前，病毒、蠕虫和木马会以许多不同的形式进入电脑，而且通常很难被发现。病毒的多样性使得普通人很难察觉到其计算机早已被感染。事实上，恶意软件经常以软件下载或假冒应用程序更新的形式出现。就连一度被认为不会受到病毒感染的Mac电脑，在2018年也成为了4.9万种新型恶意软件攻击的目标。黑客将恶意程序和勒索软件伪装成合法的应用程序，从而隐藏其行踪。这些恶意软件可能窃取了数以百万计的个人信息。<br>这时，区块链技术可为软件的下载和更新分配惟一的哈希值。这将允许用户将想要下载的软件的哈希值与开发者的哈希值进行比较，并可最大程度的降低系统感染恶意软件的风险。</p>
+
+
+
+<h4><strong>2、基于生物特征数据、私钥和多重认证</strong><strong></strong></h4>
+
+
+
+<p>密码的问题在于，我们必须不断更新和更改密码，因为只有这样才能使这些由单词、符号和数字组成的字符串不会被追踪。Facebook表示，平均每天有60万次的针对用户密码的网络攻击。根据Thycotic的数据，50%的安全专业人士一年内都没有更改过他们的社交媒体密码，有20%的人从未更改过。区块链技术可以帮助我们解决密码难题，它是基于生物特征数据、私钥和多重认证来确保用户的身份。这些系统不仅比密码更有效，而且也更简单。</p>
+
+
+
+<h4><strong>3、多重签名的身份验证</strong><strong></strong></h4>
+
+
+
+<p>存储着的用户名和密码中央数据库是黑客的头号目标。2016年，多达3.6亿个Myspace用户名和密码被盗，并被放到网络黑市中出售，黑客入侵事件为Myspace敲响了丧钟。</p>
+
+
+
+<p>区块链本质上是分散的，它将关键信息存储在多个节点上，以降低任何单个节点被破坏的风险。区块链还运行在一个多重签名的身份验证模型上。该模型不使用用户名和密码，而是通过确认用户可以访问多个设备来进行身份验证。该机制可有效减少黑客攻击频率，能更好地保护敏感的、有价值的用户数据。</p>
+
+
+
+<h4><strong>4、多节点数据验证</strong><strong></strong></h4>
+
+
+
+<p>无论哪个行业，在检测欺诈行为和排查低效的原因时，如果收到不良数据或是错误的报告，其代价将是极为巨大的。用于打击欺诈的算法在检测不一致性方面非常有效，但它们常常会引起大量的误报。一项测试研究表明，现有的最先进算法能够识别99%信用卡欺诈交易，但这些算法还将另外50万笔合法交易标记为异常。也就是说，这些算法和安全措施在区分真实威胁方面并不可靠。通过区块链网络过滤的数据往往更可信赖，因为多节点的安全性有助于进行更准确的验证，并防止数据被篡改。</p>
+
+
+
+<h3><strong>(二）安全保护</strong><strong></strong></h3>
+
+
+
+<h4><strong>1、提升DNS系统安全</strong><strong></strong></h4>
+
+
+
+<p>当前研究表明，黑客最常用的DNS攻击手法大概可分为三种：一、DNS缓存中毒，此类攻击可将用户重定向至诈骗网站；二、DNS扩展攻击，此类攻击利用了DNS系统的漏洞，以增强DDoS攻击效果；三、DDoS攻击域名系统，此类攻击会使服务器超载，乃至完全瘫痪网站。</p>
+
+
+
+<p>区块链本质上是完全去中心化，因而适合运用在DNS系统主机中。该技术可有效提高此类分散式系统的安全性，因为入侵单独一处的访问漏洞将需要获得系统中更多的权限。</p>
+
+
+
+<h4><strong>2、提升数据存储的安全性</strong><strong></strong></h4>
+
+
+
+<p>数据，其实是一种通用货币。相关数据显示，单个消费者的数据平均每年可创造至少240美元的收益，甚至更多。在当今互联网时代，将这些数据存储在一个集中的数据库中是不明智的。似乎每周都有数据泄露事件发生，为何没有尝试不同的存储方法?</p>
+
+
+
+<p>区块链的特性使得黑客无法通过入侵单一站点来获取大量数据。分散的数据存储将有效提高数据的安全性，在黑客和你的数据之间，有无数道坚固的钢铁屏障。</p>
+
+
+
+<h4><strong>3、确保边缘设备安全</strong><strong></strong></h4>
+
+
+
+<p>随着技术的发展，互联网、应用程序和其他技术融入了我们生活的方方面面。同时这也代表着，网络为那些知道漏洞位置和利用方法的黑客提供了大量数据。在2017年，有41%的安卓设备容易遭到“极具破坏性”的Wi-Fi攻击，这些攻击会使手机被植入恶意软件。可以说，此类边缘设备打开了通向核心网络。对于一个黑客来说，通过一个边缘设备的漏洞来渗透整个网络，就像从一个婴儿手里拿糖果那般容易。</p>
+
+
+
+<p>区块链技术可以确保这些设备和核心网络隔离于多重认证过程和区块链级，而分散的威胁缓解协议是修补漏洞的第一步。</p>
+
+
+
+<h3><strong>(三）抵御入侵攻击</strong><strong></strong></h3>
+
+
+
+<h4><strong>1、 有效抵御DDoS攻击</strong><strong></strong></h4>
+
+
+
+<p>随着黑客技术的不断发展，攻击者的分布式拒绝服务攻击(DDoS)手段日益复杂。例如，黑客开始使用善于隐藏的恶意软件，即使在系统重新启动后，此类恶意软件也能自行启动，从而导致系统过载，并一次又一次地崩溃。这些攻击不仅变得更加复杂，其攻击频率也大大增加(DDoS攻击在过去三年中的发生频率至少增长了2.5倍)。物联网的应用更是降低了DDoS攻击的难度，因为一次攻击便可以影响多个相互连接的系统。</p>
+
+
+
+<p>区块链技术可以允许用户加入分布式网络，以更好地抵御DDoS攻击，进而增强网络的安全性。不仅如此，区块链技术还将允许网络用户出租额外带宽，以支持那些流量过载的网络。这样一来，DDoS攻击的成功率将显著降低。</p>
+
+
+
+<h4><strong>2、防止针对自动化的黑客入侵</strong><strong></strong></h4>
+
+
+
+<p>智能设备和自动化技术的兴起使得数据泄露变成了家常便饭。安全公司Senrio已经证明，一旦成功渗透到一两个脆弱的物联网设备，黑客便可以在互相连接的设备网络中自由穿梭，无论这些设备是摄像机或手机。可以说，这是当前困扰物联网和自动化设备的最大问题之一。</p>
+
+
+
+<p>区块链技术可被用于识别无效或可能导致严重后果的指令、程序（诸如自动更新程序可能会无意中包含的恶意软件）。此外，区块链算法还可持续工作以识别入侵行为，这将有效保证自动化设备的安全性。</p>
+
+
+
+<h4><strong>3、计算机固件免受远程入侵</strong><strong></strong></h4>
+
+
+
+<p>知识产权对任何国家的经济都具有同等价值，盗窃也同样有害。根据美国调查机构的数据，每年知识产权损失在2250亿美元至6000亿美元之间。而防止这种盗窃的最有效方式是确保计算机固件不会受到远程入侵。了解固件的制造商及生产地，不仅可为购买决策做参考，还有助于在发生黑客攻击时进行调查。区块链分类账的优点之一是能够准确地证明设备的生产地点，它能够提供计算机生产和运输历史的不可变记录。</p>
+
+
+
+<p><strong>&nbsp;四、启示建议</strong><strong></strong></p>
+
+
+
+<p>区块链在一定程度上解决了价值传输过程中完整性、真实性、唯一性的问题，降低了价值传输的风险，提高了传输的效率，实现了企业协作环节的信息化，将催生大量创新合作场景，构建创新创业新生态。区块链技术将带动新一轮的创业创新浪潮。同时，区块链与人工智能、物联网等新技术融合不断拓展技术应用新空间，进一步释放创新创业活力。</p>
+
+
+
+<p><strong>一是加快推进物联网和区块链技术的融合。</strong>一方面，借助物联网设备的物理防篡改，有助于实现区块链数据从链下到链上的“过程可信”；另一方面，区块链将各自分离、协议不同的物联网网络链接在一起，并通过事先约定规则、“沙箱式”数据处理等方式，形成了跨系统跨边界的数据共享协作新模式。目前，区块链与物联网的结合，业界在物流存证溯源、新型共享经济、能源去中介交易、电动车适配充电、无人机群体智能等方面做了相应探索，也遇到了性能、存储、能源消耗等一系列的问题。</p>
+
+
+
+<p><strong>二是加快5G和区块链技术融合。</strong>随着5G技术的不断发展与成熟，5G所带来的高效率数据传播、延迟降低、降低成本、海量设备连接等优势，如果与区块链技术融合，将释放巨大的经济价值潜能，真正创造一个无法预料的海量价值。5G技术可以加速区块链应用落地，区块链技术也会给5G应用带来新思路。区块链技术作为当前最“火”的话题，旨在打破当前依赖中心机构信任背书的交易模式，用密码学的手段为交易去中心化、交易信息隐私保护、历史记录防篡改、可追溯等提供技术支持。其缺点如上所述包括延时高、交易速率慢、基础设备要求高等。5G技术作为通信基础设施未来能够促进区块链应用项目的落地。</p>
+
+
+
+<p><strong>三是加快人工智能和区块链技术的融合。</strong>人工智能发展的底层构架核心在于算法、算力和数据；算法已取得突破性进展，但是在算力和数据层面仍遭遇巨大挑战。最典型的就是计算资源昂贵、数据垄断以及数据隐私得不到保护，使得人工智能往往成为寡头游戏，严重制约了人工智能发展。因此，必须解决数据隐私问题，实现数据确权，形成基于区块链的数据交易平台，才能推动人工智能的快速发展。</p>
+
+
+
+<p>原文来源：信息安全与通信保密杂志社</p>
+
+
+
+<p>“投稿联系方式：孙中豪&nbsp;010-82992251 &nbsp; sunzhonghao@cert.org.cn”</p>
+
+
+
+<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/UFpzMGQ0T3pQN1V2Wkg0QU9ETFNxcGY1M3QvNlJsTUE0MmFCVEYycWFkWXBqRUU5SFQwbGNSTEtmRm9oNzlhOWFrZHJvMVoveHFzbEViQjZKLzhGb1JlSWFVWmUwYTdCOGV4QVVHWlVtb1A2NEwzaDFyelcxYThKVEs1WTBEb1l2MUJMY2ZjbmJnbHZ2TFV3M2VSOThLVjVKN3NZRzVGdE8rcDV6WVlrcVhDbGFmUFNKWS93OWpTd1ViZmVGb2pLMUZld2g0djFXbWtIQ3prSkRXZz0=/attach/object/40217d309a39bc00a9eb3c14289fdc3905a5e8d8" alt=""/></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/archives/847/feed</wfw:commentRss>
+					<wfw:commentRss>/archives/4359/feed</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>政策要闻  国家数据分级分类保护制度如何落地？《网络数据安全管理条例》公开征求意见</title>
-		<link>/archives/841</link>
-					<comments>/archives/841#respond</comments>
+		<title>区块链助力健康养老“智慧”发展</title>
+		<link>/archives/4355</link>
+					<comments>/archives/4355#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Sun, 14 Nov 2021 03:31:00 +0000</pubDate>
+		<pubDate>Mon, 27 Dec 2021 09:21:40 +0000</pubDate>
 				<category><![CDATA[全部]]></category>
-		<category><![CDATA[国家政策]]></category>
-		<guid isPermaLink="false">/?p=841</guid>
+		<category><![CDATA[区块链]]></category>
+		<guid isPermaLink="false">/?p=4355</guid>
 
-					<description><![CDATA[政策要闻 &#124;&#124; 国家数据分级分类保护制度如何落地？《网络数据安全管理条例》公开征求意见 《为落实《中华人民共和 [&#8230;]]]></description>
+					<description><![CDATA[区块链助力健康养老“智慧”发展 区块链的信息不可篡改、可溯源、分布式共享、共识机制等特性，为解决健康养老领域中 [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<h1><strong>政策要闻 || 国家数据分级分类保护制度如何落地？《网络数据安全管理条例》公开征求意见</strong><strong></strong></h1>
+<h1><strong>区块链助力健康养老“智慧”发展</strong><strong></strong></h1>
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="802" height="471" src="/wp-content/uploads/2021/11/4b7a2f38f083734f91b31eaa5b0187b3ba88f50c.png" alt="" class="wp-image-842" srcset="/wp-content/uploads/2021/11/4b7a2f38f083734f91b31eaa5b0187b3ba88f50c.png 802w, /wp-content/uploads/2021/11/4b7a2f38f083734f91b31eaa5b0187b3ba88f50c-300x176.png 300w, /wp-content/uploads/2021/11/4b7a2f38f083734f91b31eaa5b0187b3ba88f50c-768x451.png 768w" sizes="(max-width: 802px) 100vw, 802px" /></figure>
+<p>区块链的信息不可篡改、可溯源、分布式共享、共识机制等特性，为解决健康养老领域中数据隐私泄露、数据造假、健康信息共享难等问题提供了新思路。</p>
 
 
 
-<p><strong>《</strong>为落实《中华人民共和国网络安全法》《中华人民共和国数据安全法》《中华人民共和国个人信息保护法》等法律关于数据安全管理的规定，规范网络数据处理活动，保护个人、组织在网络空间的合法权益，维护国家安全和公共利益，根据国务院2021年立法计划，我办会同相关部门研究起草《网络数据安全管理条例（征求意见稿）》，现向社会公开征求意见。公众可通过以下途径和方式反馈意见：</p>
+<figure class="wp-block-image size-full"><img loading="lazy" width="432" height="261" src="/wp-content/uploads/2021/12/image-1.png" alt="" class="wp-image-4356" srcset="/wp-content/uploads/2021/12/image-1.png 432w, /wp-content/uploads/2021/12/image-1-300x181.png 300w" sizes="(max-width: 432px) 100vw, 432px" /></figure>
 
 
 
-<p>1.通过电子邮件将意见发送至：shujuju@cac.gov.cn。</p>
+<p>第七次全国人口普查结果显示，我国60岁及以上人口高达2.64亿人。我国老龄化程度正日益加重，随之带来的是健康养老服务需求的不断增长。然而健康养老服务中面临的数据存储难、数据隐私泄露、数据造假等挑战，成为了健康养老服务的快速发展的阻碍因素。</p>
 
 
 
-<p>2.通过信函将意见寄至：北京市西城区车公庄大街11号国家互联网信息办公室网络数据管理局，邮编：100044，并在信封上注明“网络数据安全管理条例征求意见”。</p>
+<p>区块链技术自诞生以来，引起了社会各界的广泛关注。其信息不可篡改、可溯源、分布式共享、共识机制等特性，为解决健康养老领域中数据隐私泄露、数据造假、健康信息共享难等问题提供了新思路。</p>
 
 
 
-<p>意见反馈截止时间为2021年12月13日。</p>
+<p><strong>区块链助力解决健康养老中的问题</strong></p>
 
 
 
-<p><strong>附件：《网络数据安全管理条例（征求意见稿）》</strong></p>
+<p><strong>1、区块链助力解决健康养老隐私泄露问题</strong></p>
 
 
 
-<p>国家互联网信息办公室</p>
+<p>传统中心化的医疗健康信息存储机构极易出现患者隐私泄露问题，比如由于黑客的攻击、恶意软件引发的系统问题，可能导致数据因此被篡改、删除，或者出现更新错误等现象。全球的医疗健康数据每年会有高达 150EB 的存储量。由于基因组测序等高通量医学测试成本的降低，其增长速度将会进一步加快。来自移动和可穿戴设备、高清诊断成像、新的生物分子疾病标志物的大量多模态数据在促进创新和改善临床诊断结果方面发挥着重要作用。但与此同时获取和存储患者的这些数据也给医院或者私营企业带来高昂的成本和潜在的身份盗窃、隐私泄露风险。更加重要的是，患者作为数据的制造者，却被剥夺了对个人信息处理的权利。</p>
 
 
 
-<p>2021年11月14日</p>
+<p>采用中心化存储方式的数据库，若被黑客入侵有可能面临所有数据泄露的安全风险，区块链技术采用分布式存储方式，一定程度上降低了数据全部被泄露的风险。此外，区块链技术采用的加密算法使其链上交易数据对应的参与者身份具有匿名性，访问数据必须提供私钥；在开发区块链应用时，可利用加密性按需设置不同参与者的数据获取权限，使特定数据只能被特定人员查看。</p>
 
 
 
-<p><strong>网络数据安全管理条例</strong></p>
+<p>MyHealthMyData（MHMD）是亚马逊2020年的研究与创新行动，通过使用区块链技术，构建共享的公共数据分类账本，减少身份盗用和隐私受到侵犯的风险。患者自己可以根据不同的数据用途提供不同类型的权限许可，还可追踪记录适用范围和干系人。由于区块链具有可追溯的特性，任何篡改区块链数据的企图都可以被检测到，从而可以有效地减少隐私泄露问题的出现。</p>
 
 
 
-<p>（征求意见稿）</p>
+<p><strong>2、区块链助力解决健康养老信任问题</strong></p>
 
 
 
-<p><strong>第一章 总则</strong></p>
+<p>健康养老的主体是老年人，其总体上属于弱势群体，老年人对于新生事物反应不如年轻人那么快，因而比较容易上当受骗，对服务人员及其提供的服务存有警惕之心，这导致许多养老服务很难推进。当使用区块链技术构建可信互联网时，可打消老人对养老服务安全性、可靠性的顾忌。区块链通过加密算法、分布式存储、共识机制、智能合约等保证健康养老系统参与各主体能够在信任的环境下自动安全地交换数据，上链过的数据确保真实不可篡改，出现问题可溯源；智能合约解决了“陌生信任”，合同一旦达到条件自动执行，不必担心一方出现违约行为。</p>
 
 
 
-<p><strong>第一条</strong>&nbsp;为了规范网络数据处理活动，保障数据安全，保护个人、组织在网络空间的合法权益，维护国家安全、公共利益，根据《中华人民共和国网络安全法》《中华人民共和国数据安全法》《中华人民共和国个人信息保护法》等法律，制定本条例。</p>
+<p>一个典型应用是时间银行。时间银行的概念是美国Edgar S. Cahn教授于20世纪80年代提出的，低龄老年人通过社区志愿服务，累积服务时间，等步入高龄时，兑换等时的他人志愿服务时间。目前我国时间银行体量小、受众少，各地时间银行缺乏联系。分析问题背后产生的原因主要是人们之间存在信任危机：人们的劳动成果代际接力的延期支付方式不易得到信任和认同，人口流动背景下难以实现“时间货币”的转让、继承及通存通兑。使用区块链技术可以有效解决人们之间存在的信任问题。区块链具有共识机制，基于社区的共识运行，其本质是点对点的价值传输协议，与时间银行这一用户与用户之间志愿服务时间的交换平台不谋而合。支付宝通过使用区块链技术，使得时间银行可确保“时间”的存储和兑换公开透明，永久在链，防止丢失或者被篡改，还可以跨机构、跨区域通兑。南京市在政务平台上开发出了一套“养老服务时间银行”信息系统。截至2021年3月6日，南京市已注册养老服务“时间银行”运营服务点1252个。一共有5万多名志愿者和3万多名老人，有11万多的订单。应用区块链技术，助力时间银行消除信任危机。</p>
 
 
 
-<p><strong>第二条</strong>&nbsp;在中华人民共和国境内利用网络开展数据处理活动，以及网络数据安全的监督管理，适用本条例。</p>
+<p><strong>3. 区块链助力解决虚假信息问题</strong></p>
 
 
 
-<p>在中华人民共和国境外处理中华人民共和国境内个人和组织数据的活动，有下列情形之一的，适用本条例：</p>
+<p>近年来，随着文本信息的爆发式增长，人们每天能接触到海量的文本信息，如新闻、博客、聊天、报告、论文、微博等。老年人在购买产品或尝试新服务时，往往会上网查看产品相关介绍与其他用户的评价，而有的商家或服务商会夸大宣传，甚至会雇佣人员进行刷单好评。与健康养老相关的虚假信息往往会导致老年人上当受骗，易造成财产或精神损失。使用区块链技术可解决虚假信息问题。区块链的共识算法、哈希算法、时间戳等技术保证数据不可篡改、可溯源，共识算法使得区块链中的节点基于待管理信息达成共识，虚假信息上链之后不可被篡改，可以根据分布式账本上的记录，溯源到虚假信息的源头，从而找出虚假信息的传播者，保证了信息的安全性，也更加有利于高效地治理虚假信息。</p>
 
 
 
-<p>（一）以向境内提供产品或者服务为目的；</p>
+<p>在社交需求方面，老年人同样，甚至更加需要陪伴。比如，越来越多的老年人学会上网，学会在婚恋网站上寻找自己的伴侣。然而婚恋网站上存在着大量虚假信息，不少不法分子利用网络通过婚恋网站伪造自己的个人信息，诈骗老年人。利用区块链不可篡改的时间戳可解决数据追踪与信息防伪问题，将婚恋网站上所有填写的资料均上报到链上，就不用担心虚假填报的问题，出了问题可利用区块链可追溯特点查找到责任人。同时区块链有助于实现用户对数据的控制权，老年人可使用基于区块链技术的婚恋网站放心填写个人资料，不必担心隐私泄露，避免骚扰电话的发生。例如，百合网联合世纪佳缘推出的BHChain，试图用理性技术打造婚恋社交信任基石，可为老年用户提供安全可信的婚恋社交平台。</p>
 
 
 
-<p>（二）分析、评估境内个人、组织的行为；</p>
+<p><strong>区块链在健康养老领域的趋势</strong></p>
 
 
 
-<p>（三）涉及境内重要数据处理；</p>
+<p>区块链技术目前已在养老保险、养老金融、养老供应链、老年社交、老年旅游、医药溯源、电子病历等领域有所应用，但应用落地的远没有宣传的多，而且老年使用人数也未有准确的统计数字。</p>
 
 
 
-<p>（四）法律、行政法规规定的其他情形。</p>
+<p>区块链技术本质是多个节点共同记账的账本，是一个去中心化数据库。任何需要数据存储的系统或应用，都可以使用区块链技术，达到不可篡改、可溯源、多节点共同治理的效果。但并不是所有的应用场景都需要跟区块链技术结合在一起。目前区块链技术本身存在着一些技术挑战。例如区块链的性能较低，限制了部分高性能要求的场景应用；由于区块确认需要时间，对时间要求高的应用并不适合纯粹依靠区块链技术；区块链优势在于解决信任问题，但无法保证数据质量；上链后的数据难以篡改的特性使得区块链可以用于防伪，但无法保证上链时的数据本身是正确的。此外，区块链仍面临众多安全问题，比如用户因盗窃、欺诈、泄密导致的私钥被他人得知或丢失，从而导致的个人数字资产丧失。</p>
 
 
 
-<p>自然人因个人或者家庭事务开展数据处理活动，不适用本条例。</p>
+<p>从政府层面来讲，在健康养老领域，政府需要牵头协作各方，如医院、养老企业、社区、志愿者、老人。多主体带来的协作困难与各方之间的不信任，是政府面临的最大问题。由于信息孤岛、部门保护、机制僵化、基础薄弱等问题，导致各参与主体之间缺乏信任，政府如何牵头消除互相之间存在的信任危机，如何实施有效的监管，是亟需解决的问题。</p>
 
 
 
-<p><strong>第三条</strong>&nbsp;国家统筹发展和安全，坚持促进数据开发利用与保障数据安全并重，加强数据安全防护能力建设，保障数据依法有序自由流动，促进数据依法合理有效利用。</p>
+<p>从技术层面而言，健康养老领域涉及数据具有多维、多来源、规模大等特点，在对数据进行获取、存储、计算过程中存在许多技术上的阻碍，在计算能力、存储能力上需要进行突破。与此同时，由于健康养老领域数据都与人有关，隐私保护便成了突出问题，因此隐私保护能力也是技术上需要进行突破的重点。此外，养老机构可能会不够重视数据存储的安全性，获取的老人健康养老信息易被黑客攻击，数据访问和接入方式安全性需要提升。</p>
 
 
 
-<p><strong>第四条</strong>&nbsp;国家支持数据开发利用与安全保护相关的技术、产品、服务创新和人才培养。</p>
+<p>针对上述问题，我们建议有志于将区块链技术应用在养老健康等领域的企业可与高校或研究单位开展合作，共同攻克区块链在实施上的技术难题。我们建议，目前可研究的研究方向包括：在提升计算和存储能力方面，利用边缘计算，扩展“云 &#8211; 端”的系统架构，通过边缘设备将边缘计算尽可能推到“人”的身边，减少集中式的云计算和云存储；在隐私保护方面，通过数字孪生技术在数字世界模拟一个“数字人”，完整记录人的健康医疗信息，数字人经过脱敏加密后，可以在数字世界实现交换和交易，从而不必担心隐私的困扰；通过分布式数字身份，用分布式基础设施改变应用厂商控制数字身份的模式，让用户控制和管理自己的数字身份。</p>
 
 
 
-<p>国家鼓励国家机关、行业组织、企业、教育和科研机构、有关专业机构等开展数据开发利用和安全保护合作，开展数据安全宣传教育和培训。</p>
+<p>好的系统不仅需要政府引导，企业参与，更需要我们每个人付出实际行动。老年人在政府、社区宣传引导下主动了解区块链技术，还可以用一定激励手段引导老年人主动将数据上链、共享。使用区块链技术，可通过算法与零知识证明机制，实现自动资源分配与排队机制，杜绝特权与关系通道，实现生命平等就医。减少人为干预流程，实时对接医保、治疗、康复养老等数据上链，实现一链单点通办。了解到这些益处之后，老年人及其照护者应会主动与多方联动，参与到区块链应用之中。</p>
 
 
 
-<p><strong>第五条</strong>&nbsp;国家建立数据分类分级保护制度。按照数据对国家安全、公共利益或者个人、组织合法权益的影响和重要程度，将数据分为一般数据、重要数据、核心数据，不同级别的数据采取不同的保护措施。</p>
-
-
-
-<p>国家对个人信息和重要数据进行重点保护，对核心数据实行严格保护。</p>
-
-
-
-<p>各地区、各部门应当按照国家数据分类分级要求，对本地区、本部门以及相关行业、领域的数据进行分类分级管理。</p>
-
-
-
-<p><strong>第六条</strong>&nbsp;数据处理者对所处理数据的安全负责，履行数据安全保护义务，接受政府和社会监督，承担社会责任。</p>
-
-
-
-<p>数据处理者应当按照有关法律、行政法规的规定和国家标准的强制性要求，建立完善数据安全管理制度和技术保护机制。</p>
-
-
-
-<p><strong>第七条</strong>&nbsp;国家推动公共数据开放、共享，促进数据开发利用，并依法对公共数据实施监督管理。</p>
-
-
-
-<p>国家建立健全数据交易管理制度，明确数据交易机构设立、运行标准，规范数据流通交易行为，确保数据依法有序流通。</p>
-
-
-
-<p><strong>第二章 一般规定</strong></p>
-
-
-
-<p><strong>第八条</strong>&nbsp;任何个人和组织开展数据处理活动应当遵守法律、行政法规，尊重社会公德和伦理，不得从事以下活动：</p>
-
-
-
-<p>（一）危害国家安全、荣誉和利益，泄露国家秘密和工作秘密；</p>
-
-
-
-<p>（二）侵害他人名誉权、隐私权、著作权和其他合法权益等；</p>
-
-
-
-<p>（三）通过窃取或者以其他非法方式获取数据；</p>
-
-
-
-<p>（四）非法出售或者非法向他人提供数据；</p>
-
-
-
-<p>（五）制作、发布、复制、传播违法信息；</p>
-
-
-
-<p>（六）法律、行政法规禁止的其他行为。</p>
-
-
-
-<p>任何个人和组织知道或者应当知道他人从事前款活动的，不得为其提供技术支持、工具、程序和广告推广、支付结算等服务。</p>
-
-
-
-<p><strong>第九条</strong>&nbsp;数据处理者应当采取备份、加密、访问控制等必要措施，保障数据免遭泄露、窃取、篡改、毁损、丢失、非法使用，应对数据安全事件，防范针对和利用数据的违法犯罪活动，维护数据的完整性、保密性、可用性。</p>
-
-
-
-<p>数据处理者应当按照网络安全等级保护的要求，加强数据处理系统、数据传输网络、数据存储环境等安全防护，处理重要数据的系统原则上应当满足三级以上网络安全等级保护和关键信息基础设施安全保护要求，处理核心数据的系统依照有关规定从严保护。</p>
-
-
-
-<p>数据处理者应当使用密码对重要数据和核心数据进行保护。</p>
-
-
-
-<p><strong>第十条</strong>&nbsp;数据处理者发现其使用或者提供的网络产品和服务存在安全缺陷、漏洞，或者威胁国家安全、危害公共利益等风险时，应当立即采取补救措施。</p>
-
-
-
-<p><strong>第十一条</strong>&nbsp;数据处理者应当建立数据安全应急处置机制，发生数据安全事件时及时启动应急响应机制，采取措施防止危害扩大，消除安全隐患。安全事件对个人、组织造成危害的，数据处理者应当在三个工作日内将安全事件和风险情况、危害后果、已经采取的补救措施等以电话、短信、即时通信工具、电子邮件等方式通知利害关系人，无法通知的可采取公告方式告知，法律、行政法规规定可以不通知的从其规定。安全事件涉嫌犯罪的，数据处理者应当按规定向公安机关报案。</p>
-
-
-
-<p>发生重要数据或者十万人以上个人信息泄露、毁损、丢失等数据安全事件时，数据处理者还应当履行以下义务：</p>
-
-
-
-<p>（一）在发生安全事件的八小时内向设区的市级网信部门和有关主管部门报告事件基本信息，包括涉及的数据数量、类型、可能的影响、已经或拟采取的处置措施等；</p>
-
-
-
-<p>（二）在事件处置完毕后五个工作日内向设区的市级网信部门和有关主管部门报告包括事件原因、危害后果、责任处理、改进措施等情况的调查评估报告。</p>
-
-
-
-<p><strong>第十二条</strong>&nbsp;数据处理者向第三方提供个人信息，或者共享、交易、委托处理重要数据的，应当遵守以下规定：</p>
-
-
-
-<p>（一）向个人告知提供个人信息的目的、类型、方式、范围、存储期限、存储地点，并取得个人单独同意，符合法律、行政法规规定的不需要取得个人同意的情形或者经过匿名化处理的除外；</p>
-
-
-
-<p>（二）与数据接收方约定处理数据的目的、范围、处理方式，数据安全保护措施等，通过合同等形式明确双方的数据安全责任义务，并对数据接收方的数据处理活动进行监督；</p>
-
-
-
-<p>（三）留存个人同意记录及提供个人信息的日志记录，共享、交易、委托处理重要数据的审批记录、日志记录至少五年。</p>
-
-
-
-<p>数据接收方应当履行约定的义务，不得超出约定的目的、范围、处理方式处理个人信息和重要数据。</p>
-
-
-
-<p><strong>第十三条</strong>&nbsp;数据处理者开展以下活动，应当按照国家有关规定，申报网络安全审查：</p>
-
-
-
-<p>（一）汇聚掌握大量关系国家安全、经济发展、公共利益的数据资源的互联网平台运营者实施合并、重组、分立，影响或者可能影响国家安全的；</p>
-
-
-
-<p>（二）处理一百万人以上个人信息的数据处理者赴国外上市的；</p>
-
-
-
-<p>（三）数据处理者赴香港上市，影响或者可能影响国家安全的；</p>
-
-
-
-<p>（四）其他影响或者可能影响国家安全的数据处理活动。</p>
-
-
-
-<p>大型互联网平台运营者在境外设立总部或者运营中心、研发中心，应当向国家网信部门和主管部门报告。</p>
-
-
-
-<p><strong>第十四条</strong>&nbsp;数据处理者发生合并、重组、分立等情况的，数据接收方应当继续履行数据安全保护义务，涉及重要数据和一百万人以上个人信息的，应当向设区的市级主管部门报告；数据处理者发生解散、被宣告破产等情况的，应当向设区的市级主管部门报告，按照相关要求移交或删除数据，主管部门不明确的，应当向设区的市级网信部门报告。</p>
-
-
-
-<p><strong>第十五条</strong>&nbsp;数据处理者从其他途径获取的数据，应当按照本条例的规定履行数据安全保护义务。</p>
-
-
-
-<p><strong>第十六条</strong>&nbsp;国家机关应当依照法律、行政法规的规定和国家标准的强制性要求，建立健全数据安全管理制度，落实数据安全保护责任，保障政务数据安全。</p>
-
-
-
-<p><strong>第十七条</strong>&nbsp;数据处理者在采用自动化工具访问、收集数据时，应当评估对网络服务的性能、功能带来的影响，不得干扰网络服务的正常功能。</p>
-
-
-
-<p>自动化工具访问、收集数据违反法律、行政法规或者行业自律公约、影响网络服务正常功能，或者侵犯他人知识产权等合法权益的，数据处理者应当停止访问、收集数据行为并采取相应补救措施。</p>
-
-
-
-<p><strong>第十八条</strong>&nbsp;数据处理者应当建立便捷的数据安全投诉举报渠道，及时受理、处置数据安全投诉举报。</p>
-
-
-
-<p>数据处理者应当公布接受投诉、举报的联系方式、责任人信息，每年公开披露受理和收到的个人信息安全投诉数量、投诉处理情况、平均处理时间情况，接受社会监督。</p>
-
-
-
-<p><strong>第三章 个人信息保护</strong></p>
-
-
-
-<p><strong>第十九条</strong>&nbsp;数据处理者处理个人信息，应当具有明确、合理的目的，遵循合法、正当、必要的原则。基于个人同意处理个人信息的，应当满足以下要求：</p>
-
-
-
-<p>（一）处理的个人信息是提供服务所必需的，或者是履行法律、行政法规规定的义务所必需的；</p>
-
-
-
-<p>（二）限于实现处理目的最短周期、最低频次，采取对个人权益影响最小的方式；</p>
-
-
-
-<p>（三）不得因个人拒绝提供服务必需的个人信息以外的信息，拒绝提供服务或者干扰个人正常使用服务。</p>
-
-
-
-<p><strong>第二十条</strong>&nbsp;数据处理者处理个人信息，应当制定个人信息处理规则并严格遵守。个人信息处理规则应当集中公开展示、易于访问并置于醒目位置，内容明确具体、简明通俗，系统全面地向个人说明个人信息处理情况。</p>
-
-
-
-<p>个人信息处理规则应当包括但不限于以下内容：</p>
-
-
-
-<p>（一）依据产品或者服务的功能明确所需的个人信息，以清单形式列明每项功能处理个人信息的目的、用途、方式、种类、频次或者时机、保存地点等，以及拒绝处理个人信息对个人的影响；</p>
-
-
-
-<p>（二）个人信息存储期限或者个人信息存储期限的确定方法、到期后的处理方式；</p>
-
-
-
-<p>（三）个人查阅、复制、更正、删除、限制处理、转移个人信息，以及注销账号、撤回处理个人信息同意的途径和方法；</p>
-
-
-
-<p>（四）以集中展示等便利用户访问的方式说明产品服务中嵌入的所有收集个人信息的第三方代码、插件的名称，以及每个第三方代码、插件收集个人信息的目的、方式、种类、频次或者时机及其个人信息处理规则；</p>
-
-
-
-<p>（五）向第三方提供个人信息情形及其目的、方式、种类，数据接收方相关信息等；</p>
-
-
-
-<p>（六）个人信息安全风险及保护措施；</p>
-
-
-
-<p>（七）个人信息安全问题的投诉、举报渠道及解决途径，个人信息保护负责人联系方式。</p>
-
-
-
-<p><strong>第二十一条</strong>&nbsp;处理个人信息应当取得个人同意的，数据处理者应当遵守以下规定：</p>
-
-
-
-<p>（一）按照服务类型分别向个人申请处理个人信息的同意，不得使用概括性条款取得同意；</p>
-
-
-
-<p>（二）处理个人生物识别、宗教信仰、特定身份、医疗健康、金融账户、行踪轨迹等敏感个人信息应当取得个人单独同意；</p>
-
-
-
-<p>（三）处理不满十四周岁未成年人的个人信息，应当取得其监护人同意；</p>
-
-
-
-<p>（四）不得以改善服务质量、提升用户体验、研发新产品等为由，强迫个人同意处理其个人信息；</p>
-
-
-
-<p>（五）不得通过误导、欺诈、胁迫等方式获得个人的同意；</p>
-
-
-
-<p>（六）不得通过捆绑不同类型服务、批量申请同意等方式诱导、强迫个人进行批量个人信息同意；</p>
-
-
-
-<p>（七）不得超出个人授权同意的范围处理个人信息；</p>
-
-
-
-<p>（八）不得在个人明确表示不同意后，频繁征求同意、干扰正常使用服务。</p>
-
-
-
-<p>个人信息的处理目的、处理方式和处理的个人信息种类发生变更的，数据处理者应当重新取得个人同意，并同步修改个人信息处理规则。</p>
-
-
-
-<p>对个人同意行为有效性存在争议的，数据处理者负有举证责任。</p>
-
-
-
-<p><strong>第二十二条</strong>&nbsp;有下列情况之一的，数据处理者应当在十五个工作日内删除个人信息或者进行匿名化处理：</p>
-
-
-
-<p>（一）已实现个人信息处理目的或者实现处理目的不再必要；</p>
-
-
-
-<p>（二）达到与用户约定或者个人信息处理规则明确的存储期限；</p>
-
-
-
-<p>（三）终止服务或者个人注销账号；</p>
-
-
-
-<p>（四）因使用自动化采集技术等，无法避免采集到的非必要个人信息或者未经个人同意的个人信息。</p>
-
-
-
-<p>删除个人信息从技术上难以实现，或者因业务复杂等原因，在十五个工作日内删除个人信息确有困难的，数据处理者不得开展除存储和采取必要的安全保护措施之外的处理，并应当向个人作出合理解释。</p>
-
-
-
-<p>法律、行政法规另有规定的从其规定。</p>
-
-
-
-<p><strong>第二十三条</strong>&nbsp;个人提出查阅、复制、更正、补充、限制处理、删除其个人信息的合理请求的，数据处理者应当履行以下义务：</p>
-
-
-
-<p>（一）提供便捷的支持个人结构化查询本人被收集的个人信息类型、数量等的方法和途径，不得以时间、位置等因素对个人的合理请求进行限制；</p>
-
-
-
-<p>（二）提供便捷的支持个人复制、更正、补充、限制处理、删除其个人信息、撤回授权同意以及注销账号的功能，且不得设置不合理条件；</p>
-
-
-
-<p>（三）收到个人复制、更正、补充、限制处理、删除本人个人信息、撤回授权同意或者注销账号申请的，应当在十五个工作日内处理并反馈。</p>
-
-
-
-<p>法律、行政法规另有规定的从其规定。</p>
-
-
-
-<p><strong>第二十四条</strong>&nbsp;符合下列条件的个人信息转移请求，数据处理者应当为个人指定的其他数据处理者访问、获取其个人信息提供转移服务：</p>
-
-
-
-<p>（一）请求转移的个人信息是基于同意或者订立、履行合同所必需而收集的个人信息；</p>
-
-
-
-<p>（二）请求转移的个人信息是本人信息或者请求人合法获得且不违背他人意愿的他人信息；</p>
-
-
-
-<p>（三）能够验证请求人的合法身份。</p>
-
-
-
-<p>数据处理者发现接收个人信息的其他数据处理者有非法处理个人信息风险的，应当对个人信息转移请求做合理的风险提示。</p>
-
-
-
-<p>请求转移个人信息次数明显超出合理范围的，数据处理者可以收取合理费用。</p>
-
-
-
-<p><strong>第二十五条</strong>&nbsp;数据处理者利用生物特征进行个人身份认证的，应当对必要性、安全性进行风险评估，不得将人脸、步态、指纹、虹膜、声纹等生物特征作为唯一的个人身份认证方式，以强制个人同意收集其个人生物特征信息。</p>
-
-
-
-<p>法律、行政法规另有规定的从其规定。</p>
-
-
-
-<p><strong>第二十六条</strong>&nbsp;数据处理者处理一百万人以上个人信息的，还应当遵守本条例第四章对重要数据的处理者作出的规定。</p>
-
-
-
-<p><strong>第四章 重要数据安全</strong></p>
-
-
-
-<p><strong>第二十七条</strong>&nbsp;各地区、各部门按照国家有关要求和标准，组织本地区、本部门以及相关行业、领域的数据处理者识别重要数据和核心数据，组织制定本地区、本部门以及相关行业、领域重要数据和核心数据目录，并报国家网信部门。</p>
-
-
-
-<p><strong>第二十八条</strong>&nbsp;重要数据的处理者，应当明确数据安全负责人，成立数据安全管理机构。数据安全管理机构在数据安全负责人的领导下，履行以下职责：</p>
-
-
-
-<p>（一）研究提出数据安全相关重大决策建议；</p>
-
-
-
-<p>（二）制定实施数据安全保护计划和数据安全事件应急预案；</p>
-
-
-
-<p>（三）开展数据安全风险监测，及时处置数据安全风险和事件；</p>
-
-
-
-<p>（四）定期组织开展数据安全宣传教育培训、风险评估、应急演练等活动；</p>
-
-
-
-<p>（五）受理、处置数据安全投诉、举报；</p>
-
-
-
-<p>（六）按照要求及时向网信部门和主管、监管部门报告数据安全情况。</p>
-
-
-
-<p>数据安全负责人应当具备数据安全专业知识和相关管理工作经历，由数据处理者决策层成员承担，有权直接向网信部门和主管、监管部门反映数据安全情况。</p>
-
-
-
-<p><strong>第二十九条</strong>&nbsp;重要数据的处理者，应当在识别其重要数据后的十五个工作日内向设区的市级网信部门备案，备案内容包括：</p>
-
-
-
-<p>（一）数据处理者基本信息，数据安全管理机构信息、数据安全负责人姓名和联系方式等；</p>
-
-
-
-<p>（二）处理数据的目的、规模、方式、范围、类型、存储期限、存储地点等，不包括数据内容本身；</p>
-
-
-
-<p>（三）国家网信部门和主管、监管部门规定的其他备案内容。</p>
-
-
-
-<p>处理数据的目的、范围、类型及数据安全防护措施等有重大变化的，应当重新备案。</p>
-
-
-
-<p>依据部门职责分工，网信部门与有关部门共享备案信息。</p>
-
-
-
-<p><strong>第三十条</strong>&nbsp;重要数据的处理者，应当制定数据安全培训计划，每年组织开展全员数据安全教育培训，数据安全相关的技术和管理人员每年教育培训时间不得少于二十小时。</p>
-
-
-
-<p><strong>第三十一条</strong>&nbsp;重要数据的处理者，应当优先采购安全可信的网络产品和服务。</p>
-
-
-
-<p><strong>第三十二条</strong>&nbsp;处理重要数据或者赴境外上市的数据处理者，应当自行或者委托数据安全服务机构每年开展一次数据安全评估，并在每年1月31日前将上一年度数据安全评估报告报设区的市级网信部门，年度数据安全评估报告的内容包括：</p>
-
-
-
-<p>（一）处理重要数据的情况；</p>
-
-
-
-<p>（二）发现的数据安全风险及处置措施；</p>
-
-
-
-<p>（三）数据安全管理制度，数据备份、加密、访问控制等安全防护措施，以及管理制度实施情况和防护措施的有效性；</p>
-
-
-
-<p>（四）落实国家数据安全法律、行政法规和标准情况；</p>
-
-
-
-<p>（五）发生的数据安全事件及其处置情况；</p>
-
-
-
-<p>（六）共享、交易、委托处理、向境外提供重要数据的安全评估情况；</p>
-
-
-
-<p>（七）数据安全相关的投诉及处理情况；</p>
-
-
-
-<p>（八）国家网信部门和主管、监管部门明确的其他数据安全情况。</p>
-
-
-
-<p>数据处理者应当保留风险评估报告至少三年。</p>
-
-
-
-<p>依据部门职责分工，网信部门与有关部门共享报告信息。</p>
-
-
-
-<p>数据处理者开展共享、交易、委托处理、向境外提供重要数据的安全评估，应当重点评估以下内容：</p>
-
-
-
-<p>（一）共享、交易、委托处理、向境外提供数据，以及数据接收方处理数据的目的、方式、范围等是否合法、正当、必要；</p>
-
-
-
-<p>（二）共享、交易、委托处理、向境外提供数据被泄露、毁损、篡改、滥用的风险，以及对国家安全、经济发展、公共利益带来的风险；</p>
-
-
-
-<p>（三）数据接收方的诚信状况、守法情况、境外政府机构合作关系、是否被中国政府制裁等背景情况，承诺承担的责任以及履行责任的能力等是否能够有效保障数据安全；</p>
-
-
-
-<p>（四）与数据接收方订立的相关合同中关于数据安全的要求能否有效约束数据接收方履行数据安全保护义务；</p>
-
-
-
-<p>（五）在数据处理过程中的管理和技术措施等是否能够防范数据泄露、毁损等风险。</p>
-
-
-
-<p>评估认为可能危害国家安全、经济发展和公共利益，数据处理者不得共享、交易、委托处理、向境外提供数据。</p>
-
-
-
-<p><strong>第三十三条</strong>&nbsp;数据处理者共享、交易、委托处理重要数据的，应当征得设区的市级及以上主管部门同意，主管部门不明确的，应当征得设区的市级及以上网信部门同意。</p>
-
-
-
-<p><strong>第三十四条</strong>&nbsp;国家机关和关键信息基础设施运营者采购的云计算服务，应当通过国家网信部门会同国务院有关部门组织的安全评估。</p>
-
-
-
-<p><strong>第五章 数据跨境安全管理</strong></p>
-
-
-
-<p><strong>第三十五条</strong>&nbsp;数据处理者因业务等需要，确需向中华人民共和国境外提供数据的，应当具备下列条件之一：</p>
-
-
-
-<p>（一）通过国家网信部门组织的数据出境安全评估；</p>
-
-
-
-<p>（二）数据处理者和数据接收方均通过国家网信部门认定的专业机构进行的个人信息保护认证；</p>
-
-
-
-<p>（三）按照国家网信部门制定的关于标准合同的规定与境外数据接收方订立合同，约定双方权利和义务；</p>
-
-
-
-<p>（四）法律、行政法规或者国家网信部门规定的其他条件。</p>
-
-
-
-<p>数据处理者为订立、履行个人作为一方当事人的合同所必需向境外提供当事人个人信息的，或者为了保护个人生命健康和财产安全而必须向境外提供个人信息的除外。</p>
-
-
-
-<p><strong>第三十六条</strong>&nbsp;数据处理者向中华人民共和国境外提供个人信息的，应当向个人告知境外数据接收方的名称、联系方式、处理目的、处理方式、个人信息的种类以及个人向境外数据接收方行使个人信息权利的方式等事项，并取得个人的单独同意。</p>
-
-
-
-<p>收集个人信息时已单独就个人信息出境取得个人同意，且按照取得同意的事项出境的，无需再次取得个人单独同意。</p>
-
-
-
-<p><strong>第三十七条</strong>&nbsp;数据处理者向境外提供在中华人民共和国境内收集和产生的数据，属于以下情形的，应当通过国家网信部门组织的数据出境安全评估：</p>
-
-
-
-<p>（一）出境数据中包含重要数据；</p>
-
-
-
-<p>（二）关键信息基础设施运营者和处理一百万人以上个人信息的数据处理者向境外提供个人信息；</p>
-
-
-
-<p>（三）国家网信部门规定的其它情形。</p>
-
-
-
-<p>法律、行政法规和国家网信部门规定可以不进行安全评估的，从其规定。</p>
-
-
-
-<p><strong>第三十八条</strong>&nbsp;中华人民共和国缔结或者参加的国际条约、协定对向中华人民共和国境外提供个人信息的条件等有规定的，可以按照其规定执行。</p>
-
-
-
-<p><strong>第三十九条</strong>&nbsp;数据处理者向境外提供数据应当履行以下义务：</p>
-
-
-
-<p>（一）不得超出报送网信部门的个人信息保护影响评估报告中明确的目的、范围、方式和数据类型、规模等向境外提供个人信息；</p>
-
-
-
-<p>（二）不得超出网信部门安全评估时明确的出境目的、范围、方式和数据类型、规模等向境外提供个人信息和重要数据；</p>
-
-
-
-<p>（三）采取合同等有效措施监督数据接收方按照双方约定的目的、范围、方式使用数据，履行数据安全保护义务，保证数据安全；</p>
-
-
-
-<p>（四）接受和处理数据出境所涉及的用户投诉；</p>
-
-
-
-<p>（五）数据出境对个人、组织合法权益或者公共利益造成损害的，数据处理者应当依法承担责任；</p>
-
-
-
-<p>（六）存留相关日志记录和数据出境审批记录三年以上；</p>
-
-
-
-<p>（七）国家网信部门会同国务院有关部门核验向境外提供个人信息和重要数据的类型、范围时，数据处理者应当以明文、可读方式予以展示；</p>
-
-
-
-<p>（八）国家网信部门认定不得出境的，数据处理者应当停止数据出境，并采取有效措施对已出境数据的安全予以补救；</p>
-
-
-
-<p>（九）个人信息出境后确需再转移的，应当事先与个人约定再转移的条件，并明确数据接收方履行的安全保护义务。</p>
-
-
-
-<p>非经中华人民共和国主管机关批准，境内的个人、组织不得向外国司法或者执法机构提供存储于中华人民共和国境内的数据。</p>
-
-
-
-<p><strong>第四十条</strong>&nbsp;向境外提供个人信息和重要数据的数据处理者，应当在每年1月31日前编制数据出境安全报告，向设区的市级网信部门报告上一年度以下数据出境情况：</p>
-
-
-
-<p>（一）全部数据接收方名称、联系方式；</p>
-
-
-
-<p>（二）出境数据的类型、数量及目的；</p>
-
-
-
-<p>（三）数据在境外的存放地点、存储期限、使用范围和方式；</p>
-
-
-
-<p>（四）涉及向境外提供数据的用户投诉及处理情况；</p>
-
-
-
-<p>（五）发生的数据安全事件及其处置情况；</p>
-
-
-
-<p>（六）数据出境后再转移的情况；</p>
-
-
-
-<p>（七）国家网信部门明确向境外提供数据需要报告的其他事项。</p>
-
-
-
-<p><strong>第四十一条</strong>&nbsp;国家建立数据跨境安全网关，对来源于中华人民共和国境外、法律和行政法规禁止发布或者传输的信息予以阻断传播。</p>
-
-
-
-<p>任何个人和组织不得提供用于穿透、绕过数据跨境安全网关的程序、工具、线路等，不得为穿透、绕过数据跨境安全网关提供互联网接入、服务器托管、技术支持、传播推广、支付结算、应用下载等服务。</p>
-
-
-
-<p>境内用户访问境内网络的，其流量不得被路由至境外。</p>
-
-
-
-<p><strong>第四十二条</strong>&nbsp;数据处理者从事跨境数据活动应当按照国家数据跨境安全监管要求，建立健全相关技术和管理措施。</p>
-
-
-
-<p><strong>第六章 互联网平台运营者义务</strong></p>
-
-
-
-<p><strong>第四十三条</strong>&nbsp;互联网平台运营者应当建立与数据相关的平台规则、隐私政策和算法策略披露制度，及时披露制定程序、裁决程序，保障平台规则、隐私政策、算法公平公正。</p>
-
-
-
-<p>平台规则、隐私政策制定或者对用户权益有重大影响的修订，互联网平台运营者应当在其官方网站、个人信息保护相关行业协会互联网平台面向社会公开征求意见，征求意见时长不得少于三十个工作日，确保用户能够便捷充分表达意见。互联网平台运营者应当充分采纳公众意见，修改完善平台规则、隐私政策，并以易于用户访问的方式公布意见采纳情况，说明未采纳的理由，接受社会监督。</p>
-
-
-
-<p>日活用户超过一亿的大型互联网平台运营者平台规则、隐私政策制定或者对用户权益有重大影响的修订的，应当经国家网信部门认定的第三方机构评估，并报省级及以上网信部门和电信主管部门同意。</p>
-
-
-
-<p><strong>第四十四条</strong>&nbsp;互联网平台运营者应当对接入其平台的第三方产品和服务承担数据安全管理责任，通过合同等形式明确第三方的数据安全责任义务，并督促第三方加强数据安全管理，采取必要的数据安全保护措施。</p>
-
-
-
-<p>第三方产品和服务对用户造成损害的，用户可以要求互联网平台运营者先行赔偿。</p>
-
-
-
-<p>移动通信终端预装第三方产品适用本条前两款规定。</p>
-
-
-
-<p><strong>第四十五条</strong>&nbsp;国家鼓励提供即时通信服务的互联网平台运营者从功能设计上为用户提供个人通信和非个人通信选择。个人通信的信息按照个人信息保护要求严格保护，非个人通信的信息按照公共信息有关规定进行管理。</p>
-
-
-
-<p><strong>第四十六条</strong>&nbsp;互联网平台运营者不得利用数据以及平台规则等从事以下活动：</p>
-
-
-
-<p>（一）利用平台收集掌握的用户数据，无正当理由对交易条件相同的用户实施产品和服务差异化定价等损害用户合法利益的行为；</p>
-
-
-
-<p>（二）利用平台收集掌握的经营者数据，在产品推广中实行最低价销售等损害公平竞争的行为；</p>
-
-
-
-<p>（三）利用数据误导、欺诈、胁迫用户，损害用户对其数据被处理的决定权，违背用户意愿处理用户数据；</p>
-
-
-
-<p>（四）在平台规则、算法、技术、流量分配等方面设置不合理的限制和障碍，限制平台上的中小企业公平获取平台产生的行业、市场数据等，阻碍市场创新。</p>
-
-
-
-<p><strong>第四十七条</strong>&nbsp;提供应用程序分发服务的互联网平台运营者，应当按照有关法律、行政法规和国家网信部门的规定，建立、披露应用程序审核规则，并对应用程序进行安全审核。对不符合法律、行政法规的规定和国家标准的强制性要求的应用程序，应当采取拒绝上架、督促整改、下架处置等措施。</p>
-
-
-
-<p><strong>第四十八条</strong>&nbsp;互联网平台运营者面向公众提供即时通信服务的，应当按照国务院电信主管部门的规定，为其他互联网平台运营者的即时通信服务提供数据接口，支持不同即时通信服务之间用户数据互通，无正当理由不得限制用户访问其他互联网平台以及向其他互联网平台传输文件。</p>
-
-
-
-<p><strong>第四十九条</strong>&nbsp;互联网平台运营者利用个人信息和个性化推送算法向用户提供信息的，应当对推送信息的真实性、准确性以及来源合法性负责，并符合以下要求：</p>
-
-
-
-<p>（一）收集个人信息用于个性化推荐时，应当取得个人单独同意；</p>
-
-
-
-<p>（二）设置易于理解、便于访问和操作的一键关闭个性化推荐选项，允许用户拒绝接受定向推送信息，允许用户重置、修改、调整针对其个人特征的定向推送参数；</p>
-
-
-
-<p>（三）允许个人删除定向推送信息服务收集产生的个人信息，法律、行政法规另有规定或者与用户另有约定的除外。</p>
-
-
-
-<p><strong>第五十条</strong>&nbsp;国家建设网络身份认证公共服务基础设施，按照政府引导、网民自愿原则，提供个人身份认证公共服务。</p>
-
-
-
-<p>互联网平台运营者应当支持并优先使用国家网络身份认证公共服务基础设施提供的个人身份认证服务。</p>
-
-
-
-<p><strong>第五十一条</strong>&nbsp;互联网平台运营者在为国家机关提供服务，参与公共基础设施、公共服务系统建设运维管理，利用公共资源提供服务过程中收集、产生的数据不得用于其他用途。</p>
-
-
-
-<p><strong>第五十二条</strong>&nbsp;国务院有关部门履行法定职责需要调取或者访问互联网平台运营者掌握的公共数据、公共信息，应当明确调取或者访问的范围、类型、用途、依据，严格限定在履行法定职责范围内，不得将调取或者访问的公共数据、公共信息用于履行法定职责之外的目的。</p>
-
-
-
-<p>互联网平台运营者应当对有关部门调取或者访问公共数据、公共信息予以配合。</p>
-
-
-
-<p><strong>第五十三条</strong>&nbsp;大型互联网平台运营者应当通过委托第三方审计方式，每年对平台数据安全情况、平台规则和自身承诺的执行情况、个人信息保护情况、数据开发利用情况等进行年度审计，并披露审计结果。</p>
-
-
-
-<p><strong>第五十四条</strong>&nbsp;互联网平台运营者利用人工智能、虚拟现实、深度合成等新技术开展数据处理活动的，应当按照国家有关规定进行安全评估。</p>
-
-
-
-<p><strong>第七章 监督管理</strong></p>
-
-
-
-<p><strong>第五十五条</strong>&nbsp;国家网信部门负责统筹协调数据安全和相关监督管理工作。</p>
-
-
-
-<p>公安机关、国家安全机关等在各自职责范围内承担数据安全监管职责。</p>
-
-
-
-<p>工业、电信、交通、金融、自然资源、卫生健康、教育、科技等主管部门承担本行业、本领域数据安全监管职责。</p>
-
-
-
-<p>主管部门应当明确本行业、本领域数据安全保护工作机构和人员，编制并组织实施本行业、本领域的数据安全规划和数据安全事件应急预案。</p>
-
-
-
-<p>主管部门应当定期组织开展本行业、本领域的数据安全风险评估，对数据处理者履行数据安全保护义务情况进行监督检查，指导督促数据处理者及时对存在的风险隐患进行整改。</p>
-
-
-
-<p><strong>第五十六条</strong>&nbsp;国家建立健全数据安全应急处置机制，完善网络安全事件应急预案和网络安全信息共享平台，将数据安全事件纳入国家网络安全事件应急响应机制，加强数据安全信息共享、数据安全风险和威胁监测预警以及数据安全事件应急处置工作。</p>
-
-
-
-<p><strong>第五十七条</strong>&nbsp;有关主管、监管部门可以采取以下措施对数据安全进行监督检查：</p>
-
-
-
-<p>（一）要求数据处理者相关人员就监督检查事项作出说明；</p>
-
-
-
-<p>（二）查阅、调取与数据安全有关的文档、记录；</p>
-
-
-
-<p>（三）按照规定程序，利用检测工具或者委托专业机构对数据安全措施运行情况进行技术检测；</p>
-
-
-
-<p>（四）核验数据出境类型、范围等；</p>
-
-
-
-<p>（五）法律、行政法规、规章规定的其他必要方式。</p>
-
-
-
-<p>有关主管、监管部门开展数据安全监督检查，应当客观公正，不得向被检查单位收取费用。在数据安全监督检查中获取的信息只能用于维护数据安全的需要，不得用于其他用途。</p>
-
-
-
-<p>数据处理者应当对有关主管、监管部门的数据安全监督检查予以配合，包括对组织运作、技术系统、算法原理、数据处理程序等进行解释说明，开放安全相关数据访问、提供必要技术支持等。</p>
-
-
-
-<p><strong>第五十八条</strong>&nbsp;国家建立数据安全审计制度。数据处理者应当委托数据安全审计专业机构定期对其处理个人信息遵守法律、行政法规的情况进行合规审计。</p>
-
-
-
-<p>主管、监管部门组织开展对重要数据处理活动的审计，重点审计数据处理者履行法律、行政法规规定的义务等情况。</p>
-
-
-
-<p><strong>第五十九条</strong>&nbsp;国家支持相关行业组织按照章程，制定数据安全行为规范，加强行业自律，指导会员加强数据安全保护，提高数据安全保护水平，促进行业健康发展。</p>
-
-
-
-<p>国家支持成立个人信息保护行业组织，开展以下活动：</p>
-
-
-
-<p>（一）接受个人信息保护投诉举报并进行调查、调解；</p>
-
-
-
-<p>（二）向个人提供信息和咨询服务，支持个人依法对损害个人信息权益的行为提起诉讼；</p>
-
-
-
-<p>（三）曝光损害个人信息权益的行为，对个人信息保护开展社会监督；</p>
-
-
-
-<p>（四）向有关部门反映个人信息保护情况、提供咨询、建议；</p>
-
-
-
-<p>（五）违法处理个人信息、侵害众多个人的权益的行为，依法向人民法院提起诉讼。</p>
-
-
-
-<p><strong>第八章 法律责任</strong></p>
-
-
-
-<p><strong>第六十条</strong>&nbsp;数据处理者不履行第九条、第十条、第十一条、第十二条、第十三条、第十四条、第十五条、第十八条的规定，由有关主管部门责令改正，给予警告，可以并处五万元以上五十万元以下罚款，对直接负责的主管人员和其他直接责任人员可以处一万元以上十万元以下罚款；拒不改正或者导致危害数据安全等严重后果的，处五十万元以上二百万元以下罚款，并可以责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照，对直接负责的主管人员和其他直接责任人员处五万元以上二十万元以下罚款。</p>
-
-
-
-<p><strong>第六十一条</strong>&nbsp;数据处理者不履行第十九条、第二十条、第二十一条、第二十二条、第二十三条、第二十四条、第二十五条规定的数据安全保护义务的，由有关部门责令改正，给予警告，没收违法所得，对违法处理个人信息的应用程序，责令暂停或者终止提供服务；拒不改正的，并处一百万元以下罚款；对直接负责的主管人员和其他直接责任人员处一万元以上十万元以下罚款。</p>
-
-
-
-<p>有前款规定的违法行为，情节严重的，由有关部门责令改正，没收违法所得，并处五千万元以下或者上一年度营业额百分之五以下罚款，并可以责令暂停相关业务或者停业整顿、通报有关主管部门吊销相关业务许可证或者吊销营业执照；对直接负责的主管人员和其他直接责任人员处十万元以上一百万元以下罚款，并可以决定禁止其在一定期限内担任相关企业的董事、监事、高级管理人员和个人信息保护负责人。</p>
-
-
-
-<p><strong>第六十二条</strong>&nbsp;数据处理者不履行第二十八条、第二十九条、第三十条、第三十一条、第三十二条、第三十三条规定的数据安全保护义务的，由有关部门责令改正，给予警告，对违法处理重要数据的系统及应用，责令暂停或者终止提供服务；拒不改正的，并处二百万元以下罚款，对直接负责的主管人员和其他直接责任人员处五万元以上二十万元以下罚款。</p>
-
-
-
-<p>有前款规定的违法行为，情节严重的，由有关部门责令改正，没收违法所得，并处二百万元以上五百万元以下罚款，并可以责令暂停相关业务或者停业整顿、通报有关主管部门吊销相关业务许可证或者吊销营业执照；对直接负责的主管人员和其他直接责任人员处二十万元以上一百万元以下罚款。</p>
-
-
-
-<p><strong>第六十三条</strong>&nbsp;关键信息基础设施运营者违反第三十四条的规定，由有关部门责令改正，依照有关法律、行政法规的规定予以处罚。</p>
-
-
-
-<p><strong>第六十四条</strong>&nbsp;数据处理者违反第三十五条、第三十六条、第三十七条、第三十九条第一款、第四十条、第四十二条的规定，由有关部门责令改正，给予警告，暂停数据出境，可以并处十万元以上一百万元以下罚款，对直接负责的主管人员和其他直接责任人员可以处一万元以上十万元以下罚款；情节严重的，处一百万元以上一千万元以下罚款，并可以责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照，对直接负责的主管人员和其他直接责任人员处十万元以上一百万元以下罚款。</p>
-
-
-
-<p><strong>第六十五条</strong>&nbsp;违反本条例第三十九条第二款的规定，未经主管机关批准向外国司法或者执法机构提供数据的，由有关主管部门给予警告，可以并处十万元以上一百万元以下罚款，对直接负责的主管人员和其他直接责任人员可以处一万元以上十万元以下罚款；造成严重后果的，处一百万元以上五百万元以下罚款，并可以责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照，对直接负责的主管人员和其他直接责任人员处五万元以上五十万元以下罚款。</p>
-
-
-
-<p><strong>第六十六条</strong>&nbsp;个人和组织违反第四十一条的规定，由有关主管部门责令改正，给予警告、没收违法所得；拒不改正的，处违法所得一倍以上十倍以下的罚款，没有违法所得的，对直接负责的主管人员和其他直接负责人员，处五万元以上五十万元以下罚款；情节严重的，由有关主管部门依照相关法律、行政法规的规定，责令其暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照；构成犯罪的，依照相关法律、行政法规的规定处罚。</p>
-
-
-
-<p><strong>第六十七条</strong>&nbsp;互联网平台运营者违反第四十三条、第四十四条、第四十五条、第四十七条、第五十三条的规定，由有关部门责令改正，予以警告；拒不改正，处五十万元以上五百万元以下罚款，对直接负责的主管人员和其他直接负责人员，处五万元以上五十万元以下罚款；情节严重的，可以责令暂停相关业务、停业整顿、关闭网站、吊销相关业务许可证或者吊销营业执照。</p>
-
-
-
-<p><strong>第六十八条</strong>&nbsp;互联网平台运营者违反第四十六条、第四十八条、第五十一条的规定，由有关主管部门责令改正，给予警告；拒不改正的，处上一年度销售额百分之一以上百分之五以下的罚款；情节严重的，由有关主管部门依照相关法律、行政法规的规定，责令其暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照；构成犯罪的，依照相关法律、行政法规的规定处罚。</p>
-
-
-
-<p><strong>第六十九条</strong>&nbsp;互联网平台运营者违反第四十九条、第五十四条的规定，由有关主管部门责令改正，予以警告；拒不改正，处五万元以上五十万元以下罚款，对直接负责的主管人员和其他直接责任人员处一万元以上十万元以下罚款；情节严重的，可由有关主管部门责令暂停相关业务、停业整顿、关闭网站、吊销相关业务许可证或者吊销营业执照。</p>
-
-
-
-<p><strong>第七十条</strong>&nbsp;数据处理者违反本条例规定，给他人造成损害的，依法承担民事责任；构成违反治安管理行为的，依法给予治安管理处罚；构成犯罪的，依法追究刑事责任。</p>
-
-
-
-<p><strong>第七十一条</strong>&nbsp;国家机关不履行本法规定的数据安全保护义务的，由其上级机关或者履行数据安全管理职责的部门责令改正；对直接负责的主管人员和其他直接责任人员依法给予处分。</p>
-
-
-
-<p><strong>第七十二条</strong>&nbsp;在中华人民共和国境外开展数据处理活动，损害中华人民共和国国家安全、公共利益或者公民、组织合法权益的，依法追究法律责任。</p>
-
-
-
-<p><strong>第九章 附则</strong></p>
-
-
-
-<p><strong>第七十三条</strong>&nbsp;本条例下列用语的含义：</p>
-
-
-
-<p>（一）网络数据（简称数据）是指任何以电子方式对信息的记录。</p>
-
-
-
-<p>（二）数据处理活动是指数据收集、存储、使用、加工、传输、提供、公开、删除等活动。</p>
-
-
-
-<p>（三）重要数据是指一旦遭到篡改、破坏、泄露或者非法获取、非法利用，可能危害国家安全、公共利益的数据。包括以下数据：</p>
-
-
-
-<p>1.未公开的政务数据、工作秘密、情报数据和执法司法数据；</p>
-
-
-
-<p>2.出口管制数据，出口管制物项涉及的核心技术、设计方案、生产工艺等相关的数据，密码、生物、电子信息、人工智能等领域对国家安全、经济竞争实力有直接影响的科学技术成果数据；</p>
-
-
-
-<p>3.国家法律、行政法规、部门规章明确规定需要保护或者控制传播的国家经济运行数据、重要行业业务数据、统计数据等；</p>
-
-
-
-<p>4.工业、电信、能源、交通、水利、金融、国防科技工业、海关、税务等重点行业和领域安全生产、运行的数据，关键系统组件、设备供应链数据；</p>
-
-
-
-<p>5.达到国家有关部门规定的规模或者精度的基因、地理、矿产、气象等人口与健康、自然资源与环境国家基础数据；</p>
-
-
-
-<p>6.国家基础设施、关键信息基础设施建设运行及其安全数据，国防设施、军事管理区、国防科研生产单位等重要敏感区域的地理位置、安保情况等数据；</p>
-
-
-
-<p>7.其他可能影响国家政治、国土、军事、经济、文化、社会、科技、生态、资源、核设施、海外利益、生物、太空、极地、深海等安全的数据。</p>
-
-
-
-<p>（四）核心数据是指关系国家安全、国民经济命脉、重要民生和重大公共利益等的数据。</p>
-
-
-
-<p>（五）数据处理者是指在数据处理活动中自主决定处理目的和处理方式的个人和组织。</p>
-
-
-
-<p>（六）公共数据是指国家机关和法律、行政法规授权的具有管理公共事务职能的组织履行公共管理职责或者提供公共服务过程中收集、产生的各类数据，以及其他组织在提供公共服务中收集、产生的涉及公共利益的各类数据。</p>
-
-
-
-<p>（七）委托处理是指数据处理者委托第三方按照约定的目的和方式开展的数据处理活动。</p>
-
-
-
-<p>（八）单独同意是指数据处理者在开展具体数据处理活动时，对每项个人信息取得个人同意，不包括一次性针对多项个人信息、多种处理活动的同意。</p>
-
-
-
-<p>（九）互联网平台运营者是指为用户提供信息发布、社交、交易、支付、视听等互联网平台服务的数据处理者。</p>
-
-
-
-<p>（十）大型互联网平台运营者是指用户超过五千万、处理大量个人信息和重要数据、具有强大社会动员能力和市场支配地位的互联网平台运营者。</p>
-
-
-
-<p>（十一）数据跨境安全网关是指阻断访问境外反动网站和有害信息、防止来自境外的网络攻击、管控跨境网络数据传输、防范侦查打击跨境网络犯罪的重要安全基础设施。</p>
-
-
-
-<p>（十二）公共信息是指数据处理者在提供公共服务过程中收集、产生的具有公共传播特性的信息。包括公开发布信息、可转发信息、无明确接收人信息等。</p>
-
-
-
-<p><strong>第七十四条</strong>&nbsp;涉及国家秘密信息、核心数据、密码使用的数据处理活动，按照国家有关规定执行。</p>
-
-
-
-<p><strong>第七十五条</strong>&nbsp;本条例自<strong>&nbsp;</strong>年<strong>&nbsp;</strong>月<strong>&nbsp;</strong>日起施行。</p>
+<p>此外，在应用区块链技术时，要考虑成本效益、投入产出比、技术难度、实施周期、法律与政策等因素，而不是盲目将现有应用与区块链技术强行结合在一起。当政府引导、企业协作、个人参与，相信区块链技术一定会在健康养老领域大放光彩。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/archives/841/feed</wfw:commentRss>
+					<wfw:commentRss>/archives/4355/feed</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>热点信息  美国网络司令部副司令称中国是该司令部的首要作战对象</title>
-		<link>/archives/2083</link>
-					<comments>/archives/2083#respond</comments>
+		<title>区块链安全技术与应用</title>
+		<link>/archives/4353</link>
+					<comments>/archives/4353#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Fri, 12 Nov 2021 11:13:00 +0000</pubDate>
+		<pubDate>Mon, 27 Dec 2021 09:19:52 +0000</pubDate>
 				<category><![CDATA[全部]]></category>
-		<category><![CDATA[推荐]]></category>
-		<guid isPermaLink="false">/?p=2083</guid>
+		<category><![CDATA[区块链]]></category>
+		<guid isPermaLink="false">/?p=4353</guid>
 
-					<description><![CDATA[热点信息 &#124;&#124; 美国网络司令部副司令称中国是该司令部的首要作战对象 在周三由C4ISRNet网站组织的Cybe [&#8230;]]]></description>
+					<description><![CDATA[区块链安全技术与应用 随着区块链技术的不断发展和完善，区块链应用已经拓展到国计民生的很多重要领域，可见区块链技 [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<h1><strong>热点信息 || 美国网络司令部副司令称中国是该司令部的首要作战对象</strong><strong></strong></h1>
+<h1><strong>区块链安全技术与应用</strong><strong></strong></h1>
 
 
 
-<p>在周三由C4ISRNet网站组织的CyberCon网络会议上，美国网络司令部副司令查尔斯.摩尔（Charles “Tuna” Moore）指出，美国网络司令部目前已将中国视作其首要作战对象，并密切地跟踪监视中国“在国际网络空间内的活动”，同时该司令部也正在与美军印太平洋司令部（INDOPACOM）合作发展针对印太平洋区域未来冲突事件、以中国为主要目标的网络战手段。</p>
+<p>随着区块链技术的不断发展和完善，区块链应用已经拓展到国计民生的很多重要领域，可见区块链技术的发展前景可观，值得我们研究和关注。以下是区块链在网络安全、国家安全、金融安全等方面的应用研究，来探索区块链广泛应用的奥秘。</p>
 
 
 
-<p>虽然摩尔在会上未就“美国网络司令部的对华网络战规划”这个话题进行深入，但该司令部目前的主要作战任务类型“前出狩猎”（Hunt Forward）显然在其中扮演重要角色。“前出狩猎”是美国网络司令部在“持续交战”（Persistent engagement）作战方针——该方针在2018年美国《国家网络战略》（National Cyber Strategy）文件中正式提出，核心概念是在网络空间内与对手保持接触、持续对抗——指导下，将美国网络司令部的网络战小组部署至美国盟友及伙伴方境内，并帮助后者开展网络防御并获得恶意软件样本、攻击手法等潜在对手第一手情报的网络作战行动。摩尔透露，从2018年开始，美国网络司令部已在14个国家实施了超过24次的“前出狩猎”行动，历次行动共捕获约30种新的恶意软件样本。</p>
+<p><strong>总体国家安全观视角下的区块链与国家安全</strong></p>
 
 
 
-<p>摩尔认为，历次“前出狩猎”行动的成果证明，美国网络司令部这类有机结合网络攻击和网络防御元素的网络作战任务是“非常有效的”，同时由于美国网络司令部通过此类行动展现出来的主动姿态，来自美国盟友及伙伴方的网络协防需求正日益增多。</p>
+<p>区块链作为一项战略性前沿技术，与国家安全关系密切。总体国家安全观是我国新时</p>
 
 
 
-<p>摩尔还指出，美国网络司令部希望获得更多的资源和人员配套，这样该司令部就能够在现有“前出狩猎”行动的基础上“做得更多”。目前美国网络司令部正在寻求扩大其“网络任务部队”（Cyber Mission Force，CMF）的规模，其中一半的新增单位将在2024年底前开始与美国太空司令部合作，参与面向美国国防太空资产的网络防御行动。</p>
+<p>代国家安全工作的根本遵循，在此框架下梳理区块链在军事安全、社会安全、经济安全等</p>
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="570" src="/wp-content/uploads/2021/12/ffbe9c74abedc331814a3b585f266ba46d87ec87.png" alt="" class="wp-image-2084" srcset="/wp-content/uploads/2021/12/ffbe9c74abedc331814a3b585f266ba46d87ec87.png 830w, /wp-content/uploads/2021/12/ffbe9c74abedc331814a3b585f266ba46d87ec87-300x206.png 300w, /wp-content/uploads/2021/12/ffbe9c74abedc331814a3b585f266ba46d87ec87-768x527.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
+<p>国家安全领域的应用，分析区块链为国家安全带来的挑战，并研究如何利用区块链赋能我</p>
+
+
+
+<p>国国家安全工作，将帮助我们全面、辩证地对待区块链与国家安全的关系。</p>
+
+
+
+<p><strong>区块链技术及其军事应用</strong></p>
+
+
+
+<p>当前，区块链技术已成为与人工智能、量子信息、物联网同等重要， 并可能产生颠覆性影响的新一代信息技术，是一座未探明储量的金矿。同其他新兴技术产生后必然应用于军事领域一样，近年来世界发达国家军队纷纷探索区块链的军事应用，以期在新一轮军事革命大潮中占据先机。</p>
+
+
+
+<p><strong>美军“战场物联网”及其区块链保证技术的研究进展</strong></p>
+
+
+
+<p>据2020年美军相关网站的最新报道，美国陆军和海军正在研究如何将更多的物联网</p>
+
+
+
+<p>设备引入作战领域，海军正在努力开发自己的航海物联网舰队，陆军正将物联网技术带入</p>
+
+
+
+<p>战场。“战场物联网（IoBT）”一词开始越来越多地出现在了相关新闻报道及学术期刊及会</p>
+
+
+
+<p>议录中。当前，美军有关军种都在独立推进相关IoBT项目，但是他们也都面临着巨大的</p>
+
+
+
+<p>挑战，其中，最大的挑战就是如何应对IoBT带来的各种网络安全威胁和风险。</p>
+
+
+
+<p><strong>区块链技术在网络信任中的应用</strong></p>
+
+
+
+<p>随着网络应用的蓬勃发展，网络信任问题日益突出，网络信任体系的建立迫在眉睫。</p>
+
+
+
+<p>通过分析网络信任体系的现状和区块链技术的应用情况，指出现有网络信任体系中存在的问题，提出了利用区块链安全可信、分布共享、去中心化等特点解决信任体系有中心认证架构的弊端以及实现网络实体信用评价，为信任评估和动态授权提供了有力支撑。通过区块链技术在网络信任中的综合应用，改进完善现有网络信任运行规则，促进新的网络信任体系建立。</p>
+
+
+
+<p><strong>区块链在网络信任体系中的应用研究</strong></p>
+
+
+
+<p>信息技术飞速发展，在不断改变人们生产生活方式的同时，也带来了日益严峻的网络安全问题。如何在网络实体间建立信任关系，是信息安全领域需要解决的重点问题。作为网络安全的基石，网络信任体系衍生出公钥基础设施、标识密码等多种技术。当前，区块链技术以不可篡改、不可伪造、可追溯等特点备受各界关注，在金融、政务、司法等领域广泛应用，也为网络信任体系的构建提供了新的思路。深入分析区块链技术在网络信任体系建设中的应用潜力，有望为新一代网络信任体系的建设提供参考借鉴，具有重要的研究价值与实践意义。</p>
+
+
+
+<p><strong>各国重视区块链技术在网络安全中的应用</strong></p>
+
+
+
+<p>2019年3月5日，跨国计算机巨头IBM公司提交了两项新的区块链专利申请，一项专利是IBM目前正寻求通过区块链技术维护网络安全，另一项专利则专注于使用该技术的数据库管理功能。从网络安全的角度来讲，近几年，各个领域都成为黑客攻击的重点。同时，各国也都在重视区块链技术在网络安全中的运用，仅仅2018年，75%的CEO和董事会成员都将网络安全和技术收购视为他们的首要任务。除了商界巨头之外，不少平民大众也在考虑采用基于区块链的网络安全解决方案。</p>
+
+
+
+<p><strong>区块链权益证明共识机制综述</strong></p>
+
+
+
+<p>自区块链技术被提出以来，共识机制作为其核心部分之一受到广泛关注。在众多共识机制中，根据节点权益情况以竞争记账权的权益证明共识机制有着较低能耗和较高性能等特点。为深入研究这一共识机制，第一，阐述了权益证明的主要原理；第二，将权益证明机制按照区块链系统结构划分为基于链结构和图结构的权益证明共识机制，并分别介绍了Ouroboros、Algorand、Tendermint、Casper 和LaKSA 这 5 种基于权益证明的共识机制的特点、共识、性能与安全性；第三，分析了权益证明共识机制面临的安全威胁，如无利害关系攻击、研磨攻击、长程攻击、变节攻击和 51% 攻击，给出应对措施；第四，总结了权益证明目前的发展现状，并对未来发展提出了展望。</p>
+
+
+
+<p><strong>一种基于区块链的身份认证方法</strong></p>
+
+
+
+<p>零信任理念的提出和发展，提高了网络信息系统数据访问的可控性和可信性，有效增强了系统数据的安全性。但是，总不信任，永远验证的设计原则，也给用户进行数据访问带来了巨大的挑战，特别是在广域、异地身份验证情况下，严重影响用户访问数据的效率。针对广域、海量用户的身份认证需求，提出了一种基于区块链的身份认证方法，利用区块链技术的不可抵赖性，构造相应的用户身份注册、认证、更新方法，实现广域、海量用户的无中心化身份认证能力，提升网络信息系统身份认证效率，从而为零信任环境下的数据访问提供可靠保障。</p>
+
+
+
+<p><strong>基于区块链技术的数据交换安全性研究</strong></p>
+
+
+
+<p>随着区块链技术的飞速发展，区块链由第一阶段1.0的可编程货币逐渐发展至3.0版本的可编程社会。区块链的关键是去中心化和降低信任成本，防伪造和可追踪性，为解决大数据问题提供了一种思路。基于此，提出了一种基于区块链技术的可扩展性隐私保护数据共享方案来研究和解决数据交换系统的安全问题。方案中使用Paillier算法加密用户数据，整个Paillier密码体系的时间基本都很短，但是效率很高。该方案的内部安全分析显示，系统具有超强的安全性。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/archives/2083/feed</wfw:commentRss>
+					<wfw:commentRss>/archives/4353/feed</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		

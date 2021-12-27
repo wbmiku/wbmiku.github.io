@@ -12,7 +12,7 @@
 	<atom:link href="/archives/author/admin/feed" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Sat, 11 Dec 2021 11:19:16 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 27 Dec 2021 09:34:50 +0000</lastBuildDate>
 	<language>zh-CN</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,1254 +20,1643 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.8.2</generator>
 	<item>
-		<title>Enigma API 在linux下的调用</title>
-		<link>/archives/1012</link>
-					<comments>/archives/1012#respond</comments>
+		<title>物联网安全行业研究简析</title>
+		<link>/archives/4414</link>
+					<comments>/archives/4414#respond</comments>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Tue, 07 Dec 2021 01:25:51 +0000</pubDate>
-				<category><![CDATA[手册]]></category>
-		<guid isPermaLink="false">/?p=1012</guid>
-
-					<description><![CDATA[Enigma API 在linux下的调用 ZhongDaIC的MX+开源了Enigma API的接口调用，允 [&#8230;]]]></description>
-										<content:encoded><![CDATA[
-<h2><strong>Enigma API 在linux下的调用</strong><strong></strong></h2>
-
-
-
-<p>ZhongDaIC的MX+开源了Enigma API的接口调用，允许开发者自己开发Enigma的UI，分为Linux、Windows、MAC三个版本的API，调用方法类似，只是API库不同。我们今天解释Linux下的调用！</p>
-
-
-
-<p>完整自己开发Enigma UI需要三个基础条件：Enigma开发板（或Enigma产品）、API授权文件、Gcc编译器。<strong>废话少说，让我们开始吧！</strong>.</p>
-
-
-
-<h2><strong>条件准备</strong><strong></strong></h2>
-
-
-
-<p>1. Enigma开发板有很多个版本，也有很多方案商的捆绑方案，我们这里通过WB MIKU获得的是普通的Enigma开发板，当然也可以作为产品使用。 通过淘宝直接下单即可：</p>
-
-
-
-<p><a href="https://item.taobao.com/item.htm?ft=t&amp;id=638454042786">Enigma4.0 开发板</a></p>
-
-
-
-<p>2. 使用Enigma API需要从官方获得API授权，授权分为测试开发授权和正式授权，两个授权的API不能通用，我们这里以测试授权进行示例。 获取授权mail to：<a href="mailto:info@zhongdaic.com">info@zhongdaic.com</a>.</p>
-
-
-
-<p>3. gcc编译器比较简单，一般的Linux的OS都内带gcc。推荐使用Ubuntu 16.04.6 作为开发环境。</p>
-
-
-
-<h3><strong>硬件</strong><strong></strong></h3>
-
-
-
-<p>Enigma开发板的硬件比较简单，USB 接口用于连接到PC。开发板上就2颗芯片，1颗USB转SATA的桥片，1颗ZhongDaIC的SPELITE MX+加密桥片，后面是一个M.2接口的插槽，我们可以自己选择接多大容量的存储。注意这个M.2是 NGFF的，不要选错哟！</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="450" height="255" src="/wp-content/uploads/2021/12/c2039678d19b14ec37844416df2793e77286991d.png" alt="" class="wp-image-1013" srcset="/wp-content/uploads/2021/12/c2039678d19b14ec37844416df2793e77286991d.png 450w, /wp-content/uploads/2021/12/c2039678d19b14ec37844416df2793e77286991d-300x170.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="450" height="245" src="/wp-content/uploads/2021/12/b40b43899754391a2d1b9a0d22e90fa06638e69f.png" alt="" class="wp-image-1014" srcset="/wp-content/uploads/2021/12/b40b43899754391a2d1b9a0d22e90fa06638e69f.png 450w, /wp-content/uploads/2021/12/b40b43899754391a2d1b9a0d22e90fa06638e69f-300x163.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure>
-
-
-
-<h3><strong>授权文件</strong><strong></strong></h3>
-
-
-
-<p>授权文件是一个标准的.a库。.a库内嵌授权码。我试过了不同的授权不能通用。授权文件包括如下几个文件：</p>
-
-
-
-<ul><li>Mxlib.a</li><li>Mxlib.h</li><li>Enigma 4.0 API For Linux Guide 1.0.3.pdf</li></ul>
-
-
-
-<p>其中Mxlib.a和Mxlib.h是Gcc编译和调用需要的库文件。Enigma 4.0 API For Linux Guide 1.0.3.pdf是API使用手册，其中有各种函数的详细调用方法和说明。</p>
-
-
-
-<h3><strong>开始DIY Enigma UI</strong><strong></strong></h3>
-
-
-
-<p>在Linux下新建一个gcc project，我们新建一个Enigma.c作为主文件，并将Mxlib.a和Mxlib.h放入根目录下。在Enigma.c主要实现如下几个功能：</p>
-
-
-
-<ul><li>硬件检查</li><li>登录Login</li><li>文件加密Encrypt File</li><li>文件解密Decrypt File</li><li>修改登录密码Change PIN</li></ul>
-
-
-
-<p>1. 首先构建一个菜单，可以选择使用那个功能</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="741" height="551" src="/wp-content/uploads/2021/12/bf952ad3637226b354707fa1d759e25c21c41369.png" alt="" class="wp-image-1015" srcset="/wp-content/uploads/2021/12/bf952ad3637226b354707fa1d759e25c21c41369.png 741w, /wp-content/uploads/2021/12/bf952ad3637226b354707fa1d759e25c21c41369-300x223.png 300w" sizes="(max-width: 741px) 100vw, 741px" /></figure>
-
-
-
-<p>定义初始菜单，默认不带参数时显示操作指令和使用方法，-S、-L、-E、-D、-C共五个参数选项，分别对应检查Enigma、登录、加密文件、解密文件、修改PIN。</p>
-
-
-
-<p>构建效果如下：</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="900" height="179" src="/wp-content/uploads/2021/12/6a9702abae62eab733dfcc5a6bd757517bf8e925.png" alt="" class="wp-image-1016" srcset="/wp-content/uploads/2021/12/6a9702abae62eab733dfcc5a6bd757517bf8e925.png 900w, /wp-content/uploads/2021/12/6a9702abae62eab733dfcc5a6bd757517bf8e925-300x60.png 300w, /wp-content/uploads/2021/12/6a9702abae62eab733dfcc5a6bd757517bf8e925-768x153.png 768w" sizes="(max-width: 900px) 100vw, 900px" /></figure>
-
-
-
-<p>2. main()主程序</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="900" height="680" src="/wp-content/uploads/2021/12/f5ee94db87ddab3b8286a1a6c478ce3c0fd9a32a.png" alt="" class="wp-image-1017" srcset="/wp-content/uploads/2021/12/f5ee94db87ddab3b8286a1a6c478ce3c0fd9a32a.png 900w, /wp-content/uploads/2021/12/f5ee94db87ddab3b8286a1a6c478ce3c0fd9a32a-300x227.png 300w, /wp-content/uploads/2021/12/f5ee94db87ddab3b8286a1a6c478ce3c0fd9a32a-768x580.png 768w" sizes="(max-width: 900px) 100vw, 900px" /></figure>
-
-
-
-<p>主程序启动，读取参数，并按照参数选择执行。无参数时调用菜单，有参数时先调用open()检查Enigma是否存在？</p>
-
-
-
-<p>构建效果如下：</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="600" height="308" src="/wp-content/uploads/2021/12/34370a6ca074ac8c3bd257c9d0cf6e61ad6f9133.png" alt="" class="wp-image-1018" srcset="/wp-content/uploads/2021/12/34370a6ca074ac8c3bd257c9d0cf6e61ad6f9133.png 600w, /wp-content/uploads/2021/12/34370a6ca074ac8c3bd257c9d0cf6e61ad6f9133-300x154.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></figure>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="450" height="281" src="/wp-content/uploads/2021/12/346bc7d7f17511cac517f1b811706ae1ce442cee.png" alt="" class="wp-image-1019" srcset="/wp-content/uploads/2021/12/346bc7d7f17511cac517f1b811706ae1ce442cee.png 450w, /wp-content/uploads/2021/12/346bc7d7f17511cac517f1b811706ae1ce442cee-300x187.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure>
-
-
-
-<p>首选调用MXAPIVersion()获取Enigma的硬件版本号，获取硬件版本号后，再调用checkLoginStatus()检查登录状态。</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="900" height="600" src="/wp-content/uploads/2021/12/c100434780f10f4c08921f87ee2b47864b51610b.png" alt="" class="wp-image-1020" srcset="/wp-content/uploads/2021/12/c100434780f10f4c08921f87ee2b47864b51610b.png 900w, /wp-content/uploads/2021/12/c100434780f10f4c08921f87ee2b47864b51610b-300x200.png 300w, /wp-content/uploads/2021/12/c100434780f10f4c08921f87ee2b47864b51610b-768x512.png 768w" sizes="(max-width: 900px) 100vw, 900px" /></figure>
-
-
-
-<p>3. 调用Login、Encrypt、Decrypt、ChangePIN()等函数</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="900" height="575" src="/wp-content/uploads/2021/12/fccf76fc10a0d86502cf12bdca0ef85cd4eac6fc.png" alt="" class="wp-image-1021" srcset="/wp-content/uploads/2021/12/fccf76fc10a0d86502cf12bdca0ef85cd4eac6fc.png 900w, /wp-content/uploads/2021/12/fccf76fc10a0d86502cf12bdca0ef85cd4eac6fc-300x192.png 300w, /wp-content/uploads/2021/12/fccf76fc10a0d86502cf12bdca0ef85cd4eac6fc-768x491.png 768w" sizes="(max-width: 900px) 100vw, 900px" /></figure>
-
-
-
-<p>分别调用mxLoginPIN()函数实现Login；调用FileAES()函数实现文件加密和文件解密</p>
-
-
-
-<p>构建效果如下：</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="600" height="647" src="/wp-content/uploads/2021/12/1ed4aefe5c9ebdc63b51a6116cb451760c38331e.png" alt="" class="wp-image-1022" srcset="/wp-content/uploads/2021/12/1ed4aefe5c9ebdc63b51a6116cb451760c38331e.png 600w, /wp-content/uploads/2021/12/1ed4aefe5c9ebdc63b51a6116cb451760c38331e-278x300.png 278w" sizes="(max-width: 600px) 100vw, 600px" /></figure>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="450" height="281" src="/wp-content/uploads/2021/12/346bc7d7f17511cac517f1b811706ae1ce442cee-1.png" alt="" class="wp-image-1023" srcset="/wp-content/uploads/2021/12/346bc7d7f17511cac517f1b811706ae1ce442cee-1.png 450w, /wp-content/uploads/2021/12/346bc7d7f17511cac517f1b811706ae1ce442cee-1-300x187.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure>
-
-
-
-<p>以上就是在Linux下Enigma API的调用分析，我使用了传统的linux 指令行方式，可以在Server和Desktop版本的UB16.04.6上使用，如果你单纯在Desktop上使用，可以做成图形化的界面！有问题请给我发邮件，u@cloudkey.net.cn 。祝你好运！</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>/archives/1012/feed</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>SiliconGo 双份区SSD使用手册</title>
-		<link>/archives/999</link>
-					<comments>/archives/999#respond</comments>
-		
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Tue, 07 Dec 2021 01:20:34 +0000</pubDate>
-				<category><![CDATA[手册]]></category>
-		<guid isPermaLink="false">/?p=999</guid>
-
-					<description><![CDATA[SiliconGo 双份区SSD使用手册 桂格半导体SiliconGo的双份区SSD大家在B站、好看视频、MI [&#8230;]]]></description>
-										<content:encoded><![CDATA[
-<h2><strong>SiliconGo 双份区SSD使用手册</strong><strong></strong></h2>
-
-
-
-<p>桂格半导体SiliconGo的双份区SSD大家在B站、好看视频、MIKU公众号都有看过展示，但是具体使用上还是有些细节不清楚，包括UI是否可以修改等。这个手册详细带你了解细节！</p>
-
-
-
-<p>手册是在Window下的使用说明，你需要有一块双份区的SSD，或者也可以用双份区的SATA-to-SATA加密桥板+普通SSD的组合来代替也可以。<strong>废话少说，让我们开始吧！</strong>.</p>
-
-
-
-<h2><strong>产品简介</strong><strong></strong></h2>
-
-
-
-<p>桂格半导体SiliconGo的双份区SSD是一款2.5” 标准的SSD。具备一个明文分区、一个密文分区两个分区，每个分区各50%的容量。有512G、1T、2T、4T四种规格。</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="840" height="591" src="/wp-content/uploads/2021/12/96d2a1524cc0754b6767ed845a38249e57c9a6b9.png" alt="" class="wp-image-1000" srcset="/wp-content/uploads/2021/12/96d2a1524cc0754b6767ed845a38249e57c9a6b9.png 840w, /wp-content/uploads/2021/12/96d2a1524cc0754b6767ed845a38249e57c9a6b9-300x211.png 300w, /wp-content/uploads/2021/12/96d2a1524cc0754b6767ed845a38249e57c9a6b9-768x540.png 768w" sizes="(max-width: 840px) 100vw, 840px" /></figure>
-
-
-
-<p>我们拿到的样品是512G的。datasheet解释权归桂格半导体所有，索取详细datasheet，请联系<a href="http://www.silicongo.com/">SiliconGO</a>.</p>
-
-
-
-<h3><strong>FEATURES</strong><strong></strong></h3>
-
-
-
-<p>标准手册是英文的，我们适当翻译：</p>
-
-
-
-<ul><li>Security with AES 256-bit hardware encryption &#8211; Best secure than another solution.</li><li>High-speed R/W – 6Gbps Real Time Encrypted.</li><li>Hardware Encryption – More secure.</li><li>&gt;1T Disk – Support 1T.</li><li>Erasure – Fast erase and destroy.</li></ul>
-
-
-
-<p>标注采用的是AES 256 bit加密，实时读写6Gbps，大约500MB,跟大部分的SATA SSD读写性能差不多，也就是加密并没有损伤其读写性能；支持1T以上容量的加密；支持销毁；</p>
-
-
-
-<h3><strong>开始实操</strong><strong></strong></h3>
-
-
-
-<p>为了操作更加方便，我们选择将双份区SSD放到一个USB的移动硬盘盒里，这样可以通过USB接口插拔，比较方便。</p>
-
-
-
-<p>1. 把双份区SSD放入USB移动硬盘盒</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="846" height="365" src="/wp-content/uploads/2021/12/9c37a433ed9bf16053a8b03157ecad9143c92e2b.png" alt="" class="wp-image-1001" srcset="/wp-content/uploads/2021/12/9c37a433ed9bf16053a8b03157ecad9143c92e2b.png 846w, /wp-content/uploads/2021/12/9c37a433ed9bf16053a8b03157ecad9143c92e2b-300x129.png 300w, /wp-content/uploads/2021/12/9c37a433ed9bf16053a8b03157ecad9143c92e2b-768x331.png 768w" sizes="(max-width: 846px) 100vw, 846px" /></figure>
-
-
-
-<p>定义初始菜单，默认不带参数时显示操作指令和使用方法，-S、-L、-E、-D、-C共五个参数选项，分别对应检查Enigma、登录、加密文件、解密文件、修改PIN。</p>
-
-
-
-<p>构建效果如下：</p>
-
-
-
-<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="549" src="/wp-content/uploads/2021/12/下载-1024x549.png" alt="" class="wp-image-1010" srcset="/wp-content/uploads/2021/12/下载-1024x549.png 1024w, /wp-content/uploads/2021/12/下载-300x161.png 300w, /wp-content/uploads/2021/12/下载-768x412.png 768w, /wp-content/uploads/2021/12/下载.png 1169w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
-
-
-
-<p>2. 插入电脑USB</p>
-
-
-
-<p>电脑自动识别到两个分区。</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="900" height="423" src="/wp-content/uploads/2021/12/abbb1b10b57ed9fd04751cdda5892ef01c9447ba.png" alt="" class="wp-image-1002" srcset="/wp-content/uploads/2021/12/abbb1b10b57ed9fd04751cdda5892ef01c9447ba.png 900w, /wp-content/uploads/2021/12/abbb1b10b57ed9fd04751cdda5892ef01c9447ba-300x141.png 300w, /wp-content/uploads/2021/12/abbb1b10b57ed9fd04751cdda5892ef01c9447ba-768x361.png 768w" sizes="(max-width: 900px) 100vw, 900px" /></figure>
-
-
-
-<p>其中一个分区是明文分区，主机可以识别，并读出盘里的内容。另外一个分区是密文分区，主机识别到，但是打不开。</p>
-
-
-
-<p>3. 运行密文分区身份识别APP，进行身份识别。</p>
-
-
-
-<p>在明文分区下有一个原厂出场的APP，点击运行。输入PIN码进行登录。出厂默认密码：000000</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="450" height="314" src="/wp-content/uploads/2021/12/ad2f81c34ce21f4932a9f6c8c75c4747c65968f5.png" alt="" class="wp-image-1003" srcset="/wp-content/uploads/2021/12/ad2f81c34ce21f4932a9f6c8c75c4747c65968f5.png 450w, /wp-content/uploads/2021/12/ad2f81c34ce21f4932a9f6c8c75c4747c65968f5-300x209.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="450" height="366" src="/wp-content/uploads/2021/12/ea452c8803aa16da02c5998c523f3f0ad3a4e886.png" alt="" class="wp-image-1004" srcset="/wp-content/uploads/2021/12/ea452c8803aa16da02c5998c523f3f0ad3a4e886.png 450w, /wp-content/uploads/2021/12/ea452c8803aa16da02c5998c523f3f0ad3a4e886-300x244.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure>
-
-
-
-<p>这时密文分区解密，在资源管理器可以看到，并打开这个分区。</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="838" height="514" src="/wp-content/uploads/2021/12/0dbfe91bcc740be44cfb98e5085ae8fb1b8ccd12.png" alt="" class="wp-image-1005" srcset="/wp-content/uploads/2021/12/0dbfe91bcc740be44cfb98e5085ae8fb1b8ccd12.png 838w, /wp-content/uploads/2021/12/0dbfe91bcc740be44cfb98e5085ae8fb1b8ccd12-300x184.png 300w, /wp-content/uploads/2021/12/0dbfe91bcc740be44cfb98e5085ae8fb1b8ccd12-768x471.png 768w" sizes="(max-width: 838px) 100vw, 838px" /></figure>
-
-
-
-<p>4. 打开明文分区的APP文件夹，我们做些DIY</p>
-
-
-
-<p>在APP目录有一个隐藏目录\Resource,打开这个目录</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="600" height="297" src="/wp-content/uploads/2021/12/fc95a4adfedf8dd0c9b3d0b1760dcc6747db94c6.png" alt="" class="wp-image-1006" srcset="/wp-content/uploads/2021/12/fc95a4adfedf8dd0c9b3d0b1760dcc6747db94c6.png 600w, /wp-content/uploads/2021/12/fc95a4adfedf8dd0c9b3d0b1760dcc6747db94c6-300x149.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></figure>
-
-
-
-<p>目录下的图片文件更换后，就可以在UI上发生很多变化。大家可以自己试试！还有Config.ini也可以修改，不过不要随便改啊！</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="900" height="351" src="/wp-content/uploads/2021/12/e0d46d37377cebb1dc703a818b1f4b7e7951d19c.png" alt="" class="wp-image-1007" srcset="/wp-content/uploads/2021/12/e0d46d37377cebb1dc703a818b1f4b7e7951d19c.png 900w, /wp-content/uploads/2021/12/e0d46d37377cebb1dc703a818b1f4b7e7951d19c-300x117.png 300w, /wp-content/uploads/2021/12/e0d46d37377cebb1dc703a818b1f4b7e7951d19c-768x300.png 768w" sizes="(max-width: 900px) 100vw, 900px" /></figure>
-
-
-
-<p>以上是双份区SSD的使用方法。还做了些DIY的操作，有点儿过了啊！有问题请给我发邮件，u@cloudkey.net.cn 。祝你好运！</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>/archives/999/feed</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>SPELITE MX</title>
-		<link>/archives/989</link>
-					<comments>/archives/989#respond</comments>
-		
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Tue, 07 Dec 2021 01:16:14 +0000</pubDate>
-				<category><![CDATA[手册]]></category>
-		<guid isPermaLink="false">/?p=989</guid>
-
-					<description><![CDATA[SPELITE MX+外置Dongle制作 SATA-to-SATA的加密桥板可以外接硬件的Dongle实现密 [&#8230;]]]></description>
-										<content:encoded><![CDATA[
-<h2><strong>SPELITE MX+外置Dongle制作</strong><strong></strong></h2>
-
-
-
-<p>SATA-to-SATA的加密桥板可以外接硬件的Dongle实现密钥外置。Dongle可以是可复制备份密钥、不可复制备份密钥两种。一种是不加密的密钥、一种是加密的密钥。使用方法类似，只是安全性不同。</p>
-
-
-
-<p>制作Dongle需要一些基础的准备：AT24C/ATSHA204芯片（或开发板）、AT24C02/ATSHA204烧录程序/烧录器、SATA-to-SATA加密桥板（内嵌MX+）、授权USB Key（AT24C不需要，ATSHA204需要）。<strong>准备好了吗？我们开始！</strong>.</p>
-
-
-
-<h2><strong>材料准备：</strong><strong></strong></h2>
-
-
-
-<p>1. AT24C02是ATMEL的EEPROM芯片，可以在淘宝、电子器件等平台购买，我们购买的是带PCBA的半成品，有5PIN接线。因为选用的是非开发板，就额外购买了一个烧录器。烧录器的好处是可以烧录很多个AT24C02，适合经常做实验的场景。烧录器的链接如下（一般会配套给烧录软件）：</p>
-
-
-
-<p><a href="https://item.taobao.com/item.htm?ft=t&amp;id=638454042786">AT24C02 USB烧录器</a></p>
-
-
-
-<p>2. AT24C02烧录器及烧录程序，如果买的是芯片开发板，烧录程序一般会配，如果是芯片或半成品，需要单独购买烧录器及配套的烧录软件。如果使用的是ATSHA204需要获得原厂的授权，获取SPELITE MX+授权USB Key，mail to：<a href="mailto:info@zhongdaic.com">info@zhongdaic.com</a>.使用ATSHA204时不需要烧录程序和烧录器。</p>
-
-
-
-<p>3. SATA-to-SATA加密桥板上预留了mini usb的接口用于链接外置的Dongle，我们可以买一个成品Dongle，也可以使用自己做的Dongle。</p>
-
-
-
-<p><a href="https://item.taobao.com/item.htm?ft=t&amp;id=638454042786">SATA-to-SATA加密桥板（内嵌MX+）</a></p>
-
-
-
-<p><a href="https://item.taobao.com/item.htm?ft=t&amp;id=638454042786">Dongle（普通）</a></p>
-
-
-
-<p><a href="https://item.taobao.com/item.htm?ft=t&amp;id=638454042786">Dongle（SHA加密）</a></p>
-
-
-
-<p>除了这些主要材料之外，还需要链接的线，如果是芯片，还需要焊接的设备。</p>
-
-
-
-<h3><strong>烧录软件</strong><strong></strong></h3>
-
-
-
-<p>烧录软件是一个标准软件，可以将AES key文件写入到AT24C02，如果不嫌麻烦，也可以自己写一个写入的程序。一般程序界面如下：</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="753" height="479" src="/wp-content/uploads/2021/12/f3151aff4da530b62dbe71aa17e76ae1ff65a67e.png" alt="" class="wp-image-990" srcset="/wp-content/uploads/2021/12/f3151aff4da530b62dbe71aa17e76ae1ff65a67e.png 753w, /wp-content/uploads/2021/12/f3151aff4da530b62dbe71aa17e76ae1ff65a67e-300x191.png 300w" sizes="(max-width: 753px) 100vw, 753px" /></figure>
-
-
-
-<h3><strong>开始DIY</strong><strong></strong></h3>
-
-
-
-<p>我们选用的是Type A USB接口连接作为一个I2C Key 的外接接口，使用VCC、GND、SCL、SDA四根线，其他线无用。</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="883" height="225" src="/wp-content/uploads/2021/12/911bb235bad03ac5a0c0dac8043aca5383aab3b0.png" alt="" class="wp-image-991" srcset="/wp-content/uploads/2021/12/911bb235bad03ac5a0c0dac8043aca5383aab3b0.png 883w, /wp-content/uploads/2021/12/911bb235bad03ac5a0c0dac8043aca5383aab3b0-300x76.png 300w, /wp-content/uploads/2021/12/911bb235bad03ac5a0c0dac8043aca5383aab3b0-768x196.png 768w" sizes="(max-width: 883px) 100vw, 883px" /></figure>
-
-
-
-<p>1. 将AT24C系列的EPROM通过连接线连接到USB接口的写入转接板。线序按照板卡标识线序对应即可。</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="900" height="371" src="/wp-content/uploads/2021/12/1811de5f0eb43cd6c0739c266d31a7528b5afdd4.png" alt="" class="wp-image-992" srcset="/wp-content/uploads/2021/12/1811de5f0eb43cd6c0739c266d31a7528b5afdd4.png 900w, /wp-content/uploads/2021/12/1811de5f0eb43cd6c0739c266d31a7528b5afdd4-300x124.png 300w, /wp-content/uploads/2021/12/1811de5f0eb43cd6c0739c266d31a7528b5afdd4-768x317.png 768w" sizes="(max-width: 900px) 100vw, 900px" /></figure>
-
-
-
-<p>2. 将USB的转接板插入电脑</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="887" height="433" src="/wp-content/uploads/2021/12/4f62f6b043cccc5e1c45ca2a62ede9171fa6b018.png" alt="" class="wp-image-993" srcset="/wp-content/uploads/2021/12/4f62f6b043cccc5e1c45ca2a62ede9171fa6b018.png 887w, /wp-content/uploads/2021/12/4f62f6b043cccc5e1c45ca2a62ede9171fa6b018-300x146.png 300w, /wp-content/uploads/2021/12/4f62f6b043cccc5e1c45ca2a62ede9171fa6b018-768x375.png 768w" sizes="(max-width: 887px) 100vw, 887px" /></figure>
-
-
-
-<p>3. 启动写入程序CH341A1.16（可选用其他的USB转接板及对应的程序）</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="887" height="433" src="/wp-content/uploads/2021/12/4f62f6b043cccc5e1c45ca2a62ede9171fa6b018-1.png" alt="" class="wp-image-994" srcset="/wp-content/uploads/2021/12/4f62f6b043cccc5e1c45ca2a62ede9171fa6b018-1.png 887w, /wp-content/uploads/2021/12/4f62f6b043cccc5e1c45ca2a62ede9171fa6b018-1-300x146.png 300w, /wp-content/uploads/2021/12/4f62f6b043cccc5e1c45ca2a62ede9171fa6b018-1-768x375.png 768w" sizes="(max-width: 887px) 100vw, 887px" /></figure>
-
-
-
-<p>4. 编辑CBC 格式的二进制Key文件，或直接导入已经做好的000000的二进制密钥文件cbckey.bin</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="740" height="467" src="/wp-content/uploads/2021/12/bb7fee8b7c648cf7c387e456632e5bb849784934.png" alt="" class="wp-image-995" srcset="/wp-content/uploads/2021/12/bb7fee8b7c648cf7c387e456632e5bb849784934.png 740w, /wp-content/uploads/2021/12/bb7fee8b7c648cf7c387e456632e5bb849784934-300x189.png 300w" sizes="(max-width: 740px) 100vw, 740px" /></figure>
-
-
-
-<p>Key文件是一个128/256的二进制密钥，可以从文件导入，也可以直接在界面上编辑。</p>
-
-
-
-<p>5. 取下USB设备，按照入下线序焊接到Type A USB接口</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="900" height="243" src="/wp-content/uploads/2021/12/c83615c7c3e14d11b8da7959226175329b5a96c4.png" alt="" class="wp-image-996" srcset="/wp-content/uploads/2021/12/c83615c7c3e14d11b8da7959226175329b5a96c4.png 900w, /wp-content/uploads/2021/12/c83615c7c3e14d11b8da7959226175329b5a96c4-300x81.png 300w, /wp-content/uploads/2021/12/c83615c7c3e14d11b8da7959226175329b5a96c4-768x207.png 768w" sizes="(max-width: 900px) 100vw, 900px" /></figure>
-
-
-
-<p>6. 做防护处理后，插入桥板测试</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="889" height="667" src="/wp-content/uploads/2021/12/26b7a4242ab8429a9684888326fdfc9e929f03c3.png" alt="" class="wp-image-997" srcset="/wp-content/uploads/2021/12/26b7a4242ab8429a9684888326fdfc9e929f03c3.png 889w, /wp-content/uploads/2021/12/26b7a4242ab8429a9684888326fdfc9e929f03c3-300x225.png 300w, /wp-content/uploads/2021/12/26b7a4242ab8429a9684888326fdfc9e929f03c3-768x576.png 768w" sizes="(max-width: 889px) 100vw, 889px" /></figure>
-
-
-
-<p>Dongle插上，这个加密桥板就正常工作，对应的存储就加密读写；不插桥板就不工作，对应的存储也就不工作。</p>
-
-
-
-<p>以上就是Dongle的制作过程，只是AT24C02这种非加密的Dongle的制作，加密的另外再展示。Dongle、SATA-to-SATA桥板都有成熟的成品，大家可以在淘宝上直接购买，制作过程只是告诉大家原理如何！有问题请给我发邮件，u@cloudkey.net.cn 。祝你好运！</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>/archives/989/feed</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>GPIO4的作用是？</title>
-		<link>/archives/968</link>
-					<comments>/archives/968#respond</comments>
-		
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Mon, 06 Dec 2021 12:59:34 +0000</pubDate>
-				<category><![CDATA[问答]]></category>
-		<guid isPermaLink="false">/?p=968</guid>
-
-					<description><![CDATA[GPIO4的作用是 条件准备 1. Enigma开发板有很多个版本，也有很多方案商的捆绑方案，我们这里通过WB [&#8230;]]]></description>
-										<content:encoded><![CDATA[
-<h4><strong>GPIO4的作用是</strong><strong></strong></h4>
-
-
-
-<h3><strong>条件准备</strong><strong></strong></h3>
-
-
-
-<h3>1. Enigma开发板有很多个版本，也有很多方案商的捆绑方案，我们这里通过WB MIKU获得的是普通的Enigma开发板，当然也可以作为产品使用。 通过淘宝直接下单即可：</h3>
-
-
-
-<div class="wp-block-image"><figure class="aligncenter size-full"><a href="https://item.taobao.com/item.htm?ft=t&amp;id=638454042786"><img loading="lazy" width="350" height="230" src="/wp-content/uploads/2021/12/image.png" alt="" class="wp-image-969" srcset="/wp-content/uploads/2021/12/image.png 350w, /wp-content/uploads/2021/12/image-300x197.png 300w" sizes="(max-width: 350px) 100vw, 350px" /></a></figure></div>
-
-
-
-<p>2. 使用Enigma API需要从官方获得API授权，授权分为测试开发授权和正式授权，两个授权的API不能通用，我们这里以测试授权进行示例。 获取授权mail to：<a href="mailto:info@zhongdaic.com">info@zhongdaic.com</a>.</p>
-
-
-
-<p>3. gcc编译器比较简单，一般的Linux的OS都内带gcc。推荐使用Ubuntu 16.04.6 作为开发环境。</p>
-
-
-
-<h3><strong>硬件</strong><strong></strong></h3>
-
-
-
-<p>Enigma开发板的硬件比较简单，USB 接口用于连接到PC。开发板上就2颗芯片，1颗USB转SATA的桥片，1颗ZhongDaIC的SPELITE MX+加密桥片，后面是一个M.2接口的插槽，我们可以自己选择接多大容量的存储。注意这个M.2是 NGFF的，不要选错哟！</p>
-
-
-
-<h3><strong>授权文件</strong><strong></strong></h3>
-
-
-
-<p>授权文件是一个标准的.a库。.a库内嵌授权码。我试过了不同的授权不能通用。授权文件包括如下几个文件：</p>
-
-
-
-<ul><li>Mxlib.a</li><li>Mxlib.h</li><li>Enigma 4.0 API For Linux Guide 1.0.3.pdf</li></ul>
-
-
-
-<p>其中Mxlib.a和Mxlib.h是Gcc编译和调用需要的库文件。Enigma 4.0 API For Linux Guide 1.0.3.pdf是API使用手册，其中有各种函数的详细调用方法和说明。</p>
-
-
-
-<h3><strong>开始DIY Enigma UI</strong><strong></strong></h3>
-
-
-
-<p>在Linux下新建一个gcc project，我们新建一个Enigma.c作为主文件，并将Mxlib.a和Mxlib.h放入根目录下。在Enigma.c主要实现如下几个功能：</p>
-
-
-
-<ul><li>硬件检查</li><li>登录Login</li><li>文件加密Encrypt File</li><li>文件解密Decrypt File</li><li>修改登录密码Change PIN</li></ul>
-]]></content:encoded>
-					
-					<wfw:commentRss>/archives/968/feed</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>企业和私人信息泄露最主要的几个途径？</title>
-		<link>/archives/963</link>
-					<comments>/archives/963#respond</comments>
-		
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Mon, 06 Dec 2021 12:57:20 +0000</pubDate>
-				<category><![CDATA[问答]]></category>
-		<guid isPermaLink="false">/?p=963</guid>
-
-					<description><![CDATA[企业和私人信息泄露最主要的几个途径 1.内部人员离职拷贝带走资料泄密 这类情况发生概率最高。据调查，中国企业员 [&#8230;]]]></description>
-										<content:encoded><![CDATA[
-<h4><strong>企业和私人信息泄露最主要的几个途径</strong><strong></strong></h4>
-
-
-
-<h3><strong>1.内部人员离职拷贝带走资料泄密</strong><strong></strong></h3>
-
-
-
-<p>这类情况发生概率最高。据调查，中国企业员工离职拷贝资料达到70%以上。在离职的时候，研发人员带走研发成果，销售人员带走企业客户资料，甚至是财务人员也会把企业的核心财务信息拷贝带走。</p>
-
-
-
-<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="450" height="294" src="/wp-content/uploads/2021/12/499906e9b55a6d30982f13ec1c4410ff7f4fad30.png" alt="" class="wp-image-964" srcset="/wp-content/uploads/2021/12/499906e9b55a6d30982f13ec1c4410ff7f4fad30.png 450w, /wp-content/uploads/2021/12/499906e9b55a6d30982f13ec1c4410ff7f4fad30-300x196.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure></div>
-
-
-
-<h3><strong>2.内部人员无意泄密和恶意泄密</strong><strong></strong></h3>
-
-
-
-<p>企业内部人员在上网时候不小心中了病毒或木马，电脑上存储的重要资料被流失的情况也非常多。由于病毒和木马泛滥，使得企业泄密的风险越来越大。而部分不良员工明知是企业机密信息，还通过QQ、MSN、邮件、博客或者是其他网络形式，把信息发到企业外部，这种有针对性的泄密行为，导致的危害也相当严重。</p>
-
-
-
-<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="450" height="368" src="/wp-content/uploads/2021/12/9244f1e60c5dfbe5a9f5e41884c9fe965bb1a055.png" alt="" class="wp-image-965" srcset="/wp-content/uploads/2021/12/9244f1e60c5dfbe5a9f5e41884c9fe965bb1a055.png 450w, /wp-content/uploads/2021/12/9244f1e60c5dfbe5a9f5e41884c9fe965bb1a055-300x245.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure></div>
-
-
-
-<h3><strong>3.外部竞争对手窃密</strong><strong></strong></h3>
-
-
-
-<p>竞争对手采用收买方式，买通企业内部人员，让内部人员把重要信息发送竞争方，从而窃取机密的情况也非常多。这种方式直接损害了企业的核心资产，给企业带来致命的打击。</p>
-
-
-
-<h3><strong>4.黑客和间谍窃密</strong><strong></strong></h3>
-
-
-
-<p>目前国际国内许多黑客和间谍，通过层出不穷的技术手段，窃取国内各种重要信息，已经成为中国信息安全的巨大威胁。虽然许多企业都部署了防火墙、杀毒软件、入侵检测等系统，但是对于高智商的犯罪人员来说，这些防御措施往往形同虚设。</p>
-
-
-
-<h3><strong>5.内部文档权限失控失密</strong><strong></strong></h3>
-
-
-
-<p>在单位内部，往往机密信息会分为秘密、机密和绝密等不同的涉密等级。一般来说，根据人员在单位中的地位和部门的不同，其所接触和知悉的信息也是不同。然而，当前多数单位的涉密信息的权限划分是相当粗放的，导致不具备相应密级的人员获知了高密级信息。</p>
-
-
-
-<h3><strong>6.存储设备丢失和维修失密</strong><strong></strong></h3>
-
-
-
-<p>移动存储设备例如笔记本电脑、移动硬盘、手机存储卡、数码照相/摄录机等，一旦遗失、维修或者报废后，其存储数据往往暴露无遗。随着移动存储设备的广泛使用，家庭办公兴起，出差人员的大量事务处理等等都会不可避免地使用移动存储设备。因此，移动存储设备丢失和维修导致泄密也是当前泄密事件发生的主要原因之一。</p>
-
-
-
-<h3><strong>7.对外信息发布失控失密</strong><strong></strong></h3>
-
-
-
-<p>在两个或者多个合作单位之间，由于信息交互的频繁发生，涉密信息也可能泄露，导致合作方不具备权限的人员获得涉密信息。甚至是涉密信息流至处于竞争关系的第三方。因此，对于往外部发送的涉密信息，必须加以管控，防止外发信息失控而导致失密。</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>/archives/963/feed</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>信息保密防护的常用方法有哪些？</title>
-		<link>/archives/959</link>
-					<comments>/archives/959#respond</comments>
-		
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Mon, 06 Dec 2021 12:55:30 +0000</pubDate>
-				<category><![CDATA[问答]]></category>
-		<guid isPermaLink="false">/?p=959</guid>
-
-					<description><![CDATA[信息保密防护的常用方法有哪些 方法一： 修改后缀名严格地说，这并不是-种加密的方法，更像是虛张声势的方法，因为 [&#8230;]]]></description>
-										<content:encoded><![CDATA[
-<h4><strong>信息保密防护的常用方法有哪些</strong><strong></strong></h4>
-
-
-
-<h3><strong>方法一：</strong><strong></strong></h3>
-
-
-
-<p>修改后缀名严格地说，这并不是-种加密的方法，更像是虛张声势的方法，因为这种方法对高手无用!但真正的高手是不会关注你的。这种方法就是将你想保密的文件改为一个任意字符的后缀名。如:将123.doc 改为456. swc，在别人来看，是很难知道其中的秘密的。</p>
-
-
-
-<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="450" height="336" src="/wp-content/uploads/2021/12/e546917f47ab917a2d677ae7603d3f25f00d3045.png" alt="" class="wp-image-960" srcset="/wp-content/uploads/2021/12/e546917f47ab917a2d677ae7603d3f25f00d3045.png 450w, /wp-content/uploads/2021/12/e546917f47ab917a2d677ae7603d3f25f00d3045-300x224.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure></div>
-
-
-
-<h3><strong>方法二</strong><strong></strong></h3>
-
-
-
-<p>目录欺骗法新建一一个目录， 把想保密的文件放入该文件夹，然后将文件夹改名为“123.wav. {00020c01-0000-0000-c000-00000000046}”,你会看到你的这个文件夹会变成一个WAV 文件的图标，双击它也是打开媒体播放器(但就是无法播放)。想浏览该文件需要在“ 资源管理器”里找。</p>
-
-
-
-<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="450" height="363" src="/wp-content/uploads/2021/12/666cdf8b8939a33145995617e25f3bec6b891f7f.png" alt="" class="wp-image-961" srcset="/wp-content/uploads/2021/12/666cdf8b8939a33145995617e25f3bec6b891f7f.png 450w, /wp-content/uploads/2021/12/666cdf8b8939a33145995617e25f3bec6b891f7f-300x242.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure></div>
-
-
-
-<h3><strong>方法三</strong><strong></strong></h3>
-
-
-
-<p>使用软件加密使用&#8211;些专业的文件加密软件即可。这一类软件有很多，用户可以根据自己需要选择。</p>
-
-
-
-<h3><strong>方法四</strong><strong></strong></h3>
-
-
-
-<p>硬件加密就是利用一-些诸如“硬件狗”等这类工具进行相关的设定，使用计算机时必须使用这类硬件才能正常启动电脑和使用。又如:现在很多硬件厂商为其主板专门设计的USB接口加密锁，只有当计算机插上这个加密锁之后，才能进入操作系统和正常使用。不用这个USB加密锁，即使你清空CMOS也无济于事。</p>
-
-
-
-<h3><strong>方法五</strong><strong></strong></h3>
-
-
-
-<p>文件相互捆绑这种方法就是将你要加密的文件捆绑在另-一个文件中，以达到瞒天过海的效果。这方面的代表软件有图形加密软件,其加密手法就是把文件隐藏在图片格式文件中，除非知道密码并用特殊工具打开，否则你只能看到图片。这个软件操作起来相当简便，一个加密流程需要的步骤是:选择伪装图片→选择加密文件→设置加密密码→完成。</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>/archives/959/feed</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>目前世界主流信息加密技术有那些？</title>
-		<link>/archives/955</link>
-					<comments>/archives/955#respond</comments>
-		
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Mon, 06 Dec 2021 12:53:56 +0000</pubDate>
-				<category><![CDATA[问答]]></category>
-		<guid isPermaLink="false">/?p=955</guid>
-
-					<description><![CDATA[目前世界主流信息加密技术有那些？ 当今世界加密技术的主流: 信息加密技术是指利用数学或物理手段，对电子信息在传 [&#8230;]]]></description>
-										<content:encoded><![CDATA[
-<h4><strong>目前世界主流信息加密技术有那些</strong>？</h4>
-
-
-
-<h3><strong>当今世界加密技术的主流:</strong><strong></strong></h3>
-
-
-
-<p>信息加密技术是指利用数学或物理手段，对电子信息在传输过程中和存储体内进行保护，以防止泄漏的技术。一般来说，保密通信、计算机密钥、防复制软盘等都属于信息加密技术。通信过程中的加密主要是采用密码，在数字通信中可利用计算机采用加密法，改变负载信息的数码结构。</p>
-
-
-
-<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="656" height="281" src="/wp-content/uploads/2021/12/3e1b8abffdf26629971a8118996a99e571aa4fba.png" alt="" class="wp-image-956" srcset="/wp-content/uploads/2021/12/3e1b8abffdf26629971a8118996a99e571aa4fba.png 656w, /wp-content/uploads/2021/12/3e1b8abffdf26629971a8118996a99e571aa4fba-300x129.png 300w" sizes="(max-width: 656px) 100vw, 656px" /></figure></div>
-
-
-
-<p>计算机信息保护则以软件加密为主。目前世界上最流行的几种加密体制和加密算法有RSA算法和CCEP算法等。为防止破密，加密软件还常采用硬件加密和加密软盘。一些软件商品常带有一种小的硬卡，这就是硬件加密措施。在软盘上用激光穿孔，使软件的存储区有不为人所知的局部破坏，就可以防止非法复制。这样的加密软盘可以为不掌握加密技术的人员使用，以保护软件。由于计算机软件的非法复制、解密及盗版问题日益严重，甚至引发国际争端，因此信息加密技术和加密手段的研究，正在飞速地发展。</p>
-
-
-
-<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="667" height="286" src="/wp-content/uploads/2021/12/1d954b89fc868cca0db47e6ac39afdc460eb305f.png" alt="" class="wp-image-957" srcset="/wp-content/uploads/2021/12/1d954b89fc868cca0db47e6ac39afdc460eb305f.png 667w, /wp-content/uploads/2021/12/1d954b89fc868cca0db47e6ac39afdc460eb305f-300x129.png 300w" sizes="(max-width: 667px) 100vw, 667px" /></figure></div>
-]]></content:encoded>
-					
-					<wfw:commentRss>/archives/955/feed</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>当我们做信息防护时，如何选自信息加密器？</title>
-		<link>/archives/949</link>
-					<comments>/archives/949#respond</comments>
-		
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Mon, 06 Dec 2021 12:36:40 +0000</pubDate>
-				<category><![CDATA[问答]]></category>
-		<guid isPermaLink="false">/?p=949</guid>
-
-					<description><![CDATA[当我们做信息防护时，如何选自信息加密器？ 1.安全性 选择加密产品，最重要的就是安全性，加密这个行业特征是必须 [&#8230;]]]></description>
-										<content:encoded><![CDATA[
-<h4><strong>当我们做信息防护时，如何选自信息加密器</strong>？</h4>
-
-
-
-<h3><strong>1.安全性</strong><strong></strong></h3>
-
-
-
-<p>选择加密产品，最重要的就是安全性，加密这个行业特征是必须对加解密有深入了解，研究的越深入，对应的加密技术更强悍。还需要不断升级加密技术，尽可能全面的防止各种侵害，加密效果才能更好，所以可根据测评选择安全性更高的加解密产品。</p>
-
-
-
-<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="664" height="284" src="/wp-content/uploads/2021/12/025d61c0de9cd0006eb8cae7ea154c8b8ddf9605.png" alt="" class="wp-image-950" srcset="/wp-content/uploads/2021/12/025d61c0de9cd0006eb8cae7ea154c8b8ddf9605.png 664w, /wp-content/uploads/2021/12/025d61c0de9cd0006eb8cae7ea154c8b8ddf9605-300x128.png 300w" sizes="(max-width: 664px) 100vw, 664px" /></figure></div>
-
-
-
-<h3><strong>2.稳定性</strong><strong></strong></h3>
-
-
-
-<p>加密的成功率、加密后保护的时间长短、加密进程时间的长短等都影响加密的稳定性。</p>
-
-
-
-<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="651" height="326" src="/wp-content/uploads/2021/12/60bd3a32958e5ccbe30cd73e86e8eb86c04688ec.png" alt="" class="wp-image-951" srcset="/wp-content/uploads/2021/12/60bd3a32958e5ccbe30cd73e86e8eb86c04688ec.png 651w, /wp-content/uploads/2021/12/60bd3a32958e5ccbe30cd73e86e8eb86c04688ec-300x150.png 300w" sizes="(max-width: 651px) 100vw, 651px" /></figure></div>
-
-
-
-<h3><strong>3兼容性</strong><strong></strong></h3>
-
-
-
-<p>市面上应用设备层不不穷，加密工具本身要适用于多平台多系统。加密后的程序或文件应尽量保持与源程序或文件同等的运行效果，频繁出现在打不开或者崩溃等现象，便不可选。</p>
-
-
-
-<h3><strong>4.操作稳定性</strong><strong></strong></h3>
-
-
-
-<p>选择加密产品，操作稳定与便捷，是使用者应注重的问题，操作稳定与便捷可为用户带来更好的使用感觉。</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>/archives/949/feed</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>哪几种加密算法应用最广，安全度最高？他们有什么优缺点？</title>
-		<link>/archives/944</link>
-					<comments>/archives/944#respond</comments>
-		
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Mon, 06 Dec 2021 12:32:48 +0000</pubDate>
-				<category><![CDATA[问答]]></category>
-		<guid isPermaLink="false">/?p=944</guid>
-
-					<description><![CDATA[哪几种加密算法应用最广，安全度最高？他们有什么优缺点？ 1.对称加密算法（AES、DES、3DES） 对称加密 [&#8230;]]]></description>
-										<content:encoded><![CDATA[
-<h4><strong>哪几种加密算法应用最广，安全度最高？他们有什么优缺点</strong>？</h4>
-
-
-
-<h3><strong>1.对称加密算法（AES、DES、3DES）</strong><strong></strong></h3>
-
-
-
-<p>对称加密算法是指加密和解密采用相同的密钥，是可逆的（即可解密）。 AES加密算法是密码学中的高级加密标准，采用的是对称分组密码体制，密钥长度的最少 支持为128。AES加密算法是美国联邦政府采用的区块加密标准，这个标准用来替代原先 的DES，已经被多方分析且广为全世界使用。 优点：加密速度快 缺点：密钥的传递和保存是一个问题，参与加密和解密的双方使用的密钥是一样的，这样密钥就很容易泄露。</p>
-
-
-
-<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="700" height="450" src="/wp-content/uploads/2021/12/aba72d6c426ebd736e7814ab1c5f6c0cc054469a.png" alt="" class="wp-image-945" srcset="/wp-content/uploads/2021/12/aba72d6c426ebd736e7814ab1c5f6c0cc054469a.png 700w, /wp-content/uploads/2021/12/aba72d6c426ebd736e7814ab1c5f6c0cc054469a-300x193.png 300w" sizes="(max-width: 700px) 100vw, 700px" /></figure></div>
-
-
-
-<h3><strong>2.非对称加密算法（RSA、DSA、ECC）</strong><strong></strong></h3>
-
-
-
-<p>非对称加密算法是指加密和解密采用不同的密钥（公钥和私钥），因此非对称加密也叫公钥加密，是可逆的（即可解密）。公钥密码体制根据其所依据的难题一般分为三类：大素数分解问题类、离散对数问题类、椭圆曲线类。 RSA加密算法是基于一个十分简单的数论事实：将两个大素数相乘十分容易，但是想要对其乘积进行因式分解极其困难，因此可以将乘积公开作为加密密钥。虽然RSA的安全性一直未能得到理论上的证明，但它经历了各种攻击至今未被完全攻破。 优点：加密和解密的密钥不一致，公钥是可以公开的，只需保证私钥不被泄露即可，这样就密钥的传递变的简单很多，从而降低了被破解的几率。 缺点：加密速度慢 RSA加密算法既可以用来做数据加密，也可以用来数字签名。 &#8211;数据加密过程：发送者用公钥加密，接收者用私钥解密（只有拥有私钥的接收者才能解读加密的内容） &#8211;数字签名过程：甲方用私钥加密，乙方用公钥解密（乙方解密成功说明就是甲方加的密，甲方就不可以抵赖） ECC加密算法是基于椭圆曲线上离散对数计算问题（ECDLP）的ECC算法。ECC算法的数学理论非常深奥和复杂，在工程应用中比较难于实现，但它的单位安全强度相对较高。 用国际上公认的对于ECC算法最有效的攻击方法&#8211;Pollard rho方法去破译和攻击ECC算法，它的破译或求解难度基本上是指数级的。正是由于RSA算法和ECC算法这一明显不同，使得ECC算法的单位安全强度高于RSA算法，也就是说，要达到同样的安全强度，ECC算法所需的密钥长度远比RSA算法低。有研究表示160位的椭圆密钥与1024位的RSA密钥安全性相同。在私钥的加密解密速度上，ECC算法比RSA、DSA速度更快。存储空间占用更小。</p>
-
-
-
-<div class="wp-block-image"><figure class="aligncenter size-full"><img loading="lazy" width="653" height="280" src="/wp-content/uploads/2021/12/d516f08f4a085f70626b3ebb0fd5025673f94dbc.png" alt="" class="wp-image-946" srcset="/wp-content/uploads/2021/12/d516f08f4a085f70626b3ebb0fd5025673f94dbc.png 653w, /wp-content/uploads/2021/12/d516f08f4a085f70626b3ebb0fd5025673f94dbc-300x129.png 300w" sizes="(max-width: 653px) 100vw, 653px" /></figure></div>
-
-
-
-<h3><strong>3．线性散列算法算法（MD5、SHA1、HMAC）</strong><strong></strong></h3>
-
-
-
-<p>MD5全称是Message-Digest Algorithm 5（信息摘要算法5），单向的算法不可逆（被MD5加密的数据不能被解密）。MD5加密后的数据长度要比加密数据小的多，且长度固定，且加密后的串是唯一的。 适用场景：常用在不可还原的密码存储、信息完整性校验等。 信息完整性校验：典型的应用是对一段信息产生信息摘要，以防止被篡改。如果再有一个第三方的认证机构，用MD5还可以防止文件作者的“抵赖”，这就是所谓的数字签名应用。</p>
-
-
-
-<h3><strong>4.混合加密</strong><strong></strong></h3>
-
-
-
-<p>由于以上加密算法都有各自的缺点（RSA加密速度慢、AES密钥存储问题、MD5加密不可逆），因此实际应用时常将几种加密算法混合使用。 例如：RSA+AES： 采用RSA加密AES的密钥，采用AES对数据进行加密，这样集成了两种加密算法的优点，既保证了数据加密的速度，又实现了安全方便的密钥管理。 那么，采用多少位的密钥合适呢？一般来讲密钥长度越长，安全性越高，但是加密速度越慢。所以密钥长度也要合理的选择，一般RSA建议采用1024位的数字，AES建议采用128位即可。</p>
-
-
-
-<h3><strong>5.内部文档权限失控失密</strong><strong></strong></h3>
-
-
-
-<p>严格意义讲，Base64并不能算是一种加密算法，而是一种编码格式，是网络上最常见的用于传输8bid字节代码的编码方式之一。 Base64编码可用于在HTTP环境下传递较长的标识信息，Base编码不仅不仅比较简单，同时也据有不可读性（编码的数据不会被肉眼直接看到）。</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>/archives/944/feed</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
-		<title>热点信息  美国国防部新网安标准：网安成数度等级划分和新增变化</title>
-		<link>/archives/2086</link>
-					<comments>/archives/2086#respond</comments>
-		
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Fri, 19 Nov 2021 11:16:00 +0000</pubDate>
+		<pubDate>Mon, 27 Dec 2021 09:34:50 +0000</pubDate>
 				<category><![CDATA[全部]]></category>
-		<category><![CDATA[推荐]]></category>
-		<guid isPermaLink="false">/?p=2086</guid>
+		<category><![CDATA[物联网安全]]></category>
+		<guid isPermaLink="false">/?p=4414</guid>
 
-					<description><![CDATA[美国国防部新网安标准：网安成数度等级划分和新增变化 网安标准2月14日讯，据外媒报道，于2020年1月31日， [&#8230;]]]></description>
+					<description><![CDATA[物联网安全行业研究简析 一&#160;行业概况 自2005年国际电信联盟（ITU）正式提出“物联网”这一概念以 [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<p><strong>美国国防部新网安标准：网安成数度等级划分和新增变化</strong><strong></strong></p>
+<h2><strong>物联网安全行业研究简析</strong><strong></strong></h2>
 
 
 
-<p>网安标准2月14日讯，据外媒报道，于2020年1月31日，美国国防部发布了新的网络安全标准——《网络安全成熟度模型认证1.0版》(简称CMMC 1.0)。美国防部表示，到2026年，国防承包商在回应政府采购计划的提案请求时，必须满足基本的网络安全标准。美国防部希望通过新版CMMC框架的推出，以增强国防工业基础（DIB）分包商的网络安全准备程度的方式，加强对供应链非机密信息（联邦合同信息（FCI）和受控未分类信息（CUI）的保护。继上一期谈了网安成熟度模型框架分析和进程级别之后，本期将要介绍CMMC的网安成熟度等级划分和新增变化。</p>
+<p><strong>一&nbsp;行业概况</strong></p>
 
 
 
-<p>首先CMMC是一个基于数据保护为中心的安全成熟度评价体系。在这套体系里面，重点提到保护目标是CUI-受控的非机密信息，那这个定义清晰的界定了所保护数据的范围，任何绝密/秘密的涉及国家安全的数据信息不包含在内，CUI是政府创建或拥有的，或组织实体为政府创建或拥有的或代表政府创建或拥有的信息，这些信息是法律，法规或政府范围内的政策要求或允许机构使用保障或传播控制措施进行处理的信息。在CMMC体系文档中没有明确针对所保护数据信息的分类分级做明确的定义和说明，直接引用在美国的国家档案网站中CUI的分类与细分子类的详细描述说明，以及细分子类的分类指南和示例。</p>
+<p>自2005年国际电信联盟（ITU）正式提出“物联网”这一概念以来，物联网在全球范围内迅速获得认可，并成为信息产业革命第三次浪潮和第四次工业革命的核心支撑。物联网技术的发展创新，深刻改变着传统产业形态和社会生活方式，催生了大量新产品、新服务、新模式，引发了产业、经济和社会发展新浪潮。</p>
 
 
 
-<p><br>&nbsp;&nbsp;&nbsp;CUI数据信息的总体分类包括：关键基础设施、防御、出口管制、金融、出入境、情报、国际协定、执法、法律、自然和文化资源、北约、核、隐私、采购与供应链、专有业务信息、临时信息、统计、税务。</p>
+<p>与此同时，数以亿计的设备接入物联网，物联网产业规模不断壮大，针对用户隐私、基础网络环境的安全攻击不断增多，网络安全问题已成为限制物联网服务广泛部署的障碍之一。</p>
 
 
 
-<p><strong>目前，云安全的痛点有以下：</strong><strong></strong></p>
+<p><strong>二行业规模</strong></p>
 
 
 
-<ol type="1"><li>云存储不加密，没有保密的交换文件的网盘</li><li>网盘存储的是明文文件</li><li>网盘共享功能分享的是明文文件</li><li>共享密码只有4个字母</li></ol>
+<p>“万物互联”成为全球网络未来发展的重要方向。据GSMA预测，2025年全球物联网设备（包括蜂窝及非蜂窝）联网数量将达到252亿如图1.1，远高于2017年的63亿；同时，物联网市场规模将达到目前的四倍。此外，工业物联网设备联网数量在2016年至2025年间，将从24亿增加到138亿，增幅达五倍左右1，工业互联网设备联网数量也将在2023年超过消费物联网设备联网数量如图：</p>
 
 
 
-<p><strong>无法区分获取文件的人是否是授权的？</strong><strong></strong></p>
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="283" src="/wp-content/uploads/2021/12/image-36.png" alt="" class="wp-image-4416" srcset="/wp-content/uploads/2021/12/image-36.png 554w, /wp-content/uploads/2021/12/image-36-300x153.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
 
 
 
-<ol type="1"><li>网盘数据是用户的，用户文件在云端没有隐私</li><li>云平台可以看到所有用户数据</li><li>存在云平台的数据没有加密保护</li><li>云平台数据不区分用户保密</li></ol>
+<figure class="wp-block-image size-full"><img loading="lazy" width="549" height="354" src="/wp-content/uploads/2021/12/image-37.png" alt="" class="wp-image-4417" srcset="/wp-content/uploads/2021/12/image-37.png 549w, /wp-content/uploads/2021/12/image-37-300x193.png 300w" sizes="(max-width: 549px) 100vw, 549px" /></figure>
 
 
 
-<p><strong>云安全的痛点？</strong><strong></strong></p>
+<p>当前，基于物联网（IoT）的攻击已经成为现实。据Gartner调查，近20％的企业或相关机构在过去三年内遭受了至少一次基于物联网的攻击。为了防范安全威胁，Gartner预测2018年全球物联网安全支出将达到15亿美元，比2017年增长28％，预计到2021年物联网安全支出将达到31亿美元2如表：</p>
 
 
 
-<ol type="1"><li>加解密影响速度和体感</li><li>如果云端加密，超过百万用户规模，严重加解密占用云计算资源</li><li>用户端软件加密受终端影响感知较差</li><li>现有加密硬件速度不够快小于10MB/s</li><li>软件加密，效率低、不可信</li><li>软件加密占用主机CPU和内存资源</li><li>软件加密可以被篡改，不完全可信</li><li>密钥在那里？</li><li>放在云端？密钥和加密文件放在一起不安全</li></ol>
+<figure class="wp-block-image size-full"><img loading="lazy" width="548" height="195" src="/wp-content/uploads/2021/12/image-39.png" alt="" class="wp-image-4419" srcset="/wp-content/uploads/2021/12/image-39.png 548w, /wp-content/uploads/2021/12/image-39-300x107.png 300w" sizes="(max-width: 548px) 100vw, 548px" /></figure>
 
 
 
-<p>10.放在用户手中？用户口令安全性不确定</p>
+<p><strong>三物联网安全风险分析</strong></p>
 
 
 
-<p><strong>解决方案</strong><strong></strong></p>
+<p>当前，大量物联网设备及云服务端直接暴露于互联网，这些设备和云服务端存在的漏洞一旦被利用，可导致设备被控、用户隐私泄露、云服务端数据被窃取等安全风险，甚至会对基础通信网络造成严重影响。</p>
 
 
 
-<ol type="1"><li>云端存储加密后文档</li><li>加密密钥在用户端存放</li><li>用户端解密使用</li><li><strong>上传、下载：都是以密文传输</strong><strong></strong></li><li>硬件加解密</li><li>上云前加密</li><li>下载后本机解密</li><li>密钥+PIN结合(指纹/按键)</li></ol>
+<p>从全球分布来看，路由器、视频监控设备暴露数量占比较高。路由器暴露数量超过3000万台，视频监控设备暴露数量超过1700万台如图：</p>
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="530" src="/wp-content/uploads/2021/12/6b14cace303714f96ded434ac143b40f1654efd6.png" alt="" class="wp-image-2089" srcset="/wp-content/uploads/2021/12/6b14cace303714f96ded434ac143b40f1654efd6.png 830w, /wp-content/uploads/2021/12/6b14cace303714f96ded434ac143b40f1654efd6-300x192.png 300w, /wp-content/uploads/2021/12/6b14cace303714f96ded434ac143b40f1654efd6-768x490.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="304" src="/wp-content/uploads/2021/12/image-40.png" alt="" class="wp-image-4421" srcset="/wp-content/uploads/2021/12/image-40.png 554w, /wp-content/uploads/2021/12/image-40-300x165.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
 
 
 
-<p><strong>解决方案——链</strong><strong></strong></p>
+<p><strong>四物联网安全未来发展趋势</strong></p>
 
 
 
-<p><strong>认证模式：</strong><strong></strong></p>
+<p>近年来，物联网在蓬勃发展的同时，也暴露出了许多安全问题。服务端、终端以及通信网等物联网应用模型各主要环节，仍然存在网络安全管理和检测工作不规范、传统的安全防护技术不能适应当前的网络安全新形势、尚未建立起有效的安全防护防御体系和安全生态等诸多问题。</p>
 
 
 
-<ol type="1"><li>客户终端必须上报正确的账号和密码</li><li>一次认证AAA：对用户的账号中的域名校验</li><li>国密认证AAA：对用户的身份、账号进行国密认证检验<strong></strong></li></ol>
+<p><strong>1.&nbsp;物联网安全技术标准落地及合规性检测</strong></p>
 
 
 
-<p><strong>终端国密认证：</strong><strong></strong></p>
+<p>推动物联网安全技术标准落地实施，全面推广技术合规性检测，促进物联网产业良性发展。目前，国内已发布《物联网参考体系结构》《物联网术语》《网络安全等级保护基本要求4：物联网安全扩展要求》《信息安全技术物联网安全参考模型及通用要求》等系列国家和行业标准，为设备厂商、服务提供商、安全企业等开展物联网相关工作提供了技术要求和参考规范。下一步要健全完善物联网安全标准体系，加快推动相关技术标准落地实施，全面推广技术合规性检测，进一步促进物联网产业健康良性发展。</p>
 
 
 
-<ol type="1"><li>客户终端设备、身份国密认证</li><li>业务系统高速加密、国密加密</li><li>网络连接VPDN国密认证</li></ol>
+<p><strong>2.&nbsp;以攻促防推进物联网安全技术发展</strong></p>
 
 
 
-<p><strong>高速加密：</strong><strong></strong></p>
+<p>密切关注物联网攻防技术发展趋势，以攻促防，建立适应物联网环境的安全防护机制。当前，针对物联网业务系统的攻击手段已经超出传统网络攻击范畴，攻击形式更加多样化，传统的防御手段难以满足日益增长的安全保护需求。为此，可从攻击的角度出发对物联网系统进行安全风险分析及检测评估，深入研究物联网应用系统可能存在的安全漏洞，以及针对这些漏洞的新型攻击手段，攻防结合，在完整攻击链条中寻找最佳防御点，采取针对性的防御技术，构建有效的物联网安全防护体系。</p>
 
 
 
-<ol type="1"><li>终端数据加密</li><li>业务数据加密</li></ol>
+<p><strong>3.&nbsp;构建物联网全生命周期立体防御体系</strong></p>
 
 
 
-<p><strong>解决方案——端</strong></p>
+<p>加强物联网全生命周期安全管理，构建覆盖物联网系统建设各环节的安全防护体系。在物联网业务系统规划、分析、设计、开发、建设、验收、运营维护以及废弃等各环节，明确安全管理规章制度并严格执行安全管理，使安全融入到物联网系统建设全生命周期中。在开发阶段，严格依据要求和规范进行系统软硬件开发及测试，并阶段性开展安全测试；在建设、验收阶段，严格执行安全管理，在系统建设完成后进行安全风险评估，保障安全防护的有效性和合规性；在运营维护阶段，定期进行安全风险评估，持续跟踪威胁情报和信息，改进安全管理和防护措施；在系统废弃阶段，做好残余信息清理工作，形成全生命周期安全防护管理体系。</p>
 
 
 
-<ol type="1"><li>搭载最新USB 3.1第二代10Gbps接口</li><li>实时6Gbps加解密，支持AES /SM4 256bit 加密引擎</li><li>NIST/CSE认证的硬件加密芯片MX+</li><li>使用者可透过选择任何主机端可读取的存储装置里的文档及文件夹包含云端硬盘，加密既有资料</li><li>您拥有别人所没有的实体钥匙</li></ol>
+<p><strong>4.&nbsp;联合行业力量打造物联网安全生态</strong></p>
 
 
 
-<p><strong>加密终端、身份识别</strong><strong>&nbsp;</strong><strong>保护个人及企业云端资料的安全</strong><strong></strong></p>
+<p>联合物联网产业链各方力量，共同打造物联网安全生态。物联网产业具有高度融合、应用多样、发展迅速等特点，其生态覆盖传感器元器件制造、设备集成生产、网络服务提供、软件服务提供、系统集成开发及销售等环节，安全问题更是涉及传感器、芯片、硬件，通信技术、网络服务以及相关行业领域应用等方面，因此构建开放、合作、共赢的安全生态圈是产业发展的必然趋势和要求。未来，我国需要从整机设备、核心芯片、安全运营服务等板块入手加快产业布局，形成产业链上下游协同创新的局面，推进产业转型升级，提升我国物联网安全产业核心竞争力。</p>
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="509" src="/wp-content/uploads/2021/12/035a8748384eb72aee2d00015a3675191fd44535.png" alt="" class="wp-image-2091" srcset="/wp-content/uploads/2021/12/035a8748384eb72aee2d00015a3675191fd44535.png 830w, /wp-content/uploads/2021/12/035a8748384eb72aee2d00015a3675191fd44535-300x184.png 300w, /wp-content/uploads/2021/12/035a8748384eb72aee2d00015a3675191fd44535-768x471.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
+<p><strong>5.&nbsp;探索新技术在物联网安全领域的应用</strong></p>
 
 
 
-<p><strong>解决方案——加密网盘</strong></p>
-
-
-
-<ol type="1"><li>文件本端硬件加密</li><li>密钥=硬件+PIN组合（密码、按键、指纹）</li><li>对接云存储，云上存密文</li><li>可共享，分享者硬件授权和解密</li></ol>
-
-
-
-<p><strong>加密网盘——用户侧加密、解密文件</strong><strong></strong></p>
-
-
-
-<ol type="1"><li>右键单击执行文档或文件夹加密 (Windows版本)</li><li>选取位于右方窗格的一个文档 (或可使用Shift或Ctrl键选取多个文档)，接着右键单击选择 “加密至目前路径”进行加密</li><li>选取左方窗格的一个文件夹并选择 “加密至目前路径”</li><li>欲解密文档，选取加密的文档/文件夹并右键单击选择“解密至目前路径</li></ol>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="344" height="303" src="/wp-content/uploads/2021/12/a74e73301021d17381dafffa4139501d53dcfb27.png" alt="" class="wp-image-2092" srcset="/wp-content/uploads/2021/12/a74e73301021d17381dafffa4139501d53dcfb27.png 344w, /wp-content/uploads/2021/12/a74e73301021d17381dafffa4139501d53dcfb27-300x264.png 300w" sizes="(max-width: 344px) 100vw, 344px" /></figure>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="355" height="305" src="/wp-content/uploads/2021/12/263152a5fc2f044bc869fe3f234982ae0c0bb993.png" alt="" class="wp-image-2093" srcset="/wp-content/uploads/2021/12/263152a5fc2f044bc869fe3f234982ae0c0bb993.png 355w, /wp-content/uploads/2021/12/263152a5fc2f044bc869fe3f234982ae0c0bb993-300x258.png 300w" sizes="(max-width: 355px) 100vw, 355px" /></figure>
-
-
-
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/MXNzK3hyMm9DTkl3YllQeWlHdWlFbTlVeVk1TmVXZjlHdDlHY3JyaVJvWEVsQjdqVWIwNGF0cmY5K3hjR3RoQmJvTllUVDUzN2xtcitMT29ZVmFlWnZKQVRueDJFdEpsaFh1YnJETndsOHV4VzFZQ0ZCQVYvcGN1cE5jNTdsekZxN2FXSXZOSTlKSDg4V1haWXJTKzBqclZGK0hMWUlLS1loMHRqRit2Njcrc1ZyUWI2ZkgvZC9LdnB2NjJuS2x0bERBRGpnWXVxbG51MUJPTTBRRT0=/attach/object/f9689ef8a8c6e8aff187fbae99f007c42ac41670" alt=""/></figure>
-
-
-
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/MXNzK3hyMm9DTkl3YllQeWlHdWlFbTlVeVk1TmVXZjlHdDlHY3JyaVJvWEVsQjdqVWIwNGF0cmY5K3hjR3RoQmJvTllUVDUzN2xtcitMT29ZVmFlWnZKQVRueDJFdEpsaFh1YnJETndsOHV4VzFZQ0ZCQVYvcGN1cE5jNTdsekZxN2FXSXZOSTlKSDg4V1haWXJTKzBqclZGK0hMWUlLS1loMHRqRit2Njcrc1ZyUWI2ZkgvZC9LdnB2NjJuS2x0bERBRGpnWXVxbG51MUJPTTBRRT0=/attach/object/43930fbf355f4b940c32f28d57e2db434f066937" alt=""/></figure>
-
-
-
-<p><strong>加密网盘——通过网盘客户端上传</strong><strong></strong></p>
-
-
-
-<ol type="1"><li>通过网盘客户端软件上传加密文件(Windows版本)</li><li>登录网盘</li><li>点击上传</li><li>选取已经用Enigma加密的文件，点击签名上传</li><li>客户端软件调用Enigma完成签名，并上传</li></ol>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="301" height="251" src="/wp-content/uploads/2021/12/fc527ce569306b1ab55d105e7834ac69f504f0fa.png" alt="" class="wp-image-2094"/></figure>
-
-
-
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/MXNzK3hyMm9DTkl3YllQeWlHdWlFbTlVeVk1TmVXZjlHdDlHY3JyaVJvWEVsQjdqVWIwNGF0cmY5K3hjR3RoQmJvTllUVDUzN2xtcitMT29ZVmFlWnZKQVRueDJFdEpsaFh1YnJETndsOHV4VzFZQ0ZCQVYvcGN1cE5jNTdsekZxN2FXSXZOSTlKSDg4V1haWXJTKzBqclZGK0hMWUlLS1loMHRqRit2Njcrc1ZyUWI2ZkgvZC9LdnB2NjJuS2x0bERBRGpnWXVxbG51MUJPTTBRRT0=/attach/object/ae5c379b0c3d46606dd95b31e41a1205f68d6cbe" alt=""/></figure>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="407" height="242" src="/wp-content/uploads/2021/12/d56d11ac0c8d8b3692e877b318196974e355d2f9.png" alt="" class="wp-image-2095" srcset="/wp-content/uploads/2021/12/d56d11ac0c8d8b3692e877b318196974e355d2f9.png 407w, /wp-content/uploads/2021/12/d56d11ac0c8d8b3692e877b318196974e355d2f9-300x178.png 300w" sizes="(max-width: 407px) 100vw, 407px" /></figure>
-
-
-
-<p><strong>加密网盘——文件加密上传过程实例</strong><strong></strong></p>
-
-
-
-<p>以PC端和云网盘使用Encryption Cloud Storage通过互联网交换和传输加密文件内容为例说明如下：</p>
-
-
-
-<p><strong>第一步: PC端使用Enigma高速硬件AES（密钥为个人私有）加密文件资料</strong><strong></strong></p>
-
-
-
-<p><strong>第二步: PC端用云网盘的Public Key加密第二步的结果</strong><strong></strong></p>
-
-
-
-<p><strong>第三步: 用云网盘的Private Key签名，并发送</strong><strong></strong></p>
-
-
-
-<p><strong>第四步: 云网盘收到后，用PC端的Public Key进行签名验证</strong><strong></strong></p>
-
-
-
-<p><strong>第五步: 用云网盘的Private Key解密第三步的结果</strong><strong></strong></p>
-
-
-
-<p><strong>第六步: 云网盘存储已经在PC端使用Enigma加密的文件资料</strong><strong></strong></p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="202" src="/wp-content/uploads/2021/12/a629756b0e28cf9c5c9bb481c470ac770cd696d1.png" alt="" class="wp-image-2096" srcset="/wp-content/uploads/2021/12/a629756b0e28cf9c5c9bb481c470ac770cd696d1.png 830w, /wp-content/uploads/2021/12/a629756b0e28cf9c5c9bb481c470ac770cd696d1-300x73.png 300w, /wp-content/uploads/2021/12/a629756b0e28cf9c5c9bb481c470ac770cd696d1-768x187.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
-
-
-
-<p><strong>解决方案——加密文档</strong><strong></strong></p>
-
-
-
-<ol type="1"><li>硬件身份认证</li><li>文档加密</li><li>加密文档网络共享</li><li>加密文档传递</li></ol>
-
-
-
-<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>支持多用户、群组的PKI部署</strong><strong></strong></p>
-
-
-
-<p><strong>文档和要素采用高性能硬件加解密引擎</strong><strong></strong></p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="829" height="471" src="/wp-content/uploads/2021/12/c1b8401f0c631195d72117b2c5488674acd9089f.png" alt="" class="wp-image-2097" srcset="/wp-content/uploads/2021/12/c1b8401f0c631195d72117b2c5488674acd9089f.png 829w, /wp-content/uploads/2021/12/c1b8401f0c631195d72117b2c5488674acd9089f-300x170.png 300w, /wp-content/uploads/2021/12/c1b8401f0c631195d72117b2c5488674acd9089f-768x436.png 768w" sizes="(max-width: 829px) 100vw, 829px" /></figure>
-
-
-
-<p><strong>加密文档——加密、解密文件</strong><strong></strong></p>
-
-
-
-<ol type="1"><li>右键单击执行文档或文件夹加密 (Windows版本)</li><li>选取位于右方窗格的一个文档 (或可使用Shift或Ctrl键选取多个文档)，接着右键单击选</li><li>择 “加密至目前路径”进行加密</li><li>选取左方窗格的一个文件夹并选择 “加密至目前路径”</li><li>欲解密文档，选取加密的文档/文件夹并右键单击选择“解密至目前路径”</li></ol>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="470" height="384" src="/wp-content/uploads/2021/12/bbbb200430ee28ca746d746b7d0cfdc262c18fa7.png" alt="" class="wp-image-2098" srcset="/wp-content/uploads/2021/12/bbbb200430ee28ca746d746b7d0cfdc262c18fa7.png 470w, /wp-content/uploads/2021/12/bbbb200430ee28ca746d746b7d0cfdc262c18fa7-300x245.png 300w" sizes="(max-width: 470px) 100vw, 470px" /></figure>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="466" height="376" src="/wp-content/uploads/2021/12/570bf7a9b97d2654b235b862d6f0639714621032.png" alt="" class="wp-image-2099" srcset="/wp-content/uploads/2021/12/570bf7a9b97d2654b235b862d6f0639714621032.png 466w, /wp-content/uploads/2021/12/570bf7a9b97d2654b235b862d6f0639714621032-300x242.png 300w" sizes="(max-width: 466px) 100vw, 466px" /></figure>
-
-
-
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/MXNzK3hyMm9DTkl3YllQeWlHdWlFbTlVeVk1TmVXZjlHdDlHY3JyaVJvWEVsQjdqVWIwNGF0cmY5K3hjR3RoQmJvTllUVDUzN2xtcitMT29ZVmFlWnZKQVRueDJFdEpsaFh1YnJETndsOHV4VzFZQ0ZCQVYvcGN1cE5jNTdsekZxN2FXSXZOSTlKSDg4V1haWXJTKzBqclZGK0hMWUlLS1loMHRqRit2Njcrc1ZyUWI2ZkgvZC9LdnB2NjJuS2x0bERBRGpnWXVxbG51MUJPTTBRRT0=/attach/object/1c849b500ac4181089e8d0eb1aeccf18b8522e21" alt=""/></figure>
-
-
-
-<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/MXNzK3hyMm9DTkl3YllQeWlHdWlFbTlVeVk1TmVXZjlHdDlHY3JyaVJvWEVsQjdqVWIwNGF0cmY5K3hjR3RoQmJvTllUVDUzN2xtcitMT29ZVmFlWnZKQVRueDJFdEpsaFh1YnJETndsOHV4VzFZQ0ZCQVYvcGN1cE5jNTdsekZxN2FXSXZOSTlKSDg4V1haWXJTKzBqclZGK0hMWUlLS1loMHRqRit2Njcrc1ZyUWI2ZkgvZC9LdnB2NjJuS2x0bERBRGpnWXVxbG51MUJPTTBRRT0=/attach/object/eb6c4677e77923f2cb3335e89e3990b0f6d8b755" alt=""/></figure>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="829" height="361" src="/wp-content/uploads/2021/12/82a1f9a74d9cc838abca77e0699edec3e3781e17.png" alt="" class="wp-image-2100" srcset="/wp-content/uploads/2021/12/82a1f9a74d9cc838abca77e0699edec3e3781e17.png 829w, /wp-content/uploads/2021/12/82a1f9a74d9cc838abca77e0699edec3e3781e17-300x131.png 300w, /wp-content/uploads/2021/12/82a1f9a74d9cc838abca77e0699edec3e3781e17-768x334.png 768w" sizes="(max-width: 829px) 100vw, 829px" /></figure>
-
-
-
-<p><strong>加密文档——用户端到端加密文档传递</strong><strong></strong></p>
-
-
-
-<p>以Alice和Bob使用Encryption Cloud Storage通过互联网交换和传输加密文件内容为例说明如下：</p>
-
-
-
-<p>第一步: Alice使用CloudKey高速硬件AES加密文件资料</p>
-
-
-
-<p>第二步: Alice用Bob的Public Key加密第二步的结果</p>
-
-
-
-<p>第三步: 用Alice的Private Key签名，并发送</p>
-
-
-
-<p>第四步: Bob收到后，用Alice的Public Key进行签名验证</p>
-
-
-
-<p>第五步: 用Bob的Private Key解密第三步的结果</p>
-
-
-
-<p>第六步: Bob使用CloudKey的高速硬件AES解密文件资料</p>
-
-
-
-<h1><strong>CMMC等级划分</strong><strong></strong></h1>
-
-
-
-<p>除了网络安全控制标准外，CMMC将更广泛地“衡量一家公司网络安全实践和安全运营过程制度化的成熟度”。CMMC将实现多个级别的网络安全。除了评估公司实施网络安全控制措施的成熟度外，CMMC还将评估公司网络安全实践和流程的成熟度/制度化水平。</p>
-
-
-
-<p>从美国国防部各级官员对于网络安全成熟度模型认证的要求可以看到美国正在倾力打造国防相关的信息数据保护和安全防御体系，强制要求所有国防相关企业快速落地网络安全成熟度模型认证等级划分(CMMC)框架。</p>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="830" height="525" src="/wp-content/uploads/2021/12/3302c5bad1cca29fb95d3b096afa7e8a83190679.png" alt="" class="wp-image-2101" srcset="/wp-content/uploads/2021/12/3302c5bad1cca29fb95d3b096afa7e8a83190679.png 830w, /wp-content/uploads/2021/12/3302c5bad1cca29fb95d3b096afa7e8a83190679-300x190.png 300w, /wp-content/uploads/2021/12/3302c5bad1cca29fb95d3b096afa7e8a83190679-768x486.png 768w" sizes="(max-width: 830px) 100vw, 830px" /></figure>
-
-
-
-<p><strong>第一级：基础的网络卫生</strong></p>
-
-
-
-<ul><li>相当于联邦收购法规48 CFR 52.204-21中的所有实践。</li></ul>
-
-
-
-<p>一级要求最低。据国防部负责采办的助理部长办公室网络事务特别助理凯蒂·阿灵顿介绍，CMMC框架大约确定了17个网络安全特定“领域”，一级合规性仅要求在各个领域制定一项基本的“控制”措施</p>
-
-
-
-<p><strong>第二级：中级网络卫生，72种实践</strong></p>
-
-
-
-<ul><li>与联邦收购法相符</li><li>包括从NIST SP 800-171 r 1中选择的48个实践所组成的例集。</li><li>外加7个支持网络卫生的额外实践</li></ul>
-
-
-
-<p>二级被认为是过渡阶段。五角大楼可通过建立新的流程、规划和预算帮助各企业为更高的认证级别做好准备，其主要目标仍是“帮助小企业”。</p>
-
-
-
-<p><strong>第三级：良好的网络卫生，130种实践</strong></p>
-
-
-
-<ul><li>与联邦收购法相符</li><li>包括NIST SP 800-171 r 1中的所有实践案例。</li><li>外加20支持良好网络卫生的额外实践。</li></ul>
-
-
-
-<p>三级被认为是跨度最大的一级，是处理受控非机密信息的最低要求。企业的控制措施必须从前两级要求的17项增加到110多项。这些标准出自美国国家标准技术研究院的NIST 800-171修订版文件，也是目前许多企业声称已经达到的标准。</p>
-
-
-
-<p><strong>第四级：主动型，156种实践</strong></p>
-
-
-
-<ul><li>与联邦收购法相符</li><li>包括NIST SP 800-171 r 1中的所有实践。</li><li>外加NIST SP800-171B草案的11个额外实践。</li><li>包含额外15个实践，这些实践对一个主动出击型的网络项目进行了阐述。</li></ul>
-
-
-
-<p><strong>第五级：高级别，171个实践</strong></p>
-
-
-
-<ul><li>与联邦收购法相符</li><li>包括NIST SP 800-171 r 1中的所有实践。</li><li>从NIST SP800-171B草案中选择了4个额外实践案例。</li><li>还包含11个阐述高级网络安全计划的额外案例。</li></ul>
-
-
-
-<figure class="wp-block-image size-full"><img loading="lazy" width="987" height="739" src="/wp-content/uploads/2021/12/image.jpeg" alt="" class="wp-image-2102" srcset="/wp-content/uploads/2021/12/image.jpeg 987w, /wp-content/uploads/2021/12/image-300x225.jpeg 300w, /wp-content/uploads/2021/12/image-768x575.jpeg 768w" sizes="(max-width: 987px) 100vw, 987px" /></figure>
-
-
-
-<p>据悉，第四级和第五级针对承包最敏感合同的“极核心技术企业”，增加了额外的控制措施。而综上可知，这些标准将来自美国国家标准技术研究院、国际标准组织（ISO）、航空航天工业协会（AIA）等机构已经发布或正在制定的标准。</p>
-
-
-
-<p><strong>新版CMCC主要变化</strong><strong></strong></p>
-
-
-
-<p>新版CMMC模型利用了多处资源，进行了多方参考，包括：</p>
-
-
-
-<ul><li>CMMC第一级 只解决联邦并购法52.204-21条款涉及的惯例。</li><li>CMMC第三级 包括NIST SP 800-171r1等条款所涉实践（案例/惯例）。</li><li>CMMC第四和第五级整合了NIST SP 800-171B草案和其他法案中的部分实践（案例/惯例）。</li><li>此外，新版本的CMCC还参考了其他资源，如英国网络要素和澳大利亚网络安全中心必要的八种成熟度模型。</li></ul>
-
-
-
-<p>在CMMC认证方案中，企业不再“自行认证”而由美国防部授权第三方进行评估是最大的变化之一，且费用由企业承担。</p>
-
-
-
-<p>理论上，企业今后可以在不遵守规定的情况下竞标，但必须在选出“中标者”前获得所要求的等级的认证，否则将失去资格。因为未经认证的企业无法获得合同，且五角大楼官员无权给予任何企业网络安全认证的通行证。</p>
-
-
-
-<p>据报道，CMMC认证尤其会对小企业造成负担，美国防部将在不影响国家安全的前提下将影响降至最低。主承包商和工业界协会都在研究构建满足各种CMMC等级的计算基础架构，供分包商访问，让后者不必自己支付创建这些设施的费用</p>
+<p>加快探索物联网安全新技术新应用，满足不断发展的物联网安全防护新需求。随着物联网技术的发展和应用的创新，未来物联网在服务系统、终端、通信网络等方面都将面临巨大挑战，例如如何有效管理百亿级别的多源异构终端设备、如何解决海量数据对网络带宽带来挑战等，同时也给物联网安全提出了更高要求。下一步，我们要着眼于物联网未来发展趋势，加快对去中心化认证、边缘计算、终端安全轻量化防护技术、软件定义边界等新技术新应用的研究和探索，将其应用于物联网安全防护中，满足物联网未来发展的安全保护需求。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/archives/2086/feed</wfw:commentRss>
+					<wfw:commentRss>/archives/4414/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>物联网安全概述</title>
+		<link>/archives/4401</link>
+					<comments>/archives/4401#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 27 Dec 2021 09:33:32 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[物联网安全]]></category>
+		<guid isPermaLink="false">/?p=4401</guid>
+
+					<description><![CDATA[物联网安全概述 第一章：物联网安全概述 1.物联网安全概述 1.1.1 物联网的简介 广义物联网：物联网是一个 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h1><strong>物联网安全概述</strong></h1>
+
+
+
+<p><strong>第一章：物联网安全概述</strong><strong></strong></p>
+
+
+
+<p><strong>1.物联网安全概述</strong><strong></strong></p>
+
+
+
+<p><strong>1.1.1 物联网的简介</strong><strong></strong></p>
+
+
+
+<p><strong>广义物联网：</strong><br>物联网是一个未来发展的愿景，等同于“未来的互联网”，能够实现人在任何时间、地点、使用任何网络与任何人与物的信息交换，以及物与物之间的信息交换。<br><strong>狭义物联网：</strong><br>物联网是物品之间通过网络连接起来的局域网，不论该局域网是否接入互联网，只要具有感、联、知、控（用）四个环节，都属于物联网的范畴。</p>
+
+
+
+<p><strong>1.1.2 物联网的特点</strong><strong></strong></p>
+
+
+
+<ul><li>普通对象设备化</li><li>自治终端互联化</li><li>普适服务智能化</li></ul>
+
+
+
+<p><strong>1.1.3 物联网的四层模型</strong><strong></strong></p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="269" src="/wp-content/uploads/2021/12/image-25.png" alt="" class="wp-image-4402" srcset="/wp-content/uploads/2021/12/image-25.png 554w, /wp-content/uploads/2021/12/image-25-300x146.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p><strong>1.1.4 物联网中的安全问题</strong><strong></strong></p>
+
+
+
+<ul><li><strong>数据安全</strong></li><li><strong>隐私</strong></li><li><strong>复制</strong></li><li><strong>RFID系统的威胁</strong>：从应用系统的角度考虑面临的安全问题，如数据机密性、可用性、隐私保护。</li></ul>
+
+
+
+<p><strong>2.物联网安全问题分析</strong><strong></strong></p>
+
+
+
+<p><strong>1.2.1信息网安全</strong><strong></strong></p>
+
+
+
+<p>针对信息安全的攻击，主要包括<strong>主动攻击</strong>和<strong>被动攻击</strong>。<br>主动攻击包括：</p>
+
+
+
+<ul><li>中断（Interruption），阻止通信设施的正常工作，破坏可用性。</li><li>篡改（Modification），更改数据流。</li><li>伪造（Fabrication），将一个非法实体伪装成一个合法的实体。</li><li>重放（Replay）攻击，将一个数据单元截获后进行重传。</li></ul>
+
+
+
+<p>被动攻击包括：</p>
+
+
+
+<ul><li>截取（Interception），指未授权地窃听传输的信息，企图分析出消息内容或者是通信模式。</li></ul>
+
+
+
+<p><strong>1.2.2 信息安全的目标</strong><strong></strong></p>
+
+
+
+<ul><li><strong>机密性</strong>（Confidentiality）。指保证信息不泄露给非授权的用户或者实体，确保保存的信息和被传输的信息仅能被授权的各方得到。通常通过访问控制机制阻止非授权的访问，通过加密机制阻止非授权用户或者信息的内容。</li><li><strong>完整性</strong>（Integrity）。指消息未经授权不能进行篡改，要保证消息的一致性。一般通过访问控制阻止篡改行为，同时通过消息鉴别算法来检测信息是否被篡改。</li><li><strong>认证性</strong>（Authentication）。指确保一个消息的来源或者消息本身被正确地标识，同时确保该标识没有被伪造，认证分为消息鉴别和实体认证。</li><li><strong>不可否认性</strong>（Non-Repudiation）。指能保证用户无法事后否认曾经对信息进行的生成、签发、接收等行为。分源不可否认性、宿不可否认性。一般通过数字签名来提供不可否认服务。</li><li><strong>可用性</strong>（Availability）。指保障信息资源随时可提供服务的能力。即授权用户根据需要可以随时访问所需信息，保证合法用户对信息资源的使用不被非法拒绝。典型的对可用性的攻击是拒绝服务攻击。</li></ul>
+
+
+
+<p><strong>1.2.3受到攻击的方式</strong></p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="295" src="/wp-content/uploads/2021/12/image-26.png" alt="" class="wp-image-4403" srcset="/wp-content/uploads/2021/12/image-26.png 554w, /wp-content/uploads/2021/12/image-26-300x160.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="306" src="/wp-content/uploads/2021/12/image-27.png" alt="" class="wp-image-4404" srcset="/wp-content/uploads/2021/12/image-27.png 554w, /wp-content/uploads/2021/12/image-27-300x166.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p><strong>1.2.4 密码学（Cryptology）</strong><strong></strong></p>
+
+
+
+<ul><li>研究了实现信息安全各目标的相关的数学、方法和技术。</li><li>密码学不是提供信息安全的唯一方式。</li><li>主要包括：机密性、完整性、认证性、不可否认性。</li><li>大的方面可分为密码编码学和密码分析学两类<br><br></li></ul>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="351" src="/wp-content/uploads/2021/12/image-28.png" alt="" class="wp-image-4405" srcset="/wp-content/uploads/2021/12/image-28.png 554w, /wp-content/uploads/2021/12/image-28-300x190.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="518" height="370" src="/wp-content/uploads/2021/12/image-29.png" alt="" class="wp-image-4406" srcset="/wp-content/uploads/2021/12/image-29.png 518w, /wp-content/uploads/2021/12/image-29-300x214.png 300w" sizes="(max-width: 518px) 100vw, 518px" /></figure>
+
+
+
+<p><strong>1.2.5 信息网安全威胁</strong><strong></strong></p>
+
+
+
+<ul><li>安全威胁可分为故意的和偶然的（故意威胁危害性大）。</li><li>故意威胁分为主动的和被动的</li><li>被动威胁只对信息进行监听，而不进行修改</li><li>主动威胁包括对信息进行故意篡改（包含插入、删减、添加等）、伪造虚假信息等</li></ul>
+
+
+
+<p>网络环境中的安全威胁表现的3个方面</p>
+
+
+
+<ul><li><strong>无线以及有线链路上存在的安全威胁:</strong><ul><li>攻击者被动窃听链路上的未加密信息，或者收集并分析使用弱密码体制加密的信息。</li></ul><ul><li>攻击者篡改、插入、添加或删除链路上的数据。攻击者重放截获的信息已达到欺骗的目的。</li></ul><ul><li>因链路被干扰或攻击而导致移动终端和无线网络的信息不同步或者服务中断。</li></ul><ul><li>攻击者从链路上非法获取用户的隐私，包括定位、追踪合法用户的位置、记录用户使用过的服务、根据链路流量特征推测用户个人行为的隐私等</li></ul></li><li><strong>网络实体上存在的安全威胁</strong><ul><li>攻击者伪装成合法用户使用网络服务。攻击者伪装成合法网络实体欺骗用户使其接入，或者与其他网络实体进行通信，从而获取有效的用户信息，便于展开进一步攻击。</li></ul><ul><li>合法用户超越原有权限使用网络服务。</li></ul><ul><li>攻击者针对无线网络实施阻塞、干扰等攻击。</li></ul><ul><li>用户否认其使用过某种服务、资源、或完成的某种行为</li></ul></li><li><strong>移动终端上存在的安全威胁</strong><ul><li>移动终端由于丢失或被窃取而造成其中的机密信息泄漏；</li></ul><ul><li>现有移动终端操作系统缺乏完整性保护和完善的访问控制策略，容易被病毒或恶意代码所侵入，造成用户的机密信息被泄漏或篡改</li></ul></li></ul>
+
+
+
+<p><strong>1.2.6 四层的安全威胁</strong><strong></strong></p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="346" src="/wp-content/uploads/2021/12/image-30.png" alt="" class="wp-image-4407" srcset="/wp-content/uploads/2021/12/image-30.png 554w, /wp-content/uploads/2021/12/image-30-300x187.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="265" src="/wp-content/uploads/2021/12/image-31.png" alt="" class="wp-image-4408" srcset="/wp-content/uploads/2021/12/image-31.png 554w, /wp-content/uploads/2021/12/image-31-300x144.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="173" src="/wp-content/uploads/2021/12/image-32.png" alt="" class="wp-image-4409" srcset="/wp-content/uploads/2021/12/image-32.png 554w, /wp-content/uploads/2021/12/image-32-300x94.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="217" src="/wp-content/uploads/2021/12/image-33.png" alt="" class="wp-image-4410" srcset="/wp-content/uploads/2021/12/image-33.png 554w, /wp-content/uploads/2021/12/image-33-300x118.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p><strong>3.物联网的安全架构</strong><strong></strong></p>
+
+
+
+<p><strong>1.3.1物联网安全层次模型</strong><strong></strong></p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="367" src="/wp-content/uploads/2021/12/image-34.png" alt="" class="wp-image-4411" srcset="/wp-content/uploads/2021/12/image-34.png 554w, /wp-content/uploads/2021/12/image-34-300x199.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p><strong>1.3.2 感知层安全</strong><strong></strong></p>
+
+
+
+<ul><li>物联网感知层的任务是实现智能感知外界信息的功能，包括信息采集、捕获和物体识别</li><li>该层的典型设备包括：RFID、传感器、GPS……</li><li>涉及的关键技术：RFID、自组织网络、短距离无线通信、低功耗路由等。</li><li>面临的安全问题：物理破坏、传感阻塞、碰撞攻击、伪装攻击</li></ul>
+
+
+
+<p>1.传感网络安全技术<br></p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="244" src="/wp-content/uploads/2021/12/image-35.png" alt="" class="wp-image-4412" srcset="/wp-content/uploads/2021/12/image-35.png 554w, /wp-content/uploads/2021/12/image-35-300x132.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p><br>2.RFID相关安全问题</p>
+
+
+
+<ul><li>包含阅读器和标签</li><li>标签本身访问的缺陷：任何用户都可以通过合法的阅读器读取RFID标签</li><li>通信链路的安全</li><li>移动RFID的安全：主要存在假冒和非授权服务访问的问题</li></ul>
+
+
+
+<p><strong>1.3.3 网络层安全</strong><strong></strong></p>
+
+
+
+<p>物联网的接入层将采用如移动互联网、有线网、WiFi、WiMAX等各种无线接入技术</p>
+
+
+
+<p><strong>1.3.4 应用层安全</strong><strong></strong></p>
+
+
+
+<p>1)业务控制、管理和认证机制<br>解决物联网设备远程签约问题<br>2) 中间件：<br>通过中间件系统、WebServices<br>3) 隐私保护：<br>当前隐私保护方法主要有两个发展方向：一是对等计算（P2P），通过直接交换共享计算机资源和服务；二是语义Web，通过规范定义和组织信息内容，使之具有语义信息，能被计算和理解</p>
+
+
+
+<p><strong>4.物联网的安全技术分析</strong><strong></strong></p>
+
+
+
+<p><strong>1.4.1物联网面临的特殊安全问题</strong><strong></strong></p>
+
+
+
+<ul><li>感知节点的本地安全问题<ul><li>部署在无人值守环境</li></ul></li><li>感知网络的传输与信息安全问题<ul><li>能耗少</li></ul><ul><li>无统一数据标准</li></ul></li><li>核心网络的传输与信息安全问题</li><li>物联网业务的安全问题</li></ul>
+
+
+
+<p><strong>1.4.2物联网的安全技术分析</strong><strong></strong></p>
+
+
+
+<p>物联网中的加密机制<br><strong>感知层：</strong>&nbsp;密码技术、高速密码芯片、PKI公钥基础设施、信息系统平台安全<br><strong>网络层：</strong>&nbsp;攻击监控、内容分析、病毒防治、访问控制、应急反应、战略预警<br><strong>管理层：</strong>&nbsp;无线网安全、虚拟专用网安全、传输安全、路由安全、防火墙、安全域策略、安全审计<br><strong>应用层：</strong>&nbsp;可信终端、身份认证、访问控制、安全审计</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/4401/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>物联网发展中的安全风险及对策研究</title>
+		<link>/archives/4398</link>
+					<comments>/archives/4398#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 27 Dec 2021 09:31:24 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[物联网安全]]></category>
+		<guid isPermaLink="false">/?p=4398</guid>
+
+					<description><![CDATA[物联网发展中的安全风险及对策研究 摘　要 分析了国内外物联网安全政策、技术、标准、产业等形势，重点强调了当前我 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h2><strong>物联网发展中的安全风险及对策研究</strong><strong></strong></h2>
+
+
+
+<p><strong>摘　要</strong></p>
+
+
+
+<p>分析了国内外物联网安全政策、技术、标准、产业等形势，重点强调了当前我国物联网发展中存在的安全风险，包括大连接环境下的设备风险、物联网网络本身安全风险以及物联网上承载的各类应用安全风险，提出了打造以密码为核心的物联网安全体系 , 加速新技术在物联网安全的应用，以新基建为契机建立物联网领域安全设备泛在化部署新体系，以多层次立体式理念确保物联网安全，呼吁供给侧需求侧建立安全协同新机制，共同促进物联网产业安全可持续发展。</p>
+
+
+
+<p><strong>00 引言</strong></p>
+
+
+
+<p><br>物联网是继计算机、互联网和移动通信之后新一轮信息技术革命，自1999年美国麻省理工学院的凯文·阿什顿教授提出物联网的概念以来，同时伴随着5G、人工智能、区块链等新兴技术的快速发展和逐步应用，以及智慧城市、工业互联网、车联网等新应用的快速落地，物联网和移动互联网进一步深度融合，正进入“跨界融合、集成创新、规模化发展”新阶段。在物联网快速发展的同时，安全问题日益凸显，安全事件不断爆发。<br>从2007年美国副总统迪克·切尼心脏病发作、疑似心脏除颤器被模拟攻击，到2014年360发现特斯拉Tesla Model S车型汽车应用存在设计漏洞、可致使攻击者远程控制车辆，以及2017年央视曝光目前智能城市的家庭摄像头存在重大隐私泄露问题等，都不同程度反应出物联网不同应用场景下的安全问题。可以说，在万物互联时代，安全正逐步成为物联网发展的核心要素和关键一环。</p>
+
+
+
+<p><strong>1 物联网及安全风险概述</strong></p>
+
+
+
+<ol type="1"><li><strong>物联网介绍</strong><br>根据ITU的定义，物联网是：通过二维码识读设备、射频识别 (RFID) 装置、红外感应器、全球定位系统和激光扫描器等信息传感设备，按约定的协议，把任何物品与互联网相连接， 并进行信息交换和通信，实现智能化识别、定位、跟踪、监控和管理的一种网络。<br>根据行业划分维度，一般从感知层、网络层和应用层描述其结构，如图1所示。</li></ol>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="356" height="223" src="/wp-content/uploads/2021/12/image-24.png" alt="" class="wp-image-4399" srcset="/wp-content/uploads/2021/12/image-24.png 356w, /wp-content/uploads/2021/12/image-24-300x188.png 300w" sizes="(max-width: 356px) 100vw, 356px" /></figure>
+
+
+
+<ol type="1"><li>可以理解为，物联网就是“物与物相互连接的互联网”，包含两方面含义：<strong>一是物联网是在互联网的基础上进行延伸并扩展的网络；二是物联网的用户端延伸并扩展到任何物品之间，实现万物互联。</strong></li><li>因此，物联网是建立在互联网基础上的一个泛在化的网络，是发展的一个新阶段，它通过各种有线和无线的网络与互联网融合，并在各类应用场景中利用海量传感器、终端设备等 , 实现物与物、物与人的随时随地连接。</li><li>业内普遍认为，物联网有望成为未来社会经济发展、社会进步和科技创新的最重要的基础设施，极大改变人们的生产生活方式。</li><li><strong>1.2　物联网发展形势</strong></li><li>当前，各国加速从政策、技术、标准、产业发展等方面加速物联网发展。</li><li>政策层面，各国政府抢抓物联网安全发展先机，塑造在物联网领域的国际竞争优势。美国2016年、2017年相继发布《保障物联网安全战略原则》《2017物联网网络安全改进法》等战略法律，指出要重点提升物联网的安全防护能力，促进物联网安全发展；英国2015年成立物联网安全基金会，从资金投入方面支撑物联网安全发展；欧盟2016年制定新的物联网设备安全规范。</li><li>我国高度重视物联网安全发展，并将物联网纳入国家战略高度，在《“十二五”规划纲要》中，明确指出要推动物联网关键技术研发和重点领域的应用示范。2013年《国务院关于推进物联网有序健康发展的指导意见》发布，提出要基本形成安全可控、具有国际竞争力的物联网产业体系。</li><li>工信部2017年发布《工业和信息化部办公厅关于全面推进移动物联网（NB-IoT）建设发展的通知》，要求加快推动物联网的网络和信息安全保障体系建设。2009年、2016年、2018年物联网三次被写入政府工作报告，习近平总书记在2018年的中国科学院第十九次院士大会、中国工程院第十四次院士大会上提出，要加速以物联网等为代表的新一代信息技术的应用突破，对物联网发展高度关注。</li><li>技术层面，随着第五代移动通讯技术（5G）、窄带物联网（NB-IOT）等新技术为万物互联提供基础设施支撑，万物互联的泛在介入、高效传输、海量异构信息处理和设备智能控制，由此推动了信任统一化、密码防护轻量化、安全服务化等安全技术的变革。物联网软硬件、操作系统、通信协议、云平台等方面的安全技术关注力度也逐年上升，如何解决大连接下的安全问题也成为业界普遍关注的重要议题。</li><li>标准方面，我国在物联网标准制定工作方面的组织机构主要包括发展和改革委员会、国家标准化管理委员会、工业和信息化部等。在OneM2M、3GPP、ITU、IEEE等国际主要标准化组织物联网相关领域已经获得多项物联网相关标准，自主研发的物联网安全TRAIS和NEAU标准被相继纳入RFID安全和NFC安全国际标准，在物联网语义、物联网大数据、物联网网关等重要领域主导相关标准的制定工作，逐步在重要标准上确立主导优势，和其他国家共同推进了全球移动物联网基础设施和业务应用的发展。</li><li>产业发展方面，据国际数据公司预计，2019年全球物联网支出将达1.3万亿美元，较2015年6986亿美元增长近一倍；Gartner发布的数据显示，2020年全球物联网市场规模将达1.9万亿美元。</li><li>同时，我国物联网产业高速发展，根据《2018-2019中国物联网发展年度报告》显示，2018年我国物联网产业规模已超1.2万亿元， 业务收入较上年增长72.9%，目前我国已经初步形成了覆盖芯片、元器件、软件、系统、集成、服务在内的较为完整的物联网产业链。伴随我国不断加大IPV6、5G等基础设施建设，以及智慧城市的应用推广，预计未来5—10年，我国物联网产业将会引来发展的爆发期。</li><li><strong>1.3　物联网安全风险介绍</strong></li><li>经过多年发展，我国初步形成物联网政策体系，在技术研发、标准研制、产业培育和行业应用等方面具备一定基础，但也面临关键核心技术待突破、行业安全产品部署不够等突出短板。物联网具有大连接、高并发访问、多点接入、大规模数据量处理等特点，网络安全边界越来越模糊，网络安全威胁多元化、攻击手段多样化。</li><li>物联网安全问题的多样性和复杂性，对发展物联网技术和应用提出了更高要求，物联网安全的发展形势依旧严峻。万物互联使网络安全的威胁已经超越信息安全本身，直接关系到人们的财产、人身安全甚至国家基础设施和社会服务的安全。其存在安全威胁主要有以下几方面：</li><li><strong>一是物联网终端设备更容易遭受攻击和信息泄露。</strong>物联网终端类型多样、数量众多、部署场景复杂，现有物联网大多从满足可用性出发，对其软硬件平台、通信协议等普遍缺乏完善的完整性保护、机密性保护和身份的验证机制。终端作为物联网感知层面和用户广泛交互的设备，在当前的操作环境下极易遭受非法入侵和非授权者的访问。</li><li>并且作为物联网安全领域最为核心的密码设备，当前的部署规模远远跟不上物联网发展速度，已有的密码应用主要集中于轻量级密码算法、物联网安全芯片和模组等较为简单的加密处理和保护，目前仍有大量设备未按国家有关要求采用密码保护。</li><li><strong>二是物联网网络本身的安全性问题突出。</strong>除传统网络安全问题外，物联网在万物互联网环境中存在无线传感器网络、蜂窝移动通信网、因特网、各类专网等各类异构网络的互联互通的应用场景，这些网络本身都存在着各类网络安全问题。同时，物联网由于存在各类异构网络互联互通的应用场景，异构网络的安全问题也必将在物联网的网络层中进一步凸显，各类不同网络间协议的适配、通信机制的安全更具有挑战性，也更容易出现安全漏洞。</li><li><strong>三是物联网的数据安全问题日益严重。</strong>当前物联网领域设备类型多，收集的各类数据类型多。各类摄像头、视频监控等传感器数据，各类单车、汽车、公交、出租车等联网交通工具数据，智能家居和智能生活设备数据等汇聚处理难度大，多源数据的鉴别与发现、异构网络的数据融合与处理、核心设备参数配置与更新等问题处理难度大，数据在各业务平台和系统中容易被窃取利用。</li><li><strong>四是物联网上承载的各类应用安全问题。</strong>物联网面临各种各样的行业应用需求，需要对各类信息进行分类处理，在这个过程中，攻击者通过篡改、伪造用户的信息，往往以合法身份进行短信彩信信息、用户的健康状况、出行线路、家居信息及消费习惯等非法交易和动作，用户隐私安全隐患巨大。同时，目前行业应用系统的建设并没有统一技术标准和安全措施，各种网络互联成为一个大的网络平台的融合问题以及相应的安全问题日益凸显。</li></ol>
+
+
+
+<p><strong>2 物联网安全对策建议</strong></p>
+
+
+
+<p><strong>2.1　瞄准内生安全，打造以密码为核心的物联网安全体系</strong><br>相对于互联网和移动通信网安全而言，物联网安全研究处于起步阶段。由于物联网本身特点，使其研究难度增大。当前已有一些轻量级加密、认证算法，但是还没有提出完整的适用于物联网的整体安全方案。<br>围绕物联网的行业应用和安全需求，应加强以密码为核心的物联网整体安全框架设计，在物联网芯片、模组、设备、网络和系统等多个层次推动密码技术融合，实现从物联网感知、传输、存储到应用的全过程密码安全保障，以一体化、协同化、智能化物联网安全理念，提升物联网内生安全，明确物联网安全目标和保障对象，描述物联网安全角色与职责，提出物联网安全总体要求，确保物联网安全可持续发展。<br><strong>2.2　结合物联网业务特性，加速新技术在物联网安全的应用</strong><br><strong>一是大力推动人工智能在物联网安全的应用。</strong>物联网广泛互联、异构特性需要智能化的发现、威胁识别和处理能力。充分利用人工智能技术，提高对物联网各类终端自动感知，根据不同网络进行协议自适配、连接自动化等操作；对安全威胁自动识别、安全隐患自适应分析和处理。<br><strong>二是大力推动大数据技术在物联网安全中的应用。</strong>物联网海量部署，必然带来海量数据计算和高速处理需求。要积极运用大数据技术开展数据分析、数据融合、数据呈现、数据预测等工作，构建基于大数据的安全防护体系。<br><strong>三是加大区块链技术在物联网安全中的应用。</strong>区块链本身去中心化、分布式、抗抵赖的特性，与物联网海量节点具有天然的契合点， 能有效解决物联网中各类伪节点的安全隐患， 降低单元内计算处理数据量，减少各类安全冲突，有力确保物联网各类节点安全。<br><strong>2.3　以新基建为契机，建立物联网领域安全设备泛在化部署新体系</strong><br>国家启动新基建战略部署，要求利用新一代信息技术赋能国家重要领域基础设施。5G和物联网作为新基建的重要内容，将迎来大规模部署新阶段。在物联网终端数量海量化、设备类型多样化、网络异构化、应用部署多样化等场景下，急需建立安全设备泛在化部署新体系。加强具有自适应性、云网端协同的物联网安全机制研究，加快在物联网架构安全、异构网络安全、认证与信任、隐私保护等方面突破，在物联网应用方面重点打造专用安全（加密）芯片、安全LoRa 模块 /NB-IoT模块、安全物联网网关、安全业务平台等产品。<br>加大安全设备在物联网各领域的泛在化应用和规模化部署，协调推动处理好安全和业务发展的内在关系，在网络和系统等多个层次推动安全技术融合，在物联网设计、开发、应用、维护等多个环节同步考虑安全要素，大力推动物联网标识、智能装备安全网关、司法电子取证等产品和设备在物联网相关垂直行业的应用，实现安全设备在物联网的泛在化部署。<br><strong>2.4　加强全方位安全防护，以多层次立体式理念确保物联网安全</strong><br><strong>一是在感知层加强感知节点物理防护和感知节点设备安全。</strong>加强对感知节点和终端进行有效的物理安全防护，要采取节点身份认证、数据加密、节点监控等安全防护手段，对标签身份进行统一管理，有效平衡安全性和认证效率，有效保护RFID安全性和隐私。<br><strong>二是在网络层加强节点和汇聚节点之间以及节点和网络之间的安全认证，特别是要使用标准算法、轻量级密码算法在物联网的终端设备和后台系统端点或传输过程中进行加密；提高入侵检测的手段，增强物联网端点智能安全能力。</strong>加强反病毒、反蠕虫软件在规模异构数据场景的适配和适应性改造。重点建立完善异构网络统一、兼容、一致的跨网认证机制和网络安全协议。加强数据传输过程的机密性、完整性、可用性的保护。<br><strong>三是在应用层重点开展数据智能化处理基础上，加强数据库访问控制策略方面的安全。</strong>加强数据溯源能力和网络取证能力，完善网络犯罪取证机制。以无感方式，在不影响物联网业务情况下，以安全服务化方式开展各项安全防护工作，有效开展物联网环境下的安全运维服务。<br>此外，根据物联网具体业务及应用相关数据、对国家、社会和个人影响程度，建立分级分类保护制度。针对不同业务和应用需求，结合等保2.0，制定不同等级、不同场景下的安全防护措施，有效利用现有资源，开展有针对性的安全防护。<br><strong>2.5　强化供应链安全，建立供给侧需求侧安全协同新机制</strong><br><strong>一是加强物联网的供应链安全。</strong>物联网由于覆盖面广，其产业链涉及的行业类型多、产品更将是丰富多样，厂商不计其数。但也应该看到，部分核心技术仍为一些国际寡头所掌控，我国应及早培育相关企业，打造安全可靠产品，掌握基于云化的安全管理策略和技术手段，采用集中和分布式相结合的方式，构建安全可靠、可控、可管、可追溯的供应链管理体系。同时开展供应链安全审查技术的研究，加强核心关键产品的安全审查力度，培育供应链安全相关人才，从多方面保障供应链的安全。<br><strong>二是构建物联网安全协同新机制。</strong>物联网产业发展和产品推广离不开行业，要进一步加强物联网在智能家居、工业互联网、车联网等行业的推广力度，进一步联动上游生产资料企业、中游设备生产制造商、下游个体和行业用户，建立覆盖行业生态链和全生命周期的安全协同新机制。<br>同时，要加强安全技术与物联网在智能家居、智慧交通等垂直行业的有效衔接和融合，积极打造物联网安全产业生态，联合传感器元器件制造商、设备生产集成商、网络安全服务提供商、销售商等产业链各方力量，共同构建开放合作的物联网安全产业生态圈；积极建立网络安全企业和物联网企业、网络安全企业与物联网垂直行业企业的互动体验机制， 在不断的应用实践中发现问题、解决问题，构建供给侧、需求侧的人、机、物安全协同新机制， 共同促进物联网安全发展。</p>
+
+
+
+<p><strong>3 结　语</strong></p>
+
+
+
+<p><br>物联网高速发展，呈现出前所未有的发展活力，物联网正成为新一代信息技术革命的典型代表。而当前物联网安全的研究尚处于初步阶段，海量节点汇聚、规模化数据处理、多场景应用的安全研究需后续更多实践和分析，也需要高校院所、行业主管、政府部门、企业和行业应用者等共同推动，参与物联网安全的研究，共筑物联网发展的安全防线，护航我国物联网产业，占据在全球的发展优势。</p>
+
+
+
+<p><strong>引用本文：</strong>黄云霞,董哲一,孟凡欣.物联网发展中的安全风险及对策研究[J].信息安全与通信保密,2020(05):78-84.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/4398/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>工信部：到2022年，初步建立物联网基础安全标准体系</title>
+		<link>/archives/4386</link>
+					<comments>/archives/4386#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 27 Dec 2021 09:30:28 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[物联网安全]]></category>
+		<guid isPermaLink="false">/?p=4386</guid>
+
+					<description><![CDATA[工信部：到2022年，初步建立物联网基础安全标准体系 10月25日，工信部发布《物联网基础安全标准体系建设指南 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h2><strong>工信部：到2022年，初步建立物联网基础安全标准体系</strong><strong></strong></h2>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="553" height="310" src="/wp-content/uploads/2021/12/image-14.png" alt="" class="wp-image-4387" srcset="/wp-content/uploads/2021/12/image-14.png 553w, /wp-content/uploads/2021/12/image-14-300x168.png 300w" sizes="(max-width: 553px) 100vw, 553px" /></figure>
+
+
+
+<p>10月25日，工信部发布《物联网基础安全标准体系建设指南（2021版）》（以下简称《指南》）。</p>
+
+
+
+<p>《指南》提出，到2022年，初步建立物联网基础安全标准体系，研制重点行业标准10项以上，明确物联网终端、网关、平台等关键基础环节安全要求，促进物联网基础安全能力提升。</p>
+
+
+
+<p>《指南》要求，跟踪物联网新技术、新应用的发展趋势，主动适应物联网安全发展水平的不断提升，加强标准体系的动态更新和完善，有效满足产业安全发展需求。</p>
+
+
+
+<p>《指南》称，鼓励行业协会、标准化技术组织等面向生产者、用户、第三方检测认证机构等，开展重点标准的宣传和培训，引导企业对标达标，推动标准落地实施。四是开展交流合作。支持中外企业、协会、标准化机构等开展物联网基础安全标准的国际交流合作，积极参与物联网安全国际标准制定，为提升全球物联网安全水平贡献中国技术方案。</p>
+
+
+
+<hr class="wp-block-separator"/>
+
+
+
+<p><strong>物联网基础安全标准体系建设指南</strong></p>
+
+
+
+<p><strong>（2021版）</strong></p>
+
+
+
+<p><strong>一、总体要求</strong></p>
+
+
+
+<p>以习近平新时代中国特色社会主义思想为指导，深入贯彻落实习近平总书记关于网络强国的重要思想，坚持总体国家安全观，以筑牢物联网基础安全、防范公共网络安全风险为目标，着力构建物联网基础安全标准体系，加强标准统筹规划，扎实推进标准研制，促进标准落地实施，支撑和保障物联网产业安全有序发展。</p>
+
+
+
+<p>（一）基本原则</p>
+
+
+
+<p>需求牵引，加强统筹。紧密贴合物联网产业发展现状和趋势，着力构建科学合理、先进适用、开放融合的基础安全标准体系，强化标准工作统筹协调，指导标准制定有序开展。聚焦重点，急用先行。围绕物联网基础设施和重点行业应用，加快推进基础通用、关键技术、试验方法等重点和急需标准制定，及时满足物联网产业的安全需求。广泛参与，强化实施。凝聚设备厂商、电信企业、安全企业、互联网企业、科研单位、高校等产学研用各方力量，鼓励头部企业发挥示范带头作用，推动标准有效实施。</p>
+
+
+
+<p>（二）建设目标</p>
+
+
+
+<p>到2022年，初步建立物联网基础安全标准体系，研制重点行业标准10项以上，明确物联网终端、网关、平台等关键基础环节安全要求，满足物联网基础安全保障需要，促进物联网基础安全能力提升。</p>
+
+
+
+<p>到2025年，推动形成较为完善的物联网基础安全标准体系，研制行业标准30项以上，提升标准在细分行业及领域的覆盖程度，提高跨行业物联网应用安全水平，保障消费者安全使用。</p>
+
+
+
+<p><strong>二、建设内容</strong></p>
+
+
+
+<p>（一）标准体系框架</p>
+
+
+
+<p>物联网基础安全标准主要是指物联网终端、网关、平台等关键基础环节的安全标准。物联网基础安全标准体系包括总体安全、终端安全、网关安全、平台安全、安全管理等5大类标准（见图1）。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="553" height="341" src="/wp-content/uploads/2021/12/image-15.png" alt="" class="wp-image-4388" srcset="/wp-content/uploads/2021/12/image-15.png 553w, /wp-content/uploads/2021/12/image-15-300x185.png 300w" sizes="(max-width: 553px) 100vw, 553px" /></figure>
+
+
+
+<p>（二）重点领域</p>
+
+
+
+<p>1.总体安全</p>
+
+
+
+<p>总体安全是物联网基础安全的基础性、指导性和通用性3标准，主要包括物联网基础安全术语定义、架构模型、安全场景、安全集成、安全分级、安全协议等（见图2）。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="553" height="402" src="/wp-content/uploads/2021/12/image-16.png" alt="" class="wp-image-4389" srcset="/wp-content/uploads/2021/12/image-16.png 553w, /wp-content/uploads/2021/12/image-16-300x218.png 300w" sizes="(max-width: 553px) 100vw, 553px" /></figure>
+
+
+
+<p>（1）物联网基础安全术语定义：规范物联网基础安全的概念，统一相关术语的理解和使用。</p>
+
+
+
+<p>（2）物联网基础安全架构模型：主要提出物联网基础安全体系框架以及各部分参考模型，明确和界定云、管、端各层面功能、关系、角色、边界、责任等内容。</p>
+
+
+
+<p>（3）物联网基础安全场景：主要对不同类型场景中的安全需求进行示例和规范。</p>
+
+
+
+<p>（4）物联网基础安全集成：在物联网系统规划、集成、实施等过程中，通过建立安全模型等方式，保障基础设施系统各层级对象安全性和可靠性。</p>
+
+
+
+<p>（5）物联网基础安全分级：明确物联网基础安全分级的基本原则、维度、方法、示例等要求，为实施分级安全管理提供基础支撑。</p>
+
+
+
+<p>（6）物联网基础安全协议：主要是物联网平台、网关、终端本身及设备之间的基础安全协议，包括有线协议安全、无线协议安全、存储协议安全等。</p>
+
+
+
+<p>2.终端安全</p>
+
+
+
+<p>终端安全是物联网基础安全体系中感知层面的标准，主要包括终端通用安全、模组安全、通信芯片安全、卡安全、行业终端安全、终端测试评估等（见图3）。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="553" height="365" src="/wp-content/uploads/2021/12/image-17.png" alt="" class="wp-image-4390" srcset="/wp-content/uploads/2021/12/image-17.png 553w, /wp-content/uploads/2021/12/image-17-300x198.png 300w" sizes="(max-width: 553px) 100vw, 553px" /></figure>
+
+
+
+<p>（1）终端通用安全：主要包括物联网终端硬件安全、操作系统安全、软件安全、接入认证、数据安全、协议安全、隐私保护、证书规范、固件安全、插件/组件安全等。</p>
+
+
+
+<p>（2）模组安全：规范通信模组在接入认证、数据交互、数据传输、抗电磁干扰等方面的安全要求，包括蜂窝通信模组和其他类型通信模组等。</p>
+
+
+
+<p>（3）通信芯片安全：主要包括通信加密算法、密钥管理、加解密能力、签名验签、数据存储、芯片安全基线要求等。</p>
+
+
+
+<p>（4）卡安全：分为管理要求和技术要求。其中，管理要求主要是规范物联网卡销售、登记、使用管理等；技术要求主要包括卡身份认证、分级分类、技术手段建设等。</p>
+
+
+
+<p>（5）行业终端安全：主要是指与各垂直行业密切相关的、具有特定功能的物联网终端安全要求，如智能门锁、监控设备等特定行业终端的特有安全要求。</p>
+
+
+
+<p>（6）终端测试评估：主要包括物联网卡安全测试、硬件安全测试、操作系统安全测试、软件安全测试、接入认证安全测试、数据安全测试、通信协议安全测试、固件安全测试等。</p>
+
+
+
+<p>3.网关安全</p>
+
+
+
+<p>网关安全主要包括物联网网关通用安全、网关通信与接口安全、网关物理环境安全、网关组件安全、网关测试评估等（见图4）。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="553" height="454" src="/wp-content/uploads/2021/12/image-18.png" alt="" class="wp-image-4391" srcset="/wp-content/uploads/2021/12/image-18.png 553w, /wp-content/uploads/2021/12/image-18-300x246.png 300w" sizes="(max-width: 553px) 100vw, 553px" /></figure>
+
+
+
+<p>（1）网关通用安全：规范物联网网关相关的功能架构、安全协议、安全防护，以及数据传输、处理和存储等方面的安全技术要求，主要包括网关安全模型、安全架构、安全功能、安全性能、数据安全、边缘计算安全、安全协议等。</p>
+
+
+
+<p>（2）网关通信与接口安全：规范网关与其他设备互联时通信接口和管理接口的安全通信协议、黑白名单、鉴权认证等方面技术要求，主要包括网关南向和北向接口安全规程、安全协议流程、端口防护等。</p>
+
+
+
+<p>（3）网关物理环境安全：规范网关贮存、运输和使用环境条件下电磁辐射、防电磁干扰、抗硬力破坏、温湿盐雾环境适应能力等方面技术要求，主要包括网关设备电磁兼容、机械环境适应性、气候环境适应性等。</p>
+
+
+
+<p>（4）网关组件安全：规范网关功能服务、数据采集、7数据传输处理等软硬件组件的安全设计、安全功能等方面技术要求，主要包括网关设备组件安全架构、开源组件安全、应用启动安全等。</p>
+
+
+
+<p>（5）网关测试评估：规范网关安全评估测试方法，主要包括设备安全测试、组件安全测试、接口安全测试、安全管理维护测试、数据传输处理安全测试、环境适应性测试、分级分类评估测试等。</p>
+
+
+
+<p>4.平台安全</p>
+
+
+
+<p>物联网平台包括设备管理平台、连接管理平台、应用使能平台、业务分析平台、态势感知及风险处置平台等。物联网平台安全标准主要包括平台通用安全、平台安全防护、平台交互安全、平台安全监测、平台测试评估等（见图5）。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="553" height="413" src="/wp-content/uploads/2021/12/image-22.png" alt="" class="wp-image-4395" srcset="/wp-content/uploads/2021/12/image-22.png 553w, /wp-content/uploads/2021/12/image-22-300x224.png 300w" sizes="(max-width: 553px) 100vw, 553px" /></figure>
+
+
+
+<p>（1）平台通用安全：规范各类物联网平台通用数据安全、通信安全、身份鉴别、安全监测、物理安全、安全可信等方面要求，主要包括通用安全框架、平台可信计算等。</p>
+
+
+
+<p>（2）平台安全防护：规范物联网平台以及基于物联网平台开发的行业业务系统和对外应用组件的访问控制、防代码逆向、安全审计、篡改和注入防范等安全防护要求，主要包括平台业务基础安全、平台安全防护要求等。</p>
+
+
+
+<p>（3）平台交互安全：规范物联网平台之间、平台与上层业务系统或管理系统、平台与下层接入设备之间的数据交互、加密传输、交互接口配置和审计等方面的安全要求，主要包括不同物联网平台之间交互、平台与南向和北向之间交互等。</p>
+
+
+
+<p>（4）平台安全监测：规范物联网平台的安全监测、态势汇总等功能建设，主要包括物联网网络安全监测预警平台、物联网网络安全态势感知平台等。</p>
+
+
+
+<p>（5）平台测试评估：规范物联网平台的通用安全、平台安全防护、平台内部和平台之间交互安全、平台安全管理等方面的测试评估方法，主要包括物联网平台能力评估、安全防护测试、交互安全测试和安全管理评估等。</p>
+
+
+
+<p>5.安全管理</p>
+
+
+
+<p>安全管理标准用于指导行业落实通用安全管理要求，主要包括数据安全管理、安全信息协同、管理与维护安全、安全认证等（见图6）。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="553" height="432" src="/wp-content/uploads/2021/12/image-23.png" alt="" class="wp-image-4396" srcset="/wp-content/uploads/2021/12/image-23.png 553w, /wp-content/uploads/2021/12/image-23-300x234.png 300w" sizes="(max-width: 553px) 100vw, 553px" /></figure>
+
+
+
+<p>（1）数据安全管理：面向物联网业务应用产生的各类数据，保障数据在各环节的安全可控和使用，主要包括在采集、传输、存储、处理、共享、销毁等关键环节的数据安全基础管理和技术保障等。</p>
+
+
+
+<p>（2）安全信息协同：针对物联网协议类型众多，明确物联网基础安全相关数据互联互通标准，实现跨协议安全互联互通，主要包括接口规范、测试方法等。</p>
+
+
+
+<p>（3）管理与维护安全：规范不同物联网场景下终端、网关、平台的运维管理等方面安全要求，主要包括制度建设、安全组织、人员管理、运行安全、资产管理、配置管理、远程维护安全、脆弱性检测、应急响应与管理、灾备恢复等。</p>
+
+
+
+<p>（4）安全认证：规范不同类型的物联网终端、网关、平台的认证管理，用于不同类型设备的安全认证互通互认，主要包括证书生成、证书管理、证书更换等。</p>
+
+
+
+<p><strong>三、组织实施</strong></p>
+
+
+
+<p>一是加快标准研制。按照《标准体系》明确的目标和任务，加强产学研用等各方的工作协同，注重物联网基础安全标准与行业发展实际相结合，成体系推进标准研制。</p>
+
+
+
+<p>二是实施动态更新。跟踪物联网新技术、新应用的发展趋势，主动适应物联网安全发展水平的不断提升，加强标准体系的动态更新和完善，有效满足产业安全发展需求。</p>
+
+
+
+<p>三是深化标准应用。鼓励行业协会、标准化技术组织等面向生产者、用户、第三方检测认证机构等，开展重点标准的宣传和培训，引导企业对标达标，推动标准落地实施。四是开展交流合作。支持中外企业、协会、标准化机构等开展物联网基础安全标准的国际交流合作，积极参与物联网安全国际标准制定，为提升全球物联网安全水平贡献中国技术方案。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/4386/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>为什么物联网安全如此重要？</title>
+		<link>/archives/4383</link>
+					<comments>/archives/4383#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 27 Dec 2021 09:28:32 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[物联网安全]]></category>
+		<guid isPermaLink="false">/?p=4383</guid>
+
+					<description><![CDATA[为什么物联网安全如此重要？ 针对物联网设备的恶意软件日益增加，网络犯罪分子在攻击中更频繁地利用僵尸网络。特别是 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h2><strong>为什么物联网安全如此重要？</strong></h2>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="377" src="/wp-content/uploads/2021/12/image-13.png" alt="" class="wp-image-4384" srcset="/wp-content/uploads/2021/12/image-13.png 554w, /wp-content/uploads/2021/12/image-13-300x204.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p>针对物联网设备的恶意软件日益增加，网络犯罪分子在攻击中更频繁地利用僵尸网络。特别是在疫情期间，远程工作促使网络犯罪大幅增加，各种网络更加容易受到攻击。</p>
+
+
+
+<p><strong>日益增长的物联网恶意软件</strong></p>
+
+
+
+<p><strong>和勒索软件威胁</strong></p>
+
+
+
+<p>大多数新的 IoT 攻击都是由两个著名的 IoT 僵尸网络驱动的：Mozi 和 Mirai。Mirai 是一个较老的僵尸网络，最早出现在 2016 年，而 Mozi 部署于 2019 年。Mozi 很可能基于 Mirai，因为这两个僵尸网络有明显的代码重叠。</p>
+
+
+
+<p>据 IBM 安全研究，它们占到“所有物联网 (IoT) 设备流入和流出的观察到的流量的 90%”。僵尸网络通过使用已经感染的设备来瞄准和感染他人，利用漏洞试图用代码感染他们，使他们成为僵尸网络的一部分。</p>
+
+
+
+<p>一旦僵尸网络足够大，网络背后的黑客就可以利用它们发起 DDoS 攻击。由于它们分布在受感染智能设备的庞大网络中，因此主机几乎不可能响应它们。</p>
+
+
+
+<p>除了僵尸网络恶意软件，物联网终端用户和制造商还必须应对日益频繁的勒索软件和泄漏软件攻击。勒索软件攻击将设备或文件扣为人质，以换取受害者的付款。泄漏软件与此类似，但如果受害者不付款，黑客反而威胁要泄漏或发布机密文件。</p>
+
+
+
+<p><strong>具体情况</strong></p>
+
+
+
+<p>Mozi 和 Moirai 僵尸网络通常通过使用命令注入 (CMDi) 攻击来感染新设备。这是一种针对物联网设备的常见策略，因为它允许黑客利用常见的物联网安全漏洞和错误配置。</p>
+
+
+
+<p>三个主要因素会使设备更容易受到 CMDi 攻击。物联网系统通常包含固件开发遗留下来的 Web 和调试界面。黑客可以利用它们来访问设备。内置于物联网 Web 界面的 PHP 模块也可以为黑客提供访问权限。</p>
+
+
+
+<p>在线物联网接口也可以使设备更容易受到攻击。管理员通常无法通过不清理远程输入来强化这些接口。如果没有清理，网络攻击者可以输入 shell 命令，让他们可以做任何他们想做的事情——包括使用诸如“curl”或“wget”之类的 shell 命令来检索恶意网站。</p>
+
+
+
+<p>最终用户应在购买前仔细研究 IoT 设备及其开发人员。具有良好安全记录的开发人员通常更有可能销售更易于保护的物联网设备。他们还应该实施良好的安全实践。</p>
+
+
+
+<p>更改新设备的默认密码、下载安全补丁以及停用不必要的功能（如远程访问工具）都是不错的起点。定期维护物联网设备以确保它们被商业安全软件完全修补和监控也将有所帮助。</p>
+
+
+
+<p>网络分段可以限制物联网设备对业务网络的访问。如果受到损害，这种分段将减少这些机器可能造成的潜在损害。</p>
+
+
+
+<p>使用防病毒软件、网络流量分析工具和其他网络安全软件可以帮助最终用户管理和监控潜在威胁。</p>
+
+
+
+<p>公司还应该了解员工智能设备如何与其业务网络交互。它们可能不如 IT 员工可以直接访问的项目那么安全。</p>
+
+
+
+<p>在不久的将来，网络犯罪分子可能会加大攻击力度。物联网设备的所有者可能会继续面临恶意软件、勒索软件和泄漏软件的威胁。最佳实践可以帮助最终用户确保他们的物品安全。即使是像定期修补这样简单的技术，也可以在保持智能技术安全方面大有帮助。</p>
+
+
+
+<p>制造商还可以采取行动来创造更安全的物联网设备。避免常见漏洞并采用安全设计实践将有助于确保最终产品不易受到攻击。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/4383/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>为什么 Web3 与区块链有关</title>
+		<link>/archives/4373</link>
+					<comments>/archives/4373#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 27 Dec 2021 09:26:29 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[区块链]]></category>
+		<guid isPermaLink="false">/?p=4373</guid>
+
+					<description><![CDATA[为什么 Web3 与区块链有关 互联网迄今有两个阶段：Web 1.0 和 Web 2.0。 下一个阶段自然就是 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h1><strong>为什么 Web3 与区块链有关</strong><strong></strong></h1>
+
+
+
+<p>互联网迄今有两个阶段：Web 1.0 和 Web 2.0。</p>
+
+
+
+<p>下一个阶段自然就是 Web 3.0（简称 Web3）。本文谈谈我对 Web3 的一些初步理解，它到底是什么。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="565" height="318" src="/wp-content/uploads/2021/12/image-7.png" alt="" class="wp-image-4375" srcset="/wp-content/uploads/2021/12/image-7.png 565w, /wp-content/uploads/2021/12/image-7-300x169.png 300w" sizes="(max-width: 565px) 100vw, 565px" /></figure>
+
+
+
+<p>一、历史回顾</p>
+
+
+
+<p>Web 1.0 阶段，用户是单纯的内容消费者，内容由网站提供，网站让你看什么，你就看什么，典型例子就是新闻门户网站。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="385" height="254" src="/wp-content/uploads/2021/12/image-8.png" alt="" class="wp-image-4376" srcset="/wp-content/uploads/2021/12/image-8.png 385w, /wp-content/uploads/2021/12/image-8-300x198.png 300w" sizes="(max-width: 385px) 100vw, 385px" /></figure>
+
+
+
+<p>Web 2.0 阶段，用户是内容的生产者，网站只是一个向用户提供服务的平台，典型的 Web 2.0 平台有维基百科、抖音、微信等等。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="429" height="495" src="/wp-content/uploads/2021/12/image-9.png" alt="" class="wp-image-4377" srcset="/wp-content/uploads/2021/12/image-9.png 429w, /wp-content/uploads/2021/12/image-9-260x300.png 260w" sizes="(max-width: 429px) 100vw, 429px" /></figure>
+
+
+
+<h2><strong>二、Web3 的特征</strong><strong></strong></h2>
+
+
+
+<p>Web3 的很多特征还不明确，但是国外很多文章认为，它跟区块链有关。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="463" height="495" src="/wp-content/uploads/2021/12/image-10.png" alt="" class="wp-image-4378" srcset="/wp-content/uploads/2021/12/image-10.png 463w, /wp-content/uploads/2021/12/image-10-281x300.png 281w" sizes="(max-width: 463px) 100vw, 463px" /></figure>
+
+
+
+<p>Web 1.0 是用户<strong>读取互联网</strong>，Web 2.0 是用户<strong>写入互联网</strong>，Web3 是用户<strong>生活在互联网</strong>。</p>
+
+
+
+<p>娱乐、工作、学习、消费、交际，都在网上发生。网站不仅提供服务，还是一个生活空间，人们的一部分生活可以在网上完成。</p>
+
+
+
+<p>在教育网站学习，在会议网站开会，在社交网站交友，在游戏网站玩乐。所有网站共同构成了一个无所不包的网络世界。</p>
+
+
+
+<h2><strong>三、虚拟世界</strong><strong></strong></h2>
+
+
+
+<p>所有网站的生活功能，如果能够连在一起，让用户无缝地从一个场景进入另一个场景，那就构成了一个虚拟世界。这大概就是最近很热门的元宇宙（metaverse）的样子。</p>
+
+
+
+<p>到了那个阶段，用户不再是访问网站，而是进入虚拟世界，过着虚拟的线上生活。</p>
+
+
+
+<h2><strong>四、Web3 是分布式的</strong><strong></strong></h2>
+
+
+
+<p>这样的虚拟世界，显然不能被一家或几家巨头垄断，否则我们就会依赖这些巨头，不得不遵守它制定的规则。当你的生活都在虚拟世界里面，某一天巨头突然决定关闭你的账号，你的虚拟人生岂不嘎然而止了！</p>
+
+
+
+<p>这就是很多人提出 Web3 应该是分布式的原因。这有两层含义：</p>
+
+
+
+<p>（1）它不是集中式的，就没有单一的公司可以控制它；</p>
+
+
+
+<p>（2）任何一种服务都有多家提供商，通过分布式协议连起来，用户可以极小的成本，从一个提供商转移到另一个服务商。</p>
+
+
+
+<h2><strong>五、区块链的作用</strong><strong></strong></h2>
+
+
+
+<p>如果 Web3 确定是分布式的，那么区块链简直就是天然的基础设施。因为区块链是分布式数据库的一种实现，本身就是分布式的，而且信息一旦上链，就无法修改。</p>
+
+
+
+<p><strong>这解决了 Web3 的核心问题：不同网站的数据交换。</strong>&nbsp;不同网站都可以自由读写同一个用户的数据，并且这些数据是可以信赖的，从而保证用户进入另一个网站，就好像进入同一个世界的不同地区。</p>
+
+
+
+<p>一旦 Web3 构建于区块链之上，按照区块链的设计，用户需要有一个数字钱包，它是你在虚拟世界的身份证和银行账户。你的身份、财产、消费，都通过这个数字钱包来标识。网站通过数字钱包的 ID，来识别你是谁。</p>
+
+
+
+<p>另一方面，有了数字钱包以后，银行和金融也就变成虚拟的了，这让虚拟世界更像现实世界了。</p>
+
+
+
+<h2><strong>六、数字资产</strong><strong></strong></h2>
+
+
+
+<p>区块链允许写入任意数据，那么不可避免的，我们虚拟生活的所有数字记录都可以放在区块链上面。</p>
+
+
+
+<p>如果每一样虚拟物品都有自己的一个编号，把它们记录在区块链，那么就可以确定它们的主人（即关联到数字钱包）。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="415" height="223" src="/wp-content/uploads/2021/12/image-11.png" alt="" class="wp-image-4379" srcset="/wp-content/uploads/2021/12/image-11.png 415w, /wp-content/uploads/2021/12/image-11-300x161.png 300w" sizes="(max-width: 415px) 100vw, 415px" /></figure>
+
+
+
+<p>举例来说，虚拟世界的每一把数字牙刷，都可以在区块链上有一个唯一编号，不会跟别的牙刷混淆，并且通过关联到数字钱包，确定每把牙刷的主人。</p>
+
+
+
+<p>我也不知道，为什么要把牙刷放到区块链上，我只是举一个例子，说明区块链可以做到这一点。</p>
+
+
+
+<p>我们甚至可以交易这把牙刷，把它登记到另一个数字钱包，让它的主人变成其他人。现在很热门的 NFT，就是这么搞的，只不过它在区块链上登记的不是牙刷，而是数字收藏品。</p>
+
+
+
+<p>创业家&nbsp;Chris Dixon<sup>[2]</sup>&nbsp;前不久公开说：“Web3 就是所有权”，就是这个意思。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="476" height="245" src="/wp-content/uploads/2021/12/image-12.png" alt="" class="wp-image-4380" srcset="/wp-content/uploads/2021/12/image-12.png 476w, /wp-content/uploads/2021/12/image-12-300x154.png 300w" sizes="(max-width: 476px) 100vw, 476px" /></figure>
+
+
+
+<p>如果所有人、所有物品、所有交易都登记在区块链上，那么基于它的 Web3 的玩法简直是无穷无尽，是现在难以想象的。虚拟世界的可能性，比现实世界多100倍、1000倍。</p>
+
+
+
+<p>目前只是 Web3 的初始阶段，基础设施都还没有建成，玩法还在探索，但是进展很快。这个领域应该会诞生无数的创新和机会，值得密切关注。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/4373/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>助力碳中和，区块链有妙用</title>
+		<link>/archives/4368</link>
+					<comments>/archives/4368#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 27 Dec 2021 09:25:45 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[区块链]]></category>
+		<guid isPermaLink="false">/?p=4368</guid>
+
+					<description><![CDATA[助力碳中和，区块链有妙用 降低碳排放是联合国可持续发展目标（SDGs）中的主要任务之一。去年9月，中国宣布将力 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h1><strong>助力碳中和，区块链有妙用</strong><strong></strong></h1>
+
+
+
+<p>降低碳排放是联合国可持续发展目标（SDGs）中的主要任务之一。去年9月，中国宣布将力争2030年碳达峰，2060年实现碳中和的目标。一场有力的全国行动已经自上而下迅速展开，展现了中国全面开启向低碳经济转型的决心。</p>
+
+
+
+<p>置身其中的企业怎样才能把握住这次重大的经济转型机遇？如何在业务中减少碳排放？如何构建可持续的商业模式并实现碳中和？这已经是每个决策者正在思考的问题。</p>
+
+
+
+<p>具有数据可追溯、多方信任、分布式网络、智能合约等诸多特性的区块链则是帮助企业实现碳中和的关键技术之一。甚至有专家们认为，碳中和正是区块链技术能够真正大显身手的领域，必将会诞生许多“杀手级应用”。</p>
+
+
+
+<p><strong>助力全供应链碳披露</strong></p>
+
+
+
+<p>如今，各行各业的分工越来越精细，任何商品或服务从研发到销售的过程中，都涉及复杂的供应链体系，“链条”背后则是上百家大大小小的供应商。但在整个供应链条中，产生的碳排放和碳补偿相关数据目前并没有被收集和汇总分析，核心企业通常也不清楚各级供应商的碳足迹。这让碳披露和碳减排工作难以展开。</p>
+
+
+
+<p><strong>区块链技术利用其数据不可篡改、数据可追溯、促成多方信任等特点，可建立覆盖整条供应链的溯源应用，充分评估供应商的碳足迹，从而判断是否能够将其纳入自己的供应链体系。</strong>供应链上的各家企业也可以通过溯源数据收集分析自己的碳排放表现，来减少碳排放，提高能源利用率，优化业务以达成碳中和。</p>
+
+
+
+<p>区块链溯源的应用，还能够提升产业链和供应链的透明度。有了透明且可信的数据，企业才可以进行有效的碳披露，同时制定相应的碳补偿方案，进而实现真正的碳中和供应链、负碳供应链。</p>
+
+
+
+<p>埃森哲为荷兰喜力（Heineken®）使用Hyperledger区块链构建了一个试点项目，全程追踪其旗下品牌Brand Blond啤酒从啤酒花种植环节直到啤酒厂装瓶整个过程的碳排放。消费者通过扫描瓶身上的二维码，可以查看啤酒的碳足迹和水足迹。</p>
+
+
+
+<p>供应链的高透明度不仅可以帮助我们减少整条供应链中的环境足迹，还能够通过提供详细的产品溯源信息，让消费者对品牌和产品更加信任，进而增强消费者的复购意愿和品牌忠诚度。</p>
+
+
+
+<p><strong>实现碳数据共享并保证其安全</strong></p>
+
+
+
+<p>企业的碳排放和碳减排数据与生产、经营情况相关，也侧面体现了一家企业的研发方向和技术选型。出于数据安全和保护商业机密的考虑，多数企业对碳披露持保守态度，而基于区块链的数据共享应用能够有效消除企业在这方面的担忧。</p>
+
+
+
+<p><strong>利用区块链结合隐私计算技术，可以做到信息可验证但不可见。</strong>通过数据所有者的私钥签名授权，数据访问权可临时开放给特定的潜在合作伙伴、上下游企业、第三方监管机构验证碳排放相关数据，一切可量化的碳排放数据都可以用这种方式实现数据安全共享。</p>
+
+
+
+<p>一旦消除了企业数据安全的担忧，碳排放数据可以在产业级范围内实现流通和共享，数据的价值能够真正被解锁。这将推进碳中和目标的实现进程。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="572" height="322" src="/wp-content/uploads/2021/12/image-5.png" alt="" class="wp-image-4369" srcset="/wp-content/uploads/2021/12/image-5.png 572w, /wp-content/uploads/2021/12/image-5-300x169.png 300w" sizes="(max-width: 572px) 100vw, 572px" /></figure>
+
+
+
+<p><strong>落实碳数据留存和数据可信</strong></p>
+
+
+
+<p>在目前碳披露和碳排放数据收集的过程中，依然存在大量人为因素，数据采集和流转过程中的数据录入错误、数据瞒报、谎报等风险难以避免，导致碳排放相关数据质量较低、标准化不足。这不但阻碍了企业实现碳中和，还带来了公关和舆情风险。</p>
+
+
+
+<p><strong>区块链结合物联网和边缘计算技术的应用，让碳排放数据在产生的同时就被加密并写入区块链网络，能够有效提升数据的实时性、精确度和可信度。</strong>同时，任何企图关停数据采集设备、篡改数据、删除数据的行为都将被记录留存，在碳排放、碳补偿数据方面的造假、作弊、欺诈门槛被大幅提高。</p>
+
+
+
+<p>事实上，这方面的应用案例已经逐渐落地，7月15日，天津排放权交易所发布了基于区块链的碳中和存证产品，该产品可以协助企业和组织解决碳排放、碳补偿数据留存和数据可信的问题，通过物联网监测设备接入、自动碳数据上报、系统数据集成等方式收集碳排放相关数据。</p>
+
+
+
+<p>此外，利用区块链的分布式存储特性，还可以避免中心化数据系统的单点故障脆弱性。能够解决数据长期留存的问题，避免出现因数据丢失而无法核算碳排放、碳补偿的情况。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="615" height="410" src="/wp-content/uploads/2021/12/image-6.png" alt="" class="wp-image-4370" srcset="/wp-content/uploads/2021/12/image-6.png 615w, /wp-content/uploads/2021/12/image-6-300x200.png 300w" sizes="(max-width: 615px) 100vw, 615px" /></figure>
+
+
+
+<p><strong>建立碳账户</strong></p>
+
+
+
+<p>浙江省衢州市是国家级绿色金融改革创新试验区，在全国首创了工业、农业、个人领域三大碳账户体系。其中，已经试点一年的“个人碳账户”可以从节约纸张、用电用水、交通碳排等18类日常场景中折算个人绿色行为节省的碳排放量。目前，衢州全市已有银行个人碳账户137万户，累计碳减排已达3000吨以上。</p>
+
+
+
+<p>碳账户表示个人和企业减少的碳排放量。在不远的将来，这将成为个人和企业在银行账户和信用账户外的又一个标配，是管理人类与气候环境关系的有力工具。碳账户的建立和普及能让每一个企业和个人都参与到碳中和目标的实现中来。</p>
+
+
+
+<p>传统的中心化碳账户体系往往存在多方对账难、数据孤岛林立、清算周期长等问题，而<strong>基于区块链网络的通证化以及无需中间人的点对点价值交换能力，企业可以快速构建一套分布式、安全可靠的碳账户系统。</strong>用碳账户管理企业员工、部门、楼宇空间的碳排放和碳补偿，在提升企业治理的数字化程度的同时，将碳中和理念贯彻到企业经营行为中，进而实现真正的可持续发展。</p>
+
+
+
+<p>得益于区块链技术的特点及不可替代性，其在碳中和领域的应用必将成为大势所趋。除了上述四点，企业还可以结合自身的行业背景、商业模式以及业务特点，在碳资产数字化、跨国跨地区碳交易、智能合约碳披露、绿色债券发行等领域进行区块链技术的创新应用探索。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/4368/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>全球加速区块链技术发展，筑网络安全未来</title>
+		<link>/archives/4359</link>
+					<comments>/archives/4359#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 27 Dec 2021 09:23:47 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[区块链]]></category>
+		<guid isPermaLink="false">/?p=4359</guid>
+
+					<description><![CDATA[全球加速区块链技术发展，筑网络安全未来 关键基础设施安全应急响应中心&#160;2021-12-10 14:3 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h1><strong>全球加速区块链技术发展，筑网络安全未来</strong><strong></strong></h1>
+
+
+
+<p><a href="https://mp.weixin.qq.com/javascript:void(0);">关键基础设施安全应急响应中心</a>&nbsp;2021-12-10 14:34</p>
+
+
+
+<p>以下文章来源于信息安全与通信保密杂志社&nbsp;，作者Cismag</p>
+
+
+
+<p><a href="https://mp.weixin.qq.com/s?subscene=88&amp;__biz=MzkyMzAwMDEyNg==&amp;mid=2247523209&amp;idx=2&amp;sn=19f7129cafa752f0ab920a5dd49ba2da&amp;chksm=c1e917d8f69e9ecedf981891d923306f9be7518d910af40e887b89032adeb9e40d1a24d5d121&amp;scene=7&amp;key=9fe78104b921057869ccc7b72907d85a206a85fb02e914783dd6567d51697e16146d0dcee033a0000ca74dcd5412bafac4d7f3fb91f4dfb016a082082ac238709b61caf50e3a5bdba0f55dcf8fb66215ced9ab6af61707d3b5de5a477c6690e2b0fe7fcb6cfed81f6f75f4d8320887e37939217db7c56dbac33268b652bf1239&amp;ascene=0&amp;uin=NDgzODI4MDE5&amp;devicetype=Windows+10+x64&amp;version=6304051b&amp;lang=zh_CN&amp;exportkey=A87j3KpORz2eb7P04sFspLw=&amp;pass_ticket=AEIebfUkxX2k+jxiAzkMwimjSHo30ydMKDwyr6f4jdcbhMHfKjKEIgf0sIfrGJmh&amp;wx_header=0&amp;fontgear=2"></a></p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="512" height="512" src="/wp-content/uploads/2021/12/1f3b074fe2acde8e2b2ae046ec8c0d61736a8cc6.png" alt="" class="wp-image-4360" srcset="/wp-content/uploads/2021/12/1f3b074fe2acde8e2b2ae046ec8c0d61736a8cc6.png 512w, /wp-content/uploads/2021/12/1f3b074fe2acde8e2b2ae046ec8c0d61736a8cc6-300x300.png 300w, /wp-content/uploads/2021/12/1f3b074fe2acde8e2b2ae046ec8c0d61736a8cc6-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></figure>
+
+
+
+<p><strong>信息安全与通信保密杂志社</strong>.</p>
+
+
+
+<p>网络强国建设的思想库 安全产业发展的情报站 创新企业腾飞的动力源</p>
+
+
+
+<p>2020年2月7日, 澳大利亚政府发布了“国家区块链路线图”， 此次发布的区块链路线图意义深远，旨在使澳大利亚成为区块链产业的全球领导者。路线图提出，区块链技术带来的巨大机遇，不仅是在金融领域，还包括供应链、物流、农业、可信凭证和智能合约等领域。这是继欧盟和德国外，又一国家将区块链技术发展提升到战略的高度。当前，全球区块链技术发展热度不减。以美国、俄罗斯等国为代表的国家，加快顶层设计，牢牢紧握战略先机；加速区块链技术的落地，并采用了一系列措施来鼓励区块链技术的发展；同时发现了区块链技术在网络安全领域的潜力，加速推动区块链技术与网络安全领域的融合发展。</p>
+
+
+
+<p><strong>&nbsp;一、全球区块链技术发展现状</strong><strong></strong></p>
+
+
+
+<p>在区块链掀起的这场技术革命与革新浪潮中，全球区块链热度不减，正如图1所示。以中、美、英、等为代表的国家开始主动作为、牢牢紧握战略先机，不断加快顶层设计及政策法规的制定，积极转变区块链技术发展态度，加速区块链技术的落地。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="251" src="/wp-content/uploads/2021/12/image-2.png" alt="" class="wp-image-4361" srcset="/wp-content/uploads/2021/12/image-2.png 554w, /wp-content/uploads/2021/12/image-2-300x136.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p>图1&nbsp;&nbsp; 各国对区块链的重视</p>
+
+
+
+<h3><strong>(一）区块链技术上升为国家战略新高度</strong><strong></strong></h3>
+
+
+
+<p>欧盟地区及相关国家把区块链技术提升到国家战略高度，从战略布局上加大重视和支持力度。2019年9月，欧盟科学中心在举行的OECD区块链论坛上发布报告《Blockchain Now And Tomorrow》(区块链：当前和未来)。该报告的发布表明欧盟已经认识到区块链(分布式账本技术)的重要性，而此前欧盟对区块链技术的关注度从未提升到政策层面。区块链会对经济、行业和社会当前和未来产生广泛的变化和影响。该报告通过识别区块链技术在多个领域的应用和潜在应用对区块链进行了多维度的分析。2019年9月18日，德国政府审议通过并发布区块链战略。德国政府的区块链战略明确了五大领域的行动措施，包括在金融领域确保稳定并刺激创新；支持技术创新项目与应用实验；制定清晰可靠的投资框架；加强数字行政服务领域的技术应用；传播普及区块链相关信息与知识，加强有关教育培训及合作等方面。</p>
+
+
+
+<p>在英国，2016年1月l9日，英国政府率先发布《分布式账本技术：超越区块链》的战略白皮书，明确提出区块链是一项能给英国社会经济发展带来颠覆性变革的优势潜力技术，将它上升为国家的战略意志，是英国巩固其金融强国和网络强国地位的必然选择。</p>
+
+
+
+<p>在澳大利亚，澳大利亚政府在2020年2月7日发布了“国家区块链路线图”，但澳大利亚在改进区块链的技术和监管环境的一些项目的国际协作中已经处于领先地位。同时，澳大利亚也证明了在区块链的创新和领导地位，其中包括国际标准、科研、智能可编程货币，并且在能源、农业和公共领域都有试用。2019年3月，澳大利亚公布国家区块链战略路线图，并增加了10万澳元的联邦政府资金。新的区块链战略路线图旨在促进澳成为新兴区块链产业的全球领导者，该路线图将加强对区块链产业的监管引导、技能培训和能力建设，加大产业投资力度，增强国际合作，提升产业竞争力。</p>
+
+
+
+<h3><strong>(二）积极转变区块链技术发展态度</strong><strong></strong></h3>
+
+
+
+<p>以俄罗斯为代表，俄罗斯政府积极转变态度，下决心推进区块链技术发展。从最初严禁比特币交易，到逐渐转为积极态度，再到将区块链作为国家未来发展的重要部分，俄罗斯政府的态度转变正显示出其推进区块链技术发展的决心和力量，在这场新技术的角逐中，“战斗民族”俄罗斯正清理跑道，全速奔跑。</p>
+
+
+
+<p>2019 年，俄罗斯在计划颁布“实施去中心化登记和合法证书中技术应用管理的监管法案”，以明确对区块链技术的监管。2018年8月，俄罗斯总统普京批准关于在Primorski Krai地区、Oktyabrsky岛以及Russky岛建立“经济特区”的政策，并于9月提出将这些地区发展成俄“数字发展中心”。</p>
+
+
+
+<p>区块链产业在各国发展阶段和发展特色(如图2所示)各有不同，鼓励技术与政策监管各有侧重，但是各国政策基本持支持态度。其中，英国、美国等地区对于区块链的政策补贴较为突出，如美国国土安全部多次向区块链技术公司颁发研究合同，英国则是国家层面设立基金进行支持等。法、德等国家对区块链发展持谨慎观望的态度，仅在技术发展方面较为支持。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="538" height="285" src="/wp-content/uploads/2021/12/image-4.png" alt="" class="wp-image-4364" srcset="/wp-content/uploads/2021/12/image-4.png 538w, /wp-content/uploads/2021/12/image-4-300x159.png 300w" sizes="(max-width: 538px) 100vw, 538px" /></figure>
+
+
+
+<p>图2&nbsp; 主要国家和地区对区块链技术和应用情况</p>
+
+
+
+<h3><strong>(三）加速推进区块链技术的应用</strong><strong></strong></h3>
+
+
+
+<p>以美国为代表，2019年8月，美国财政部提交给美国总统特朗普的一份报告中对当前货币体系进行了分析，提议对加密货币进行彻底改革，在削弱监管的环境下培育新技术。美国财政部承认加密货币和区块链技术的崛起和快速发展，并表示区块链和分布式账本技术目前在美国金融稳定监督委员会的直接管理之下，美国政府支持这项技术并表示制定促进新兴产业增长的法规，对整个监管体系至关重要。2018年，美国国会发布《2018年联合经济报告》，提出区块链技术可以作为打击网络犯罪和保护国家经济和基础设施的潜在工具，指出这一领域的应用应成为立法者和监管者的首要任务。2017年，总统特朗普签署了一份7000亿美元的军费开支法案，其中包括授权一项区块链安全性研究，呼吁“调查区块链技术和其他分布式数据库技术的潜在攻击和防御网络应用”，支持美国土安全部开展加密货币跟踪、取证和分析工具开发项目。</p>
+
+
+
+<p><strong>&nbsp;二、全球区块链产业发展</strong><strong></strong></p>
+
+
+
+<p>随着全球各个国家对区块链技术的重视，各国加大布局和战略制定，全力推动区块链产业的发展，区块链技术在各领域应用落地的步伐不断加快，但产业规模和增长见缓，投融资交易热度下降。</p>
+
+
+
+<h3><strong>(一）各领域应用落地步伐加快</strong><strong></strong></h3>
+
+
+
+<p>2019年以来，区块链在各领域应用落地的步伐不断加快，正在贸易金融、供应链、社会公共服务、选举、司法存证、税务、物流、医疗健康、农业、能源等多个垂直行业探索应用。截止 2019 年 8 月，由全球各国政府推动的区块链项目数量达 154 项，主要涉及金融业、政府档案、数字资产管理、投票、政府采购、土地认证/不动产登记、医疗健康等领域。其中，荷兰、韩国、美国、英国、澳大利亚等国的政府推动项目数排名前五，在探索区块链技术研发与应用落地方面表现更加积极主动。2019 年 6 月脸书(Facebook)牵头发布全球数字加密货币项目天秤座(Libra)的白皮书，天秤座(Libra)将作为一种简单、无国界的货币和为数十亿人服务的金融基础设施，为数十亿人提供无国界、低成本、普惠的金融服务。天秤座项目一经宣布就受到了全球各界的关注与讨论，各国监管部门先后发声，显示出区块链技术在重塑全球金融基础设施方面的巨大潜力。</p>
+
+
+
+<h3><strong>(二）产业规模增长减缓</strong><strong></strong></h3>
+
+
+
+<p>产业规模层面，全球新增区块链企业数量出现减缓迹象。在经历了 2014 年和 2017 年的新成立区块链企业数量高峰后，2018 年起新成立企业数量开始下降。截止 2019 年 8 月，全球共有 2450 家区块链企业，新成立区块链企业数量锐减。行业应用方面，当前全球区块链企业 38%集中在加密货币领域，23%的企业专注于区块链技术研发，互联网、金融业是应用最多的两个领域。美国、中国、英国区块链企业数量分列前三位；加拿大、新加坡、瑞士等国由于相对宽松的产业监管环境，区块链企业数量也较多。城市分布方面，旧金山、北京、伦敦是拥有区块链企业最多的三个城市。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+
+
+<h3><strong>(三）资本投融资热度下降</strong><strong></strong></h3>
+
+
+
+<p>投融资层面，区块链产业投融资交易热度下降。进入 2019 年，整个互联网投融资市场活跃度低位运行，2019 年Q2 中国市场互联网投融资总金额 81.3 亿美元，环比上涨 3.8%，但同比跌幅达 70.8%，资本环境趋紧态势明显，区块链投融资交易热度也有所下降。截止 2019 年 8 月底，2019 年区块链投融资交易规模仅为20.28 亿美元。2019 年 1-8 月区块链企业种子轮、天使轮、A 轮投融资交易共 273 笔，6.74 亿美元；均低于去年同期的 374 笔和 9.69 亿美元。美国、中国、韩国、瑞士、加拿大是全球区块链产业投融资金额最多的5个国家。其中，仅美国占比达到 49%。从五国近年投融资发展变化来看，美国区块链产业在 2015、2018 年出现投融资两次高峰，而韩国自2017 年起加速，2018 年投融资额位居全球第三位。2009 年至 2019年8月，全球区块链产业累计投融资金额达到 103.69亿美元。其中，2017、2018 是区块链产业投融资最活跃的时期。</p>
+
+
+
+<p>据Gartner预测，到2030年，区块链的商业价值将达到3.1万亿美元。据2018年麦肯锡的预测，到2027年全球GDP的10%将被存储到区块链上。全球数字货币总市值在2018年初达到了7000 亿美金，后经历了较大波动，2018年6月份其总市值约为3000 亿美元。即便是经历了较大的起伏，数字货币的价值依然超过了世界上过半国家的GDP和大量世界级大公司的市值。根据国际数据公司(IDC)2017年发布的其全球半年度区块链支出指南，到2022年，全球区块链解决方案支出将达到117亿美元。</p>
+
+
+
+<p><strong>&nbsp;三、区块链技术之于网络安全</strong><strong></strong></p>
+
+
+
+<p>当前，几乎没有哪个行业是绝对安全的，黑客从未放弃寻找有漏洞的系统。虽然没有万无一失的方法来阻止黑客，但我们可以采取一些措施来减少设备被攻击的概率。通过将区块链技术与网络安全领域相结合，可以有效保护数据和信息的安全，主要体现在身份验证识别、安全保护、抵御入侵三个方面。</p>
+
+
+
+<h3><strong>(一）身份识别验证</strong><strong></strong></h3>
+
+
+
+<h4><strong>1、哈希值验证软件下载/更新的有效性</strong><strong></strong></h4>
+
+
+
+<p>当前，病毒、蠕虫和木马会以许多不同的形式进入电脑，而且通常很难被发现。病毒的多样性使得普通人很难察觉到其计算机早已被感染。事实上，恶意软件经常以软件下载或假冒应用程序更新的形式出现。就连一度被认为不会受到病毒感染的Mac电脑，在2018年也成为了4.9万种新型恶意软件攻击的目标。黑客将恶意程序和勒索软件伪装成合法的应用程序，从而隐藏其行踪。这些恶意软件可能窃取了数以百万计的个人信息。<br>这时，区块链技术可为软件的下载和更新分配惟一的哈希值。这将允许用户将想要下载的软件的哈希值与开发者的哈希值进行比较，并可最大程度的降低系统感染恶意软件的风险。</p>
+
+
+
+<h4><strong>2、基于生物特征数据、私钥和多重认证</strong><strong></strong></h4>
+
+
+
+<p>密码的问题在于，我们必须不断更新和更改密码，因为只有这样才能使这些由单词、符号和数字组成的字符串不会被追踪。Facebook表示，平均每天有60万次的针对用户密码的网络攻击。根据Thycotic的数据，50%的安全专业人士一年内都没有更改过他们的社交媒体密码，有20%的人从未更改过。区块链技术可以帮助我们解决密码难题，它是基于生物特征数据、私钥和多重认证来确保用户的身份。这些系统不仅比密码更有效，而且也更简单。</p>
+
+
+
+<h4><strong>3、多重签名的身份验证</strong><strong></strong></h4>
+
+
+
+<p>存储着的用户名和密码中央数据库是黑客的头号目标。2016年，多达3.6亿个Myspace用户名和密码被盗，并被放到网络黑市中出售，黑客入侵事件为Myspace敲响了丧钟。</p>
+
+
+
+<p>区块链本质上是分散的，它将关键信息存储在多个节点上，以降低任何单个节点被破坏的风险。区块链还运行在一个多重签名的身份验证模型上。该模型不使用用户名和密码，而是通过确认用户可以访问多个设备来进行身份验证。该机制可有效减少黑客攻击频率，能更好地保护敏感的、有价值的用户数据。</p>
+
+
+
+<h4><strong>4、多节点数据验证</strong><strong></strong></h4>
+
+
+
+<p>无论哪个行业，在检测欺诈行为和排查低效的原因时，如果收到不良数据或是错误的报告，其代价将是极为巨大的。用于打击欺诈的算法在检测不一致性方面非常有效，但它们常常会引起大量的误报。一项测试研究表明，现有的最先进算法能够识别99%信用卡欺诈交易，但这些算法还将另外50万笔合法交易标记为异常。也就是说，这些算法和安全措施在区分真实威胁方面并不可靠。通过区块链网络过滤的数据往往更可信赖，因为多节点的安全性有助于进行更准确的验证，并防止数据被篡改。</p>
+
+
+
+<h3><strong>(二）安全保护</strong><strong></strong></h3>
+
+
+
+<h4><strong>1、提升DNS系统安全</strong><strong></strong></h4>
+
+
+
+<p>当前研究表明，黑客最常用的DNS攻击手法大概可分为三种：一、DNS缓存中毒，此类攻击可将用户重定向至诈骗网站；二、DNS扩展攻击，此类攻击利用了DNS系统的漏洞，以增强DDoS攻击效果；三、DDoS攻击域名系统，此类攻击会使服务器超载，乃至完全瘫痪网站。</p>
+
+
+
+<p>区块链本质上是完全去中心化，因而适合运用在DNS系统主机中。该技术可有效提高此类分散式系统的安全性，因为入侵单独一处的访问漏洞将需要获得系统中更多的权限。</p>
+
+
+
+<h4><strong>2、提升数据存储的安全性</strong><strong></strong></h4>
+
+
+
+<p>数据，其实是一种通用货币。相关数据显示，单个消费者的数据平均每年可创造至少240美元的收益，甚至更多。在当今互联网时代，将这些数据存储在一个集中的数据库中是不明智的。似乎每周都有数据泄露事件发生，为何没有尝试不同的存储方法?</p>
+
+
+
+<p>区块链的特性使得黑客无法通过入侵单一站点来获取大量数据。分散的数据存储将有效提高数据的安全性，在黑客和你的数据之间，有无数道坚固的钢铁屏障。</p>
+
+
+
+<h4><strong>3、确保边缘设备安全</strong><strong></strong></h4>
+
+
+
+<p>随着技术的发展，互联网、应用程序和其他技术融入了我们生活的方方面面。同时这也代表着，网络为那些知道漏洞位置和利用方法的黑客提供了大量数据。在2017年，有41%的安卓设备容易遭到“极具破坏性”的Wi-Fi攻击，这些攻击会使手机被植入恶意软件。可以说，此类边缘设备打开了通向核心网络。对于一个黑客来说，通过一个边缘设备的漏洞来渗透整个网络，就像从一个婴儿手里拿糖果那般容易。</p>
+
+
+
+<p>区块链技术可以确保这些设备和核心网络隔离于多重认证过程和区块链级，而分散的威胁缓解协议是修补漏洞的第一步。</p>
+
+
+
+<h3><strong>(三）抵御入侵攻击</strong><strong></strong></h3>
+
+
+
+<h4><strong>1、 有效抵御DDoS攻击</strong><strong></strong></h4>
+
+
+
+<p>随着黑客技术的不断发展，攻击者的分布式拒绝服务攻击(DDoS)手段日益复杂。例如，黑客开始使用善于隐藏的恶意软件，即使在系统重新启动后，此类恶意软件也能自行启动，从而导致系统过载，并一次又一次地崩溃。这些攻击不仅变得更加复杂，其攻击频率也大大增加(DDoS攻击在过去三年中的发生频率至少增长了2.5倍)。物联网的应用更是降低了DDoS攻击的难度，因为一次攻击便可以影响多个相互连接的系统。</p>
+
+
+
+<p>区块链技术可以允许用户加入分布式网络，以更好地抵御DDoS攻击，进而增强网络的安全性。不仅如此，区块链技术还将允许网络用户出租额外带宽，以支持那些流量过载的网络。这样一来，DDoS攻击的成功率将显著降低。</p>
+
+
+
+<h4><strong>2、防止针对自动化的黑客入侵</strong><strong></strong></h4>
+
+
+
+<p>智能设备和自动化技术的兴起使得数据泄露变成了家常便饭。安全公司Senrio已经证明，一旦成功渗透到一两个脆弱的物联网设备，黑客便可以在互相连接的设备网络中自由穿梭，无论这些设备是摄像机或手机。可以说，这是当前困扰物联网和自动化设备的最大问题之一。</p>
+
+
+
+<p>区块链技术可被用于识别无效或可能导致严重后果的指令、程序（诸如自动更新程序可能会无意中包含的恶意软件）。此外，区块链算法还可持续工作以识别入侵行为，这将有效保证自动化设备的安全性。</p>
+
+
+
+<h4><strong>3、计算机固件免受远程入侵</strong><strong></strong></h4>
+
+
+
+<p>知识产权对任何国家的经济都具有同等价值，盗窃也同样有害。根据美国调查机构的数据，每年知识产权损失在2250亿美元至6000亿美元之间。而防止这种盗窃的最有效方式是确保计算机固件不会受到远程入侵。了解固件的制造商及生产地，不仅可为购买决策做参考，还有助于在发生黑客攻击时进行调查。区块链分类账的优点之一是能够准确地证明设备的生产地点，它能够提供计算机生产和运输历史的不可变记录。</p>
+
+
+
+<p><strong>&nbsp;四、启示建议</strong><strong></strong></p>
+
+
+
+<p>区块链在一定程度上解决了价值传输过程中完整性、真实性、唯一性的问题，降低了价值传输的风险，提高了传输的效率，实现了企业协作环节的信息化，将催生大量创新合作场景，构建创新创业新生态。区块链技术将带动新一轮的创业创新浪潮。同时，区块链与人工智能、物联网等新技术融合不断拓展技术应用新空间，进一步释放创新创业活力。</p>
+
+
+
+<p><strong>一是加快推进物联网和区块链技术的融合。</strong>一方面，借助物联网设备的物理防篡改，有助于实现区块链数据从链下到链上的“过程可信”；另一方面，区块链将各自分离、协议不同的物联网网络链接在一起，并通过事先约定规则、“沙箱式”数据处理等方式，形成了跨系统跨边界的数据共享协作新模式。目前，区块链与物联网的结合，业界在物流存证溯源、新型共享经济、能源去中介交易、电动车适配充电、无人机群体智能等方面做了相应探索，也遇到了性能、存储、能源消耗等一系列的问题。</p>
+
+
+
+<p><strong>二是加快5G和区块链技术融合。</strong>随着5G技术的不断发展与成熟，5G所带来的高效率数据传播、延迟降低、降低成本、海量设备连接等优势，如果与区块链技术融合，将释放巨大的经济价值潜能，真正创造一个无法预料的海量价值。5G技术可以加速区块链应用落地，区块链技术也会给5G应用带来新思路。区块链技术作为当前最“火”的话题，旨在打破当前依赖中心机构信任背书的交易模式，用密码学的手段为交易去中心化、交易信息隐私保护、历史记录防篡改、可追溯等提供技术支持。其缺点如上所述包括延时高、交易速率慢、基础设备要求高等。5G技术作为通信基础设施未来能够促进区块链应用项目的落地。</p>
+
+
+
+<p><strong>三是加快人工智能和区块链技术的融合。</strong>人工智能发展的底层构架核心在于算法、算力和数据；算法已取得突破性进展，但是在算力和数据层面仍遭遇巨大挑战。最典型的就是计算资源昂贵、数据垄断以及数据隐私得不到保护，使得人工智能往往成为寡头游戏，严重制约了人工智能发展。因此，必须解决数据隐私问题，实现数据确权，形成基于区块链的数据交易平台，才能推动人工智能的快速发展。</p>
+
+
+
+<p>原文来源：信息安全与通信保密杂志社</p>
+
+
+
+<p>“投稿联系方式：孙中豪&nbsp;010-82992251 &nbsp; sunzhonghao@cert.org.cn”</p>
+
+
+
+<figure class="wp-block-image"><img src="https://www.kdocs.cn/api/v3/office/copy/UFpzMGQ0T3pQN1V2Wkg0QU9ETFNxcGY1M3QvNlJsTUE0MmFCVEYycWFkWXBqRUU5SFQwbGNSTEtmRm9oNzlhOWFrZHJvMVoveHFzbEViQjZKLzhGb1JlSWFVWmUwYTdCOGV4QVVHWlVtb1A2NEwzaDFyelcxYThKVEs1WTBEb1l2MUJMY2ZjbmJnbHZ2TFV3M2VSOThLVjVKN3NZRzVGdE8rcDV6WVlrcVhDbGFmUFNKWS93OWpTd1ViZmVGb2pLMUZld2g0djFXbWtIQ3prSkRXZz0=/attach/object/40217d309a39bc00a9eb3c14289fdc3905a5e8d8" alt=""/></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/4359/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>区块链助力健康养老“智慧”发展</title>
+		<link>/archives/4355</link>
+					<comments>/archives/4355#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 27 Dec 2021 09:21:40 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[区块链]]></category>
+		<guid isPermaLink="false">/?p=4355</guid>
+
+					<description><![CDATA[区块链助力健康养老“智慧”发展 区块链的信息不可篡改、可溯源、分布式共享、共识机制等特性，为解决健康养老领域中 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h1><strong>区块链助力健康养老“智慧”发展</strong><strong></strong></h1>
+
+
+
+<p>区块链的信息不可篡改、可溯源、分布式共享、共识机制等特性，为解决健康养老领域中数据隐私泄露、数据造假、健康信息共享难等问题提供了新思路。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="432" height="261" src="/wp-content/uploads/2021/12/image-1.png" alt="" class="wp-image-4356" srcset="/wp-content/uploads/2021/12/image-1.png 432w, /wp-content/uploads/2021/12/image-1-300x181.png 300w" sizes="(max-width: 432px) 100vw, 432px" /></figure>
+
+
+
+<p>第七次全国人口普查结果显示，我国60岁及以上人口高达2.64亿人。我国老龄化程度正日益加重，随之带来的是健康养老服务需求的不断增长。然而健康养老服务中面临的数据存储难、数据隐私泄露、数据造假等挑战，成为了健康养老服务的快速发展的阻碍因素。</p>
+
+
+
+<p>区块链技术自诞生以来，引起了社会各界的广泛关注。其信息不可篡改、可溯源、分布式共享、共识机制等特性，为解决健康养老领域中数据隐私泄露、数据造假、健康信息共享难等问题提供了新思路。</p>
+
+
+
+<p><strong>区块链助力解决健康养老中的问题</strong></p>
+
+
+
+<p><strong>1、区块链助力解决健康养老隐私泄露问题</strong></p>
+
+
+
+<p>传统中心化的医疗健康信息存储机构极易出现患者隐私泄露问题，比如由于黑客的攻击、恶意软件引发的系统问题，可能导致数据因此被篡改、删除，或者出现更新错误等现象。全球的医疗健康数据每年会有高达 150EB 的存储量。由于基因组测序等高通量医学测试成本的降低，其增长速度将会进一步加快。来自移动和可穿戴设备、高清诊断成像、新的生物分子疾病标志物的大量多模态数据在促进创新和改善临床诊断结果方面发挥着重要作用。但与此同时获取和存储患者的这些数据也给医院或者私营企业带来高昂的成本和潜在的身份盗窃、隐私泄露风险。更加重要的是，患者作为数据的制造者，却被剥夺了对个人信息处理的权利。</p>
+
+
+
+<p>采用中心化存储方式的数据库，若被黑客入侵有可能面临所有数据泄露的安全风险，区块链技术采用分布式存储方式，一定程度上降低了数据全部被泄露的风险。此外，区块链技术采用的加密算法使其链上交易数据对应的参与者身份具有匿名性，访问数据必须提供私钥；在开发区块链应用时，可利用加密性按需设置不同参与者的数据获取权限，使特定数据只能被特定人员查看。</p>
+
+
+
+<p>MyHealthMyData（MHMD）是亚马逊2020年的研究与创新行动，通过使用区块链技术，构建共享的公共数据分类账本，减少身份盗用和隐私受到侵犯的风险。患者自己可以根据不同的数据用途提供不同类型的权限许可，还可追踪记录适用范围和干系人。由于区块链具有可追溯的特性，任何篡改区块链数据的企图都可以被检测到，从而可以有效地减少隐私泄露问题的出现。</p>
+
+
+
+<p><strong>2、区块链助力解决健康养老信任问题</strong></p>
+
+
+
+<p>健康养老的主体是老年人，其总体上属于弱势群体，老年人对于新生事物反应不如年轻人那么快，因而比较容易上当受骗，对服务人员及其提供的服务存有警惕之心，这导致许多养老服务很难推进。当使用区块链技术构建可信互联网时，可打消老人对养老服务安全性、可靠性的顾忌。区块链通过加密算法、分布式存储、共识机制、智能合约等保证健康养老系统参与各主体能够在信任的环境下自动安全地交换数据，上链过的数据确保真实不可篡改，出现问题可溯源；智能合约解决了“陌生信任”，合同一旦达到条件自动执行，不必担心一方出现违约行为。</p>
+
+
+
+<p>一个典型应用是时间银行。时间银行的概念是美国Edgar S. Cahn教授于20世纪80年代提出的，低龄老年人通过社区志愿服务，累积服务时间，等步入高龄时，兑换等时的他人志愿服务时间。目前我国时间银行体量小、受众少，各地时间银行缺乏联系。分析问题背后产生的原因主要是人们之间存在信任危机：人们的劳动成果代际接力的延期支付方式不易得到信任和认同，人口流动背景下难以实现“时间货币”的转让、继承及通存通兑。使用区块链技术可以有效解决人们之间存在的信任问题。区块链具有共识机制，基于社区的共识运行，其本质是点对点的价值传输协议，与时间银行这一用户与用户之间志愿服务时间的交换平台不谋而合。支付宝通过使用区块链技术，使得时间银行可确保“时间”的存储和兑换公开透明，永久在链，防止丢失或者被篡改，还可以跨机构、跨区域通兑。南京市在政务平台上开发出了一套“养老服务时间银行”信息系统。截至2021年3月6日，南京市已注册养老服务“时间银行”运营服务点1252个。一共有5万多名志愿者和3万多名老人，有11万多的订单。应用区块链技术，助力时间银行消除信任危机。</p>
+
+
+
+<p><strong>3. 区块链助力解决虚假信息问题</strong></p>
+
+
+
+<p>近年来，随着文本信息的爆发式增长，人们每天能接触到海量的文本信息，如新闻、博客、聊天、报告、论文、微博等。老年人在购买产品或尝试新服务时，往往会上网查看产品相关介绍与其他用户的评价，而有的商家或服务商会夸大宣传，甚至会雇佣人员进行刷单好评。与健康养老相关的虚假信息往往会导致老年人上当受骗，易造成财产或精神损失。使用区块链技术可解决虚假信息问题。区块链的共识算法、哈希算法、时间戳等技术保证数据不可篡改、可溯源，共识算法使得区块链中的节点基于待管理信息达成共识，虚假信息上链之后不可被篡改，可以根据分布式账本上的记录，溯源到虚假信息的源头，从而找出虚假信息的传播者，保证了信息的安全性，也更加有利于高效地治理虚假信息。</p>
+
+
+
+<p>在社交需求方面，老年人同样，甚至更加需要陪伴。比如，越来越多的老年人学会上网，学会在婚恋网站上寻找自己的伴侣。然而婚恋网站上存在着大量虚假信息，不少不法分子利用网络通过婚恋网站伪造自己的个人信息，诈骗老年人。利用区块链不可篡改的时间戳可解决数据追踪与信息防伪问题，将婚恋网站上所有填写的资料均上报到链上，就不用担心虚假填报的问题，出了问题可利用区块链可追溯特点查找到责任人。同时区块链有助于实现用户对数据的控制权，老年人可使用基于区块链技术的婚恋网站放心填写个人资料，不必担心隐私泄露，避免骚扰电话的发生。例如，百合网联合世纪佳缘推出的BHChain，试图用理性技术打造婚恋社交信任基石，可为老年用户提供安全可信的婚恋社交平台。</p>
+
+
+
+<p><strong>区块链在健康养老领域的趋势</strong></p>
+
+
+
+<p>区块链技术目前已在养老保险、养老金融、养老供应链、老年社交、老年旅游、医药溯源、电子病历等领域有所应用，但应用落地的远没有宣传的多，而且老年使用人数也未有准确的统计数字。</p>
+
+
+
+<p>区块链技术本质是多个节点共同记账的账本，是一个去中心化数据库。任何需要数据存储的系统或应用，都可以使用区块链技术，达到不可篡改、可溯源、多节点共同治理的效果。但并不是所有的应用场景都需要跟区块链技术结合在一起。目前区块链技术本身存在着一些技术挑战。例如区块链的性能较低，限制了部分高性能要求的场景应用；由于区块确认需要时间，对时间要求高的应用并不适合纯粹依靠区块链技术；区块链优势在于解决信任问题，但无法保证数据质量；上链后的数据难以篡改的特性使得区块链可以用于防伪，但无法保证上链时的数据本身是正确的。此外，区块链仍面临众多安全问题，比如用户因盗窃、欺诈、泄密导致的私钥被他人得知或丢失，从而导致的个人数字资产丧失。</p>
+
+
+
+<p>从政府层面来讲，在健康养老领域，政府需要牵头协作各方，如医院、养老企业、社区、志愿者、老人。多主体带来的协作困难与各方之间的不信任，是政府面临的最大问题。由于信息孤岛、部门保护、机制僵化、基础薄弱等问题，导致各参与主体之间缺乏信任，政府如何牵头消除互相之间存在的信任危机，如何实施有效的监管，是亟需解决的问题。</p>
+
+
+
+<p>从技术层面而言，健康养老领域涉及数据具有多维、多来源、规模大等特点，在对数据进行获取、存储、计算过程中存在许多技术上的阻碍，在计算能力、存储能力上需要进行突破。与此同时，由于健康养老领域数据都与人有关，隐私保护便成了突出问题，因此隐私保护能力也是技术上需要进行突破的重点。此外，养老机构可能会不够重视数据存储的安全性，获取的老人健康养老信息易被黑客攻击，数据访问和接入方式安全性需要提升。</p>
+
+
+
+<p>针对上述问题，我们建议有志于将区块链技术应用在养老健康等领域的企业可与高校或研究单位开展合作，共同攻克区块链在实施上的技术难题。我们建议，目前可研究的研究方向包括：在提升计算和存储能力方面，利用边缘计算，扩展“云 &#8211; 端”的系统架构，通过边缘设备将边缘计算尽可能推到“人”的身边，减少集中式的云计算和云存储；在隐私保护方面，通过数字孪生技术在数字世界模拟一个“数字人”，完整记录人的健康医疗信息，数字人经过脱敏加密后，可以在数字世界实现交换和交易，从而不必担心隐私的困扰；通过分布式数字身份，用分布式基础设施改变应用厂商控制数字身份的模式，让用户控制和管理自己的数字身份。</p>
+
+
+
+<p>好的系统不仅需要政府引导，企业参与，更需要我们每个人付出实际行动。老年人在政府、社区宣传引导下主动了解区块链技术，还可以用一定激励手段引导老年人主动将数据上链、共享。使用区块链技术，可通过算法与零知识证明机制，实现自动资源分配与排队机制，杜绝特权与关系通道，实现生命平等就医。减少人为干预流程，实时对接医保、治疗、康复养老等数据上链，实现一链单点通办。了解到这些益处之后，老年人及其照护者应会主动与多方联动，参与到区块链应用之中。</p>
+
+
+
+<p>此外，在应用区块链技术时，要考虑成本效益、投入产出比、技术难度、实施周期、法律与政策等因素，而不是盲目将现有应用与区块链技术强行结合在一起。当政府引导、企业协作、个人参与，相信区块链技术一定会在健康养老领域大放光彩。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/4355/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>区块链安全技术与应用</title>
+		<link>/archives/4353</link>
+					<comments>/archives/4353#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 27 Dec 2021 09:19:52 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[区块链]]></category>
+		<guid isPermaLink="false">/?p=4353</guid>
+
+					<description><![CDATA[区块链安全技术与应用 随着区块链技术的不断发展和完善，区块链应用已经拓展到国计民生的很多重要领域，可见区块链技 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h1><strong>区块链安全技术与应用</strong><strong></strong></h1>
+
+
+
+<p>随着区块链技术的不断发展和完善，区块链应用已经拓展到国计民生的很多重要领域，可见区块链技术的发展前景可观，值得我们研究和关注。以下是区块链在网络安全、国家安全、金融安全等方面的应用研究，来探索区块链广泛应用的奥秘。</p>
+
+
+
+<p><strong>总体国家安全观视角下的区块链与国家安全</strong></p>
+
+
+
+<p>区块链作为一项战略性前沿技术，与国家安全关系密切。总体国家安全观是我国新时</p>
+
+
+
+<p>代国家安全工作的根本遵循，在此框架下梳理区块链在军事安全、社会安全、经济安全等</p>
+
+
+
+<p>国家安全领域的应用，分析区块链为国家安全带来的挑战，并研究如何利用区块链赋能我</p>
+
+
+
+<p>国国家安全工作，将帮助我们全面、辩证地对待区块链与国家安全的关系。</p>
+
+
+
+<p><strong>区块链技术及其军事应用</strong></p>
+
+
+
+<p>当前，区块链技术已成为与人工智能、量子信息、物联网同等重要， 并可能产生颠覆性影响的新一代信息技术，是一座未探明储量的金矿。同其他新兴技术产生后必然应用于军事领域一样，近年来世界发达国家军队纷纷探索区块链的军事应用，以期在新一轮军事革命大潮中占据先机。</p>
+
+
+
+<p><strong>美军“战场物联网”及其区块链保证技术的研究进展</strong></p>
+
+
+
+<p>据2020年美军相关网站的最新报道，美国陆军和海军正在研究如何将更多的物联网</p>
+
+
+
+<p>设备引入作战领域，海军正在努力开发自己的航海物联网舰队，陆军正将物联网技术带入</p>
+
+
+
+<p>战场。“战场物联网（IoBT）”一词开始越来越多地出现在了相关新闻报道及学术期刊及会</p>
+
+
+
+<p>议录中。当前，美军有关军种都在独立推进相关IoBT项目，但是他们也都面临着巨大的</p>
+
+
+
+<p>挑战，其中，最大的挑战就是如何应对IoBT带来的各种网络安全威胁和风险。</p>
+
+
+
+<p><strong>区块链技术在网络信任中的应用</strong></p>
+
+
+
+<p>随着网络应用的蓬勃发展，网络信任问题日益突出，网络信任体系的建立迫在眉睫。</p>
+
+
+
+<p>通过分析网络信任体系的现状和区块链技术的应用情况，指出现有网络信任体系中存在的问题，提出了利用区块链安全可信、分布共享、去中心化等特点解决信任体系有中心认证架构的弊端以及实现网络实体信用评价，为信任评估和动态授权提供了有力支撑。通过区块链技术在网络信任中的综合应用，改进完善现有网络信任运行规则，促进新的网络信任体系建立。</p>
+
+
+
+<p><strong>区块链在网络信任体系中的应用研究</strong></p>
+
+
+
+<p>信息技术飞速发展，在不断改变人们生产生活方式的同时，也带来了日益严峻的网络安全问题。如何在网络实体间建立信任关系，是信息安全领域需要解决的重点问题。作为网络安全的基石，网络信任体系衍生出公钥基础设施、标识密码等多种技术。当前，区块链技术以不可篡改、不可伪造、可追溯等特点备受各界关注，在金融、政务、司法等领域广泛应用，也为网络信任体系的构建提供了新的思路。深入分析区块链技术在网络信任体系建设中的应用潜力，有望为新一代网络信任体系的建设提供参考借鉴，具有重要的研究价值与实践意义。</p>
+
+
+
+<p><strong>各国重视区块链技术在网络安全中的应用</strong></p>
+
+
+
+<p>2019年3月5日，跨国计算机巨头IBM公司提交了两项新的区块链专利申请，一项专利是IBM目前正寻求通过区块链技术维护网络安全，另一项专利则专注于使用该技术的数据库管理功能。从网络安全的角度来讲，近几年，各个领域都成为黑客攻击的重点。同时，各国也都在重视区块链技术在网络安全中的运用，仅仅2018年，75%的CEO和董事会成员都将网络安全和技术收购视为他们的首要任务。除了商界巨头之外，不少平民大众也在考虑采用基于区块链的网络安全解决方案。</p>
+
+
+
+<p><strong>区块链权益证明共识机制综述</strong></p>
+
+
+
+<p>自区块链技术被提出以来，共识机制作为其核心部分之一受到广泛关注。在众多共识机制中，根据节点权益情况以竞争记账权的权益证明共识机制有着较低能耗和较高性能等特点。为深入研究这一共识机制，第一，阐述了权益证明的主要原理；第二，将权益证明机制按照区块链系统结构划分为基于链结构和图结构的权益证明共识机制，并分别介绍了Ouroboros、Algorand、Tendermint、Casper 和LaKSA 这 5 种基于权益证明的共识机制的特点、共识、性能与安全性；第三，分析了权益证明共识机制面临的安全威胁，如无利害关系攻击、研磨攻击、长程攻击、变节攻击和 51% 攻击，给出应对措施；第四，总结了权益证明目前的发展现状，并对未来发展提出了展望。</p>
+
+
+
+<p><strong>一种基于区块链的身份认证方法</strong></p>
+
+
+
+<p>零信任理念的提出和发展，提高了网络信息系统数据访问的可控性和可信性，有效增强了系统数据的安全性。但是，总不信任，永远验证的设计原则，也给用户进行数据访问带来了巨大的挑战，特别是在广域、异地身份验证情况下，严重影响用户访问数据的效率。针对广域、海量用户的身份认证需求，提出了一种基于区块链的身份认证方法，利用区块链技术的不可抵赖性，构造相应的用户身份注册、认证、更新方法，实现广域、海量用户的无中心化身份认证能力，提升网络信息系统身份认证效率，从而为零信任环境下的数据访问提供可靠保障。</p>
+
+
+
+<p><strong>基于区块链技术的数据交换安全性研究</strong></p>
+
+
+
+<p>随着区块链技术的飞速发展，区块链由第一阶段1.0的可编程货币逐渐发展至3.0版本的可编程社会。区块链的关键是去中心化和降低信任成本，防伪造和可追踪性，为解决大数据问题提供了一种思路。基于此，提出了一种基于区块链技术的可扩展性隐私保护数据共享方案来研究和解决数据交换系统的安全问题。方案中使用Paillier算法加密用户数据，整个Paillier密码体系的时间基本都很短，但是效率很高。该方案的内部安全分析显示，系统具有超强的安全性。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/4353/feed</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
