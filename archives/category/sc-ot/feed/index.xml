@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>手册-其他 &#8211; WBMIKU密库</title>
+	<atom:link href="/archives/category/sc-ot/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 29 Dec 2021 13:14:01 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2021/11/cropped-logo-2-32x32.png</url>
+	<title>手册-其他 &#8211; WBMIKU密库</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>SPELITE MX</title>
+		<link>/archives/989</link>
+					<comments>/archives/989#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Tue, 07 Dec 2021 01:16:14 +0000</pubDate>
+				<category><![CDATA[手册-其他]]></category>
+		<guid isPermaLink="false">/?p=989</guid>
+
+					<description><![CDATA[SPELITE MX+外置Dongle制作 SATA-to-SATA的加密桥板可以外接硬件的Dongle实现密 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h2><strong>SPELITE MX+外置Dongle制作</strong><strong></strong></h2>
+
+
+
+<p>SATA-to-SATA的加密桥板可以外接硬件的Dongle实现密钥外置。Dongle可以是可复制备份密钥、不可复制备份密钥两种。一种是不加密的密钥、一种是加密的密钥。使用方法类似，只是安全性不同。</p>
+
+
+
+<p>制作Dongle需要一些基础的准备：AT24C/ATSHA204芯片（或开发板）、AT24C02/ATSHA204烧录程序/烧录器、SATA-to-SATA加密桥板（内嵌MX+）、授权USB Key（AT24C不需要，ATSHA204需要）。<strong>准备好了吗？我们开始！</strong>.</p>
+
+
+
+<h2><strong>材料准备：</strong><strong></strong></h2>
+
+
+
+<p>1. AT24C02是ATMEL的EEPROM芯片，可以在淘宝、电子器件等平台购买，我们购买的是带PCBA的半成品，有5PIN接线。因为选用的是非开发板，就额外购买了一个烧录器。烧录器的好处是可以烧录很多个AT24C02，适合经常做实验的场景。烧录器的链接如下（一般会配套给烧录软件）：</p>
+
+
+
+<p><a href="https://item.taobao.com/item.htm?ft=t&amp;id=638454042786">AT24C02 USB烧录器</a></p>
+
+
+
+<p>2. AT24C02烧录器及烧录程序，如果买的是芯片开发板，烧录程序一般会配，如果是芯片或半成品，需要单独购买烧录器及配套的烧录软件。如果使用的是ATSHA204需要获得原厂的授权，获取SPELITE MX+授权USB Key，mail to：<a href="mailto:info@zhongdaic.com">info@zhongdaic.com</a>.使用ATSHA204时不需要烧录程序和烧录器。</p>
+
+
+
+<p>3. SATA-to-SATA加密桥板上预留了mini usb的接口用于链接外置的Dongle，我们可以买一个成品Dongle，也可以使用自己做的Dongle。</p>
+
+
+
+<p><a href="https://item.taobao.com/item.htm?ft=t&amp;id=638454042786">SATA-to-SATA加密桥板（内嵌MX+）</a></p>
+
+
+
+<p><a href="https://item.taobao.com/item.htm?ft=t&amp;id=638454042786">Dongle（普通）</a></p>
+
+
+
+<p><a href="https://item.taobao.com/item.htm?ft=t&amp;id=638454042786">Dongle（SHA加密）</a></p>
+
+
+
+<p>除了这些主要材料之外，还需要链接的线，如果是芯片，还需要焊接的设备。</p>
+
+
+
+<h3><strong>烧录软件</strong><strong></strong></h3>
+
+
+
+<p>烧录软件是一个标准软件，可以将AES key文件写入到AT24C02，如果不嫌麻烦，也可以自己写一个写入的程序。一般程序界面如下：</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="753" height="479" src="/wp-content/uploads/2021/12/f3151aff4da530b62dbe71aa17e76ae1ff65a67e.png" alt="" class="wp-image-990" srcset="/wp-content/uploads/2021/12/f3151aff4da530b62dbe71aa17e76ae1ff65a67e.png 753w, /wp-content/uploads/2021/12/f3151aff4da530b62dbe71aa17e76ae1ff65a67e-300x191.png 300w" sizes="(max-width: 753px) 100vw, 753px" /></figure>
+
+
+
+<h3><strong>开始DIY</strong><strong></strong></h3>
+
+
+
+<p>我们选用的是Type A USB接口连接作为一个I2C Key 的外接接口，使用VCC、GND、SCL、SDA四根线，其他线无用。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="883" height="225" src="/wp-content/uploads/2021/12/911bb235bad03ac5a0c0dac8043aca5383aab3b0.png" alt="" class="wp-image-991" srcset="/wp-content/uploads/2021/12/911bb235bad03ac5a0c0dac8043aca5383aab3b0.png 883w, /wp-content/uploads/2021/12/911bb235bad03ac5a0c0dac8043aca5383aab3b0-300x76.png 300w, /wp-content/uploads/2021/12/911bb235bad03ac5a0c0dac8043aca5383aab3b0-768x196.png 768w" sizes="(max-width: 883px) 100vw, 883px" /></figure>
+
+
+
+<p>1. 将AT24C系列的EPROM通过连接线连接到USB接口的写入转接板。线序按照板卡标识线序对应即可。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="900" height="371" src="/wp-content/uploads/2021/12/1811de5f0eb43cd6c0739c266d31a7528b5afdd4.png" alt="" class="wp-image-992" srcset="/wp-content/uploads/2021/12/1811de5f0eb43cd6c0739c266d31a7528b5afdd4.png 900w, /wp-content/uploads/2021/12/1811de5f0eb43cd6c0739c266d31a7528b5afdd4-300x124.png 300w, /wp-content/uploads/2021/12/1811de5f0eb43cd6c0739c266d31a7528b5afdd4-768x317.png 768w" sizes="(max-width: 900px) 100vw, 900px" /></figure>
+
+
+
+<p>2. 将USB的转接板插入电脑</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="887" height="433" src="/wp-content/uploads/2021/12/4f62f6b043cccc5e1c45ca2a62ede9171fa6b018.png" alt="" class="wp-image-993" srcset="/wp-content/uploads/2021/12/4f62f6b043cccc5e1c45ca2a62ede9171fa6b018.png 887w, /wp-content/uploads/2021/12/4f62f6b043cccc5e1c45ca2a62ede9171fa6b018-300x146.png 300w, /wp-content/uploads/2021/12/4f62f6b043cccc5e1c45ca2a62ede9171fa6b018-768x375.png 768w" sizes="(max-width: 887px) 100vw, 887px" /></figure>
+
+
+
+<p>3. 启动写入程序CH341A1.16（可选用其他的USB转接板及对应的程序）</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="887" height="433" src="/wp-content/uploads/2021/12/4f62f6b043cccc5e1c45ca2a62ede9171fa6b018-1.png" alt="" class="wp-image-994" srcset="/wp-content/uploads/2021/12/4f62f6b043cccc5e1c45ca2a62ede9171fa6b018-1.png 887w, /wp-content/uploads/2021/12/4f62f6b043cccc5e1c45ca2a62ede9171fa6b018-1-300x146.png 300w, /wp-content/uploads/2021/12/4f62f6b043cccc5e1c45ca2a62ede9171fa6b018-1-768x375.png 768w" sizes="(max-width: 887px) 100vw, 887px" /></figure>
+
+
+
+<p>4. 编辑CBC 格式的二进制Key文件，或直接导入已经做好的000000的二进制密钥文件cbckey.bin</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="740" height="467" src="/wp-content/uploads/2021/12/bb7fee8b7c648cf7c387e456632e5bb849784934.png" alt="" class="wp-image-995" srcset="/wp-content/uploads/2021/12/bb7fee8b7c648cf7c387e456632e5bb849784934.png 740w, /wp-content/uploads/2021/12/bb7fee8b7c648cf7c387e456632e5bb849784934-300x189.png 300w" sizes="(max-width: 740px) 100vw, 740px" /></figure>
+
+
+
+<p>Key文件是一个128/256的二进制密钥，可以从文件导入，也可以直接在界面上编辑。</p>
+
+
+
+<p>5. 取下USB设备，按照入下线序焊接到Type A USB接口</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="900" height="243" src="/wp-content/uploads/2021/12/c83615c7c3e14d11b8da7959226175329b5a96c4.png" alt="" class="wp-image-996" srcset="/wp-content/uploads/2021/12/c83615c7c3e14d11b8da7959226175329b5a96c4.png 900w, /wp-content/uploads/2021/12/c83615c7c3e14d11b8da7959226175329b5a96c4-300x81.png 300w, /wp-content/uploads/2021/12/c83615c7c3e14d11b8da7959226175329b5a96c4-768x207.png 768w" sizes="(max-width: 900px) 100vw, 900px" /></figure>
+
+
+
+<p>6. 做防护处理后，插入桥板测试</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="889" height="667" src="/wp-content/uploads/2021/12/26b7a4242ab8429a9684888326fdfc9e929f03c3.png" alt="" class="wp-image-997" srcset="/wp-content/uploads/2021/12/26b7a4242ab8429a9684888326fdfc9e929f03c3.png 889w, /wp-content/uploads/2021/12/26b7a4242ab8429a9684888326fdfc9e929f03c3-300x225.png 300w, /wp-content/uploads/2021/12/26b7a4242ab8429a9684888326fdfc9e929f03c3-768x576.png 768w" sizes="(max-width: 889px) 100vw, 889px" /></figure>
+
+
+
+<p>Dongle插上，这个加密桥板就正常工作，对应的存储就加密读写；不插桥板就不工作，对应的存储也就不工作。</p>
+
+
+
+<p>以上就是Dongle的制作过程，只是AT24C02这种非加密的Dongle的制作，加密的另外再展示。Dongle、SATA-to-SATA桥板都有成熟的成品，大家可以在淘宝上直接购买，制作过程只是告诉大家原理如何！有问题请给我发邮件，u@cloudkey.net.cn 。祝你好运！</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/989/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

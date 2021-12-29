@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>手册-SPELITE MX+ &#8211; WBMIKU密库</title>
+	<atom:link href="/archives/category/sc-mxp/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Tue, 07 Dec 2021 01:22:16 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2021/11/cropped-logo-2-32x32.png</url>
+	<title>手册-SPELITE MX+ &#8211; WBMIKU密库</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>SiliconGo 双份区SSD使用手册</title>
+		<link>/archives/999</link>
+					<comments>/archives/999#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Tue, 07 Dec 2021 01:20:34 +0000</pubDate>
+				<category><![CDATA[手册-SPELITE MX+]]></category>
+		<guid isPermaLink="false">/?p=999</guid>
+
+					<description><![CDATA[SiliconGo 双份区SSD使用手册 桂格半导体SiliconGo的双份区SSD大家在B站、好看视频、MI [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h2><strong>SiliconGo 双份区SSD使用手册</strong><strong></strong></h2>
+
+
+
+<p>桂格半导体SiliconGo的双份区SSD大家在B站、好看视频、MIKU公众号都有看过展示，但是具体使用上还是有些细节不清楚，包括UI是否可以修改等。这个手册详细带你了解细节！</p>
+
+
+
+<p>手册是在Window下的使用说明，你需要有一块双份区的SSD，或者也可以用双份区的SATA-to-SATA加密桥板+普通SSD的组合来代替也可以。<strong>废话少说，让我们开始吧！</strong>.</p>
+
+
+
+<h2><strong>产品简介</strong><strong></strong></h2>
+
+
+
+<p>桂格半导体SiliconGo的双份区SSD是一款2.5” 标准的SSD。具备一个明文分区、一个密文分区两个分区，每个分区各50%的容量。有512G、1T、2T、4T四种规格。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="840" height="591" src="/wp-content/uploads/2021/12/96d2a1524cc0754b6767ed845a38249e57c9a6b9.png" alt="" class="wp-image-1000" srcset="/wp-content/uploads/2021/12/96d2a1524cc0754b6767ed845a38249e57c9a6b9.png 840w, /wp-content/uploads/2021/12/96d2a1524cc0754b6767ed845a38249e57c9a6b9-300x211.png 300w, /wp-content/uploads/2021/12/96d2a1524cc0754b6767ed845a38249e57c9a6b9-768x540.png 768w" sizes="(max-width: 840px) 100vw, 840px" /></figure>
+
+
+
+<p>我们拿到的样品是512G的。datasheet解释权归桂格半导体所有，索取详细datasheet，请联系<a href="http://www.silicongo.com/">SiliconGO</a>.</p>
+
+
+
+<h3><strong>FEATURES</strong><strong></strong></h3>
+
+
+
+<p>标准手册是英文的，我们适当翻译：</p>
+
+
+
+<ul><li>Security with AES 256-bit hardware encryption &#8211; Best secure than another solution.</li><li>High-speed R/W – 6Gbps Real Time Encrypted.</li><li>Hardware Encryption – More secure.</li><li>&gt;1T Disk – Support 1T.</li><li>Erasure – Fast erase and destroy.</li></ul>
+
+
+
+<p>标注采用的是AES 256 bit加密，实时读写6Gbps，大约500MB,跟大部分的SATA SSD读写性能差不多，也就是加密并没有损伤其读写性能；支持1T以上容量的加密；支持销毁；</p>
+
+
+
+<h3><strong>开始实操</strong><strong></strong></h3>
+
+
+
+<p>为了操作更加方便，我们选择将双份区SSD放到一个USB的移动硬盘盒里，这样可以通过USB接口插拔，比较方便。</p>
+
+
+
+<p>1. 把双份区SSD放入USB移动硬盘盒</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="846" height="365" src="/wp-content/uploads/2021/12/9c37a433ed9bf16053a8b03157ecad9143c92e2b.png" alt="" class="wp-image-1001" srcset="/wp-content/uploads/2021/12/9c37a433ed9bf16053a8b03157ecad9143c92e2b.png 846w, /wp-content/uploads/2021/12/9c37a433ed9bf16053a8b03157ecad9143c92e2b-300x129.png 300w, /wp-content/uploads/2021/12/9c37a433ed9bf16053a8b03157ecad9143c92e2b-768x331.png 768w" sizes="(max-width: 846px) 100vw, 846px" /></figure>
+
+
+
+<p>定义初始菜单，默认不带参数时显示操作指令和使用方法，-S、-L、-E、-D、-C共五个参数选项，分别对应检查Enigma、登录、加密文件、解密文件、修改PIN。</p>
+
+
+
+<p>构建效果如下：</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1024" height="549" src="/wp-content/uploads/2021/12/下载-1024x549.png" alt="" class="wp-image-1010" srcset="/wp-content/uploads/2021/12/下载-1024x549.png 1024w, /wp-content/uploads/2021/12/下载-300x161.png 300w, /wp-content/uploads/2021/12/下载-768x412.png 768w, /wp-content/uploads/2021/12/下载.png 1169w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>2. 插入电脑USB</p>
+
+
+
+<p>电脑自动识别到两个分区。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="900" height="423" src="/wp-content/uploads/2021/12/abbb1b10b57ed9fd04751cdda5892ef01c9447ba.png" alt="" class="wp-image-1002" srcset="/wp-content/uploads/2021/12/abbb1b10b57ed9fd04751cdda5892ef01c9447ba.png 900w, /wp-content/uploads/2021/12/abbb1b10b57ed9fd04751cdda5892ef01c9447ba-300x141.png 300w, /wp-content/uploads/2021/12/abbb1b10b57ed9fd04751cdda5892ef01c9447ba-768x361.png 768w" sizes="(max-width: 900px) 100vw, 900px" /></figure>
+
+
+
+<p>其中一个分区是明文分区，主机可以识别，并读出盘里的内容。另外一个分区是密文分区，主机识别到，但是打不开。</p>
+
+
+
+<p>3. 运行密文分区身份识别APP，进行身份识别。</p>
+
+
+
+<p>在明文分区下有一个原厂出场的APP，点击运行。输入PIN码进行登录。出厂默认密码：000000</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="450" height="314" src="/wp-content/uploads/2021/12/ad2f81c34ce21f4932a9f6c8c75c4747c65968f5.png" alt="" class="wp-image-1003" srcset="/wp-content/uploads/2021/12/ad2f81c34ce21f4932a9f6c8c75c4747c65968f5.png 450w, /wp-content/uploads/2021/12/ad2f81c34ce21f4932a9f6c8c75c4747c65968f5-300x209.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="450" height="366" src="/wp-content/uploads/2021/12/ea452c8803aa16da02c5998c523f3f0ad3a4e886.png" alt="" class="wp-image-1004" srcset="/wp-content/uploads/2021/12/ea452c8803aa16da02c5998c523f3f0ad3a4e886.png 450w, /wp-content/uploads/2021/12/ea452c8803aa16da02c5998c523f3f0ad3a4e886-300x244.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure>
+
+
+
+<p>这时密文分区解密，在资源管理器可以看到，并打开这个分区。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="838" height="514" src="/wp-content/uploads/2021/12/0dbfe91bcc740be44cfb98e5085ae8fb1b8ccd12.png" alt="" class="wp-image-1005" srcset="/wp-content/uploads/2021/12/0dbfe91bcc740be44cfb98e5085ae8fb1b8ccd12.png 838w, /wp-content/uploads/2021/12/0dbfe91bcc740be44cfb98e5085ae8fb1b8ccd12-300x184.png 300w, /wp-content/uploads/2021/12/0dbfe91bcc740be44cfb98e5085ae8fb1b8ccd12-768x471.png 768w" sizes="(max-width: 838px) 100vw, 838px" /></figure>
+
+
+
+<p>4. 打开明文分区的APP文件夹，我们做些DIY</p>
+
+
+
+<p>在APP目录有一个隐藏目录\Resource,打开这个目录</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="600" height="297" src="/wp-content/uploads/2021/12/fc95a4adfedf8dd0c9b3d0b1760dcc6747db94c6.png" alt="" class="wp-image-1006" srcset="/wp-content/uploads/2021/12/fc95a4adfedf8dd0c9b3d0b1760dcc6747db94c6.png 600w, /wp-content/uploads/2021/12/fc95a4adfedf8dd0c9b3d0b1760dcc6747db94c6-300x149.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></figure>
+
+
+
+<p>目录下的图片文件更换后，就可以在UI上发生很多变化。大家可以自己试试！还有Config.ini也可以修改，不过不要随便改啊！</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="900" height="351" src="/wp-content/uploads/2021/12/e0d46d37377cebb1dc703a818b1f4b7e7951d19c.png" alt="" class="wp-image-1007" srcset="/wp-content/uploads/2021/12/e0d46d37377cebb1dc703a818b1f4b7e7951d19c.png 900w, /wp-content/uploads/2021/12/e0d46d37377cebb1dc703a818b1f4b7e7951d19c-300x117.png 300w, /wp-content/uploads/2021/12/e0d46d37377cebb1dc703a818b1f4b7e7951d19c-768x300.png 768w" sizes="(max-width: 900px) 100vw, 900px" /></figure>
+
+
+
+<p>以上是双份区SSD的使用方法。还做了些DIY的操作，有点儿过了啊！有问题请给我发邮件，u@cloudkey.net.cn 。祝你好运！</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/999/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

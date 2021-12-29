@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>手册-Enigma4.0 &#8211; WBMIKU密库</title>
+	<atom:link href="/archives/category/sc-e4/feed" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description></description>
+	<lastBuildDate>Wed, 29 Dec 2021 13:13:04 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2021/11/cropped-logo-2-32x32.png</url>
+	<title>手册-Enigma4.0 &#8211; WBMIKU密库</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Enigma API 在linux下的调用</title>
+		<link>/archives/1012</link>
+					<comments>/archives/1012#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Tue, 07 Dec 2021 01:25:51 +0000</pubDate>
+				<category><![CDATA[手册-Enigma4.0]]></category>
+		<guid isPermaLink="false">/?p=1012</guid>
+
+					<description><![CDATA[Enigma API 在linux下的调用 ZhongDaIC的MX+开源了Enigma API的接口调用，允 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h2><strong>Enigma API 在linux下的调用</strong><strong></strong></h2>
+
+
+
+<p>ZhongDaIC的MX+开源了Enigma API的接口调用，允许开发者自己开发Enigma的UI，分为Linux、Windows、MAC三个版本的API，调用方法类似，只是API库不同。我们今天解释Linux下的调用！</p>
+
+
+
+<p>完整自己开发Enigma UI需要三个基础条件：Enigma开发板（或Enigma产品）、API授权文件、Gcc编译器。<strong>废话少说，让我们开始吧！</strong>.</p>
+
+
+
+<h2><strong>条件准备</strong><strong></strong></h2>
+
+
+
+<p>1. Enigma开发板有很多个版本，也有很多方案商的捆绑方案，我们这里通过WB MIKU获得的是普通的Enigma开发板，当然也可以作为产品使用。 通过淘宝直接下单即可：</p>
+
+
+
+<p><a href="https://item.taobao.com/item.htm?ft=t&amp;id=638454042786">Enigma4.0 开发板</a></p>
+
+
+
+<p>2. 使用Enigma API需要从官方获得API授权，授权分为测试开发授权和正式授权，两个授权的API不能通用，我们这里以测试授权进行示例。 获取授权mail to：<a href="mailto:info@zhongdaic.com">info@zhongdaic.com</a>.</p>
+
+
+
+<p>3. gcc编译器比较简单，一般的Linux的OS都内带gcc。推荐使用Ubuntu 16.04.6 作为开发环境。</p>
+
+
+
+<h3><strong>硬件</strong><strong></strong></h3>
+
+
+
+<p>Enigma开发板的硬件比较简单，USB 接口用于连接到PC。开发板上就2颗芯片，1颗USB转SATA的桥片，1颗ZhongDaIC的SPELITE MX+加密桥片，后面是一个M.2接口的插槽，我们可以自己选择接多大容量的存储。注意这个M.2是 NGFF的，不要选错哟！</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="450" height="255" src="/wp-content/uploads/2021/12/c2039678d19b14ec37844416df2793e77286991d.png" alt="" class="wp-image-1013" srcset="/wp-content/uploads/2021/12/c2039678d19b14ec37844416df2793e77286991d.png 450w, /wp-content/uploads/2021/12/c2039678d19b14ec37844416df2793e77286991d-300x170.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="450" height="245" src="/wp-content/uploads/2021/12/b40b43899754391a2d1b9a0d22e90fa06638e69f.png" alt="" class="wp-image-1014" srcset="/wp-content/uploads/2021/12/b40b43899754391a2d1b9a0d22e90fa06638e69f.png 450w, /wp-content/uploads/2021/12/b40b43899754391a2d1b9a0d22e90fa06638e69f-300x163.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure>
+
+
+
+<h3><strong>授权文件</strong><strong></strong></h3>
+
+
+
+<p>授权文件是一个标准的.a库。.a库内嵌授权码。我试过了不同的授权不能通用。授权文件包括如下几个文件：</p>
+
+
+
+<ul><li>Mxlib.a</li><li>Mxlib.h</li><li>Enigma 4.0 API For Linux Guide 1.0.3.pdf</li></ul>
+
+
+
+<p>其中Mxlib.a和Mxlib.h是Gcc编译和调用需要的库文件。Enigma 4.0 API For Linux Guide 1.0.3.pdf是API使用手册，其中有各种函数的详细调用方法和说明。</p>
+
+
+
+<h3><strong>开始DIY Enigma UI</strong><strong></strong></h3>
+
+
+
+<p>在Linux下新建一个gcc project，我们新建一个Enigma.c作为主文件，并将Mxlib.a和Mxlib.h放入根目录下。在Enigma.c主要实现如下几个功能：</p>
+
+
+
+<ul><li>硬件检查</li><li>登录Login</li><li>文件加密Encrypt File</li><li>文件解密Decrypt File</li><li>修改登录密码Change PIN</li></ul>
+
+
+
+<p>1. 首先构建一个菜单，可以选择使用那个功能</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="741" height="551" src="/wp-content/uploads/2021/12/bf952ad3637226b354707fa1d759e25c21c41369.png" alt="" class="wp-image-1015" srcset="/wp-content/uploads/2021/12/bf952ad3637226b354707fa1d759e25c21c41369.png 741w, /wp-content/uploads/2021/12/bf952ad3637226b354707fa1d759e25c21c41369-300x223.png 300w" sizes="(max-width: 741px) 100vw, 741px" /></figure>
+
+
+
+<p>定义初始菜单，默认不带参数时显示操作指令和使用方法，-S、-L、-E、-D、-C共五个参数选项，分别对应检查Enigma、登录、加密文件、解密文件、修改PIN。</p>
+
+
+
+<p>构建效果如下：</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="900" height="179" src="/wp-content/uploads/2021/12/6a9702abae62eab733dfcc5a6bd757517bf8e925.png" alt="" class="wp-image-1016" srcset="/wp-content/uploads/2021/12/6a9702abae62eab733dfcc5a6bd757517bf8e925.png 900w, /wp-content/uploads/2021/12/6a9702abae62eab733dfcc5a6bd757517bf8e925-300x60.png 300w, /wp-content/uploads/2021/12/6a9702abae62eab733dfcc5a6bd757517bf8e925-768x153.png 768w" sizes="(max-width: 900px) 100vw, 900px" /></figure>
+
+
+
+<p>2. main()主程序</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="900" height="680" src="/wp-content/uploads/2021/12/f5ee94db87ddab3b8286a1a6c478ce3c0fd9a32a.png" alt="" class="wp-image-1017" srcset="/wp-content/uploads/2021/12/f5ee94db87ddab3b8286a1a6c478ce3c0fd9a32a.png 900w, /wp-content/uploads/2021/12/f5ee94db87ddab3b8286a1a6c478ce3c0fd9a32a-300x227.png 300w, /wp-content/uploads/2021/12/f5ee94db87ddab3b8286a1a6c478ce3c0fd9a32a-768x580.png 768w" sizes="(max-width: 900px) 100vw, 900px" /></figure>
+
+
+
+<p>主程序启动，读取参数，并按照参数选择执行。无参数时调用菜单，有参数时先调用open()检查Enigma是否存在？</p>
+
+
+
+<p>构建效果如下：</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="600" height="308" src="/wp-content/uploads/2021/12/34370a6ca074ac8c3bd257c9d0cf6e61ad6f9133.png" alt="" class="wp-image-1018" srcset="/wp-content/uploads/2021/12/34370a6ca074ac8c3bd257c9d0cf6e61ad6f9133.png 600w, /wp-content/uploads/2021/12/34370a6ca074ac8c3bd257c9d0cf6e61ad6f9133-300x154.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="450" height="281" src="/wp-content/uploads/2021/12/346bc7d7f17511cac517f1b811706ae1ce442cee.png" alt="" class="wp-image-1019" srcset="/wp-content/uploads/2021/12/346bc7d7f17511cac517f1b811706ae1ce442cee.png 450w, /wp-content/uploads/2021/12/346bc7d7f17511cac517f1b811706ae1ce442cee-300x187.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure>
+
+
+
+<p>首选调用MXAPIVersion()获取Enigma的硬件版本号，获取硬件版本号后，再调用checkLoginStatus()检查登录状态。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="900" height="600" src="/wp-content/uploads/2021/12/c100434780f10f4c08921f87ee2b47864b51610b.png" alt="" class="wp-image-1020" srcset="/wp-content/uploads/2021/12/c100434780f10f4c08921f87ee2b47864b51610b.png 900w, /wp-content/uploads/2021/12/c100434780f10f4c08921f87ee2b47864b51610b-300x200.png 300w, /wp-content/uploads/2021/12/c100434780f10f4c08921f87ee2b47864b51610b-768x512.png 768w" sizes="(max-width: 900px) 100vw, 900px" /></figure>
+
+
+
+<p>3. 调用Login、Encrypt、Decrypt、ChangePIN()等函数</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="900" height="575" src="/wp-content/uploads/2021/12/fccf76fc10a0d86502cf12bdca0ef85cd4eac6fc.png" alt="" class="wp-image-1021" srcset="/wp-content/uploads/2021/12/fccf76fc10a0d86502cf12bdca0ef85cd4eac6fc.png 900w, /wp-content/uploads/2021/12/fccf76fc10a0d86502cf12bdca0ef85cd4eac6fc-300x192.png 300w, /wp-content/uploads/2021/12/fccf76fc10a0d86502cf12bdca0ef85cd4eac6fc-768x491.png 768w" sizes="(max-width: 900px) 100vw, 900px" /></figure>
+
+
+
+<p>分别调用mxLoginPIN()函数实现Login；调用FileAES()函数实现文件加密和文件解密</p>
+
+
+
+<p>构建效果如下：</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="600" height="647" src="/wp-content/uploads/2021/12/1ed4aefe5c9ebdc63b51a6116cb451760c38331e.png" alt="" class="wp-image-1022" srcset="/wp-content/uploads/2021/12/1ed4aefe5c9ebdc63b51a6116cb451760c38331e.png 600w, /wp-content/uploads/2021/12/1ed4aefe5c9ebdc63b51a6116cb451760c38331e-278x300.png 278w" sizes="(max-width: 600px) 100vw, 600px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="450" height="281" src="/wp-content/uploads/2021/12/346bc7d7f17511cac517f1b811706ae1ce442cee-1.png" alt="" class="wp-image-1023" srcset="/wp-content/uploads/2021/12/346bc7d7f17511cac517f1b811706ae1ce442cee-1.png 450w, /wp-content/uploads/2021/12/346bc7d7f17511cac517f1b811706ae1ce442cee-1-300x187.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></figure>
+
+
+
+<p>以上就是在Linux下Enigma API的调用分析，我使用了传统的linux 指令行方式，可以在Server和Desktop版本的UB16.04.6上使用，如果你单纯在Desktop上使用，可以做成图形化的界面！有问题请给我发邮件，u@cloudkey.net.cn 。祝你好运！</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/1012/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
