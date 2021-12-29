@@ -12,12 +12,1443 @@
 	<atom:link href="/archives/category/mimaxue/feed" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description></description>
-	<lastBuildDate>Mon, 27 Dec 2021 09:54:10 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 29 Dec 2021 09:01:11 +0000</lastBuildDate>
 	<language>zh-CN</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.8.2</generator>
-</channel>
+
+<image>
+	<url>/wp-content/uploads/2021/11/cropped-logo-2-32x32.png</url>
+	<title>密码学 &#8211; WBMIKU密库</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>编写方法与密码破译</title>
+		<link>/archives/4888</link>
+					<comments>/archives/4888#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Wed, 29 Dec 2021 09:00:40 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[密码学]]></category>
+		<guid isPermaLink="false">/?p=4888</guid>
+
+					<description><![CDATA[编写方法与密码破译 移位式（Transposition cipher）：将字母顺序重新排列，例如‘help m [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h2><a></a><strong><a></a><a></a>编写方法</strong><strong>与</strong><strong>密码破译</strong><strong></strong></h2>
+
+
+
+<p><a></a><a></a><a></a><a></a>移位式（Transposition cipher）：将字母顺序重新排列，例如‘help me’变成‘ehpl em’；与替代式（<a href="https://baike.baidu.com/item/substitution">substitution</a><a href="https://baike.baidu.com/item/cipher">cipher</a>）：有系统地将一组字母换成其他字母或符号，例如‘fly at once’变成‘gmz bu podf’（每个字母用下一个字母取代）。 这两种单纯的方式都不足以提供足够的<a href="https://baike.baidu.com/item/%E6%9C%BA%E5%AF%86%E6%80%A7">机密性</a>。<a href="https://baike.baidu.com/item/%E5%87%AF%E6%92%92%E5%AF%86%E7%A0%81">凯撒密码</a>是最经典的替代法，据传由古<a href="https://baike.baidu.com/item/%E7%BD%97%E9%A9%AC%E5%B8%9D%E5%9B%BD">罗马帝国</a>的皇帝<a href="https://baike.baidu.com/item/%E5%87%AF%E6%92%92">凯撒</a>所发明，用在与远方将领的通讯上，每个字母被往后位移三格字母所取代。<a></a><a></a><a></a><a></a></p>
+
+
+
+<p>加密旨在确保通讯的秘密性，例如间谍、<a href="https://baike.baidu.com/item/%E5%86%9B%E4%BA%8B%E5%B0%86%E9%A2%86">军事将领</a>、外交人员间的通讯，同时也有宗教上的应用。举例来说，早期基督徒使用密码学模糊他们写作的部份观点以避免遭受迫害。<a href="https://baike.baidu.com/item/666">666</a>或部分更早期的手稿上的<a href="https://baike.baidu.com/item/616">616</a>是新约<a href="https://baike.baidu.com/item/%E5%9F%BA%E7%9D%A3">基督</a>经启示录所指的野兽的数字，常用来暗指专迫害基督徒的古罗马皇帝<a href="https://baike.baidu.com/item/%E5%B0%BC%E7%A6%84">尼禄</a>（<a href="https://baike.baidu.com/item/Nero">Nero</a>）。史上也有部份希伯来文密码的记载。古印度欲经中也提及爱侣可利用密码来通信。<a href="https://baike.baidu.com/item/%E9%9A%90%E5%86%99%E6%9C%AF">隐写术</a>也出现在古代，希罗多德记载将信息刺青在奴隶的头皮上，较近代的隐写术使用<a href="https://baike.baidu.com/item/%E9%9A%90%E5%BD%A2%E5%A2%A8%E6%B0%B4">隐形墨水</a>、缩影术（microdots）或<a href="https://baike.baidu.com/item/%E6%95%B0%E5%AD%97%E6%B0%B4%E5%8D%B0">数字水印</a>来隐藏信息。</p>
+
+
+
+<p>宋曾公亮、<a href="https://baike.baidu.com/item/%E4%B8%81%E5%BA%A6">丁度</a>等编撰《<a href="https://baike.baidu.com/item/%E6%AD%A6%E7%BB%8F%E6%80%BB%E8%A6%81">武经总要</a>》“字验”记载，北宋前期，在作战中曾用一首五言律诗的40个汉字，分别代表40种情况或要求，这种方式已具有了密本体制的特点。</p>
+
+
+
+<p>1871年，由<a href="https://baike.baidu.com/item/%E4%B8%8A%E6%B5%B7">上海</a>大北水线电报公司选用6899个汉字，代以四码数字，成为中国最初的商用明码本，同时也设计了由明码本改编为密本及进行加乱的方法。在此基础上，逐步发展为各种比较复杂的密码。</p>
+
+
+
+<p>在欧洲，公元前405年，<a href="https://baike.baidu.com/item/%E6%96%AF%E5%B7%B4%E8%BE%BE">斯巴达</a>的将领来山得使用了原始的错乱密码；公元前一世纪，古罗马皇帝<a href="https://baike.baidu.com/item/%E5%87%AF%E6%92%92">凯撒</a>曾使用有序的单表<a href="https://baike.baidu.com/item/%E4%BB%A3%E6%9B%BF%E5%AF%86%E7%A0%81">代替密码</a>；之后逐步发展为密本、多表代替及加乱等各种密码体制。</p>
+
+
+
+<p>二十世纪初，产生了最初的可以实用的机械式和电动式密码机，同时出现了商业密码机公司和市场。60年代后，电子密码机得到较快的发展和广泛的应用，使密码的发展进入了一个新的阶段。</p>
+
+
+
+<h2><a></a><a></a><a></a>密码破译</h2>
+
+
+
+<p>密码破译是随着密码的使用而逐步产生和发展的。1412年，波斯人卡勒<a href="https://baike.baidu.com/item/%E5%8D%A1%E5%B0%9A">卡尚</a>迪所编的百科全书中载有破译<a href="https://baike.baidu.com/item/%E7%AE%80%E5%8D%95%E4%BB%A3%E6%9B%BF%E5%AF%86%E7%A0%81">简单代替密码</a>的方法。到16世纪末期，欧洲一些国家设有专职的破译人员，以破译截获的密信。密码破译技术有了相当的发展。1863年<a href="https://baike.baidu.com/item/%E6%99%AE%E9%B2%81%E5%A3%AB%E4%BA%BA">普鲁士人</a>卡西斯基所著《密码和破译技术》，以及1883年法国人克尔克<a href="https://baike.baidu.com/item/%E9%9C%8D%E5%A4%AB">霍夫</a>所著《军事密码学》等著作，都对密码学的理论和方法做过一些论述和探讨。1949年美国人香农发表了《秘密体制的通信理论》一文，应用信息论的原理分析了密码学中的一些基本问题。</p>
+
+
+
+<p>自19世纪以来，由于电报特别是无线电报的广泛使用，为密码通信和第三者的截收都提供了极为有利的条件。通信保密和侦收破译形成了一条斗争十分激烈的隐蔽战线。</p>
+
+
+
+<p>1917年，英国破译了德国外长<a href="https://baike.baidu.com/item/%E9%BD%90%E9%BB%98%E5%B0%94%E6%9B%BC">齐默尔曼</a>的电报，促成了美国对德宣战。1942年，美国从破译<a href="https://baike.baidu.com/item/%E6%97%A5%E6%9C%AC%E6%B5%B7%E5%86%9B">日本海军</a>密报中，获悉日军对中途岛地区的作战意图和兵力部署，从而能以劣势兵力击破日本海军的主力，扭转了<a href="https://baike.baidu.com/item/%E5%A4%AA%E5%B9%B3%E6%B4%8B%E5%9C%B0%E5%8C%BA">太平洋地区</a>的战局。在保卫<a href="https://baike.baidu.com/item/%E8%8B%B1%E4%BC%A6%E4%B8%89%E5%B2%9B">英伦三岛</a>和其他许多著名的历史事件中，密码破译的成功都起到了极其重要的作用，这些事例也从反面说明了密码保密的重要地位和意义。</p>
+
+
+
+<p>当今世界各主要国家的政府都十分重视密码工作，有的设立庞大机构，拨出巨额经费，集中数以万计的专家和科技人员，投入大量高速的<a href="https://baike.baidu.com/item/%E7%94%B5%E5%AD%90%E8%AE%A1%E7%AE%97%E6%9C%BA">电子计算机</a>和其他先进设备进行工作。与此同时，各民间企业和学术界也对密码日益重视，不少数学家、计算机学家和其他有关学科的专家也投身于密码学的研究行列，更加速了密码学的发展。</p>
+
+
+
+<p>在密码已经成为单独的学科，从传统意义上来说，密码学是研究如何把信息转换成一种隐蔽的方式并阻止其他人得到它。</p>
+
+
+
+<p>密码学是一门跨学科科目，从很多领域衍生而来：它可以被看做是信息理论，却使用了大量的数学领域的工具，众所周知的如<a href="https://baike.baidu.com/item/%E6%95%B0%E8%AE%BA">数论</a>和有限数学。</p>
+
+
+
+<p>原始的信息，也就是需要被密码保护的信息，被称为明文。加密是把原始信息转换成不可读形式，也就是密码的过程。解密是加密的逆过程，从加密过的信息中得到原始信息。cipher是加密和解密时使用的算法。</p>
+
+
+
+<p>最早的<a href="https://baike.baidu.com/item/%E9%9A%90%E5%86%99%E6%9C%AF">隐写术</a>只需纸笔，<a href="https://baike.baidu.com/item/%E5%8A%A0%E5%AF%86%E6%B3%95">加密法</a>，将字母的顺序重新排列；替换加密法，将一组字母换成其他字母或符号。经典加密法的资讯易受统计的攻破，资料越多，破解就更容易，使用分析频率就是好办法。经典密码学仍未消失，经常出现在智力游戏之中。在二十世纪早期，包括转轮机在内的一些机械设备被发明出来用于加密，其中最著名的是用于<a href="https://baike.baidu.com/item/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%B8%96%E7%95%8C%E5%A4%A7%E6%88%98">第二次世界大战</a>的密码机Enigma。这些机器产生的密码相当大地增加了密码分析的难度。<a href="https://baike.baidu.com/item/%E6%AF%94%E5%A6%82">比如</a>针对Enigma各种各样的攻击，在付出了相当大的努力后才得以成功。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/4888/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>系统的安全性—密码学</title>
+		<link>/archives/4879</link>
+					<comments>/archives/4879#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Wed, 29 Dec 2021 09:00:14 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[密码学]]></category>
+		<guid isPermaLink="false">/?p=4879</guid>
+
+					<description><![CDATA[系统的安全性—密码学 对称加密 在1976年之前，所有的加密算法采用的都是对称加密的模式。 场景：现在A要给B [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h2>系统的安全性—密码学</h2>
+
+
+
+<p>对称加密</p>
+
+
+
+<p>在1976年之前，所有的加密算法采用的都是对称加密的模式。</p>
+
+
+
+<p>场景：现在A要给B传递一则信息，其中，m是要传递的明文，A把m用密钥e进行加密成密文C后传递给B，同时一起传递的还有密钥e；B收到后对密文C用密钥e进行解密，得到明文m。该过程实现了消息的加密传输。</p>
+
+
+
+<p>由于加密和解密使用同样规则（简称&#8221;密钥&#8221;），这被称为&#8221;对称加密算法&#8221;。这种加密模式有一个最大弱点：A必须把加密规则告诉B，否则无法解密，因此，保存和传递密钥，成为了一大难题。同时也存在着安全隐患：无论密钥算法再复杂也存在着被窃听的可能性。窃听者可以通过穷举尝试以前的算法或者通过数字的频率截取足够多的密文进行多次尝试，最终也能试出来密钥，对安全产生威胁。那如果我们发一段文字换一个密钥呢？但密钥的分发又成为一个问题，怎么才能把密钥进行安全的分发呢？目前来看，现在的量子保密通信可以实现密钥分发的保密性，但实际上这种方式并未做到普及。</p>
+
+
+
+<p>1976年，有人提出了新的“密钥交换算法”，这种算法使人们认识到，加密和解密可以使用不同的规则，只要这两种规则之间存在某种对应关系即可，这样就避免了直接传递密钥。</p>
+
+
+
+<p>这种新的加密模式被成为“非对称加密算法”。</p>
+
+
+
+<p>非对称加密算法</p>
+
+
+
+<p>场景：B生成两把密钥，即公钥和私钥，公钥是公开的，任何人都可以获得，私钥则是保密的。A获取B的公钥，并用公钥对明文进行加密然后传递给B，B得到密文后用私钥进行解密。公钥加密私钥解密，这就是该算法的“不对称”之处。</p>
+
+
+
+<p>如果公钥加密的消息只有私钥解得开，那么只要私钥不泄露，那么该算法就能实现理论上的保密绝对安全。</p>
+
+
+
+<p>那么这种安全性基于什么样的数学原理呢？我们用RSA算法来进行举例说明。</p>
+
+
+
+<p>场景：A要和B进行通信，那么它该怎么生成公钥和私钥呢？</p>
+
+
+
+<p>第一步，找到两个不相等的质数p和q</p>
+
+
+
+<p>（怎么找质数：</p>
+
+
+
+<p>1. 任意两个质数构成互质关系</p>
+
+
+
+<p>2. 一个数是质数，另一个数只要不是前者的倍数，两者就构成互质关系</p>
+
+
+
+<p>3. 如果两个数之中，较大的那个数是质数，则两者构成互质关系</p>
+
+
+
+<p>4. 1和任意一个自然数是都是互质关系</p>
+
+
+
+<p>5. p是大于1的整数，则p和p-1构成互质关系</p>
+
+
+
+<p>6. p是大于1的奇数，则p和p-2构成互质关系。）</p>
+
+
+
+<p>第二步，做乘法 n=p*q</p>
+
+
+
+<p>第三步，计算n的欧拉函数φ(n)=(p-1)*(q-1)</p>
+
+
+
+<p>下面我们给出推导过程</p>
+
+
+
+<p>任意给定正整数n，在小于等于n的正整数中，有φ(n)个数能与n构成互质关系，比如：n=8，则φ(n)=4</p>
+
+
+
+<p>φ(n)的计算方法并不复杂，为了得出公式，需要分情况讨论：</p>
+
+
+
+<p>1. 如果n=1，则φ(n)=1，因为1与任何数都构成互质关系，包括1自身</p>
+
+
+
+<p>2. 如果n是质数，则φ(n)=n-1，因为质数与小于它的每一个数，都构成互质关系</p>
+
+
+
+<p>3. 如果n是质数的某一个次方，即n=p^k（p为质数，k为大于等于1的整数），则φ(p^k)=p^k-p^k-1，这是因为只有当一个数不包含质数p，才可能与n互质。而包含质数p的数一共有p^(k-1)个，即1×p、2×p、3×p、&#8230;、p^(k-1)×p，把它们去除，剩下的就是与n互质的数。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="436" height="90" src="/wp-content/uploads/2021/12/image-79.png" alt="" class="wp-image-4882" srcset="/wp-content/uploads/2021/12/image-79.png 436w, /wp-content/uploads/2021/12/image-79-300x62.png 300w" sizes="(max-width: 436px) 100vw, 436px" /></figure>
+
+
+
+<p>（欧拉定理是RSA算法的核心，有助于我们理解RSA算法的原理）</p>
+
+
+
+<p>这里可能有人会问mod啊什么的是什么意思，那么我们就来了解一下模反元素：</p>
+
+
+
+<p>如果两个正整数a和n互质，那么一定可以找到整数b，使得 ab-1 被n整除，或者说ab被n除的余数是1。这时，b就叫做a的“模反元素”。比如，3和11互质，那么3的模反元素就是4，因为 (3 × 4)-1 可以被11整除。显然，模反元素不止一个， 4加减11的整数倍都是3的模反元素 {…,-18,-7,4,15,26,…}，即如果b是a的模反元素，则 b+kn 都是a的模反元素。</p>
+
+
+
+<p>欧拉定理可以用来证明模反元素必然存在。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="649" height="324" src="/wp-content/uploads/2021/12/image-80.png" alt="" class="wp-image-4883" srcset="/wp-content/uploads/2021/12/image-80.png 649w, /wp-content/uploads/2021/12/image-80-300x150.png 300w" sizes="(max-width: 649px) 100vw, 649px" /></figure>
+
+
+
+<p>我们接着回到之前的推导过程，根据欧拉公式</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="638" height="111" src="/wp-content/uploads/2021/12/image-82.png" alt="" class="wp-image-4885" srcset="/wp-content/uploads/2021/12/image-82.png 638w, /wp-content/uploads/2021/12/image-82-300x52.png 300w" sizes="(max-width: 638px) 100vw, 638px" /></figure>
+
+
+
+<p>其中，n = p1*p2*p3&#8230;*pr(r是自然数下标，pr是质数)</p>
+
+
+
+<p>所以：<strong>φ(n) = φ(p*q) = pq(1-1/p)(1-1/q) =(p-1)(q-1)</strong></p>
+
+
+
+<p>第四步，随机选择一个整数e，条件是1&lt; e &lt; φ(n)，且e与φ(n) 互质。</p>
+
+
+
+<p>下一步，计算e对于φ(n)的模反元素d。</p>
+
+
+
+<p>所谓“模反元素”就是指有一个整数d，可以使ed被φ(n)除的余数为1</p>
+
+
+
+<p>ed ≡ 1 (mod φ(n))</p>
+
+
+
+<p>换一种表达形式，即为：ed &#8211; 1 = kφ(n)</p>
+
+
+
+<p>于是，找到模反元素d，实质上就是对下面这个二元一次方程求解</p>
+
+
+
+<p>ex + φ(n)y = 1</p>
+
+
+
+<p>我们梳理一下这个过程：</p>
+
+
+
+<p>加密：m^e除以n，求余数C，C即为密文 me ≡ c (mod n)</p>
+
+
+
+<p>解密：C^d除以n，求余数，余数即为明文m &nbsp;cd ≡ m (mod n)</p>
+
+
+
+<p>我们来证明一下为什么用私钥解密就一定可以正确地得到m</p>
+
+
+
+<p>cd&nbsp;≡ m (mod n)，根据加密规则&nbsp;ｍe&nbsp;≡ c (mod n)</p>
+
+
+
+<p>于是，c可以写成这种形式：c = me &#8211; kn</p>
+
+
+
+<p>将c代入要我们要证明的那个解密规则：(me &#8211; kn)d ≡ m (mod n)</p>
+
+
+
+<p>它等同于求证：med ≡ m (mod n)</p>
+
+
+
+<p>由于 ed ≡ 1 (mod φ(n))&nbsp;，所以&nbsp;ed = hφ(n)+1</p>
+
+
+
+<p>将ed代入：mhφ(n)+1 ≡ m (mod n)</p>
+
+
+
+<p>接下来，分成两种情况证明上面这个式子——</p>
+
+
+
+<p>（1）m与n互质，根据欧拉定理，此时：mφ(n)&nbsp;≡ 1 (mod n)</p>
+
+
+
+<p>得到：(mφ(n))h × m ≡ m (mod n)，原式得到证明。</p>
+
+
+
+<p>（2）m与n不是互质关系，此时，由于n等于质数p和q的乘积，所以m必然等于kp或kq。以 m = kp为例，考虑到这时k与q必然互质，则根据欧拉定理，这个式子成立：(kp)q-1 ≡ 1 (mod q)</p>
+
+
+
+<p>进一步得到：[(kp)q-1]h(p-1)&nbsp;× kp ≡ kp (mod q)</p>
+
+
+
+<p>即：(kp)ed ≡ kp (mod q)</p>
+
+
+
+<p>将它改写成下面的等式：(kp)ed = tq + kp</p>
+
+
+
+<p>这时t必然能被p整除，即 t=t&#8217;p&nbsp;(kp)ed&nbsp;= t&#8217;pq + kp</p>
+
+
+
+<p>因为 m=kp，n=pq，所以&nbsp;med&nbsp;≡ m (mod n)</p>
+
+
+
+<p>原式得到证明。</p>
+
+
+
+<p>以上，这样就完成了一个明文用公钥加密成密文，密文用私钥解密成明文的消息传输全过程，至此所有计算完成。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="609" height="552" src="/wp-content/uploads/2021/12/image-83.png" alt="" class="wp-image-4886" srcset="/wp-content/uploads/2021/12/image-83.png 609w, /wp-content/uploads/2021/12/image-83-300x272.png 300w" sizes="(max-width: 609px) 100vw, 609px" /></figure>
+
+
+
+<p>下一步，将n和e封装成公钥，n和d封装成私钥。</p>
+
+
+
+<p>实际应用中，公钥和私钥的数据都采用ASN.1格式表达。</p>
+
+
+
+<p>我们来论证一下这种算法的安全性</p>
+
+
+
+<p>回顾之前的密钥生成步骤，一共出现了6个数字p、q、n、φ(n)、e、d，这6个数字中，公钥用到了两个（n和e），其余四个数字都是不公开的。其中最关键的是d，因为n和d封装成了私钥，一旦d泄露，就等于私钥泄露。</p>
+
+
+
+<p>那么有无在已知n、e的情况下推导出d？我们梳理一下思路：</p>
+
+
+
+<p>（1）ed≡1 (mod φ(n))，只有知道e和φ(n)，才能算出d；</p>
+
+
+
+<p>（2）φ(n)=(p-1)(q-1)，只有知道p和q，才能算出φ(n)；</p>
+
+
+
+<p>（3）n=pq，只有将n因数分解，才能算出p和q。</p>
+
+
+
+<p>所以，如果n能被因数分解，d就能被算出来，意味着私钥被破解</p>
+
+
+
+<p>可实际上，大数的质因数分解是极其困难的。一个RSA算法，它比较常用的是1024位的二进制数，如果想对其进行质因数分解，目前唯一可行的办法就是使用量子计算机进行暴力破解，可即使这样也要耗费大量的资源，是一件非常困难的事情，且密钥越长越难破解，比如2048位的密钥就极其安全。</p>
+
+
+
+<p>结论：RSA算法的安全性以大数质因数分解的困难性为保障。</p>
+
+
+
+<p>我们现在知道了每隔一段时间银行的系统都需要更新一次，包括数字整数也需要不断更新，就是因为银行要不停的更新算法和密钥以保证安全性。理解了本篇文章，是不是又对密码学有了不一样的认识呢？</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/4879/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>密码学起源</title>
+		<link>/archives/4876</link>
+					<comments>/archives/4876#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Wed, 29 Dec 2021 08:58:08 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[密码学]]></category>
+		<guid isPermaLink="false">/?p=4876</guid>
+
+					<description><![CDATA[密码学起源 密码学（Cryptology）一字源自希腊文&#8221;krypto&#8217;s&#8221 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h2>密码学起源</h2>
+
+
+
+<p>密码学（Cryptology）一字源自希腊文&#8221;krypto&#8217;s&#8221;及&#8221;logos&#8221;两字，直译即为&#8221;隐藏&#8221;及&#8221;讯息&#8221;之意。而其使用，可以追溯到大约四千年前。公元二千年，埃及人就将祭文刻在墓碑上。之后人们都是以书写在纸张上的方式，用来传秘密讯息。在二次大战中，密码更是扮演一个举足轻重的角色，许多人认为同盟国之所以能打赢这场战争完全归功于二次大战时所发明的破译密文数位式计算机破解德日密码。西元1949年，Shannon提出第一篇讨论密码系统通讯理论之论文，近代密码学可说是滥觞于斯。直至西元1975年，Diffie与Hellman提出公开金</p>
+
+
+
+<p>匙密码系统之观念，近代密码学之研究方向，正式脱离秘密金匙密码系统之窠臼，蓬勃发展，至今已近二十年。发展至今，已有二大类的密码系统。第一类为对称金钥（Symmetric Key）密码系统，第二类为非对称金钥（Public Key) 密码系统。</p>
+
+
+
+<p>1965年，美国史丹福大学电机工程系&#8211;默克尔、迪菲、<a href="https://baike.baidu.com/item/%E8%B5%AB%E5%B0%94%E6%9B%BC">赫尔曼</a>等三人研究密码学可惜并未有所发现。另外在英国通讯电子保安组（CESG）秘密机构的切尔纳姆发现了还原密码式，但是由于属于秘密机构，所以不能公开。直到1977年麻省理工研究生&#8211;里夫斯，阿德曼发现和切尔曼差不多的式。他们成立RSA Security</p>
+
+
+
+<p>Company (RSA是他们名字的字头）现时值25亿美元，在传送信用卡时起了很大作用。RSA已安装了5亿套产品在 IE,Netscape下的小锁就是RSA的产品。数学挂销第一个发现不是美国，但?是第一个公开。数学挂锁上锁易，还原难，所以受广泛使用，亦即是信息编码保密。</p>
+
+
+
+<p>数学挂锁泛例：</p>
+
+
+
+<p>数学挂锁用单向式：N=pxq &lt;&#8211;例子 N（合成数）=两个质数的乘</p>
+
+
+
+<p>11&#215;17=187=N</p>
+
+
+
+<p>还原单向式公式：C=Me(mod N) *e是M的次数，因为在<a href="https://baike.baidu.com/item/%E8%AE%B0%E4%BA%8B%E6%9C%AC">记事本</a>中打不到*</p>
+
+
+
+<p>M*13*(mod 187)=C *13是M的次数*</p>
+
+
+
+<p>c=165</p>
+
+
+
+<p>x=88 (password kiss)</p>
+
+
+
+<p>88*13*(mod 187)=165 *13是88的次数*</p>
+
+
+
+<p>modN=M</p>
+
+
+
+<p>C*1/e*mod(p-1)(q-1)=88</p>
+
+
+
+<p>C=165</p>
+
+
+
+<p>p=11</p>
+
+
+
+<p>q=17</p>
+
+
+
+<p>answer:mod 187=88</p>
+
+
+
+<p>一般有两种类型密码学被使用：</p>
+
+
+
+<p><strong>symmetric key （对称性的钥匙）</strong>和<strong>public key （公开的钥匙）（也叫 非对称的钥匙）</strong>密码学.</p>
+
+
+
+<p>举一个简单的对称的钥匙密码学的范例，假想从朋友处收到一个通知. 你和你的朋友同意来加解密你们的讯息，</p>
+
+
+
+<p>你们将使用下列演算法：每个字母将会上移三个字母，例如 A=C,B=D，而 Y 和 Z 转一圈回到 A 和 B,</p>
+
+
+
+<p>这个方程式 (&#8220;每个字母上移三个字母&#8221;) 就是送信者使用来加密讯息的钥匙； 而收信者使用相同的钥匙来解密 .</p>
+
+
+
+<p>任何人如果没有钥匙就不能够读此讯息. 因为相同的钥匙视同实用来加密及解密讯息，这个方法是一个对称钥匙</p>
+
+
+
+<p>的演算法. 这类的密码学及是我们所知的秘密钥匙密码学，因为此钥匙 必须被秘密保存于送信者和收信者，以保护资料的完整性.</p>
+
+
+
+<p>非对称性密码学</p>
+
+
+
+<p>非对称性或公开的钥匙 密码学，不同于对称性的 密码学，在于其加密钥匙只适用于单一使用者.</p>
+
+
+
+<p>钥匙被分为两个部分：</p>
+
+
+
+<p>一把私有的钥匙，仅有使用者才拥有.</p>
+
+
+
+<p>一把公开的钥匙，可公开发行配送，只要有要求即取得.</p>
+
+
+
+<p>每支钥匙产生一个被使用来改变<a href="https://baike.baidu.com/item/%E5%86%85%E6%96%87">内文</a>的功能. 私有的钥匙 产生一个 私有改变内文的功能，而公开的钥匙 产生一个 公开改变内文的功能.</p>
+
+
+
+<p>这些功能是反向相关的，例如.，如果一个功能是用来加密讯息，另外一个功能则被用来解密讯息.不论此改变内文功能的次序为何皆不重要.</p>
+
+
+
+<p>公开的钥匙系统的优势是两个使用者能够安全的沟通而不需交换秘密钥匙. 例如，假设一个送信者需要传送一个信息给一个收信者，</p>
+
+
+
+<p>而信息的秘密性是必要的，送信者以收信者的公开的钥匙来加密，而仅有收信者的私有的钥匙能够对此信息解密.</p>
+
+
+
+<p>公开的钥匙密码学是非常适合于提供认证，完整和不能否认的服务，所有的这些服务及是我们所知的数位签名.</p>
+
+
+
+<p>基本原理的密码法，可以分成两种：<a href="https://baike.baidu.com/item/%E7%A7%BB%E4%BD%8D%E6%B3%95">移位法</a>（transposition）和<a href="https://baike.baidu.com/item/%E6%9B%BF%E4%BB%A3%E6%B3%95">替代法</a>（substitution），</p>
+
+
+
+<p><strong>移位法</strong>就是将讯息里面的文字，根据一定的规则改变顺序，这种方法，在文字数量很大的时候，</p>
+
+
+
+<p>便可以显示出它的优势，例如&#8221;Hello World&#8221;才不过10个字母便可以有11708340914350080000种排列的方式。</p>
+
+
+
+<p>另外一种方法，就是<a href="https://baike.baidu.com/item/%E6%9B%BF%E4%BB%A3%E6%B3%95"><strong>替代法</strong></a>，还可以分成两种，一种是<strong>单字替代</strong>，一种是<strong>字母替代</strong>，两种的原理是一样的，</p>
+
+
+
+<p>就是利用文字相对顺序的对应，来改变原来的文章，以英文为例，我们可以把英文字母往后移动三个位置，即：</p>
+
+
+
+<p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+
+
+
+<p>D E F G H I J K L M N O P Q R S T U V W X Y Z A B C</p>
+
+
+
+<p>泛例：Hello World How are you</p>
+
+
+
+<p>khoor zruog krz duh brx</p>
+
+
+
+<p>这句话就变的难以辨认了，而且如果发信人收信人有协定好的话，那还可以把文字之间的空白删除，反正翻译回来的时候，</p>
+
+
+
+<p>可以靠文句的意思，来推测断句断字的时机。而单字替代，则是以每个单字，都去换成另外一个相对应的单字，这样来改写原文，</p>
+
+
+
+<p>变成一个无法辨认其意义的加密文件。</p>
+
+
+
+<p>移位法当然不只限于一种，光是英文字母不考虑大小写，就可以有25种互异的方法，每种密码法，都可视为一种加密法，</p>
+
+
+
+<p>我们称为演算法（algorithm），和一把钥匙（KEY）的组合结果。钥匙是用来指定加密程序的演算细节。以移位法为例，</p>
+
+
+
+<p>演算法是只以密码字母集里的字母，取代明文字母集里面的字母，钥匙便是收发信人定义的密码字母集。</p>
+
+
+
+<p>整个密码学发展的程序，辨识找寻新的演算法，和保护钥匙避免被解密者发现的程序，钥匙在密码学中非常重要，因为即使演算法相同或太简单，</p>
+
+
+
+<p>没有加密的钥匙的话，我们仍然很难去破解加密的文件。以单纯的英文字母，不单纯的平移，而用一个字母一个字母互换的话，不考虑大小写，</p>
+
+
+
+<p>就有403291461126605635584000000种不同的钥匙必须要去测试，才可以得到原来的明文。</p>
+
+
+
+<p><strong>量子密码学</strong>(Jennewein et al.,Quantum Cryptography with EntangledPhotons,Physical Review Letters,May 15,2000,Vol 84,Iss 20,pp. 4729-4732)</p>
+
+
+
+<p>三个独立研究机构首次实验证明利用量子幽灵式的特性来建构密码之可行性，这项研究提供未来对付电脑骇客的防犯之道.</p>
+
+
+
+<p>在这个最新&#8211;也是最安全&#8211;的资料加密解密架构（即量子密码学）中，研究者是采用一对 entangled光子，</p>
+
+
+
+<p>而这对粒子即使相隔远距离的情况下，仍有密切的互动关系.</p>
+
+
+
+<p>entanglement-based 的量子密码学具有唯一的，不可被窃听的传输特性，如果有偷听者想窃取资料，也很容易的可以监测出来.</p>
+
+
+
+<p>简而言之，entanglement process 可以建立完整的，随机的 0与 1 序列提供两端使用者传输资料，如果有骇客从中撷取资料，</p>
+
+
+
+<p>那么这个讯息序列将被改变，用户就会发现有窃听者，并授权放弃被窃听的资料. 这种数位随机序列，或称 “金钥匙”。</p>
+
+
+
+<p>再和资料进行计算 （如互斥或闸 XOR），即加密程序，使得这资料串形成一完全随机序列，这方法就是已知的 one-time pad cipher. 同理，接收端也是靠着金钥匙来进行解密程序。</p>
+
+
+
+<p>在研究中，Los Alamos 研究者模拟一位窃听者窃取传输资料，成功地被侦测出来，并授权用户放弃被窃取的资料。</p>
+
+
+
+<p>而在澳洲的研究团队，则建立了一公里长的光纤来连接两个完全独立的传输，接收站来验证 entangled 密码理论，</p>
+
+
+
+<p>他们建立了金钥匙并成功的传输 Venus 影像. 同时，在 University of Geneva 团队建构超过数公里的光纤，并使用光子频率来验证entangled 密码理论。</p>
+
+
+
+<p>在这些实验中，虽然他们的传输速率较慢，但 entanglement-based 密码理论在未来极有可能超越non-entangled 量子密码理论，</p>
+
+
+
+<p>不仅是传输速率，而且在预防资料被窃取方面，所需要的额外光子也比较少。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/4876/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>密码学的功能和学科</title>
+		<link>/archives/4874</link>
+					<comments>/archives/4874#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Wed, 29 Dec 2021 08:57:32 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[密码学]]></category>
+		<guid isPermaLink="false">/?p=4874</guid>
+
+					<description><![CDATA[密码学的功能和学科 数据加密的基本思想是通过变换信息的表示形式来伪装需要保护的敏感信息，使非授权者不能了解被保 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h2><strong>密码学的</strong><strong>功能</strong><strong>和学科</strong><strong></strong></h2>
+
+
+
+<p><a href="https://baike.baidu.com/item/%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%AF%86">数据加密</a>的基本思想是通过变换信息的表示形式来伪装需要保护的敏感<a href="https://baike.baidu.com/item/%E4%BF%A1%E6%81%AF">信息</a>，使非授权者不能了解被保护信息的内容。网络安全使用密码学来辅助完成在传递敏感信息的的相关问题，主要包括：</p>
+
+
+
+<p>(I）机密性（confidentiality)</p>
+
+
+
+<p>仅有发送方和指定的接收方能够理解传输的报文内容。窃听者可以截取到加密了的报文，但不能还原出原来的信息，即不能得到报文内容。</p>
+
+
+
+<p>(II）鉴别（authentication)</p>
+
+
+
+<p>发送方和接收方都应该能证实通信过程所涉及的另一方， 通信的另一方确实具有他们所声称的身份。即第三者不能冒充跟你通信的对方，能对对方的身份进行鉴别。</p>
+
+
+
+<p>(III）报文完整性（message intergrity)</p>
+
+
+
+<p>即使发送方和接收方可以互相鉴别对方，但他们还需要确保其通信的内容在<a href="https://baike.baidu.com/item/%E4%BC%A0%E8%BE%93">传输</a>过程中未被改变。</p>
+
+
+
+<p>(IV）不可否认性（non-repudiation)</p>
+
+
+
+<p>如果人们收到通信对方的报文后，还要证实报文确实来自所宣称的发送方，发送方也不能在发送报文以后否认自己发送过报文。</p>
+
+
+
+<h3><a></a><strong><a></a><a></a><a></a><a></a><a></a><a></a>传统学科</strong><strong></strong></h3>
+
+
+
+<p>Autokey密码、<a href="https://baike.baidu.com/item/%E7%BD%AE%E6%8D%A2%E5%AF%86%E7%A0%81">置换密码</a>、二字母组代替密码 (by Charles Wheatstone)、多字母替换密码、<a href="https://baike.baidu.com/item/%E5%B8%8C%E5%B0%94%E5%AF%86%E7%A0%81">希尔密码</a>、<a href="https://baike.baidu.com/item/%E7%BB%B4%E5%90%89%E5%B0%BC%E4%BA%9A%E5%AF%86%E7%A0%81">维吉尼亚密码</a>、<a href="https://baike.baidu.com/item/%E6%9B%BF%E6%8D%A2%E5%BC%8F%E5%AF%86%E7%A0%81">替换式密码</a>、<a href="https://baike.baidu.com/item/%E5%87%AF%E6%92%92%E5%AF%86%E7%A0%81">凯撒密码</a>、<a href="https://baike.baidu.com/item/%E6%91%A9%E5%B0%94%E6%96%AF%E7%94%B5%E7%A0%81">摩尔斯电码</a>、<a href="https://baike.baidu.com/item/%E4%BB%BF%E5%B0%84%E5%AF%86%E7%A0%81">仿射密码</a>、Atbash密码、<a href="https://baike.baidu.com/item/%E6%8D%A2%E4%BD%8D%E5%AF%86%E7%A0%81">换位密码</a>、Scytale、Grille密码</p>
+
+
+
+<p>VIC密码 （一种复杂的手工密码，在五十年代早期被至少一名苏联间谍使用过，在当时是十分安全的）</p>
+
+
+
+<p>流密码、LFSR流密码、EIGamal密码、RSA密码。</p>
+
+
+
+<p><strong>对传统密码学的攻击</strong></p>
+
+
+
+<p><a href="https://baike.baidu.com/item/%E9%A2%91%E7%8E%87%E5%88%86%E6%9E%90">频率分析</a>、重合指数</p>
+
+
+
+<p><strong>经典密码学</strong></p>
+
+
+
+<p>在近代以前，<strong>密码学</strong>只考虑到信息的<a href="https://baike.baidu.com/item/%E6%9C%BA%E5%AF%86%E6%80%A7">机密性</a>（<a href="https://baike.baidu.com/item/confidentiality">confidentiality</a>）：如何将可理解的信息转换成难以理解的信息，并且使得有秘密信息的人能够逆向回复，但缺乏秘密信息的拦截者或窃听者则无法解读。近数十年来，这个领域已经扩展到涵盖身分<a href="https://baike.baidu.com/item/%E8%AE%A4%E8%AF%81">认证</a>（或称<a href="https://baike.baidu.com/item/%E9%89%B4%E6%9D%83">鉴权</a>）、信息完整性检查、<a href="https://baike.baidu.com/item/%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D">数字签名</a>、互动证明、<a href="https://baike.baidu.com/item/%E5%AE%89%E5%85%A8%E5%A4%9A%E6%96%B9%E8%AE%A1%E7%AE%97">安全多方计算</a>等各类技术。</p>
+
+
+
+<p>古中国<a href="https://baike.baidu.com/item/%E5%91%A8%E6%9C%9D">周朝</a>兵书《<a href="https://baike.baidu.com/item/%E5%85%AD%E9%9F%AC">六韬</a>．龙韬》也记载了密码学的运用，其中的《阴符》和《阴书》便记载了<a href="https://baike.baidu.com/item/%E5%91%A8%E6%AD%A6%E7%8E%8B">周武王</a>问<a href="https://baike.baidu.com/item/%E5%A7%9C%E5%AD%90%E7%89%99">姜子牙</a>关于征战时与主将通讯的方式：</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td>太公曰：“主与将，有阴符，凡八等。有大胜克敌之符，长一尺。破军擒将之符，长九寸。降城得邑之符，长八寸。却敌报远之符，长七寸。警众坚守之符，长六寸。请粮益兵之符，长五寸。败军亡将之符，长四寸。失利亡士之符，长三寸。诸奉使行符，稽留，若符事闻，泄告者，皆诛之。八符者，主将秘闻，所以阴通言语，不泄中外相知之术。敌虽圣智，莫之能识。”武王问太公曰：“… 符不能明；相去辽远，言语不通。为之奈何？”太公曰：“诸有阴事大虑，当用书，不用符。主以书遗将，将以书问主。书皆一合而再离，三发而一知。再离者，分书为三部。三发而一知者，言三人，人操一分，相参而不相知情也。此谓阴书。敌虽圣智，莫之能识。”</td></tr></tbody></table></figure>
+
+
+
+<p>阴符是以八等长度的符来表达不同的消息和指令，可算是密码学中的替代法（en:substitution），把信息转变成敌人看不懂的符号。至于阴书则运用了移位法，把书一分为三，分三人传递，要把三份书重新拼合才能获得还原的信息。</p>
+
+
+
+<p>除了应用于军事外，公元四世纪婆罗门学者伐蹉衍那（en:Vatsyayana） 所书的《欲经》4 中曾提及到用代替法加密信息。书中第45项是秘密书信（en:mlecchita-vikalpa） ，用以帮助妇女隐瞒她们与爱郞之间的关系。其中一种方法是把字母随意配对互换，如套用在罗马字母中，可有得出下表：</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td><td>I</td><td>J</td><td>K</td><td>L</td><td>M</td></tr><tr><td>Z</td><td>Y</td><td>X</td><td>W</td><td>V</td><td>U</td><td>T</td><td>S</td><td>R</td><td>Q</td><td>P</td><td>O</td><td>N</td></tr></tbody></table></figure>
+
+
+
+<p>由经典加密法产生的密码文很容易泄漏关于<a href="https://baike.baidu.com/item/%E6%98%8E%E6%96%87">明文</a>的统计信息，以现代观点其实很容易被破解。阿拉伯人津帝（en:al-Kindi）便提及到如果要破解加密信息，可在一篇至少一页长的文章中数算出每个字母出现的频率，在加密信件中也数算出每个符号的频率，然后互相对换，这是<a href="https://baike.baidu.com/item/%E9%A2%91%E7%8E%87%E5%88%86%E6%9E%90">频率分析</a>的前身，此后几乎所有此类的密码都马上被破解。但经典密码学仍未消失，经常出现在<a href="https://baike.baidu.com/item/%E8%B0%9C%E8%AF%AD">谜语</a>之中（见en:cryptogram）。这种分析法除了被用在破解密码法外，也常用于考古学上。在破解古埃及<a href="https://baike.baidu.com/item/%E8%B1%A1%E5%BD%A2%E6%96%87%E5%AD%97">象形文字</a>（en:Hieroglyphs）时便运用了这种解密法。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/4874/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>密码学基本概念总结</title>
+		<link>/archives/4859</link>
+					<comments>/archives/4859#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Wed, 29 Dec 2021 08:56:19 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[密码学]]></category>
+		<guid isPermaLink="false">/?p=4859</guid>
+
+					<description><![CDATA[密码学基本概念总结 1.公钥密码（非对称加密） 只要拥有加密密钥（公钥）的人，都可以进行加密，但只有拥有解密密 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h2>密码学基本概念总结</h2>
+
+
+
+<h5><strong>1.公钥密码（非对称加密）</strong><strong></strong></h5>
+
+
+
+<ol type="1"><li>只要拥有加密密钥（公钥）的人，都可以进行加密，但只有拥有解密密钥（私钥）的人，才可以解密。</li></ol>
+
+
+
+<p>如RSA &#8211;&gt; 是一种非对称加密算法</p>
+
+
+
+<h5><strong>加密：</strong><strong></strong></h5>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="442" height="34" src="/wp-content/uploads/2021/12/image-68.png" alt="" class="wp-image-4860" srcset="/wp-content/uploads/2021/12/image-68.png 442w, /wp-content/uploads/2021/12/image-68-300x23.png 300w" sizes="(max-width: 442px) 100vw, 442px" /></figure>
+
+
+
+<p>公钥是（E,N）</p>
+
+
+
+<p>(E是加密的首字母，N是数字的首字母)</p>
+
+
+
+<h5><strong>解密：</strong><strong></strong></h5>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="425" height="31" src="/wp-content/uploads/2021/12/image-69.png" alt="" class="wp-image-4861" srcset="/wp-content/uploads/2021/12/image-69.png 425w, /wp-content/uploads/2021/12/image-69-300x22.png 300w" sizes="(max-width: 425px) 100vw, 425px" /></figure>
+
+
+
+<p>私钥是（D,N）</p>
+
+
+
+<p>D是解密的首字母，N是数字的首字母</p>
+
+
+
+<p><strong>2.其他概念</strong><strong></strong></p>
+
+
+
+<p>单向散列函数</p>
+
+
+
+<p>消息认证码</p>
+
+
+
+<p>数字签名</p>
+
+
+
+<p>消息认证码，需要A和B共享一个密钥，但这样无法防止否认，即A和B都有能力计算出MAC值。因此引入数字签名。</p>
+
+
+
+<p><strong>3.数字签名</strong><strong></strong></p>
+
+
+
+<ul><li>生成消息签名的行为</li><li>验证消息签名的行为</li><li>数字签名和公钥密码（非对称加密）区别（用法相反）：</li></ul>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="652" height="93" src="/wp-content/uploads/2021/12/image-70.png" alt="" class="wp-image-4862" srcset="/wp-content/uploads/2021/12/image-70.png 652w, /wp-content/uploads/2021/12/image-70-300x43.png 300w" sizes="(max-width: 652px) 100vw, 652px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="552" height="320" src="/wp-content/uploads/2021/12/image-71.png" alt="" class="wp-image-4863" srcset="/wp-content/uploads/2021/12/image-71.png 552w, /wp-content/uploads/2021/12/image-71-300x174.png 300w" sizes="(max-width: 552px) 100vw, 552px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="580" height="321" src="/wp-content/uploads/2021/12/image-72.png" alt="" class="wp-image-4864" srcset="/wp-content/uploads/2021/12/image-72.png 580w, /wp-content/uploads/2021/12/image-72-300x166.png 300w" sizes="(max-width: 580px) 100vw, 580px" /></figure>
+
+
+
+<p>用公钥加密得到的密文，只能用与该公钥配对的私钥才能解密；同样的，用私钥加密得到的密文，只能用与该私钥配对的公钥才能解密；</p>
+
+
+
+<p>由于公钥算法非常慢</p>
+
+
+
+<p>消息&#8211;&gt; 单向散列函数&#8211;&gt;签名</p>
+
+
+
+<p>公钥（消息）+公钥的数字签名 &#8211;&gt; 公钥证书</p>
+
+
+
+<p>所谓证书，就是将公钥当做一条消息，由一个可信的第三方对其签名后所得到的公钥。</p>
+
+
+
+<h5><strong>注意</strong><strong></strong></h5>
+
+
+
+<p>（1）公钥密码和数字签名最好分别使用不同的密钥对</p>
+
+
+
+<p>（2）不要直接对消息签名，对散列值签名比较安全</p>
+
+
+
+<p>为了建立一个可信的数字签名链条，我们需要让公钥以及数字签名技术成为一种社会性的基础设施，即公钥基础设施（Public Key Instrastructure），简称PKI。</p>
+
+
+
+<p><strong>第二部分 认证</strong></p>
+
+
+
+<p>1.公钥证书</p>
+
+
+
+<p>公钥证书和驾照相似，里面有姓名、组织、邮箱、地址等个人信息，以及属于此人的公钥，并由认证机构（Certification Authority，CA）施加数字签名。只要看到公钥证书，我们就可以知道认证机构认定该公钥的确属于此人。公钥证书也称为证书。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="618" height="341" src="/wp-content/uploads/2021/12/image-73.png" alt="" class="wp-image-4865" srcset="/wp-content/uploads/2021/12/image-73.png 618w, /wp-content/uploads/2021/12/image-73-300x166.png 300w" sizes="(max-width: 618px) 100vw, 618px" /></figure>
+
+
+
+<p>证书标准规范X.509</p>
+
+
+
+<ul><li>(1)证书格式统一规范，最广泛的是由ITU和ISO制定的X.509规范。</li></ul>
+
+
+
+<p>(2)包含三部分：</p>
+
+
+
+<p>签名前的证书&#8212;签名对象的信息</p>
+
+
+
+<p>数字签名算法&#8212;对证书签名时所用的算法</p>
+
+
+
+<p>数字签名&#8212;对证书施加的数字签名</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="609" height="695" src="/wp-content/uploads/2021/12/image-74.png" alt="" class="wp-image-4866" srcset="/wp-content/uploads/2021/12/image-74.png 609w, /wp-content/uploads/2021/12/image-74-263x300.png 263w" sizes="(max-width: 609px) 100vw, 609px" /></figure>
+
+
+
+<h5><strong>3.公钥基础设施（PKI）</strong><strong></strong></h5>
+
+
+
+<p>（1）证书由谁颁发、如何颁发，私钥泄露时应该如何作废证书，计算机之间的数据交换应采用怎样的格式。要使用到PKI。X.509规范是PKI的一种。</p>
+
+
+
+<p>（2）PKI的组成要素有三个：</p>
+
+
+
+<p>用户（实体）&#8212;使用PKI的人（也可是计算机）</p>
+
+
+
+<p>认证机构&#8212;颁发证书的人</p>
+
+
+
+<p>仓库&#8212;保存证书的数据库</p>
+
+
+
+<p>（3）具体介绍：</p>
+
+
+
+<p>用户：包括两种，一种是希望使用PKI注册自己公钥的人，另一种是希望使用已注册公钥的人。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="612" height="476" src="/wp-content/uploads/2021/12/image-75.png" alt="" class="wp-image-4867" srcset="/wp-content/uploads/2021/12/image-75.png 612w, /wp-content/uploads/2021/12/image-75-300x233.png 300w" sizes="(max-width: 612px) 100vw, 612px" /></figure>
+
+
+
+<p>认证机构是对证书进行管理的人（Trent）。认证机构的工作中，公钥注册和本人身份认证这一部分可由<strong>注册机构</strong>（Registration Authority,RA）来分担。CA只负责颁发证书。</p>
+
+
+
+<p>仓库：保存证书的数据库，，也叫做<strong>证书目录</strong>。</p>
+
+
+
+<p>（4）PKCS#10:申请证书时所使用的规范</p>
+
+
+
+<p>（5）PKCS#6：生成证书的格式是由PKCS#6和X.509定义的。</p>
+
+
+
+<p>（6）作废证书：CA需要制作一张证书作废清单（Certificate Revocation List）简称CRL.</p>
+
+
+
+<p>PKI用户需要从认证机构获取最新的CRL，并查询自己要用于验证签名（或用于加密）的公钥证书是否已经作废。</p>
+
+
+
+<p><strong>4.证书层级</strong><strong></strong></p>
+
+
+
+<p>（1)对于认证机构的公钥，可以由其他的认证机构施加数字签名，从而对认证机构的公钥进行验证。即生成一张认证机构的公钥证书。</p>
+
+
+
+<p>（2）根CA:认证机构的最根部，即不存在更高一层的认证机构，而对于根CA，则由根CA认证机构自己来颁发证书，这种对自己的公钥进行数字签名的行为成为<strong>自签名</strong>。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="409" height="692" src="/wp-content/uploads/2021/12/image-76.png" alt="" class="wp-image-4868" srcset="/wp-content/uploads/2021/12/image-76.png 409w, /wp-content/uploads/2021/12/image-76-177x300.png 177w" sizes="(max-width: 409px) 100vw, 409px" /></figure>
+
+
+
+<p><strong>5.SSL/TLS</strong><strong></strong></p>
+
+
+
+<p>当我们访问https://开头的网页时。web服务器和浏览器之间会进行基于SSL/TLS的加密通信。在这样的通信中所使用的密钥是仅限于本次通信的一次性密钥，下次通信时就不能使用了。像这样每次通信只能使用一次的密钥成为<strong>会话密钥</strong>（session key）。</p>
+
+
+
+<p>加密对象是用户直接使用的信息（内容），这样的密钥称为CEK(Contents Encrypting Key,内容加密密钥)，相对的，用于加密密钥的密钥称为KEK（Key Encrypting Key，密钥加密密钥）。会话密钥都是被作为CEK使用的。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="684" height="248" src="/wp-content/uploads/2021/12/image-77.png" alt="" class="wp-image-4869" srcset="/wp-content/uploads/2021/12/image-77.png 684w, /wp-content/uploads/2021/12/image-77-300x109.png 300w" sizes="(max-width: 684px) 100vw, 684px" /></figure>
+
+
+
+<p>SSL(Secure Socket Layer)与TLS(Transport Layer Security)</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="633" height="402" src="/wp-content/uploads/2021/12/image-78.png" alt="" class="wp-image-4870" srcset="/wp-content/uploads/2021/12/image-78.png 633w, /wp-content/uploads/2021/12/image-78-300x191.png 300w" sizes="(max-width: 633px) 100vw, 633px" /></figure>
+
+
+
+<p>SSL是事实上的行业标准，而TLS相当于SSL3.1。</p>
+
+
+
+<p>SSL/TLS提供了一种密码通信框架，称为密码套件，这意味着SSL/TLS中使用的对称密码，公钥密码、数字签名、单向散列函数等技术，都是可以像零件一样替换的。</p>
+
+
+
+<p>使用SSL/TLS后，通信内容不会在通信过程中被第三方获取。</p>
+
+
+
+<p>在SSL/TLS中，我们能够通过证书对服务器进行认证。只是确认了通信对象是经过认证机构确认的服务器，而不能确认是否可以和该通信对象进行安全的交易。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/4859/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>密码学【des 算法】</title>
+		<link>/archives/4826</link>
+					<comments>/archives/4826#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Wed, 29 Dec 2021 08:52:15 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[密码学]]></category>
+		<guid isPermaLink="false">/?p=4826</guid>
+
+					<description><![CDATA[密码学【des 算法】 DES Python XXX 盒，常量定义 1、初始置换 IP 盒 2、最终（逆）置换 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h2>密码学【des 算法】</h2>
+
+
+
+<h1><strong>DES Python</strong><strong></strong></h1>
+
+
+
+<h1><strong>XXX 盒，常量定义</strong><strong></strong></h1>
+
+
+
+<h1>1、初始置换 IP 盒</h1>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="116" src="/wp-content/uploads/2021/12/image-43.png" alt="" class="wp-image-4827" srcset="/wp-content/uploads/2021/12/image-43.png 554w, /wp-content/uploads/2021/12/image-43-300x63.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p>2、最终（逆）置换 IP-1 盒</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="115" src="/wp-content/uploads/2021/12/image-44.png" alt="" class="wp-image-4828" srcset="/wp-content/uploads/2021/12/image-44.png 554w, /wp-content/uploads/2021/12/image-44-300x62.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p>3、扩展置换 E 盒</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="96" src="/wp-content/uploads/2021/12/image-45.png" alt="" class="wp-image-4829" srcset="/wp-content/uploads/2021/12/image-45.png 554w, /wp-content/uploads/2021/12/image-45-300x52.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p>4、P 盒</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="93" src="/wp-content/uploads/2021/12/image-46.png" alt="" class="wp-image-4830" srcset="/wp-content/uploads/2021/12/image-46.png 554w, /wp-content/uploads/2021/12/image-46-300x50.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p>5、PC1 表</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="95" src="/wp-content/uploads/2021/12/image-47.png" alt="" class="wp-image-4831" srcset="/wp-content/uploads/2021/12/image-47.png 554w, /wp-content/uploads/2021/12/image-47-300x51.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p>6、S 盒</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="750" src="/wp-content/uploads/2021/12/image-48.png" alt="" class="wp-image-4832" srcset="/wp-content/uploads/2021/12/image-48.png 554w, /wp-content/uploads/2021/12/image-48-222x300.png 222w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="454" src="/wp-content/uploads/2021/12/image-49.png" alt="" class="wp-image-4833" srcset="/wp-content/uploads/2021/12/image-49.png 554w, /wp-content/uploads/2021/12/image-49-300x246.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p>7、循环左移位数</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="72" src="/wp-content/uploads/2021/12/image-50.png" alt="" class="wp-image-4834" srcset="/wp-content/uploads/2021/12/image-50.png 554w, /wp-content/uploads/2021/12/image-50-300x39.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p>8、其他</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="117" src="/wp-content/uploads/2021/12/image-51.png" alt="" class="wp-image-4835" srcset="/wp-content/uploads/2021/12/image-51.png 554w, /wp-content/uploads/2021/12/image-51-300x63.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<h3><strong>工具函数定义</strong></h3>
+
+
+
+<p>1、置换函数</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="50" src="/wp-content/uploads/2021/12/image-52.png" alt="" class="wp-image-4836" srcset="/wp-content/uploads/2021/12/image-52.png 554w, /wp-content/uploads/2021/12/image-52-300x27.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p>2、string/bytes to bitlist</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="90" src="/wp-content/uploads/2021/12/image-53.png" alt="" class="wp-image-4837" srcset="/wp-content/uploads/2021/12/image-53.png 554w, /wp-content/uploads/2021/12/image-53-300x49.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p>3、bitlist to hex</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="89" src="/wp-content/uploads/2021/12/image-54.png" alt="" class="wp-image-4838" srcset="/wp-content/uploads/2021/12/image-54.png 554w, /wp-content/uploads/2021/12/image-54-300x48.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<h3><strong>密钥编排函数</strong></h3>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="206" src="/wp-content/uploads/2021/12/image-55.png" alt="" class="wp-image-4839" srcset="/wp-content/uploads/2021/12/image-55.png 554w, /wp-content/uploads/2021/12/image-55-300x112.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<h3><strong>明文 pad/unpad 函数</strong></h3>
+
+
+
+<p>1、pkcs5</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="254" src="/wp-content/uploads/2021/12/image-56.png" alt="" class="wp-image-4841" srcset="/wp-content/uploads/2021/12/image-56.png 554w, /wp-content/uploads/2021/12/image-56-300x138.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p>2、normal</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="325" src="/wp-content/uploads/2021/12/image-58.png" alt="" class="wp-image-4844" srcset="/wp-content/uploads/2021/12/image-58.png 554w, /wp-content/uploads/2021/12/image-58-300x176.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<h3><strong>加解密主逻辑函数</strong></h3>
+
+
+
+<p>1、加密</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="447" src="/wp-content/uploads/2021/12/image-59.png" alt="" class="wp-image-4846" srcset="/wp-content/uploads/2021/12/image-59.png 554w, /wp-content/uploads/2021/12/image-59-300x242.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="452" src="/wp-content/uploads/2021/12/image-60.png" alt="" class="wp-image-4847" srcset="/wp-content/uploads/2021/12/image-60.png 554w, /wp-content/uploads/2021/12/image-60-300x245.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p>2、解密</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="347" src="/wp-content/uploads/2021/12/image-61.png" alt="" class="wp-image-4848" srcset="/wp-content/uploads/2021/12/image-61.png 554w, /wp-content/uploads/2021/12/image-61-300x188.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="550" src="/wp-content/uploads/2021/12/image-62.png" alt="" class="wp-image-4849" srcset="/wp-content/uploads/2021/12/image-62.png 554w, /wp-content/uploads/2021/12/image-62-300x298.png 300w, /wp-content/uploads/2021/12/image-62-150x150.png 150w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<h3><strong>demo 测试函数</strong><strong></strong></h3>
+
+
+
+<p>1、加密</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="871" src="/wp-content/uploads/2021/12/image-63.png" alt="" class="wp-image-4850" srcset="/wp-content/uploads/2021/12/image-63.png 554w, /wp-content/uploads/2021/12/image-63-191x300.png 191w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p>2、解密</p>
+
+
+
+<p></p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="866" src="/wp-content/uploads/2021/12/image-64.png" alt="" class="wp-image-4851" srcset="/wp-content/uploads/2021/12/image-64.png 554w, /wp-content/uploads/2021/12/image-64-192x300.png 192w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p><br><br></p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="279" src="/wp-content/uploads/2021/12/image-65.png" alt="" class="wp-image-4852" srcset="/wp-content/uploads/2021/12/image-65.png 554w, /wp-content/uploads/2021/12/image-65-300x151.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p><br>&nbsp;&nbsp;&nbsp;&nbsp;print(&#8216;ecb/normal:&nbsp;&#8216;,&nbsp;decrypt_ecb2(key,&nbsp;bytes.fromhex(data2),&nbsp;pad).decode())<br><br>&nbsp;&nbsp;&nbsp;&nbsp;dd1&nbsp;=&nbsp;des(key,&nbsp;IV=iv,&nbsp;mode=CBC,&nbsp;padmode=PAD_PKCS5)<br>&nbsp;&nbsp;&nbsp;&nbsp;print(&#8216;cbc/pkcs5&nbsp;:&nbsp;&#8216;,&nbsp;dd1.decrypt(bytes.fromhex(data3)).decode())<br>&nbsp;&nbsp;&nbsp;&nbsp;print(&#8216;cbc/pkcs5&nbsp;:&nbsp;&#8216;,&nbsp;decrypt_cbc1(key,&nbsp;bytes.fromhex(data3),&nbsp;iv=iv).decode())<br><br>&nbsp;&nbsp;&nbsp;&nbsp;dd1&nbsp;=&nbsp;des(key,&nbsp;IV=iv,&nbsp;pad=pad,&nbsp;mode=CBC,&nbsp;padmode=PAD_NORMAL)<br>&nbsp;&nbsp;&nbsp;&nbsp;print(&#8216;cbc/normal:&nbsp;&#8216;,&nbsp;dd1.decrypt(bytes.fromhex(data4)).decode())<br>&nbsp;&nbsp;&nbsp;&nbsp;print(&#8216;cbc/normal:&nbsp;&#8216;,&nbsp;decrypt_cbc2(key,&nbsp;bytes.fromhex(data4),&nbsp;iv=iv,&nbsp;pad=pad).decode())</p>
+
+
+
+<h3><strong>demo 测试结果</strong><strong></strong></h3>
+
+
+
+<p>1、加密</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="123" src="/wp-content/uploads/2021/12/image-66.png" alt="" class="wp-image-4853" srcset="/wp-content/uploads/2021/12/image-66.png 554w, /wp-content/uploads/2021/12/image-66-300x67.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+
+
+
+<p>2、解密</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="554" height="125" src="/wp-content/uploads/2021/12/image-67.png" alt="" class="wp-image-4854" srcset="/wp-content/uploads/2021/12/image-67.png 554w, /wp-content/uploads/2021/12/image-67-300x68.png 300w" sizes="(max-width: 554px) 100vw, 554px" /></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/4826/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>密码学</title>
+		<link>/archives/4820</link>
+					<comments>/archives/4820#respond</comments>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Wed, 29 Dec 2021 08:47:11 +0000</pubDate>
+				<category><![CDATA[全部]]></category>
+		<category><![CDATA[密码学]]></category>
+		<guid isPermaLink="false">/?p=4820</guid>
+
+					<description><![CDATA[密码学 密码学（在西欧语文中，源于希腊语kryptós“隐藏的”，和gráphein“书写”）是研究如何隐密地 [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<h2>密码学</h2>
+
+
+
+<p><strong>密码学</strong>（在<a href="https://baike.baidu.com/item/%E8%A5%BF%E6%AC%A7">西欧</a>语文中，源于<a href="https://baike.baidu.com/item/%E5%B8%8C%E8%85%8A%E8%AF%AD">希腊语</a><em>kryptós</em>“隐藏的”，和<em>gráphein</em>“书写”）是研究如何隐密地传递信息的学科。在现代特别指对信息以及其传输的数学性<a href="https://baike.baidu.com/item/%E7%A0%94%E7%A9%B6">研究</a>，常被认为是<a href="https://baike.baidu.com/item/%E6%95%B0%E5%AD%A6">数学</a>和计算机科学的分支，和<a href="https://baike.baidu.com/item/%E4%BF%A1%E6%81%AF%E8%AE%BA">信息论</a>也密切相关。著名的密码学者Ron Rivest解释道：“密码学是关于如何在<a href="https://baike.baidu.com/item/%E6%95%8C%E4%BA%BA">敌人</a>存在的<a href="https://baike.baidu.com/item/%E7%8E%AF%E5%A2%83">环境</a>中通讯”，自<a href="https://baike.baidu.com/item/%E5%B7%A5%E7%A8%8B%E5%AD%A6">工程学</a>的角度，这相当于密码学与纯数学的异同。密码学是<a href="https://baike.baidu.com/item/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8">信息安全</a>等相关议题，如认证、访问控制的核心。密码学的首要目的是隐藏信息的涵义，并不是隐藏信息的存在。密码学也促进了计算机科学，特别是在于电脑与<a href="https://baike.baidu.com/item/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8">网络安全</a>所使用的技术，如<a href="https://baike.baidu.com/item/%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6">访问控制</a>与信息的<a href="https://baike.baidu.com/item/%E6%9C%BA%E5%AF%86%E6%80%A7">机密性</a>。密码学已被应用在<a href="https://baike.baidu.com/item/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB">日常生活</a>：包括<a href="https://baike.baidu.com/item/%E8%87%AA%E5%8A%A8%E6%9F%9C%E5%91%98%E6%9C%BA">自动柜员机</a>的<a href="https://baike.baidu.com/item/%E8%8A%AF%E7%89%87%E5%8D%A1">芯片卡</a>、电脑使用者存取<a href="https://baike.baidu.com/item/%E5%AF%86%E7%A0%81">密码</a>、<a href="https://baike.baidu.com/item/%E7%94%B5%E5%AD%90%E5%95%86%E5%8A%A1">电子商务</a>等等。</p>
+
+
+
+<p><a href="https://baike.baidu.com/item/%E5%AF%86%E7%A0%81">密码</a>是通信双方按约定的<a href="https://baike.baidu.com/item/%E6%B3%95%E5%88%99">法则</a>进行信息特殊变换的一种重要<a href="https://baike.baidu.com/item/%E4%BF%9D%E5%AF%86">保密</a>手段。依照这些法则，变明文为密文，称为加密变换；变密文为明文，称为脱密变换。密码在早期仅对文字或数码进行加、脱密变换，随着通信技术的<a href="https://baike.baidu.com/item/%E5%8F%91%E5%B1%95/32354">发展</a>，对<a href="https://baike.baidu.com/item/%E8%AF%AD%E9%9F%B3">语音</a>、<a href="https://baike.baidu.com/item/%E5%9B%BE%E5%83%8F">图像</a>、<a href="https://baike.baidu.com/item/%E6%95%B0%E6%8D%AE">数据</a>等都可实施加、脱密变换。</p>
+
+
+
+<p><a href="https://baike.baidu.com/item/%E5%AF%86%E7%A0%81">密码</a>学是在编码与破译的斗争实践中逐步发展起来的，并随着先进科学技术的应用，已成为一门综合性的尖端<a href="https://baike.baidu.com/item/%E6%8A%80%E6%9C%AF%E7%A7%91%E5%AD%A6">技术科学</a>。它与<a href="https://baike.baidu.com/item/%E8%AF%AD%E8%A8%80%E5%AD%A6">语言学</a>、<a href="https://baike.baidu.com/item/%E6%95%B0%E5%AD%A6">数学</a>、<a href="https://baike.baidu.com/item/%E7%94%B5%E5%AD%90%E5%AD%A6">电子学</a>、<a href="https://baike.baidu.com/item/%E5%A3%B0%E5%AD%A6">声学</a>、<a href="https://baike.baidu.com/item/%E4%BF%A1%E6%81%AF%E8%AE%BA">信息论</a>、计算机科学等有着广泛而密切的联系。它的现实研究成果，特别是各国政府现用的密码编制及破译手段都具有高度的机密性。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="183" height="276" src="/wp-content/uploads/2021/12/image-41.png" alt="" class="wp-image-4821"/></figure>
+
+
+
+<p>密码学</p>
+
+
+
+<p>进行明密变换的法则，称为密码的<a href="https://baike.baidu.com/item/%E4%BD%93%E5%88%B6">体制</a>。指示这种变换的<a href="https://baike.baidu.com/item/%E5%8F%82%E6%95%B0">参数</a>，称为<a href="https://baike.baidu.com/item/%E5%AF%86%E9%92%A5">密钥</a>。它们是密码编制的重要组成部分。密码体制的基本类型可以分为四种：错乱－－按照规定的图形和线路，改变明文字母或数码等的位置成为密文；代替－－用一个或多个代替表将明文字母或数码等代替为密文；密本－－用预先编定的字母或数字密码组，代替一定的词组单词等变明文为密文；加乱－－用<a href="https://baike.baidu.com/item/%E6%9C%89%E9%99%90%E5%85%83">有限元</a>素组成的一串序列作为<a href="https://baike.baidu.com/item/%E4%B9%B1%E6%95%B0">乱数</a>，按规定的算法，同明文序列相结合变成密文。以上四种密码体制，既可单独使用，也可混合使用 ，以编制出各种<a href="https://baike.baidu.com/item/%E5%A4%8D%E6%9D%82%E5%BA%A6">复杂度</a>很高的实用密码。</p>
+
+
+
+<p>20世纪70年代以来，一些学者提出了<a href="https://baike.baidu.com/item/%E5%85%AC%E5%BC%80%E5%AF%86%E9%92%A5">公开密钥</a>体制，即运用<a href="https://baike.baidu.com/item/%E5%8D%95%E5%90%91%E5%87%BD%E6%95%B0">单向函数</a>的数学原理，以实现加、脱密密钥的分离。加密密钥是公开的，脱密密钥是保密的。这种新的密码体制，引起了密码学界的广泛注意和探讨。</p>
+
+
+
+<p>利用文字和密码的规律，在一定条件下，采取各种技术手段，通过对截取密文的分析，以求得明文，还原密码编制，即<a href="https://baike.baidu.com/item/%E7%A0%B4%E8%AF%91">破译</a>密码。破译不同强度的密码，对条件的要求也不相同，甚至很不相同。</p>
+
+
+
+<p>在通信过程中，待加密的信息称为明文，已被加密的信息称为密文，仅有收、发双方知道的信息称为密钥。在密钥控制下，由明文变到密文的过程叫加密，其逆过程叫脱密或解密。在密码系统中，除合法用户外，还有非法的截收者，他们试图通过各种办法窃取机密（又称为被动攻击)或窜改消息（又称为主动攻击）。</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" width="467" height="230" src="/wp-content/uploads/2021/12/image-42.png" alt="" class="wp-image-4822" srcset="/wp-content/uploads/2021/12/image-42.png 467w, /wp-content/uploads/2021/12/image-42-300x148.png 300w" sizes="(max-width: 467px) 100vw, 467px" /></figure>
+
+
+
+<p>一个密码通信系统</p>
+
+
+
+<p>对于给定的明文m和密钥k，加密变换Ek将明文变为密文c=f(m，k)=Ek(m)，在接收端，利用脱密密钥k1，（有时k=k1，）完成脱密操作，将密文c恢复成原来的明文m=Dk1(c)。一个安全的密码体制应该满足：①非法截收者很难从密文C中推断出明文m；②加密和脱密算法应该相当简便，而且适用于所有密钥空间；③密码的保密强度只依赖于密钥；④合法接收者能够检验和证实消息的完整性和真实性；⑤消息的发送者无法否认其所发出的消息，同时也不能伪造别人的合法消息；⑥必要时可由仲裁机构进行公断。</p>
+
+
+
+<p>现代密码学所涉及的学科包括：信息论、概率论、数论、计算复杂性理论、近世代数、离散数学、代数几何学和数字逻辑等。</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/archives/4820/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
 </rss>

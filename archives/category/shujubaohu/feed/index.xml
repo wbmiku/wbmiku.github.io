@@ -19,6 +19,14 @@
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.8.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2021/11/cropped-logo-2-32x32.png</url>
+	<title>数据保护 &#8211; WBMIKU密库</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
 	<item>
 		<title>信息时代的数据安全和个人信息保护</title>
 		<link>/archives/4285</link>
